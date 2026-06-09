@@ -1,0 +1,18 @@
+Sensitivity Experiment Stability Report
+total_scenarios: 9
+
+1. Winner frequency by router
+- fixed_lightweight: 9/9
+
+2. Average rank and average mission utility
+- comm_conservative: avg_rank=2.11, avg_total_utility=10.801
+- fixed_high_accuracy: avg_rank=5.00, avg_total_utility=-53.496
+- fixed_lightweight: avg_rank=1.00, avg_total_utility=18.347
+- safe_linucb: avg_rank=3.33, avg_total_utility=-13.461
+- utility_rule: avg_rank=3.56, avg_total_utility=-17.335
+
+3. SafeLinUCB minus fixed_lightweight mission-utility delta
+- positive_scenarios: 0/9
+- mean_delta: -31.808
+- worst_delta: -49.045 (baseline_reward__heavy_friendly_profiles)
+- best_delta: -7.787 (resource_guarded_reward__heavy_expensive_profiles)

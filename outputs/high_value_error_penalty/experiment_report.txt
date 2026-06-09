@@ -1,0 +1,22 @@
+High-Value Error Penalty Experiment Report
+
+Scenario: error_model_only_0x
+- rank=1, router=fixed_lightweight, total_mission_utility=19.126, high_value_error_count=7, total_mission_error_penalty=0.000
+- rank=2, router=comm_conservative, total_mission_utility=12.315, high_value_error_count=3, total_mission_error_penalty=0.000
+- rank=3, router=utility_rule, total_mission_utility=-13.143, high_value_error_count=7, total_mission_error_penalty=0.000
+- rank=4, router=fixed_high_accuracy, total_mission_utility=-55.947, high_value_error_count=2, total_mission_error_penalty=0.000
+- rank=5, router=safe_linucb, total_mission_utility=-57.730, high_value_error_count=5, total_mission_error_penalty=0.000
+
+Scenario: high_value_error_penalty_10x
+- rank=1, router=safe_linucb, total_mission_utility=4.800, high_value_error_count=0, total_mission_error_penalty=0.000
+- rank=2, router=comm_conservative, total_mission_utility=-27.428, high_value_error_count=3, total_mission_error_penalty=39.743
+- rank=3, router=fixed_high_accuracy, total_mission_utility=-81.190, high_value_error_count=2, total_mission_error_penalty=25.243
+- rank=4, router=fixed_lightweight, total_mission_utility=-83.756, high_value_error_count=7, total_mission_error_penalty=102.882
+- rank=5, router=utility_rule, total_mission_utility=-107.300, high_value_error_count=7, total_mission_error_penalty=94.157
+
+Scenario: high_value_error_penalty_5x
+- rank=1, router=safe_linucb, total_mission_utility=4.800, high_value_error_count=0, total_mission_error_penalty=0.000
+- rank=2, router=comm_conservative, total_mission_utility=-7.557, high_value_error_count=3, total_mission_error_penalty=19.871
+- rank=3, router=fixed_lightweight, total_mission_utility=-32.315, high_value_error_count=7, total_mission_error_penalty=51.441
+- rank=4, router=utility_rule, total_mission_utility=-60.222, high_value_error_count=7, total_mission_error_penalty=47.078
+- rank=5, router=fixed_high_accuracy, total_mission_utility=-68.568, high_value_error_count=2, total_mission_error_penalty=12.621

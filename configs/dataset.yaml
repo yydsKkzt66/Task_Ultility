@@ -1,0 +1,7 @@
+dataset_name: mock
+root_dir: data/raw
+tile_size: 640
+tile_stride: 512
+use_negative_tiles: true
+max_tasks: 300
+seed: 2026

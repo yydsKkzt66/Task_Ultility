@@ -1,0 +1,16 @@
+﻿scenario_name,rank,router,total_mission_utility,high_value_error_count,total_mission_error_penalty,deadline_satisfaction_rate,safety_violations
+error_model_only_0x,1,fixed_lightweight,19.126149359197417,7,0.0,0.44166666666666665,0
+error_model_only_0x,2,comm_conservative,12.31457352847725,3,0.0,0.44166666666666665,0
+error_model_only_0x,3,utility_rule,-13.14348526339045,7,0.0,0.3333333333333333,13
+error_model_only_0x,4,fixed_high_accuracy,-55.94709816480307,2,0.0,0.041666666666666664,22
+error_model_only_0x,5,safe_linucb,-57.7302663712519,5,0.0,0.24166666666666667,31
+high_value_error_penalty_10x,1,safe_linucb,4.800448327631858,0,0.0,0.325,2
+high_value_error_penalty_10x,2,comm_conservative,-27.428239978714952,3,39.742813507192196,0.44166666666666665,0
+high_value_error_penalty_10x,3,fixed_high_accuracy,-81.18963087136402,2,25.242532706560993,0.041666666666666664,22
+high_value_error_penalty_10x,4,fixed_lightweight,-83.7557908490797,7,102.88194020827711,0.44166666666666665,0
+high_value_error_penalty_10x,5,utility_rule,-107.30022968484913,7,94.15674442145868,0.3333333333333333,13
+high_value_error_penalty_5x,1,safe_linucb,4.800448327631858,0,0.0,0.325,2
+high_value_error_penalty_5x,2,comm_conservative,-7.556833225118844,3,19.871406753596098,0.44166666666666665,0
+high_value_error_penalty_5x,3,fixed_lightweight,-32.31482074494115,7,51.44097010413856,0.44166666666666665,0
+high_value_error_penalty_5x,4,utility_rule,-60.221857474119794,7,47.07837221072934,0.3333333333333333,13
+high_value_error_penalty_5x,5,fixed_high_accuracy,-68.56836451808353,2,12.621266353280497,0.041666666666666664,22

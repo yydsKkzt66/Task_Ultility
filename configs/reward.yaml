@@ -1,0 +1,13 @@
+lambda_L: 0.2
+lambda_Q: 0.1
+lambda_Omega: 2.0
+lambda_E_base: 0.3
+eta_B: 1.0
+eta_Theta: 0.5
+dynamic_energy_weight: true
+info_base: 0.25
+info_value_weight: 0.35
+info_difficulty_weight: 0.20
+info_uncertainty_weight: 0.25
+info_urgency_weight: 0.20
+deferred_delivery_credit: 0.15

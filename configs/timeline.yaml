@@ -1,0 +1,4 @@
+slot_seconds: 10
+num_slots: 300
+task_arrival: one_per_slot
+trace_mode: synthetic

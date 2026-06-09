@@ -1,0 +1,10 @@
+models:
+  - name: lightweight
+    backend: mock
+    profile_name: tiny
+  - name: balanced
+    backend: mock
+    profile_name: small
+  - name: high_accuracy
+    backend: mock
+    profile_name: medium
