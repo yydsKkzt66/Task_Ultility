@@ -1,0 +1,56 @@
+{
+  "active_arrival_swap_count": 0,
+  "arrival_profile": "ordinary_random_value_blind_seed_permutation_v1",
+  "benchmark_fingerprint": "07c4c14fa4740a7376df314a6a9ed96eab674bb28722609117e42102b49ffb84",
+  "capacity": 0.35,
+  "environment_hash": "0abc9c92cc6ed8213ceb846b8b82e50359f01f98e2f36f5ff46b9ad3ee704a50",
+  "file_sha256": {
+    "arrival_swap_manifest.csv": "cec4d0f952814f8fd12881a6154b5cf7fff2e99113c4989a7154c3549fabdb9d",
+    "resolved_config.json": "24d181fe9d244993bc405c2229ec1213f1a74b5ed6811d9e3cce0111f0b5c6de",
+    "slot_trace.csv": "9e37e8e2f05c4a501a44a8d876482e1d098510ea3e61d37a3d1914856bdd3af7",
+    "task_manifest.csv": "6c50e360b4776cb7868e0c9a0211888c0901430812e9fde47d023835f7efeecd",
+    "task_value_assignment_trace.csv": "d30c72be2c0fb9a14ca8cceb894d8e1468552dd4077dccf705188f85fb0fa132"
+  },
+  "forbidden_formats": [
+    "pickle",
+    "custom_python_object",
+    "src_module_reference"
+  ],
+  "horizon_s": 86400,
+  "late_hv_swap_pairs_reversed": 27,
+  "late_window": {
+    "end_s": 64800,
+    "high": 30,
+    "start_s": 43200,
+    "urgent": 15
+  },
+  "neutral_environment_hash": "32fe1538422435f9d176f6482e8f9357d5ad0cf6f5e0121d6a8c7322520441e0",
+  "neutral_slot_rows_hash": "ab5a375d6ec5a1a96d4ed84454c72fa4c51922b426741062cbbe2d9a69cea7de",
+  "neutral_task_rows_hash": "a4cedaa9b5ecf3335dc81ed3fa79ea7338198b17f67f675dcfaf65fd71d4e95a",
+  "normalization_factor": "0.1744791666666666666666666667",
+  "ordinary_multiseed_assignment_rule": "sha256(seed,task_id) over all tasks; value/requirement excluded",
+  "ordinary_multiseed_assignment_sha256": "81490db526aa974bba865082db50d3e25b0e338a0981be9e8ec431c7b6bbb0c3",
+  "original_environment_hash": "de8c9e70a7210918ba9de5d656aa6b1e25ab69b3add8eed4e95604de76e6ba8b",
+  "original_task_hash": "49c704997b59648d902ed9413a4116d0b45e5b404d0d20ece9d3826a7d6d38cd",
+  "schema_version": 1,
+  "seed": 2029,
+  "slot_count": 4320,
+  "slot_seconds": 20.0,
+  "swap_count": 27,
+  "task_count": 268,
+  "task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+  "value_level_counts": {
+    "high": 54,
+    "low": 54,
+    "medium": 139,
+    "urgent": 21
+  },
+  "value_multipliers": {
+    "high": "10",
+    "low": "1",
+    "medium": "3",
+    "urgent": "25"
+  },
+  "value_profile": "V25-MAIN-v1",
+  "value_profile_mode": "MEAN_NORMALIZED"
+}

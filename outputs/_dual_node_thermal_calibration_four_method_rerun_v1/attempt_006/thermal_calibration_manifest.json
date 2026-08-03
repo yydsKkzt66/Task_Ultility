@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "atlas_figure3_digitized_trace_count": 0,
+    "candidates": [
+      {
+        "classification": "RUNTIME_IDENTITY_ONLY",
+        "note": "normalized single-node proxy",
+        "path": "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_update.py",
+        "sha256": "a890c3c3fd5dbfef82bcc6aa475ab07ee6cf17b37555b7ac1e3df8d2e80f60e4"
+      },
+      {
+        "classification": "PHYSICAL_UNRELIABLE",
+        "note": "coefficients marked PROXY",
+        "path": "D:\\wt\\pilot_updated_prop_ground_ack_v1\\contracts\\thermal_coefficient_table_v1.csv",
+        "sha256": "1e56c322c2a3c9e95a9190def2740dd8d8566f836abcfdc6450bbc628cf86b95"
+      },
+      {
+        "classification": "TRUSTWORTHY_PROVENANCE_AUDIT",
+        "note": "parameter provenance, not telemetry",
+        "path": "D:\\wt\\pilot_updated_prop_ground_ack_v1\\contracts\\parameter_source_map_v1.csv",
+        "sha256": "34ff9c32acf42935765f73fb9203027232dc5d233ad20ce15aef48798e2d3ab9"
+      },
+      {
+        "classification": "UNVERIFIED_DIAGNOSTIC_ONLY",
+        "note": "user-supplied heterogeneous endpoints",
+        "path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_fast_thermal_heating_cooling_calibration_diagnostic_v1\\attempt_001\\literature_target_mapping.json",
+        "sha256": "f34d069b4f98b596176f0b119176e5adff5c49f1c8522b3c66fe30c561a88d55"
+      },
+      {
+        "classification": "SYNTHETIC_DIAGNOSTIC_ONLY",
+        "note": "synthetic exponential curves, not telemetry",
+        "path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_fast_thermal_heating_cooling_calibration_diagnostic_v1\\attempt_001\\heating_cooling_curve_comparison.csv",
+        "sha256": "012249354a8a88f1d689b2140c136ee0706bf44aa0cb36834bdb0f83cbc78cb1"
+      }
+    ],
+    "credible_two_node_parameter_count": 0,
+    "decision": "NO_RELIABLE_RAW_TRACE_USE_LITERATURE_ANCHORED_PROVISIONAL",
+    "new_dual_node_module_excluded_from_historical_assets": true,
+    "same_device_same_condition_raw_trace_count": 0,
+    "searched_roots": [
+      "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2",
+      "D:\\wt\\pilot_updated_prop_ground_ack_v1",
+      "D:\\wt\\pilot_frozen_runtime_native_direct_v1"
+    ]
+  },
+  "calibration_class": "LITERATURE_ANCHORED_PROVISIONAL_THERMAL",
+  "code_commit": "3bd7b1896b69b071a821564b745003482d8e1572",
+  "created_utc": "2026-07-25T23:05:48.899371+00:00",
+  "data_source": "user-supplied literature endpoints; no raw telemetry found",
+  "environment_slot_trace_sha256": "63566543c19c25d18b9cade7e8f909c466ba363f4bc3497c0df55a174b2ca98f",
+  "fit_method": "bounded nonlinear least squares plus weak declared chip-node prior",
+  "input_sha256": {
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\bundle_contract.json": "064617840147c5f62f2574775b9cbacb323a25c770c105342453cc0dc953d13e"
+  },
+  "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+  "thermal_parameter_hash": "17f98859448a41f2d0ab83036910b3505f9b37c3fc5a8e21dc62254f9e5bcfa9",
+  "training": "10.19W 0-180min synthetic curve from frozen 147min/24C anchors",
+  "validation": "8.5W 540min and 15min cooldown, excluded from tuning",
+  "window_hash": "8de62cf99514e6b6d6969595c485efe3437e14da354dafb8289d43c3431bfb86"
+}

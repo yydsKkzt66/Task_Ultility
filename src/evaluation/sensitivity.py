@@ -133,8 +133,10 @@ def _merge_configs(
     configs["reward"].update(reward_scenario.overrides)
     configs["model_pool"]["profile_overrides"] = copy.deepcopy(profile_scenario.overrides)
     if num_slots is not None:
+        configs["timeline"]["use_num_days"] = False
         configs["timeline"]["num_slots"] = int(num_slots)
         configs["dataset"]["max_tasks"] = max(int(configs["dataset"]["max_tasks"]), int(num_slots))
+    configs["simulator"]["slot_seconds"] = float(configs["timeline"].get("slot_seconds", configs["simulator"]["slot_seconds"]))
     return configs
 
 
@@ -145,7 +147,10 @@ def _build_manifest_row(
 ) -> dict[str, object]:
     """生成单个场景的参数清单。"""
 
-    profile_rows = ProfilingStore(profile_scenario.overrides).export_table()
+    profile_rows = ProfilingStore(
+        profile_definitions=scenario_configs["model_pool"]["profiles"],
+        profile_overrides=profile_scenario.overrides,
+    ).export_table()
     profile_by_name = {row["profile_name"]: row for row in profile_rows}
     reward_cfg = scenario_configs["reward"]
     row: dict[str, object] = {
@@ -329,9 +334,14 @@ def run_sensitivity_experiment(
 
     timeline_configs = copy.deepcopy(base_configs)
     if num_slots is not None:
+        timeline_configs["timeline"]["use_num_days"] = False
         timeline_configs["timeline"]["num_slots"] = int(num_slots)
         timeline_configs["dataset"]["max_tasks"] = max(int(timeline_configs["dataset"]["max_tasks"]), int(num_slots))
-    timeline = TimelineBuilder(timeline_configs["dataset"], timeline_configs["timeline"]).build()
+    timeline = TimelineBuilder(
+        timeline_configs["dataset"],
+        timeline_configs["timeline"],
+        timeline_configs["task_stream"],
+    ).build()
 
     output_dirs = ensure_output_dirs(output_dir)
     manifest_rows: list[dict[str, object]] = []

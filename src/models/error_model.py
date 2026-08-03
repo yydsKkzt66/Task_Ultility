@@ -6,6 +6,8 @@
 
 from __future__ import annotations
 
+from src.data.value_skew_calibration import task_effective_value
+
 import random
 
 from src.common.types import ProfileMetrics, TaskSample
@@ -33,14 +35,15 @@ def estimate_miss_probability(
         return 0.0
 
     threshold = float(error_model_cfg.get("high_value_threshold", 0.75))
-    high_value_bonus = float(error_model_cfg.get("high_value_bonus", 0.0)) if task.task_value >= threshold else 0.0
+    value = task_effective_value(task)
+    high_value_bonus = float(error_model_cfg.get("high_value_bonus", 0.0)) if value >= threshold else 0.0
     risk = (
         float(error_model_cfg.get("base_miss_probability", 0.03))
         + float(error_model_cfg.get("difficulty_weight", 0.30)) * task.difficulty
         + float(error_model_cfg.get("uncertainty_weight", 0.22)) * task.uncertainty
         + float(error_model_cfg.get("low_quality_weight", 0.55)) * (1.0 - estimated_quality)
         + float(error_model_cfg.get("low_robustness_weight", 0.18)) * (1.0 - profile.robustness)
-        + high_value_bonus * task.task_value
+        + high_value_bonus * value
     )
     min_risk = float(error_model_cfg.get("min_error_probability", 0.02))
     max_risk = float(error_model_cfg.get("max_error_probability", 0.95))
@@ -60,7 +63,7 @@ def estimate_false_alarm_probability(
 
     false_alarm_scale = float(error_model_cfg.get("false_alarm_scale", 0.35))
     quality_term = 0.70 + 0.30 * (1.0 - estimated_quality)
-    value_term = 0.80 + 0.20 * task.task_value
+    value_term = 0.80 + 0.20 * task_effective_value(task)
     false_alarm_probability = miss_probability * false_alarm_scale * quality_term * value_term
     return max(0.0, min(0.95, false_alarm_probability))
 

@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "25_fresh_runs_complete": true,
+    "25_unique_child_processes": true,
+    "current_prop_v1_v2_all_runs": true,
+    "five_seeds_per_scenario": true,
+    "ordinary_random_all_runs": true,
+    "protected_sources_unchanged": true,
+    "q_once_all_runs": true,
+    "runtime_capacity_exact": true,
+    "safe_greedy_current_selector_all_runs": true,
+    "same_non_value_tasks_across_profiles_per_seed": true,
+    "same_power_trace_all_runs": true,
+    "same_two_node_thermal_parameters_all_runs": true,
+    "two_node_runtime_active_all_runs": true,
+    "value_level_counts_frozen": true,
+    "value_sum_268_all_bundles": true,
+    "zero_soc_thermal_violations": true
+  },
+  "created_utc": "2026-07-26T03:41:07.541546+00:00",
+  "max_parallel_processes": 5,
+  "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+  "scenarios": [
+    {
+      "capacity": 0.5,
+      "scenario": "V10_CAP050",
+      "value_profile": "V10"
+    },
+    {
+      "capacity": 0.5,
+      "scenario": "V50_CAP050",
+      "value_profile": "V50"
+    },
+    {
+      "capacity": 0.25,
+      "scenario": "V25_CAP025",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.35,
+      "scenario": "V25_CAP035",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.7,
+      "scenario": "V25_CAP070",
+      "value_profile": "V25"
+    }
+  ],
+  "seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "status": "PASS",
+  "thermal_model": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\thermal_model_v1.json",
+  "thermal_model_sha256": "17f98859448a41f2d0ab83036910b3505f9b37c3fc5a8e21dc62254f9e5bcfa9",
+  "version": "CURRENT-PROP-VALUE-CAPACITY-SENSITIVITY-MULTISEED-DUAL-THERMAL-v1"
+}

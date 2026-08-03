@@ -1,0 +1,85 @@
+{
+  "seeds": [
+    {
+      "active_arrival_swap_count": 0,
+      "arrival_profile": "ordinary_random_restored_pre_late_hv_swap_v1",
+      "bundle": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026",
+      "environment_hash": "9068d53e57950fe9a28d0a4b86379dcea37b0edcdc06615e52865fdb066a74ab",
+      "ordinary_random": true,
+      "seed": 2026,
+      "task_count": 268,
+      "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "value_counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      }
+    },
+    {
+      "active_arrival_swap_count": 0,
+      "arrival_profile": "ordinary_random_value_blind_seed_permutation_v1",
+      "bundle": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2027",
+      "environment_hash": "22503f378512eba7055b80a1edd0880c2b892a29ae921a9060e91581bcdefd69",
+      "ordinary_random": true,
+      "seed": 2027,
+      "task_count": 268,
+      "task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "value_counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      }
+    },
+    {
+      "active_arrival_swap_count": 0,
+      "arrival_profile": "ordinary_random_value_blind_seed_permutation_v1",
+      "bundle": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2028",
+      "environment_hash": "35f317d750b147d86bf72444df12ae61dd864bca7bb1a02fddf108b3e849078e",
+      "ordinary_random": true,
+      "seed": 2028,
+      "task_count": 268,
+      "task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "value_counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      }
+    },
+    {
+      "active_arrival_swap_count": 0,
+      "arrival_profile": "ordinary_random_value_blind_seed_permutation_v1",
+      "bundle": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2029",
+      "environment_hash": "0abc9c92cc6ed8213ceb846b8b82e50359f01f98e2f36f5ff46b9ad3ee704a50",
+      "ordinary_random": true,
+      "seed": 2029,
+      "task_count": 268,
+      "task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "value_counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      }
+    },
+    {
+      "active_arrival_swap_count": 0,
+      "arrival_profile": "ordinary_random_value_blind_seed_permutation_v1",
+      "bundle": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2030",
+      "environment_hash": "5fdff163808b60a77dc1e9a1bd7f40f2a43fbf9a14822a09c899f9de19278131",
+      "ordinary_random": true,
+      "seed": 2030,
+      "task_count": 268,
+      "task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "value_counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      }
+    }
+  ],
+  "status": "PASS"
+}

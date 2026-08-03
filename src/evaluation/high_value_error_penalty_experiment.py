@@ -103,8 +103,10 @@ def _apply_scenario(
     reward_cfg["error_penalty_uncertainty_weight"] = 0.70
 
     if num_slots is not None:
+        configs["timeline"]["use_num_days"] = False
         configs["timeline"]["num_slots"] = int(num_slots)
         configs["dataset"]["max_tasks"] = max(int(configs["dataset"]["max_tasks"]), int(num_slots))
+    configs["simulator"]["slot_seconds"] = float(configs["timeline"].get("slot_seconds", configs["simulator"]["slot_seconds"]))
     return configs
 
 
@@ -117,6 +119,11 @@ def _run_single_router(environment: SimulationEnvironment, timeline, router) -> 
     queue = DownlinkQueue(
         queue_max_mb=float(environment.simulator_cfg["queue_max_mb"]),
         slot_seconds=float(environment.simulator_cfg["slot_seconds"]),
+        downlink_efficiency=float(environment.simulator_cfg.get("downlink_efficiency", 1.0)),
+        queue_priority_tau_d=float(environment.simulator_cfg.get("queue_priority_tau_d", 60.0)),
+        queue_age_bonus=float(environment.simulator_cfg.get("queue_age_bonus", 0.01)),
+        queue_meta_first_bonus=float(environment.simulator_cfg.get("queue_meta_first_bonus", 0.25)),
+        queue_high_value_bonus=float(environment.simulator_cfg.get("queue_high_value_bonus", 0.20)),
     )
     step_runner = environment.build_step_runner(queue)
     records = []
@@ -133,7 +140,11 @@ def _run_single_router(environment: SimulationEnvironment, timeline, router) -> 
         breakdown = step_runner.last_reward_breakdown
         miss_count += int(feedback.miss_signal >= 1.0)
         false_alarm_count += int(feedback.false_alarm_signal >= 1.0)
-        if timeline_step.task.task_value >= high_value_threshold and (feedback.miss_signal >= 1.0 or feedback.false_alarm_signal >= 1.0):
+        if (
+            timeline_step.task is not None
+            and timeline_step.task.task_value >= high_value_threshold
+            and (feedback.miss_signal >= 1.0 or feedback.false_alarm_signal >= 1.0)
+        ):
             high_value_error_count += 1
         total_mission_error_penalty += breakdown.mission_error_penalty
 
@@ -142,7 +153,13 @@ def _run_single_router(environment: SimulationEnvironment, timeline, router) -> 
         records=records,
         queue_max_mb=float(environment.simulator_cfg["queue_max_mb"]),
         final_battery=resource_state.battery_soc,
-        max_thermal=max([record.Theta_t for record in records] + [resource_state.thermal_pressure]),
+        max_thermal=max([record.thermal_next for record in records] + [resource_state.thermal_pressure]),
+        battery_min=float(environment.simulator_cfg["battery_min"]),
+        thermal_max=float(environment.simulator_cfg["thermal_max"]),
+        high_value_threshold=high_value_threshold,
+        risk_cfg=environment.simulator_cfg.get("long_term_risk_penalty", {}),
+        final_thermal=resource_state.thermal_pressure,
+        final_queue_mb=comm_state.queue_mb,
     )
     summary.update(
         {
@@ -214,9 +231,10 @@ def run_high_value_error_penalty_experiment(
 
     timeline_configs = copy.deepcopy(base_configs)
     if num_slots is not None:
+        timeline_configs["timeline"]["use_num_days"] = False
         timeline_configs["timeline"]["num_slots"] = int(num_slots)
         timeline_configs["dataset"]["max_tasks"] = max(int(timeline_configs["dataset"]["max_tasks"]), int(num_slots))
-    timeline = TimelineBuilder(timeline_configs["dataset"], timeline_configs["timeline"]).build()
+    timeline = TimelineBuilder(timeline_configs["dataset"], timeline_configs["timeline"], timeline_configs["task_stream"]).build()
 
     output_dirs = ensure_output_dirs(output_dir)
     manifest_rows: list[dict[str, object]] = []

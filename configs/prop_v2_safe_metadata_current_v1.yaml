@@ -1,0 +1,15 @@
+method_identity: PROP-V2-SAFE-METADATA-CURRENT-v1
+status: current_candidate
+base: FULL-PROP-V2
+enabled_mechanisms:
+  safe_set_consistent_fallback: true
+  hv_metadata_residual_repair: true
+  thermal_price_aware: false
+frozen_semantics:
+  ordinary_policy: soft_requirement_one_shot
+  hv_policy: hard_requirement_direct_first_metadata_fallback_residual_reentry
+  model_product_action_space: decoupled_3x3_plus_defer
+  q_once: true
+  public_evaluator_unchanged: true
+  hard_safe_filter_unchanged: true
+legacy_method_preserved: V0-CURRENT-BASELINE

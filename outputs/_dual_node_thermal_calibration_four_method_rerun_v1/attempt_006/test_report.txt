@@ -1,0 +1,9 @@
+PASS	task_hash
+PASS	fit_physical_gate
+PASS	accounting_consistency
+PASS	shared_runtime_callable
+PASS	four_processes
+PASS	four_methods_pass
+PASS	protected_unchanged
+PASS	all_outputs
+PASS	DUAL_NODE_THERMAL_CALIBRATION_AND_FOUR_METHOD_PARALLEL_RERUN_COMPLETE

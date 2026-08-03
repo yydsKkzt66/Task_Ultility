@@ -1,0 +1,9 @@
+PASS	five_runs_pass
+PASS	five_independent_processes
+PASS	same_task_environment_thermal
+PASS	current_prop_v1_plus_v2
+PASS	standalone_greedy_has_no_prop_extensions
+PASS	standalone_greedy_3x3_complete
+PASS	zero_safety_violations
+PASS	protected_assets_unchanged
+PASS	CURRENT_PROP_FOUR_INDEPENDENT_BASELINES_SINGLE_SEED_COMPLETE

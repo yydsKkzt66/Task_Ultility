@@ -1,0 +1,182 @@
+[
+  {
+    "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_B1_COMMON_GROUND_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "TUT-PROXY-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\TUT_PROXY_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_TUT_PROXY_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1.stderr.log"
+  },
+  {
+    "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_B1_COMMON_GROUND_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "TUT-PROXY-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\TUT_PROXY_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_TUT_PROXY_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\PROP_V2_SAFE_METADATA_CURRENT_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_PROP_V2_SAFE_METADATA_CURRENT_v1.stderr.log"
+  },
+  {
+    "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\PROP_V2_SAFE_METADATA_CURRENT_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_PROP_V2_SAFE_METADATA_CURRENT_v1.stderr.log"
+  },
+  {
+    "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_B1_COMMON_GROUND_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1.stderr.log"
+  },
+  {
+    "method": "TUT-PROXY-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\TUT_PROXY_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_TUT_PROXY_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\PROP_V2_SAFE_METADATA_CURRENT_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_PROP_V2_SAFE_METADATA_CURRENT_v1.stderr.log"
+  },
+  {
+    "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1.stderr.log"
+  },
+  {
+    "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_B1_COMMON_GROUND_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\PROP_V2_SAFE_METADATA_CURRENT_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_PROP_V2_SAFE_METADATA_CURRENT_v1.stderr.log"
+  },
+  {
+    "method": "TUT-PROXY-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\TUT_PROXY_THERMAL_CORRECTED",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_TUT_PROXY_THERMAL_CORRECTED.stderr.log"
+  },
+  {
+    "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1.stderr.log"
+  },
+  {
+    "method": "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC.stderr.log"
+  },
+  {
+    "method": "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC.stderr.log"
+  },
+  {
+    "method": "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC.stderr.log"
+  },
+  {
+    "method": "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC",
+    "pid": null,
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_baselines_fiveseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC.stderr.log"
+  }
+]

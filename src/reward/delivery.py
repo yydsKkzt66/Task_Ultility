@@ -6,6 +6,7 @@ from src.common.constants import (
     DELIVERY_STATUS_DELIVERED,
     DELIVERY_STATUS_DEFERRED,
     DELIVERY_STATUS_DROPPED,
+    DELIVERY_STATUS_EXPIRED,
     DELIVERY_STATUS_QUEUED,
 )
 
@@ -24,5 +25,7 @@ def compute_delivery_factor(
     if delivery_status == DELIVERY_STATUS_DEFERRED:
         return deferred_credit
     if delivery_status == DELIVERY_STATUS_DROPPED:
+        return 0.0
+    if delivery_status == DELIVERY_STATUS_EXPIRED:
         return 0.0
     return 0.0

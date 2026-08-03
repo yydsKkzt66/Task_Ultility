@@ -1,0 +1,26 @@
+{
+  "allow_online_update": false,
+  "latency_calibration": {
+    "alpha": 3.0,
+    "beta": 1000.0,
+    "method": "affine"
+  },
+  "provenance": {
+    "audited_parameter_sha256": "97a8268448aeb190d2e7eec651ca0c99f7f6931855124f23bd861b634bb40c52",
+    "audited_router_sha256": "016d110ab301f30630c81925179da8c6d6845fae4d8a14a75aca2b164ac37db0",
+    "source_parameter": "D:/wt/pilot/outputs/_myopic_frozen_calibrated_v1/myopic_frozen_calibration_v1.json",
+    "source_router": "D:/wt/pilot_myopic_frozen_calibrated_v1/src/routers/myopic_frozen_calibrated_router.py"
+  },
+  "public_cost": {
+    "controllable_mission_energy_wh": 10.0,
+    "lambda_E_common": 1.0
+  },
+  "success_calibration": {
+    "a": 0.25,
+    "b": -2.0,
+    "ceil": 1.0,
+    "floor": 0.0,
+    "method": "platt_grid_l2_proxy"
+  },
+  "version": "myopic_frozen_calibration_v1_runtime_snapshot"
+}

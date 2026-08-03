@@ -1,0 +1,18 @@
+version: CURRENT-PROP-ABLATION-SINGLE-SEED-v1
+scenario:
+  seed: 2026
+  duration_s: 86400
+  slot_s: 20
+  capacity_multiplier: 0.5
+  task_hash: c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa
+methods:
+  LEGACY-PROP-V2: frozen V0 current baseline before V1+V2
+  PROP-V2-SAFE-METADATA-CURRENT-v1: V1 plus V2 current candidate
+  A1-NO-PROGRESSIVE: current candidate without metadata-first or residual delivery
+  A2-FIXED-BALANCED: current candidate with model fixed to balanced
+  A3-NO-SLOW-LYAPUNOV: current candidate without slow Lyapunov prices/mode modulation
+  A4-SAFE-GREEDY-NO-ONLINE-BANDIT: current candidate with deterministic safe-set q-once greedy and no online updates
+execution:
+  legacy_regression_gate_first: true
+  other_five_independent_processes_parallel: true
+  overwrite_old_results: false

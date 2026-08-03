@@ -1,0 +1,11 @@
+PASS	five_methods_x_five_seeds
+PASS	seed_2026_trusted_complete_reused
+PASS	twenty_new_runs_completed
+PASS	twenty_new_unique_processes
+PASS	same_task_hash_within_each_seed
+PASS	runtime_task_hash_matches_bundle
+PASS	same_link_trace_all_runs
+PASS	same_power_trace_all_runs
+PASS	same_two_node_thermal_all_runs
+PASS	zero_soc_and_thermal_violations
+PASS	CURRENT_PROP_FOUR_BASELINES_FIVESEED_DUAL_THERMAL_COMPLETE

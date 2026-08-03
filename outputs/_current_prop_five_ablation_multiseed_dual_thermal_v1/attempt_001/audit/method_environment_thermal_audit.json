@@ -1,0 +1,44 @@
+{
+  "capacity": 0.5,
+  "checks": {
+    "25_runs_complete": true,
+    "all_unique_processes": true,
+    "direct_only_all_seeds": true,
+    "five_seeds_each_method": true,
+    "fixed_balanced_all_seeds": true,
+    "full_v1_v2_all_seeds": true,
+    "new_two_node_runtime_trace_all_runs": true,
+    "no_late_hv_forcing": true,
+    "no_lyapunov_keeps_mode": true,
+    "no_lyapunov_prices_zero": true,
+    "no_mode_keeps_nonzero_lyapunov": true,
+    "no_mode_neutral_mode": true,
+    "ordinary_value_blind_arrivals": true,
+    "same_link_hash_all_runs": true,
+    "same_new_thermal_hash_all_runs": true,
+    "same_power_hash_all_runs": true,
+    "same_task_hash_within_seed": true,
+    "zero_soc_thermal_violations": true
+  },
+  "current_selector": "safe predicted-reward greedy; SafeLinUCB disabled consistently in all five methods",
+  "max_parallel_processes": 5,
+  "methods": [
+    "FULL-V1-V2-DUAL-THERMAL",
+    "NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL",
+    "NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL",
+    "FIXED-BALANCED-V1-V2-DUAL-THERMAL",
+    "DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL"
+  ],
+  "power_environment": "40 W",
+  "seed_list": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "status": "PASS",
+  "thermal_model": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\thermal_model_v1.json",
+  "thermal_model_sha256": "17f98859448a41f2d0ab83036910b3505f9b37c3fc5a8e21dc62254f9e5bcfa9",
+  "thermal_parameter_hash": "83420010fd02b9371709c8f85b143d66b8a0f2e14a3219358c822a44592bce2b"
+}

@@ -1,0 +1,20 @@
+version: CURRENT-PROP-ORDINARY-HARD-REQUIREMENT-SINGLE-SEED-v1
+scenario:
+  seed: 2026
+  duration_s: 86400
+  slot_s: 20
+  capacity_multiplier: 0.5
+  task_hash: c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa
+variant:
+  name: ORDINARY-HARD-REQUIREMENT-GRANULARITY
+  applies_to: [low, medium]
+  allowed_products: product_rank_selected_greater_or_equal_required
+  selection_within_allowed_set: frozen_q_once_predicted_net_utility_max
+  defer_if_no_positive_safe_timely_action: true
+unchanged:
+  - high_urgent_policy
+  - safe_set_consistent_fallback
+  - hv_metadata_residual_repair
+  - model_space
+  - slow_control
+  - public_evaluator

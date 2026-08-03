@@ -7,6 +7,7 @@ from src.simulator.environment import SimulationEnvironment
 
 def test_predictor_comm_energy_accounts_for_total_transmitted_payload():
     configs = load_project_configs(Path(__file__).resolve().parents[1])
+    configs["simulator"]["slot_seconds"] = 10.0
     env = SimulationEnvironment(configs)
     action = next(action for action in env.action_space.list_actions() if action.action_name == "lightweight+metadata")
 

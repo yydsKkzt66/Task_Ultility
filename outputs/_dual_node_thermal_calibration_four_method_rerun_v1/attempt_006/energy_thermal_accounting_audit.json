@@ -1,0 +1,19 @@
+{
+  "E_action": "E_inference + E_encoding + E_communication",
+  "energy_unit": "J",
+  "legacy_findings": {
+    "PROP_predictor": "encoding latency was multiplied by inference power and encoding joules added again",
+    "executor": "inference joules plus encoding joules counted once",
+    "headroom": "encoding joules omitted"
+  },
+  "new_accounting": {
+    "communication_watts_times_seconds_to_joules": true,
+    "encoding_heat_included": true,
+    "encoding_latency_not_multiplied_by_inference_power": true,
+    "prediction_execution_tolerance": 1e-10,
+    "q_changed": false
+  },
+  "shared_module": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\src\\experiments\\dual_node_thermal_diagnostic.py",
+  "shared_module_sha256": "ae109d273dbfc5c70d7873124a0fc4e4b55df147cdf2296f7d4c9bb39e4cd32c",
+  "status": "PASS"
+}

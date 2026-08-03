@@ -1,0 +1,257 @@
+{
+  "capacity": 0.5,
+  "correct_40w_environment": true,
+  "created_utc": "2026-07-26T01:32:30.361655+00:00",
+  "current_prop_bandit_mode": "safe-greedy replacement after prior SafeLinUCB diagnostic",
+  "current_prop_is_v1_plus_v2": true,
+  "current_prop_progressive_metadata_v2": true,
+  "current_prop_safe_consistent_v1": true,
+  "duration_s": 86400,
+  "execution_mode": "four fresh parallel runs plus one hash-compatible prior OFFLOAD reuse",
+  "five_independent_processes": true,
+  "fresh_state_each_method": true,
+  "greedy_identity": {
+    "action_grid_audit": {
+      "complete": true,
+      "defer_count": 1,
+      "enabled_action_count": 10,
+      "expected_model_product_pairs": [
+        [
+          "balanced",
+          "metadata"
+        ],
+        [
+          "balanced",
+          "roi"
+        ],
+        [
+          "balanced",
+          "roi_context"
+        ],
+        [
+          "high_accuracy",
+          "metadata"
+        ],
+        [
+          "high_accuracy",
+          "roi"
+        ],
+        [
+          "high_accuracy",
+          "roi_context"
+        ],
+        [
+          "lightweight",
+          "metadata"
+        ],
+        [
+          "lightweight",
+          "roi"
+        ],
+        [
+          "lightweight",
+          "roi_context"
+        ]
+      ],
+      "fixed_model": "",
+      "model_product_pairs": [
+        [
+          "balanced",
+          "metadata"
+        ],
+        [
+          "balanced",
+          "roi"
+        ],
+        [
+          "balanced",
+          "roi_context"
+        ],
+        [
+          "high_accuracy",
+          "metadata"
+        ],
+        [
+          "high_accuracy",
+          "roi"
+        ],
+        [
+          "high_accuracy",
+          "roi_context"
+        ],
+        [
+          "lightweight",
+          "metadata"
+        ],
+        [
+          "lightweight",
+          "roi"
+        ],
+        [
+          "lightweight",
+          "roi_context"
+        ]
+      ]
+    },
+    "capacity_identity": {
+      "contact_slots_unchanged": true,
+      "runtime_capacity": 0.5,
+      "runtime_link_trace_hash": "ff85d81c6db6ed51c6535f4bdd2fe92eabe2220f061b15c94e3a8e3a23fc54a9",
+      "source_bundle_capacity": 0.35,
+      "throughput_scale_ratio": 1.4285714285714286
+    },
+    "duplicate_proxy_penalties": false,
+    "fresh_state": true,
+    "future_information_used": false,
+    "hv_special_protection": false,
+    "lyapunov_guidance": false,
+    "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "mode_controller": false,
+    "online_update": false,
+    "pid": 17216,
+    "power_identity": {
+      "frozen_power": {
+        "battery_capacity_Wh": 230.0,
+        "charge_efficiency": 0.9,
+        "daylight_duration_s": 3600,
+        "discharge_efficiency": 0.95,
+        "eclipse_duration_s": 2160,
+        "initial_soc": 0.85,
+        "orbit_period_s": 5760,
+        "platform_other_power_W": 8.86,
+        "soc_warning_threshold": 0.7,
+        "solar_energy_per_orbit_Wh": 16.0,
+        "solar_peak_power_W": 40.0,
+        "tx_active_power_W": 38.0
+      },
+      "power_config_sha256": "8234a0ef3bcdb9f065633f7c13c54bd11d84d34aa855aa1d8ddd0ad1791d7d18",
+      "power_trace_hash": "30f4ef8c2ed7567a269c9bc79dfb1882ada0e0b5407c3a4e64a6b3f8a40d6a38",
+      "selected_power_calibration_sha256": "abee5a769d1c8b68162cdb1a10ad515a269b15b57071019cea2a724c70b76b47",
+      "solar_trace_sha256": "8e251f9a778ab23fb3c8846da15d791ce3d432ac9918f80f8fcec5ddb80b1318",
+      "source_root": "D:\\wt\\pilot_updated_prop_ground_ack_v1"
+    },
+    "predictor_executor_shared": true,
+    "progressive_delivery": false,
+    "public_prices_accounting_only": {
+      "downlink_price_per_MB": 0.09202386055743175,
+      "energy_price_per_Wh": 2.981261194297225,
+      "terminal_backlog_price_per_MB": 0.09202386055743175
+    },
+    "q_eff": {
+      "balanced": 0.7342411587001637,
+      "high_accuracy": 0.8215028271304525,
+      "lightweight": 0.5697178218395861
+    },
+    "requirement_alignment": false,
+    "residual_reentry": false,
+    "safe_filter_shared": true,
+    "safe_linucb": false,
+    "scenario_identity": {
+      "capacity": 0.5,
+      "expected_task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "field_mismatch_count": 0,
+      "frozen_power_identity": {
+        "frozen_power": {
+          "battery_capacity_Wh": 230.0,
+          "charge_efficiency": 0.9,
+          "daylight_duration_s": 3600,
+          "discharge_efficiency": 0.95,
+          "eclipse_duration_s": 2160,
+          "initial_soc": 0.85,
+          "orbit_period_s": 5760,
+          "platform_other_power_W": 8.86,
+          "soc_warning_threshold": 0.7,
+          "solar_energy_per_orbit_Wh": 16.0,
+          "solar_peak_power_W": 40.0,
+          "tx_active_power_W": 38.0
+        },
+        "power_config_sha256": "8234a0ef3bcdb9f065633f7c13c54bd11d84d34aa855aa1d8ddd0ad1791d7d18",
+        "power_trace_hash": "30f4ef8c2ed7567a269c9bc79dfb1882ada0e0b5407c3a4e64a6b3f8a40d6a38",
+        "selected_power_calibration_sha256": "abee5a769d1c8b68162cdb1a10ad515a269b15b57071019cea2a724c70b76b47",
+        "solar_trace_sha256": "8e251f9a778ab23fb3c8846da15d791ce3d432ac9918f80f8fcec5ddb80b1318",
+        "source_root": "D:\\wt\\pilot_updated_prop_ground_ack_v1"
+      },
+      "frozen_power_identity_match": true,
+      "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+      "runtime_value_mismatch_count": 0,
+      "seed": 2026,
+      "task_count": 268,
+      "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "task_hash_match": true,
+      "value_level_counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      }
+    },
+    "score_mode": "common_predicted_reward",
+    "score_rule": "SafeFilter then argmax of the shared predictor's one-step predicted_reward, including Defer",
+    "seed": 2026,
+    "selector_class": "MyopicE2EUtilityGreedyRouter",
+    "selector_sha256": "923854a19f09d82e7fcb34a73d1fa2b06f3f54dc51f430fccf5fe660618383a5",
+    "selector_source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\src\\routers\\myopic_e2e_utility_greedy.py",
+    "status": "PASS",
+    "task_value_reference": 4.361979166666667,
+    "task_value_reference_semantics": "public V25 category-scale normalization only; no arrival/order/outcome information",
+    "version": "CURRENT-PROP-FOUR-INDEPENDENT-BASELINES-SINGLE-SEED-v1"
+  },
+  "offload_reuse_compatibility": {
+    "capacity": true,
+    "link_trace_hash": true,
+    "power_config_sha256": true,
+    "power_trace_hash": true,
+    "seed": true,
+    "task_hash": true
+  },
+  "ordinary_random_scenario": true,
+  "processes": [
+    {
+      "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+      "output": "outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\PROP_V2_SAFE_METADATA_CURRENT_v1",
+      "pid": 46924,
+      "returncode": 0,
+      "status": "PASS_EXISTING_THIS_ATTEMPT"
+    },
+    {
+      "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+      "output": "outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+      "pid": 26584,
+      "returncode": 0,
+      "status": "PASS_EXISTING_THIS_ATTEMPT"
+    },
+    {
+      "method": "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+      "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_pure_myopic_safe_greedy_offload_thermal_single_seed_v1\\attempt_005\\runs\\OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC",
+      "pid": 3268,
+      "returncode": 0,
+      "status": "REUSED_COMPATIBLE"
+    },
+    {
+      "method": "TUT-PROXY-THERMAL-CORRECTED",
+      "output": "outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\TUT_PROXY_THERMAL_CORRECTED",
+      "pid": 13952,
+      "returncode": 0,
+      "status": "PASS_EXISTING_THIS_ATTEMPT"
+    },
+    {
+      "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+      "output": "outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1_PREDICTED_REWARD",
+      "pid": 17216,
+      "returncode": 0,
+      "status": "PASS_EXISTING_THIS_ATTEMPT"
+    }
+  ],
+  "protected_assets_unchanged_during_run": true,
+  "reused_compatible_methods": [
+    "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC"
+  ],
+  "same_two_node_thermal_hash": true,
+  "seed": 2026,
+  "status": "PASS",
+  "task_count": 268,
+  "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+  "thermal_hash": "83420010fd02b9371709c8f85b143d66b8a0f2e14a3219358c822a44592bce2b",
+  "version": "CURRENT-PROP-FOUR-INDEPENDENT-BASELINES-SINGLE-SEED-v1",
+  "window_hash": "ff85d81c6db6ed51c6535f4bdd2fe92eabe2220f061b15c94e3a8e3a23fc54a9"
+}

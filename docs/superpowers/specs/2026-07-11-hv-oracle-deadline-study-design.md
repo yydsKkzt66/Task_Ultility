@@ -15,7 +15,7 @@ Build the authoritative seed=2026 PROP-FULL versus PROP-NO-STAGE versus B1 study
 
 ## Architecture
 
-The implementation adds a focused `src/evaluation/hv_oracle_study/` package and one orchestration script. The package separates immutable input construction, B1 semantic dominance, metric aggregation, legal plan enumeration, mathematical optimization, independent replay, deadline scaling, and report rendering. Existing simulator and policy modules are consumed but not edited.
+The implementation adds a focused `src/evaluation/hv_oracle_study/` package and one orchestration script. The package separates immutable input construction, B1 semantic dominance, metric aggregation, legal plan enumeration, mathematical optimization, independent replay, deadline scaling, and report rendering. Existing simulator and policy decision semantics are not edited. A narrow B1 observer/logging hook may record the candidate set passed to the scheduler and the feasible set returned by its existing rank function; regression tests must prove that selected task IDs and lifecycle outcomes are unchanged when logging is enabled.
 
 The orchestration script creates a new output directory and fails if it already exists. It constructs the canonical timeline and authoritative task table once, imports corrected historical task outcomes, runs only the required new sensitivity simulations, solves the two primary architecture-specific oracle objectives, validates selected plans independently, executes all accounting checks, and writes the requested files.
 

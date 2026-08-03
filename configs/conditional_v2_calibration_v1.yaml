@@ -1,0 +1,36 @@
+version: HISTORICAL-ASSET-AUDIT-CONDITIONAL-V2-CALIBRATION-v1
+environment:
+  scenario: V25
+  capacity_multiplier: 0.5
+  duration_s: 86400
+  slot_s: 20
+  power_profile: BUPT-1-corrected-40W
+seeds:
+  calibration: [3101, 3102]
+  validation: [4101, 4102]
+  formal_test: [2026]
+candidate_factors: [0.75, 1.0, 1.25]
+quality_candidates:
+  derivation: task-conditioned profile proxy from calibration tasks only
+  require_strict_order: true
+price_candidates:
+  derivation: multiple-choice LP central finite differences under independent 0.9x and 1.1x physical budgets
+  performance_ranking_used: false
+online_policy:
+  physical_net_utility_zscore: false
+  defer_score: 0.0
+  clearly_negative_action_allowed: false
+  hard_safe_filter_unchanged: true
+public_accounting:
+  gross: sum(V * delta_I * q_eff * T)
+  cost: pi_E * E_Wh + pi_B * transmitted_MB + pi_Q * terminal_backlog_MB + 10 * safety_violations
+  q_multiplication_count: 1
+selection_constraints:
+  low_lightweight_min_fraction: 0.45
+  medium_balanced_min_fraction: 0.08
+  high_urgent_high_accuracy_min_fraction: 0.01
+  any_model_max_fraction: 0.97
+  perturbation_factors: [0.75, 1.0, 1.25]
+parallel:
+  enabled: true
+  max_independent_processes: 4

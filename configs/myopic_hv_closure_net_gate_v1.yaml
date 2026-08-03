@@ -1,0 +1,17 @@
+method_identity:
+  base: MYOPIC-FROZEN-CALIBRATED-ON-CORRECTED-REQALIGN
+  enabled: MYOPIC-FROZEN-CALIBRATED-REQALIGN-HV-CLOSURE-NET-GATE-v1
+
+hv_closure_net_gate:
+  enabled: false
+  value_levels: [high, urgent]
+  public_ground_utility_formula: true
+  require_final_requirement_satisfaction: true
+  require_original_safe_candidate: true
+  require_hard_safety: true
+  require_on_time_ground_arrival: true
+  require_positive_public_closure_net: true
+  preserve_original_action_ranking: true
+  change_task_values: false
+  relax_hard_safety: false
+  apply_to_ordinary_tasks: false

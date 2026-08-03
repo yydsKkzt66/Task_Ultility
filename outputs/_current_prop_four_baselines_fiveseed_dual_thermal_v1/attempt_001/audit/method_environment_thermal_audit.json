@@ -1,0 +1,44 @@
+{
+  "capacity": 0.5,
+  "checks": {
+    "five_methods_x_five_seeds": true,
+    "runtime_task_hash_matches_bundle": true,
+    "same_link_trace_all_runs": true,
+    "same_power_trace_all_runs": true,
+    "same_task_hash_within_each_seed": true,
+    "same_two_node_thermal_all_runs": true,
+    "seed_2026_trusted_complete_reused": true,
+    "twenty_new_runs_completed": true,
+    "twenty_new_unique_processes": true,
+    "zero_soc_and_thermal_violations": true
+  },
+  "duration_s": 86400,
+  "execution": "seed 2026 reused after identity gate; seeds 2027-2030 freshly executed in independent processes",
+  "fresh_seeds": [
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "max_parallel_processes": 5,
+  "methods": [
+    "PROP-V2-SAFE-METADATA-CURRENT-v1",
+    "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "TUT-PROXY-THERMAL-CORRECTED",
+    "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1"
+  ],
+  "power_environment": "corrected 40 W",
+  "seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "status": "PASS",
+  "thermal_model": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\thermal_model_v1.json",
+  "thermal_model_sha256": "17f98859448a41f2d0ab83036910b3505f9b37c3fc5a8e21dc62254f9e5bcfa9",
+  "thermal_parameter_hash": "83420010fd02b9371709c8f85b143d66b8a0f2e14a3219358c822a44592bce2b",
+  "version": "CURRENT-PROP-FOUR-BASELINES-FIVESEED-DUAL-THERMAL-v1"
+}

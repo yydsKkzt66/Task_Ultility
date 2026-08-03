@@ -1,0 +1,1085 @@
+{
+  "runs": [
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V10_CAP050\\seed_2026",
+      "effective_task_value_sum": 268.0000000000006,
+      "non_value_task_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.6502463054187192118226600985221674876847290640394",
+          "low": "0.33004926108374384236453201970443349753694581280788",
+          "medium": "0.66009852216748768472906403940886699507389162561576",
+          "urgent": "3.3004926108374384236453201970443349753694581280788"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000016",
+        "non_value_task_identity_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+        "normalization_alpha": "0.33004926108374384236453201970443349753694581280788",
+        "profile": "V10",
+        "profile_name": "V10-SENS-1-2-5-10-v1",
+        "seed": 2026,
+        "slot_trace_sha256": "63566543c19c25d18b9cade7e8f909c466ba363f4bc3497c0df55a174b2ca98f",
+        "task_hash": "f0fad8b9e8b8ec61c3ba31dde37a64b25b331f8307c9c925d221f5312bb73f8f",
+        "weights": {
+          "high": "5",
+          "low": "1",
+          "medium": "2",
+          "urgent": "10"
+        }
+      },
+      "scenario": "V10_CAP050",
+      "seed": 2026,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2026",
+      "source_task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "task_hash": "f0fad8b9e8b8ec61c3ba31dde37a64b25b331f8307c9c925d221f5312bb73f8f",
+      "value_profile": "V10"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V10_CAP050\\seed_2027",
+      "effective_task_value_sum": 268.0000000000006,
+      "non_value_task_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.6502463054187192118226600985221674876847290640394",
+          "low": "0.33004926108374384236453201970443349753694581280788",
+          "medium": "0.66009852216748768472906403940886699507389162561576",
+          "urgent": "3.3004926108374384236453201970443349753694581280788"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000016",
+        "non_value_task_identity_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+        "normalization_alpha": "0.33004926108374384236453201970443349753694581280788",
+        "profile": "V10",
+        "profile_name": "V10-SENS-1-2-5-10-v1",
+        "seed": 2027,
+        "slot_trace_sha256": "bf4a7ff7e61c03a673e2bb384223f74b4bcd2c361c9a8f6ac42ce198a2b767f8",
+        "task_hash": "16e9892d8d695b3429d40ec768866a35c1c4a5c9af67bd4687173227b24d1a7d",
+        "weights": {
+          "high": "5",
+          "low": "1",
+          "medium": "2",
+          "urgent": "10"
+        }
+      },
+      "scenario": "V10_CAP050",
+      "seed": 2027,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2027",
+      "source_task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "task_hash": "16e9892d8d695b3429d40ec768866a35c1c4a5c9af67bd4687173227b24d1a7d",
+      "value_profile": "V10"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V10_CAP050\\seed_2028",
+      "effective_task_value_sum": 268.0000000000006,
+      "non_value_task_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.6502463054187192118226600985221674876847290640394",
+          "low": "0.33004926108374384236453201970443349753694581280788",
+          "medium": "0.66009852216748768472906403940886699507389162561576",
+          "urgent": "3.3004926108374384236453201970443349753694581280788"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000016",
+        "non_value_task_identity_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+        "normalization_alpha": "0.33004926108374384236453201970443349753694581280788",
+        "profile": "V10",
+        "profile_name": "V10-SENS-1-2-5-10-v1",
+        "seed": 2028,
+        "slot_trace_sha256": "b241cba982d4695594b476e54644d5aa426b7d1e60d5b3e09f18f3442511c3d4",
+        "task_hash": "4647b32246e55cba7e3315c0d70e373d2fbd9322126c927efd108c7b958caa59",
+        "weights": {
+          "high": "5",
+          "low": "1",
+          "medium": "2",
+          "urgent": "10"
+        }
+      },
+      "scenario": "V10_CAP050",
+      "seed": 2028,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2028",
+      "source_task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "task_hash": "4647b32246e55cba7e3315c0d70e373d2fbd9322126c927efd108c7b958caa59",
+      "value_profile": "V10"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V10_CAP050\\seed_2029",
+      "effective_task_value_sum": 268.0000000000006,
+      "non_value_task_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.6502463054187192118226600985221674876847290640394",
+          "low": "0.33004926108374384236453201970443349753694581280788",
+          "medium": "0.66009852216748768472906403940886699507389162561576",
+          "urgent": "3.3004926108374384236453201970443349753694581280788"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000016",
+        "non_value_task_identity_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+        "normalization_alpha": "0.33004926108374384236453201970443349753694581280788",
+        "profile": "V10",
+        "profile_name": "V10-SENS-1-2-5-10-v1",
+        "seed": 2029,
+        "slot_trace_sha256": "9e37e8e2f05c4a501a44a8d876482e1d098510ea3e61d37a3d1914856bdd3af7",
+        "task_hash": "295b5881cad45f052a9888a9ee1796ae43ec67164c1770e51d9262b84d8cc969",
+        "weights": {
+          "high": "5",
+          "low": "1",
+          "medium": "2",
+          "urgent": "10"
+        }
+      },
+      "scenario": "V10_CAP050",
+      "seed": 2029,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2029",
+      "source_task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "task_hash": "295b5881cad45f052a9888a9ee1796ae43ec67164c1770e51d9262b84d8cc969",
+      "value_profile": "V10"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V10_CAP050\\seed_2030",
+      "effective_task_value_sum": 268.0000000000006,
+      "non_value_task_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.6502463054187192118226600985221674876847290640394",
+          "low": "0.33004926108374384236453201970443349753694581280788",
+          "medium": "0.66009852216748768472906403940886699507389162561576",
+          "urgent": "3.3004926108374384236453201970443349753694581280788"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000016",
+        "non_value_task_identity_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+        "normalization_alpha": "0.33004926108374384236453201970443349753694581280788",
+        "profile": "V10",
+        "profile_name": "V10-SENS-1-2-5-10-v1",
+        "seed": 2030,
+        "slot_trace_sha256": "19d651e4faf8bbadead214e2267f7f359e52168b69076535e141b52a9340d021",
+        "task_hash": "e23bf75a119a0cb19e85734b133fe8510a33f52f96227ce95257ad271ef82de8",
+        "weights": {
+          "high": "5",
+          "low": "1",
+          "medium": "2",
+          "urgent": "10"
+        }
+      },
+      "scenario": "V10_CAP050",
+      "seed": 2030,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2030",
+      "source_task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "task_hash": "e23bf75a119a0cb19e85734b133fe8510a33f52f96227ce95257ad271ef82de8",
+      "value_profile": "V10"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V50_CAP050\\seed_2026",
+      "effective_task_value_sum": 268.00000000000006,
+      "non_value_task_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.8617575547064953108718304967002431399791594303578",
+          "low": "0.093087877735324765543591524835012156998957971517888",
+          "medium": "0.46543938867662382771795762417506078499478985758944",
+          "urgent": "4.6543938867662382771795762417506078499478985758944"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000002",
+        "non_value_task_identity_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+        "normalization_alpha": "0.093087877735324765543591524835012156998957971517888",
+        "profile": "V50",
+        "profile_name": "V50-SENS-1-5-20-50-v1",
+        "seed": 2026,
+        "slot_trace_sha256": "63566543c19c25d18b9cade7e8f909c466ba363f4bc3497c0df55a174b2ca98f",
+        "task_hash": "9bdf51128287dc6a9f081a30a6f0ad46b1bf9825d4310515316aae93df3b0dc8",
+        "weights": {
+          "high": "20",
+          "low": "1",
+          "medium": "5",
+          "urgent": "50"
+        }
+      },
+      "scenario": "V50_CAP050",
+      "seed": 2026,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2026",
+      "source_task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "task_hash": "9bdf51128287dc6a9f081a30a6f0ad46b1bf9825d4310515316aae93df3b0dc8",
+      "value_profile": "V50"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V50_CAP050\\seed_2027",
+      "effective_task_value_sum": 268.00000000000006,
+      "non_value_task_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.8617575547064953108718304967002431399791594303578",
+          "low": "0.093087877735324765543591524835012156998957971517888",
+          "medium": "0.46543938867662382771795762417506078499478985758944",
+          "urgent": "4.6543938867662382771795762417506078499478985758944"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000002",
+        "non_value_task_identity_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+        "normalization_alpha": "0.093087877735324765543591524835012156998957971517888",
+        "profile": "V50",
+        "profile_name": "V50-SENS-1-5-20-50-v1",
+        "seed": 2027,
+        "slot_trace_sha256": "bf4a7ff7e61c03a673e2bb384223f74b4bcd2c361c9a8f6ac42ce198a2b767f8",
+        "task_hash": "1ac8ab7339c26ef73b590ef14d4e2c3d5fe9576deceb1eb617bebe4e6a6c3c90",
+        "weights": {
+          "high": "20",
+          "low": "1",
+          "medium": "5",
+          "urgent": "50"
+        }
+      },
+      "scenario": "V50_CAP050",
+      "seed": 2027,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2027",
+      "source_task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "task_hash": "1ac8ab7339c26ef73b590ef14d4e2c3d5fe9576deceb1eb617bebe4e6a6c3c90",
+      "value_profile": "V50"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V50_CAP050\\seed_2028",
+      "effective_task_value_sum": 268.00000000000006,
+      "non_value_task_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.8617575547064953108718304967002431399791594303578",
+          "low": "0.093087877735324765543591524835012156998957971517888",
+          "medium": "0.46543938867662382771795762417506078499478985758944",
+          "urgent": "4.6543938867662382771795762417506078499478985758944"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000002",
+        "non_value_task_identity_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+        "normalization_alpha": "0.093087877735324765543591524835012156998957971517888",
+        "profile": "V50",
+        "profile_name": "V50-SENS-1-5-20-50-v1",
+        "seed": 2028,
+        "slot_trace_sha256": "b241cba982d4695594b476e54644d5aa426b7d1e60d5b3e09f18f3442511c3d4",
+        "task_hash": "2d6eab16836f5058121c123cbccb6a31691709d46bc487271f3cae096fb0a1b2",
+        "weights": {
+          "high": "20",
+          "low": "1",
+          "medium": "5",
+          "urgent": "50"
+        }
+      },
+      "scenario": "V50_CAP050",
+      "seed": 2028,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2028",
+      "source_task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "task_hash": "2d6eab16836f5058121c123cbccb6a31691709d46bc487271f3cae096fb0a1b2",
+      "value_profile": "V50"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V50_CAP050\\seed_2029",
+      "effective_task_value_sum": 268.00000000000006,
+      "non_value_task_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.8617575547064953108718304967002431399791594303578",
+          "low": "0.093087877735324765543591524835012156998957971517888",
+          "medium": "0.46543938867662382771795762417506078499478985758944",
+          "urgent": "4.6543938867662382771795762417506078499478985758944"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000002",
+        "non_value_task_identity_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+        "normalization_alpha": "0.093087877735324765543591524835012156998957971517888",
+        "profile": "V50",
+        "profile_name": "V50-SENS-1-5-20-50-v1",
+        "seed": 2029,
+        "slot_trace_sha256": "9e37e8e2f05c4a501a44a8d876482e1d098510ea3e61d37a3d1914856bdd3af7",
+        "task_hash": "5d9bf08f5acef870535db7b69a0eb4e0edd603fafd64479b02b52ac2dc9a6fa0",
+        "weights": {
+          "high": "20",
+          "low": "1",
+          "medium": "5",
+          "urgent": "50"
+        }
+      },
+      "scenario": "V50_CAP050",
+      "seed": 2029,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2029",
+      "source_task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "task_hash": "5d9bf08f5acef870535db7b69a0eb4e0edd603fafd64479b02b52ac2dc9a6fa0",
+      "value_profile": "V50"
+    },
+    {
+      "capacity": 0.5,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V50_CAP050\\seed_2030",
+      "effective_task_value_sum": 268.00000000000006,
+      "non_value_task_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+      "profile_audit": {
+        "checks": {
+          "arrival_swap_manifest_unchanged": true,
+          "controlled_bundle_preflight_passed": true,
+          "effective_values_match_ratio": true,
+          "level_counts_unchanged": true,
+          "mean_effective_value_one_within_1e_45": true,
+          "non_value_task_identity_unchanged": true,
+          "profile_not_v25": true,
+          "runtime_value_multiplier_stays_one": true,
+          "slot_trace_unchanged": true,
+          "task_count_is_268": true
+        },
+        "effective_values": {
+          "high": "1.8617575547064953108718304967002431399791594303578",
+          "low": "0.093087877735324765543591524835012156998957971517888",
+          "medium": "0.46543938867662382771795762417506078499478985758944",
+          "urgent": "4.6543938867662382771795762417506078499478985758944"
+        },
+        "mean_effective_value": "1.0000000000000000000000000000000000000000000000002",
+        "non_value_task_identity_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+        "normalization_alpha": "0.093087877735324765543591524835012156998957971517888",
+        "profile": "V50",
+        "profile_name": "V50-SENS-1-5-20-50-v1",
+        "seed": 2030,
+        "slot_trace_sha256": "19d651e4faf8bbadead214e2267f7f359e52168b69076535e141b52a9340d021",
+        "task_hash": "19f30f4b5cb955a3bc913825d17b9a50ad3f6146e3a635aad27db3c2c7261d0c",
+        "weights": {
+          "high": "20",
+          "low": "1",
+          "medium": "5",
+          "urgent": "50"
+        }
+      },
+      "scenario": "V50_CAP050",
+      "seed": 2030,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2030",
+      "source_task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "task_hash": "19f30f4b5cb955a3bc913825d17b9a50ad3f6146e3a635aad27db3c2c7261d0c",
+      "value_profile": "V50"
+    },
+    {
+      "capacity": 0.25,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP025\\seed_2026",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+      "profile_audit": null,
+      "scenario": "V25_CAP025",
+      "seed": 2026,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2026",
+      "source_task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.25,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP025\\seed_2027",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+      "profile_audit": null,
+      "scenario": "V25_CAP025",
+      "seed": 2027,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2027",
+      "source_task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.25,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP025\\seed_2028",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+      "profile_audit": null,
+      "scenario": "V25_CAP025",
+      "seed": 2028,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2028",
+      "source_task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.25,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP025\\seed_2029",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+      "profile_audit": null,
+      "scenario": "V25_CAP025",
+      "seed": 2029,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2029",
+      "source_task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.25,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP025\\seed_2030",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+      "profile_audit": null,
+      "scenario": "V25_CAP025",
+      "seed": 2030,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2030",
+      "source_task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.35,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP035\\seed_2026",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+      "profile_audit": null,
+      "scenario": "V25_CAP035",
+      "seed": 2026,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2026",
+      "source_task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.35,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP035\\seed_2027",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+      "profile_audit": null,
+      "scenario": "V25_CAP035",
+      "seed": 2027,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2027",
+      "source_task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.35,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP035\\seed_2028",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+      "profile_audit": null,
+      "scenario": "V25_CAP035",
+      "seed": 2028,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2028",
+      "source_task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.35,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP035\\seed_2029",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+      "profile_audit": null,
+      "scenario": "V25_CAP035",
+      "seed": 2029,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2029",
+      "source_task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.35,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP035\\seed_2030",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+      "profile_audit": null,
+      "scenario": "V25_CAP035",
+      "seed": 2030,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2030",
+      "source_task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.7,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP070\\seed_2026",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "6b09b9bc3463b4833645a6c77c7b4b2cd37053aafd83d5059e26fa34762f44e1",
+      "profile_audit": null,
+      "scenario": "V25_CAP070",
+      "seed": 2026,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2026",
+      "source_task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.7,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP070\\seed_2027",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "82fa0912d0e1d3246893e85bc26b49f42fbe7555d3032a5630d478d00ec43926",
+      "profile_audit": null,
+      "scenario": "V25_CAP070",
+      "seed": 2027,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2027",
+      "source_task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.7,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP070\\seed_2028",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "08d2978d7a7ce03c7e735df5050442e73ff85dbd2346e90836dfc258546fe75f",
+      "profile_audit": null,
+      "scenario": "V25_CAP070",
+      "seed": 2028,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2028",
+      "source_task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.7,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP070\\seed_2029",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "ec1990cd698f49a028d6da91876fd585ca287bb5308f290e9df10e60bfec4a91",
+      "profile_audit": null,
+      "scenario": "V25_CAP070",
+      "seed": 2029,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2029",
+      "source_task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98",
+      "value_profile": "V25"
+    },
+    {
+      "capacity": 0.7,
+      "checks": {
+        "arrival_swap_manifest_unchanged": true,
+        "effective_value_sum_268": true,
+        "late_hv_forcing_absent": true,
+        "non_value_identity_unchanged": true,
+        "ordinary_random_profile": true,
+        "slot_trace_unchanged": true,
+        "task_count_268": true,
+        "v25_task_hash_unchanged": true,
+        "value_level_counts_frozen": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "destination": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\scenario\\V25_CAP070\\seed_2030",
+      "effective_task_value_sum": 267.99999999999983,
+      "non_value_task_hash": "342025af90150c28035971fce5f795b906e930dcfd3f50b5fbc957030d5f60d7",
+      "profile_audit": null,
+      "scenario": "V25_CAP070",
+      "seed": 2030,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\scenario\\ordinary_seed_2030",
+      "source_task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119",
+      "value_profile": "V25"
+    }
+  ],
+  "status": "PASS"
+}

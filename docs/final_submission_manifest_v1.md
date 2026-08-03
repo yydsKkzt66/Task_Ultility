@@ -1,0 +1,101 @@
+# Final submission manifest v1
+
+This manifest identifies the publication-facing implementation and experiment
+assets in the repository. It is intentionally narrower than the complete local
+experiment history.
+
+## Canonical method and environment
+
+- Proposed method: `PROP-V2-SAFE-METADATA-CURRENT-v1`.
+- Main scenario: ordinary value-blind V25 arrivals, not late-HV-skew.
+- Seeds: 2026, 2027, 2028, 2029, 2030.
+- Main downlink-capacity multiplier: 0.50.
+- Duration and slot: 86400 s and 20 s.
+- Value-level counts: low/medium/high/urgent = 54/139/54/21.
+- Power: corrected 40 W solar-peak environment and shared 38 W radio.
+- Thermal environment: shared literature-anchored provisional two-node model.
+- Public accounting: frozen q-once evaluator and frozen public resource prices.
+
+The two-node parameters are literature-anchored provisional parameters, not a
+claim of device-matched in-orbit thermal calibration.
+
+## Canonical comparison methods
+
+1. `PROP-V2-SAFE-METADATA-CURRENT-v1`
+2. `B1-COMMON-GROUND-THERMAL-CORRECTED`
+3. `OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC`
+4. `TUT-PROXY-THERMAL-CORRECTED`
+5. `MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1`
+
+## Canonical entry points
+
+- Main five-method, five-seed comparison:
+  `scripts/run_current_prop_four_baselines_fiveseed_dual_thermal_v1.py`
+- Single-seed five-method identity/reference run:
+  `scripts/run_current_prop_four_independent_baselines_single_seed_v1.py`
+- Five-method ablation:
+  `scripts/run_current_prop_five_ablation_multiseed_dual_thermal_v1.py`
+- Value/capacity sensitivity:
+  `scripts/run_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1.py`
+- Two-node thermal calibration and reconciliation:
+  `scripts/run_dual_node_thermal_calibration_and_four_method_rerun_v1.py`
+- Main publication figure generator: `scripts/main metrics.py`
+- Sensitivity/ablation figure generator: `scripts/sensitive.py`
+
+## Canonical ablations
+
+1. `FULL-V1-V2-DUAL-THERMAL`
+2. `NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL`
+3. `NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL`
+4. `FIXED-BALANCED-V1-V2-DUAL-THERMAL`
+5. `DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL`
+
+## Canonical sensitivity grid
+
+- V10 at capacity 0.50.
+- V50 at capacity 0.50.
+- V25 at capacities 0.25, 0.35, 0.50, and 0.70.
+
+Only the proposed method is used for the value/capacity sensitivity grid. The
+V25/capacity-0.50 point is the main experiment reference.
+
+## Submission policy
+
+Commit:
+
+- all source modules, configuration, tests, documentation, and Python research
+  scripts;
+- frozen scenario manifests and compact calibration parameters;
+- the two reviewed figure-generator scripts and reviewed final PDF/PNG/CSV
+  figure assets;
+- compact final assessments, summary tables, completion markers, and identity
+  audits required to substantiate the reported results.
+
+Do not commit:
+
+- raw `SARFishSample` imagery;
+- full per-slot/per-task run directories and queues;
+- aborted, smoke, preflight, or debug outputs;
+- local rollback packages and agent scratch workspaces;
+- intermediate figure iterations.
+
+## Current portability limitation
+
+The canonical runners still resolve frozen implementations and native adapters
+from local `D:/wt/...` worktrees. The submitted source records these paths and
+their identities, but a clean clone is not yet fully portable. Before declaring
+a standalone archival release, vendor the exact frozen method snapshots or
+replace the absolute paths with a hash-checked configurable dependency layout,
+then pass a fresh single-seed reproduction gate.
+
+## Pre-commit validation
+
+- Python syntax compilation: PASS (`python -m compileall -q src scripts tests`).
+- Unit test suite: PASS (514 tests; 13 third-party Matplotlib/PyParsing
+  deprecation warnings).
+- Publication figure generators: PASS on Windows with project-relative output
+  directories; both PDF and high-resolution PNG assets were generated.
+- Secret-pattern scan of staged source: PASS; no credentials or private keys
+  detected.
+- GitHub large-file gate: PASS; the largest staged file is below 5 MB.
+- Main comparison, ablation, and sensitivity completion markers: PASS.

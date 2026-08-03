@@ -1,0 +1,45 @@
+version: FROZEN-V2-FINAL-GATE-v1
+environment:
+  scenario: V25
+  capacity_multiplier: 0.5
+  duration_s: 86400
+  slot_s: 20
+  power_profile: BUPT-1-corrected-40W
+frozen_parameter_asset: outputs/_historical_asset_audit_conditional_v2_calibration_v1/frozen/conditional_v2_frozen_parameters_v1.json
+methods:
+  - FULL-PROP-V2
+  - FIXED-YOLO-B-V2
+  - SINGLE-TIMESCALE-V2
+  - DIRECT-ONLY-V2
+  - GROUND-ACK-120S-V2
+  - MYOPIC-V2
+  - B1-COMMON-THERMAL
+  - OFFLOAD-EFT-THERMAL-ALIGNED
+  - TUT-UOI-PRODUCT-LITE-v2
+  - GROUND-ONLY
+seed_selection:
+  scan_roots: [configs, outputs]
+  deterministic_search_start: 10000
+  blind_count: 1
+  formal_count: 5
+parallel:
+  enabled: true
+  max_independent_processes: 4
+public_accounting:
+  gross: sum(V * delta_I * q_eff * T)
+  net: gross - pi_E * controllable_energy_Wh - pi_B * transmitted_MB - pi_Q * terminal_backlog_MB
+  hv_cost_allocation: proportional_to_closed_HV_gross
+  safety_violation_policy: Infeasible
+  q_multiplication_count: 1
+gate:
+  require_zero_soc_violations: true
+  require_zero_thermal_violations: true
+  require_method_identity: true
+  require_environment_identity: true
+  require_evaluator_identity: true
+  require_q_once: true
+  require_ordinary_one_shot: true
+  require_hv_residual_semantics: true
+  require_process_isolation: true
+  launch_formal_only_after_blind_pass: true
+completion_marker: FROZEN_V2_FINAL_GATE_AND_BLIND_FIVESEED_COMPLETE

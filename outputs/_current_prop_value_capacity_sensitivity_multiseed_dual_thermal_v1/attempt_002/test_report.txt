@@ -1,0 +1,17 @@
+25_fresh_runs_complete: PASS
+five_seeds_per_scenario: PASS
+25_unique_child_processes: PASS
+ordinary_random_all_runs: PASS
+same_non_value_tasks_across_profiles_per_seed: PASS
+value_sum_268_all_bundles: PASS
+value_level_counts_frozen: PASS
+runtime_capacity_exact: PASS
+current_prop_v1_v2_all_runs: PASS
+safe_greedy_current_selector_all_runs: PASS
+q_once_all_runs: PASS
+same_power_trace_all_runs: PASS
+same_two_node_thermal_parameters_all_runs: PASS
+two_node_runtime_active_all_runs: PASS
+zero_soc_thermal_violations: PASS
+protected_sources_unchanged: PASS
+FINAL: PASS

@@ -1,0 +1,23 @@
+sar_payload_enabled: false
+sar_active_power_w: 0.0
+sar_active_duration_s: 10.0
+charge_once_per_acquisition: true
+
+acquisition_identity_precedence:
+  - acquisition_id
+  - observation_id
+  - task_group_id
+  - metadata.product_identifier
+  - scene_id
+  - image_path
+  - task_id
+
+soc_accounting:
+  energy_formula: sar_active_power_w * sar_active_duration_s
+  energy_unit: joule
+  debit_timing: start_of_first_derived_task_slot
+  use_common_discharge_efficiency: true
+  affects_thermal: false
+  affects_ai_energy_budget: false
+  modifies_solar_trace: false
+  modifies_platform_base_power: false

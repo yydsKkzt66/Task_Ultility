@@ -1,0 +1,29 @@
+version: DIFFICULTY-AWARE-PROP-SINGLE-SEED-v1
+difficulty_seed: 73021
+observation_confusion_seed: 73022
+difficulty_levels: [easy, medium, hard]
+target_assignment: deterministic_hash_rank_balanced
+observation_confusion:
+  easy: {easy: 0.80, medium: 0.20, hard: 0.00}
+  medium: {easy: 0.10, medium: 0.80, hard: 0.10}
+  hard: {easy: 0.00, medium: 0.20, hard: 0.80}
+conditional_quality:
+  lightweight:
+    easy: 0.7000000000000000
+    medium: 0.5697178218395861
+    hard: 0.4394356436791722
+  balanced:
+    easy: 0.7900000000000000
+    medium: 0.7342411587001637
+    hard: 0.6784823174003274
+  high_accuracy:
+    easy: 0.8600000000000000
+    medium: 0.8215028271304525
+    hard: 0.7830056542609050
+quality_status: diagnostic_proxy_not_measured_accuracy
+scenario:
+  seed: 2026
+  capacity_multiplier: 0.5
+  duration_s: 86400
+  task_count: 268
+  task_hash: c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa

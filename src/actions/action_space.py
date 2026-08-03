@@ -1,40 +1,56 @@
-"""联合动作空间。
-
-第一版固定提供 5 个 joint actions，便于在 mock 场景中稳定运行，
-同时也为后续替换真实模型池与通信策略保留清晰接口。
-"""
+"""鑱斿悎鍔ㄤ綔绌洪棿銆?"""
 
 from __future__ import annotations
 
-from src.common.constants import DEFAULT_ACTION_SPECS
+from functools import lru_cache
+from pathlib import Path
+
+from src.common.config import load_yaml
 from src.common.types import JointAction
 
 
-class ActionSpace:
-    """提供固定候选动作集合。"""
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_ACTION_CONFIG_PATH = PROJECT_ROOT / "configs" / "action_space.yaml"
 
-    def __init__(self) -> None:
-        self._actions = [
-            JointAction(
-                action_name=action_name,
-                model_name=model_name,
-                payload_policy=payload_policy,
-                transmission_mode=transmission_mode,
-                expected_payload_level=payload_level,
-                expected_compute_level=compute_level,
+
+@lru_cache(maxsize=1)
+def _default_action_space_cfg() -> dict[str, object]:
+    return load_yaml(DEFAULT_ACTION_CONFIG_PATH)
+
+
+class ActionSpace:
+    """鎻愪緵閰嶇疆鍖栫殑 joint action 闆嗗悎銆?"""
+
+    def __init__(self, action_space_cfg: dict[str, object] | None = None) -> None:
+        action_space_cfg = action_space_cfg or _default_action_space_cfg()
+        self._actions = []
+        for item in action_space_cfg.get("actions", []):
+            if not bool(item.get("enabled", True)):
+                continue
+            self._actions.append(
+                JointAction(
+                    action_name=str(item["action_name"]),
+                    model_name=str(item["model_name"]),
+                    payload_policy=str(item["payload_policy"]),
+                    transmission_mode=str(item.get("transmission_option", item.get("transmission_mode", "contact_aware"))),
+                    expected_payload_level=float(item["expected_payload_level"]),
+                    expected_compute_level=float(item["expected_compute_level"]),
+                    payload_plan=str(item.get("payload_plan", item["payload_policy"])),
+                )
             )
-            for action_name, model_name, payload_policy, transmission_mode, payload_level, compute_level in DEFAULT_ACTION_SPECS
-        ]
+
+        if not self._actions:
+            raise ValueError("action_space.actions must not be empty")
 
     def list_actions(self) -> list[JointAction]:
-        """返回当前版本支持的全部联合动作。"""
+        """杩斿洖褰撳墠鐗堟湰鏀寔鐨勫叏閮ㄨ仈鍚堝姩浣溿€?"""
 
         return list(self._actions)
 
     def get_action(self, action_name: str) -> JointAction:
-        """按名字查动作。"""
+        """鎸夊悕瀛楁煡鍔ㄤ綔銆?"""
 
         for action in self._actions:
             if action.action_name == action_name:
                 return action
-        raise KeyError(f"未知动作: {action_name}")
+        raise KeyError(f"Unknown action: {action_name}")

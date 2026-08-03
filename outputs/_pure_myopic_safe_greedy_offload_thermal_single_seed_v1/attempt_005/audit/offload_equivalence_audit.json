@@ -1,0 +1,32 @@
+{
+  "comparison": "attempt_004 original execution versus attempt_005 trace-copy-elision execution",
+  "decision_or_physics_changed": false,
+  "files": [
+    {
+      "file": "native_metrics.json",
+      "sha256": "ebf11ae56611e9894c00376f1e1ba71bf5fe4abe32b2ed99f5151bd11d7f306d",
+      "identical": true
+    },
+    {
+      "file": "offload_policy_audit.csv",
+      "sha256": "67d3edd0f1c8533c8c0d3194966ee88ea0a6fb4fbe81656338e5c0e8f0d912bd",
+      "identical": true
+    },
+    {
+      "file": "native_task_outcomes.csv",
+      "sha256": "c98e145e68c8a0256fa19996b400d098bae09b3da584bc0250c57d8d4a341e23",
+      "identical": true
+    },
+    {
+      "file": "native_ground_delivery_events.csv",
+      "sha256": "63a1bcd79113b1ca39b80fd7bea5ff468e4ea46440adc6689579f034fc513e42",
+      "identical": true
+    },
+    {
+      "file": "native_per_slot_resource_trace.csv",
+      "sha256": "f66dd5b24acb81521d4416f756b3aa221298f82448cab5231c308d44eeb730bd",
+      "identical": true
+    }
+  ],
+  "status": "PASS"
+}

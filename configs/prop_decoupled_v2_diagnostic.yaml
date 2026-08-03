@@ -1,0 +1,31 @@
+version: PROP-DECOUPLED-V2-DIAGNOSTIC-v1
+scenario: V25
+seed: 2026
+capacity_multiplier: 0.5
+duration_s: 86400
+slot_s: 20
+models: [lightweight, balanced, high_accuracy]
+products: [metadata, roi, roi_context]
+defer_action: delay/store
+ordinary_policy:
+  levels: [low, medium]
+  requirement_alignment: soft
+  delivery: one_shot
+  preserve_residual: false
+  selector: safe_linucb_with_q_once_marginal_net_utility_prior
+high_value_policy:
+  levels: [high, urgent]
+  requirement_alignment: hard
+  direct_first: true
+  metadata_fallback: true
+  autonomous_residual_reentry: true
+score:
+  positive_term: V * delta_I * q * p_ground * T
+  q_multiplication_count: 1
+  dynamic_prices: unchanged_legacy_lyapunov
+public_evaluator:
+  positive_term: V * delta_I * q * T
+  energy_cost_per_Wh: 10.0
+  terminal_queue_cost_per_MB: 0.0625
+  safety_violation_cost: 10.0
+  hv_cost_allocation: proportional_to_hv_gross

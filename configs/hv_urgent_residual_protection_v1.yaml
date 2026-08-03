@@ -1,0 +1,51 @@
+method_identity:
+  parent: PROP-SHARED-CALIBRATED-PRIOR-REQALIGN-v1
+  enabled: PROP-SHARED-CALIBRATED-PRIOR-REQALIGN-HVGUARD-v1
+
+hv_urgent_residual_guard:
+  enabled: false
+
+  preserve_corrected_reqalign: true
+  preserve_original_scorer: true
+  preserve_original_selector: true
+  preserve_safe_filter: true
+  preserve_online_update: true
+
+  active_residual:
+    value_levels: [high, urgent]
+    require_open_lifecycle: true
+    require_unexpired: true
+    require_positive_predicted_net_utility: true
+    require_hard_safe: true
+    require_ground_arrival_before_deadline: true
+
+  dynamic_minimum_reservation:
+    enabled: true
+    urgent_first: true
+    protect_high_after_urgent: true
+    fixed_quota: false
+    fixed_bandwidth_share: false
+    fixed_reservation_ratio: false
+    release_when_not_required: true
+
+  displacement_check:
+    enabled: true
+    reject_ordinary_if_urgent_closure_lost: true
+    reject_ordinary_if_high_closure_lost: true
+    infeasible_urgent_never_blocks_high: true
+
+  pareto_filter:
+    enabled: true
+    weighted_sum: false
+    metrics: [J_all_net, J_HV_net, HV_closure_count]
+    preserve_original_score_as_tiebreak: true
+
+  ordinary_policy:
+    unchanged: true
+    allow_progressive: false
+
+  relax_hard_safety: false
+  change_task_values: false
+  change_resource_prices: false
+  change_product_sizes: false
+  change_contact_windows: false

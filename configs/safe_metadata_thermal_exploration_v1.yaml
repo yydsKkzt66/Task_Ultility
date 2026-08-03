@@ -1,0 +1,33 @@
+version: SAFE-METADATA-THERMAL-EXPLORATION-v1
+scenario:
+  seed: 2026
+  duration_s: 86400
+  slot_s: 20
+  capacity_multiplier: 0.5
+  task_count: 268
+  expected_task_hash: c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa
+  expected_value_counts:
+    low: 54
+    medium: 139
+    high: 54
+    urgent: 21
+variants:
+  V0_CURRENT_BASELINE: []
+  V1_SAFE_SET_CONSISTENT_FALLBACK: [safe_set_consistent_fallback]
+  V2_HV_METADATA_RESIDUAL_REPAIR: [hv_metadata_residual_repair]
+  V3_THERMAL_PRICE_AWARE: [thermal_price_aware]
+  V4_COMBINED_ABC:
+    - safe_set_consistent_fallback
+    - hv_metadata_residual_repair
+    - thermal_price_aware
+thermal_price:
+  status: experimental_no_new_tuning
+  pressure_combination: equal_mean
+  multiplier_source: frozen_lyapunov_alpha_thermal
+  applies_to_value_levels: [low, medium]
+  hard_thermal_limit_unchanged: true
+execution:
+  independent_processes: true
+  max_workers: 5
+  overwrite_old_results: false
+completion_marker: SINGLE_SEED_CONTROLLED_SAFE_METADATA_THERMAL_EXPLORATION_COMPLETE

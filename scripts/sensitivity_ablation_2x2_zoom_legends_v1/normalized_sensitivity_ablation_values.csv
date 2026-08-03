@@ -1,0 +1,52 @@
+group,x,metric,normalized_mean_percent,normalized_std_percent
+capacity,0.25,J_all,93.7518092141887,11.759335545213654
+capacity,0.25,J_HV,93.98750032963265,13.061364415495373
+capacity,0.25,N_HV,99.64412811387899,4.875444839857651
+capacity,0.35,J_all,97.26780823442964,11.970874434968493
+capacity,0.35,J_HV,97.24163392315603,13.203765723477757
+capacity,0.35,N_HV,99.64412811387899,4.875444839857651
+capacity,0.5,J_all,100.0,12.169052973791445
+capacity,0.5,J_HV,100.0,13.446375359299598
+capacity,0.5,N_HV,100.0,5.533807829181494
+capacity,0.7,J_all,101.8325948028235,12.487474671001358
+capacity,0.7,J_HV,101.72727512460116,13.601961973576648
+capacity,0.7,N_HV,100.0,5.533807829181494
+value_profile,V10,J_all,89.9886437017079,10.118239105747177
+value_profile,V10,J_HV,80.33543419213628,9.949632129954379
+value_profile,V10,N_HV,100.0,5.533807829181494
+value_profile,V25,J_all,100.0,12.169052973791445
+value_profile,V25,J_HV,100.0,13.446375359299598
+value_profile,V25,N_HV,100.0,5.533807829181494
+value_profile,V50,J_all,105.22389721436684,13.233427598031575
+value_profile,V50,J_HV,109.7122966166504,14.931040848078899
+value_profile,V50,N_HV,100.71174377224199,5.427046263345195
+ablation_performance,Full,J_all,100.0,12.169052973791445
+ablation_performance,Full,J_HV,100.0,13.446375359299598
+ablation_performance,Full,N_HV,100.0,5.516014234875445
+ablation_performance,w/o Lyapunov,J_all,64.97138658175422,11.863991627513416
+ablation_performance,w/o Lyapunov,J_HV,50.70277682550566,11.178502676617178
+ablation_performance,w/o Lyapunov,N_HV,105.33807829181494,5.338078291814946
+ablation_performance,w/o Mode,J_all,99.14271081520408,10.86196530762208
+ablation_performance,w/o Mode,J_HV,98.99264259908757,12.291342527886922
+ablation_performance,w/o Mode,N_HV,72.95373665480427,6.583629893238434
+ablation_performance,Fixed-B,J_all,90.62548709612773,10.648199692711929
+ablation_performance,Fixed-B,J_HV,89.77611349911658,11.547691252867804
+ablation_performance,Fixed-B,N_HV,98.932384341637,5.6939501779359425
+ablation_performance,w/o Prog.,J_all,85.52405976530318,13.073103386848963
+ablation_performance,w/o Prog.,J_HV,88.93752801877588,15.218480525302603
+ablation_performance,w/o Prog.,N_HV,53.73665480427046,7.829181494661921
+ablation_resource,Full,energy,100.0,0.0
+ablation_resource,Full,downlink,100.0,0.0
+ablation_resource,Full,queue,100.0,0.0
+ablation_resource,w/o Lyapunov,energy,257.50320649850363,0.0
+ablation_resource,w/o Lyapunov,downlink,270.2278844428494,0.0
+ablation_resource,w/o Lyapunov,queue,573.6473511803908,0.0
+ablation_resource,w/o Mode,energy,61.17999144933732,0.0
+ablation_resource,w/o Mode,downlink,66.31915784436868,0.0
+ablation_resource,w/o Mode,queue,91.20072291878459,0.0
+ablation_resource,Fixed-B,energy,70.15818725951262,0.0
+ablation_resource,Fixed-B,downlink,99.33070159698548,0.0
+ablation_resource,Fixed-B,queue,98.5541624308144,0.0
+ablation_resource,w/o Prog.,energy,59.08507909362976,0.0
+ablation_resource,w/o Prog.,downlink,37.34912375142054,0.0
+ablation_resource,w/o Prog.,queue,99.92093075793517,0.0

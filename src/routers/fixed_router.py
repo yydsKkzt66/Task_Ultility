@@ -1,4 +1,4 @@
-"""固定动作基线。"""
+"""鍥哄畾鍔ㄤ綔鍩虹嚎銆?"""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from src.routers.base_router import BaseRouter
 
 
 class FixedRouter(BaseRouter):
-    """始终优先选择同一个动作的 baseline。"""
+    """濮嬬粓浼樺厛閫夋嫨鍚屼竴涓姩浣滅殑 baseline銆?"""
 
     def __init__(self, router_name: str, preferred_action_name: str) -> None:
         super().__init__(router_name)
@@ -17,14 +17,15 @@ class FixedRouter(BaseRouter):
     def select_action(
         self,
         context: ContextVector,
-        safe_actions: list[JointAction],
+        candidate_actions: list[JointAction],
         predicted_map: dict[str, PredictedMetrics],
+        guidance_bundle: dict[str, object] | None = None,
     ) -> JointAction:
-        _ = (context, predicted_map)
-        for action in safe_actions:
+        _ = (context, predicted_map, guidance_bundle)
+        for action in candidate_actions:
             if action.action_name == self.preferred_action_name:
                 return action
-        for action in safe_actions:
+        for action in candidate_actions:
             if action.action_name == ACTION_FALLBACK_NAME:
                 return action
-        return safe_actions[0]
+        return candidate_actions[0]

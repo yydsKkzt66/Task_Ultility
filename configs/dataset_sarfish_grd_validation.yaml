@@ -1,0 +1,9 @@
+dataset_name: sarfishsample
+root: datasets/SARFishSample
+source_image_root: A:/6.22Dataset
+source_image_root_env: SARFISH_DATASET_ROOT
+product_type: GRD
+split: validation
+scene_index_path: data/indexes/sarfishsample_scene_index.csv
+task_state_profile_path: data/indexes/sarfishsample_task_state_profile.json
+seed: 2026

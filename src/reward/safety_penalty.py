@@ -1,9 +1,9 @@
-"""安全惩罚。"""
+"""瀹夊叏鎯╃綒銆?"""
 
 from __future__ import annotations
 
 
 def compute_safety_penalty(safety_violation: int, reward_cfg: dict[str, float]) -> float:
-    """根据安全约束违背情况计算惩罚。"""
+    """鏍规嵁瀹夊叏绾︽潫杩濊儗鎯呭喌璁＄畻鎯╃綒銆?"""
 
-    return float(reward_cfg["lambda_Omega"]) * float(safety_violation)
+    return float(reward_cfg.get("lambda_Omega", reward_cfg.get("violation_penalty", 0.0))) * float(safety_violation)

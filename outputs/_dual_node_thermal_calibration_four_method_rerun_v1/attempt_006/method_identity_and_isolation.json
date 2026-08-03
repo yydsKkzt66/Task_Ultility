@@ -1,0 +1,76 @@
+{
+  "capacity": 0.5,
+  "duration_s": 86400,
+  "four_distinct_pids": true,
+  "fresh_independent_processes": true,
+  "methods": [
+    {
+      "method": "CURRENT-PROP-THERMAL-CORRECTED",
+      "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\runs\\CURRENT_PROP_THERMAL_CORRECTED",
+      "pid": 30400,
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "method": "FIXED-BALANCED-THERMAL-CORRECTED",
+      "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\runs\\FIXED_BALANCED_THERMAL_CORRECTED",
+      "pid": 32400,
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "method": "TUT-PROXY-THERMAL-CORRECTED",
+      "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\runs\\TUT_PROXY_THERMAL_CORRECTED",
+      "pid": 16076,
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+      "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_dual_node_thermal_calibration_four_method_rerun_v1\\attempt_006\\runs\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+      "pid": 6640,
+      "returncode": 0,
+      "status": "PASS"
+    }
+  ],
+  "no_duplicate_energy": true,
+  "no_shared_mutable_state": true,
+  "power_environment": "correct 40 W",
+  "protected_post_sha256": {
+    "D:\\wt\\pilot_frozen_runtime_native_direct_v1\\src\\baselines\\b1_enhanced.py": "7014ba3639e911a23a33a44cbe61de9ddbc604d927003b55d8e0af2cabae541c",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_headroom.py": "908589cec582e6e83c3d277f861b1830e2d279f2be92f1a4c5bf88c0bfc27c5d",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_update.py": "a890c3c3fd5dbfef82bcc6aa475ab07ee6cf17b37555b7ac1e3df8d2e80f60e4",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\simulator\\predictors.py": "3039a2d3cf3c3b4473e26669d1763e9a3dfe0510993efdc6de5616eb833cd630",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\simulator\\step_runner.py": "daa2bf36adac24ce559d2204519ac0970e35628a04dd852c54b0822122f21dc2",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\configs\\bupt1_measured_power_v1.yaml": "8234a0ef3bcdb9f065633f7c13c54bd11d84d34aa855aa1d8ddd0ad1791d7d18",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\bundle_contract.json": "064617840147c5f62f2574775b9cbacb323a25c770c105342453cc0dc953d13e",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\slot_trace.csv": "63566543c19c25d18b9cade7e8f909c466ba363f4bc3497c0df55a174b2ca98f",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\scripts\\b1_common_ground_runtime.py": "11894847429f60bc1955d25db3b26a6415e2076fdc4ec1c8effa0968743fee10",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\scripts\\run_normal_scenario_tut_proxy_ground_recovery_v1.py": "b9434301e3424db1de01995ca4117929ba31bb55980dbe0c94024b4c34dd4547"
+  },
+  "protected_pre_sha256": {
+    "D:\\wt\\pilot_frozen_runtime_native_direct_v1\\src\\baselines\\b1_enhanced.py": "7014ba3639e911a23a33a44cbe61de9ddbc604d927003b55d8e0af2cabae541c",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_headroom.py": "908589cec582e6e83c3d277f861b1830e2d279f2be92f1a4c5bf88c0bfc27c5d",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_update.py": "a890c3c3fd5dbfef82bcc6aa475ab07ee6cf17b37555b7ac1e3df8d2e80f60e4",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\simulator\\predictors.py": "3039a2d3cf3c3b4473e26669d1763e9a3dfe0510993efdc6de5616eb833cd630",
+    "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\simulator\\step_runner.py": "daa2bf36adac24ce559d2204519ac0970e35628a04dd852c54b0822122f21dc2",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\configs\\bupt1_measured_power_v1.yaml": "8234a0ef3bcdb9f065633f7c13c54bd11d84d34aa855aa1d8ddd0ad1791d7d18",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\bundle_contract.json": "064617840147c5f62f2574775b9cbacb323a25c770c105342453cc0dc953d13e",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\slot_trace.csv": "63566543c19c25d18b9cade7e8f909c466ba363f4bc3497c0df55a174b2ca98f",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\scripts\\b1_common_ground_runtime.py": "11894847429f60bc1955d25db3b26a6415e2076fdc4ec1c8effa0968743fee10",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\scripts\\run_normal_scenario_tut_proxy_ground_recovery_v1.py": "b9434301e3424db1de01995ca4117929ba31bb55980dbe0c94024b4c34dd4547"
+  },
+  "protected_unchanged": true,
+  "public_evaluator_unchanged": true,
+  "q_once": true,
+  "same_thermal_hash_all_methods": true,
+  "seed": 2026,
+  "shared_thermal_callable_runtime_audit_passed": true,
+  "status": "PASS",
+  "task_count": 268,
+  "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa",
+  "thermal_parameter_hash": "17f98859448a41f2d0ab83036910b3505f9b37c3fc5a8e21dc62254f9e5bcfa9",
+  "version": "DUAL-NODE-THERMAL-CALIBRATION-AND-FOUR-METHOD-RERUN-v1"
+}

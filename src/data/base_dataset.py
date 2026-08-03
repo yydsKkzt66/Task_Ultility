@@ -1,4 +1,4 @@
-"""数据集适配器抽象层。"""
+"""Dataset adapter abstraction."""
 
 from __future__ import annotations
 
@@ -8,8 +8,13 @@ from src.common.types import TaskSample
 
 
 class DatasetAdapter(ABC):
-    """所有数据集适配器的统一抽象接口。"""
+    """Unified interface for dataset-backed task stream builders."""
 
     @abstractmethod
-    def build_task_stream(self, max_tasks: int) -> list[TaskSample]:
-        """生成统一的 TaskSample 序列。"""
+    def build_task_stream(
+        self,
+        num_slots: int,
+        slot_seconds: float,
+        task_stream_cfg: dict[str, object] | None = None,
+    ) -> list[TaskSample | None]:
+        """Build a slot-aligned task stream."""

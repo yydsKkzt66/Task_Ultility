@@ -1,0 +1,23 @@
+method:
+  method_id: B1-COMMON-GROUND
+  parent_method_id: B1-COMMON-THERMAL
+  implementation: scripts/b1_common_ground_runtime.py
+
+ground_processing:
+  shared_implementation: src.baselines.offload_eft.FiniteGroundComputeQueue
+  ground_station_id_enabled: false
+  submit_only_after_complete_downlink: true
+  streaming_compute_enabled: false
+  servers: 1
+  queue_policy: fifo
+  queue_capacity_tasks: 32
+  decode_time_s: 1.5
+  inference_model: high_accuracy
+  inference_time_s: 2.8
+
+invariants:
+  compression_ratio: 8.0
+  preserve_b1_scheduler: true
+  preserve_b1_downlink_execution: true
+  preserve_b1_soc_thermal_deadline_constraints: true
+  ground_energy_counted_in_satellite_soc: false

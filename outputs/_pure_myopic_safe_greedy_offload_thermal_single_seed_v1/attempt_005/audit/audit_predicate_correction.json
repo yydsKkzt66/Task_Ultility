@@ -1,0 +1,14 @@
+{
+  "affected_run_outputs": false,
+  "algorithm_rerun_required": false,
+  "correction": "The pre-replacement dynamic cost is a shadow diagnostic and is not part of the returned PURE score. The fixed public marginal-cost replacement was active for all 6000 score calls.",
+  "downlink_price_per_MB": 0.09202386055743175,
+  "energy_price_per_Wh": 2.981261194297225,
+  "future_queue_or_task_information_used": false,
+  "guidance_nonzero_lambda_call_count": 0,
+  "guidance_zero_lambda_call_count": 4320,
+  "original_dynamic_cost_nonzero_count_before_replacement": 2700,
+  "score_call_count_replaced": 6000,
+  "status": "PASS",
+  "terminal_backlog_price_used_online": false
+}

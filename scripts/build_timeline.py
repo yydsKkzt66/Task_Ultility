@@ -21,7 +21,7 @@ def main() -> None:
     args = parser.parse_args()
 
     configs = load_project_configs(PROJECT_ROOT)
-    timeline = TimelineBuilder(configs["dataset"], configs["timeline"]).build()
+    timeline = TimelineBuilder(configs["dataset"], configs["timeline"], configs["task_stream"]).build()
     rows = [
         {
             "slot_index": step.slot_index,

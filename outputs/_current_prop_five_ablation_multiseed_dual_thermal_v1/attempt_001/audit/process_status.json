@@ -1,0 +1,202 @@
+[
+  {
+    "method": "DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2026\\DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2026_DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FIXED-BALANCED-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2026\\FIXED_BALANCED_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2026_FIXED_BALANCED_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FULL-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2026\\FULL_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2026_FULL_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2026\\NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2026_NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FULL-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\FULL_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_FULL_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2026\\NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2026_NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FIXED-BALANCED-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\FIXED_BALANCED_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_FIXED_BALANCED_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2027\\NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2027_NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FULL-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\FULL_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_FULL_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FIXED-BALANCED-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\FIXED_BALANCED_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_FIXED_BALANCED_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2028\\NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2028_NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FULL-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\FULL_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_FULL_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FIXED-BALANCED-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\FIXED_BALANCED_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_FIXED_BALANCED_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2029\\NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2029_NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FULL-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\FULL_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_FULL_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "FIXED-BALANCED-V1-V2-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\FIXED_BALANCED_V1_V2_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_FIXED_BALANCED_V1_V2_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "DIRECT-ONLY-NO-PROGRESSIVE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_DIRECT_ONLY_NO_PROGRESSIVE_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-MODE-KEEP-LYAPUNOV-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_NO_MODE_KEEP_LYAPUNOV_DUAL_THERMAL.stderr.log"
+  },
+  {
+    "method": "NO-LYAPUNOV-KEEP-MODE-DUAL-THERMAL",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\runs\\seed_2030\\NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL",
+    "returncode": 0,
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_five_ablation_multiseed_dual_thermal_v1\\attempt_001\\logs\\seed_2030_NO_LYAPUNOV_KEEP_MODE_DUAL_THERMAL.stderr.log"
+  }
+]

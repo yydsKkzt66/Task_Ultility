@@ -5,14 +5,98 @@ queue_init_mb: 0.0
 battery_min: 0.18
 thermal_max: 0.92
 queue_max_mb: 64.0
+queue_safe_threshold_mb: 48.0
 epsilon: 1.0e-9
 E_ref: 100.0
 E_AI_ref: 100.0
-battery_capacity_j: 10000.0
+battery_capacity_wh: 35.0
+battery_charge_efficiency: 0.92
+battery_discharge_efficiency: 0.95
+tx_power_w: 8.0
 comm_power_w: 8.0
-slot_seconds: 10
+slot_seconds: 60
 delivery_beta: 0.5
-solar_recharge_scale_j: 40.0
+downlink_efficiency: 1.0
+queue_priority_tau_d: 60.0
+queue_age_bonus: 0.01
+queue_meta_first_bonus: 0.25
+queue_high_value_bonus: 0.20
 comm_alpha_gamma: 0.6
 cooling_per_slot: 0.05
+thermal_passive_cooling: 0.12
+thermal_sunlight_gain: 0.015
+thermal_eclipse_cooling_bonus: 0.03
+thermal_reference_min_c: -10.0
+thermal_reference_max_c: 30.0
 queue_priority_expire_bonus: 0.2
+high_value_threshold: 0.75
+safety_fallback_strategy: predicted_effective_utility
+safety_terminal_fallback_candidates:
+  - delay/store
+  - lightweight+metadata
+downlink_safety_throttle:
+  enabled: true
+  thermal_guard_threshold: 0.85
+  thermal_hard_threshold: 0.92
+  throttle_mode: pause_when_hot
+long_term_risk_penalty:
+  enabled: true
+  thermal_guard_threshold: 0.85
+  thermal_hard_threshold: 0.92
+  thermal_risk_weight: 0.08
+  battery_guard_threshold: 0.80
+  battery_reserve_weight: 0.04
+  downlink_burden_weight_per_mb: 0.01
+  queue_risk_weight: 0.05
+  terminal_battery_weight: 5.0
+  terminal_thermal_weight: 4.0
+  terminal_queue_weight: 2.0
+guarantee:
+  enabled: false
+  mode: dynamic_age_miss_debt
+  lambda_H: 0.0
+progressive_payload:
+  phase5_virtual_continue:
+    enabled: false
+    residual_utility_threshold: 0.08
+    max_active_residual_per_task: 1
+    residual_retry_enabled: false
+    queue_pressure_threshold: 0.65
+    min_remaining_deadline_s: 60
+    battery_guard_threshold: 0.60
+    thermal_guard_threshold: 0.85
+    continue_request_priority_bonus: 0.05
+    queue_pressure_priority_penalty: 0.0
+    high_value_uncertainty_threshold: 0.25
+  phase6_proactive_followup:
+    enabled: false
+    eriv_threshold: 0.25
+    residual_utility_threshold: 0.08
+    max_proactive_residuals_per_slot: 1
+    max_proactive_residuals_per_contact: 2
+    queue_pressure_threshold: 0.65
+    min_remaining_deadline_s: 60
+    battery_guard_threshold: 0.60
+    thermal_guard_threshold: 0.85
+    require_contact_opportunity: true
+    proactive_queue_bonus: 0.05
+  phase6_residual_candidate_carryover:
+    enabled: false
+    re_evaluate_once_per_slot: true
+    max_candidates_per_slot: 2
+    max_candidate_age_s: 600
+    require_metadata_delivered: true
+    require_pending_residual: true
+    require_positive_residual_utility: true
+    remove_on_expired: true
+    remove_on_closed: true
+    remove_on_residual_delivered: true
+    remove_on_duplicate_enqueued: false
+  phase6_same_slot_carryover:
+    enabled: false
+    only_after_lifecycle_update: true
+    reuse_existing_guards: true
+    max_same_slot_eval_per_slot: 1
+    enforce_no_reward_change: true
+    enforce_no_queue_policy_change: true
+    strict_mode: true

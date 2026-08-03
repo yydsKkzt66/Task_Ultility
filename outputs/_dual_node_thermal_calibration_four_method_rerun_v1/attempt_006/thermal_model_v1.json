@@ -1,0 +1,23 @@
+{
+  "accepted": true,
+  "environment_coupling": "use per-slot temperature_reference_c already phase-synchronized with is_sunlit/40W power timeline",
+  "parameters": {
+    "c_chip_j_per_k": 31.971872409181934,
+    "c_surface_j_per_k": 4252.301718696138,
+    "comm_to_surface_fraction": 1.0,
+    "compute_to_chip_fraction": 1.0,
+    "max_substep_s": 3600.0,
+    "r_chip_surface_k_per_w": 0.02369986319459421,
+    "r_surface_env_k_per_w": 0.6868975069155185,
+    "reference_max_c": 30.0,
+    "reference_min_c": -10.0,
+    "t_chip_max_c": 26.8,
+    "t_surface_max_c": 26.8
+  },
+  "status": "LITERATURE_ANCHORED_PROVISIONAL_THERMAL",
+  "time_constants_s": [
+    0.7520729190079022,
+    2942.8625047574233
+  ],
+  "version": "thermal_model_v1"
+}

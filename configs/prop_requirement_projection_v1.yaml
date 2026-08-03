@@ -1,0 +1,43 @@
+method_identity:
+  original: PROP-SHARED-CALIBRATED-PRIOR
+  enabled: PROP-SHARED-CALIBRATED-PRIOR-REQALIGN-v1
+
+requirement_alignment:
+  enabled: false
+
+  preserve_original_scorer: true
+  preserve_original_selector: true
+
+  prefer_same_model: true
+  prefer_minimum_satisfying_product: true
+  require_on_time_ground_arrival: true
+  require_hard_safe_action: true
+  require_positive_existing_score_vs_defer: true
+
+  ordinary_policy:
+    value_levels: [low, medium]
+    one_shot_required_product: true
+    allow_metadata_fallback: false
+    allow_progressive_reentry: false
+    infeasible_action: defer
+
+  high_value_policy:
+    value_levels: [high, urgent]
+    prefer_direct_required_delivery: true
+    allow_metadata_first_fallback: true
+    allow_progressive_reentry: true
+    preserve_residual_requirement: true
+
+  urgent_policy:
+    keep_separate_metrics: true
+    deterministic_priority_tiebreak: true
+    urgent_always_wins: false
+    resource_discount: false
+
+  # Frozen non-mechanisms.
+  urgent_soft_cost_multiplier: 1.0
+  relax_energy_price: false
+  relax_queue_budget: false
+  relax_top_k: false
+  relax_product_gate: false
+  relax_hard_safety: false

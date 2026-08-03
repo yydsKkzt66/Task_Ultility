@@ -1,0 +1,13 @@
+PASS | three_runs_pass
+PASS | three_independent_processes
+PASS | same_thermal_model
+PASS | pure_guidance_zero
+PASS | pure_selector_saw_no_guidance
+PASS | pure_bandit_disabled
+PASS | pure_fixed_current_action_prices_active
+PASS | offload_original_policy_unchanged
+PASS | offload_public_accounting_common
+PASS | offload_kept_local_and_ground_paths
+PASS | zero_safety_violations
+PASS | protected_assets_unchanged
+PASS | PURE_MYOPIC_SAFE_GREEDY_OFFLOAD_THERMAL_SINGLE_SEED_COMPLETE

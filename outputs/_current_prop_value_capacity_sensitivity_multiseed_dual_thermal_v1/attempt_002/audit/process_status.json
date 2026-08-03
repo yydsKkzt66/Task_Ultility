@@ -1,0 +1,227 @@
+[
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V10_CAP050\\seed_2028",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V10_CAP050",
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V10_CAP050_seed_2028.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V10_CAP050\\seed_2027",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V10_CAP050",
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V10_CAP050_seed_2027.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V10_CAP050\\seed_2029",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V10_CAP050",
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V10_CAP050_seed_2029.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V10_CAP050\\seed_2026",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V10_CAP050",
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V10_CAP050_seed_2026.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V10_CAP050\\seed_2030",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V10_CAP050",
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V10_CAP050_seed_2030.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V50_CAP050\\seed_2026",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V50_CAP050",
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V50_CAP050_seed_2026.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V50_CAP050\\seed_2027",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V50_CAP050",
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V50_CAP050_seed_2027.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V50_CAP050\\seed_2029",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V50_CAP050",
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V50_CAP050_seed_2029.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V50_CAP050\\seed_2028",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V50_CAP050",
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V50_CAP050_seed_2028.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V50_CAP050\\seed_2030",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V50_CAP050",
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V50_CAP050_seed_2030.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP025\\seed_2026",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP025",
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP025_seed_2026.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP025\\seed_2027",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP025",
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP025_seed_2027.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP025\\seed_2028",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP025",
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP025_seed_2028.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP025\\seed_2029",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP025",
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP025_seed_2029.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP025\\seed_2030",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP025",
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP025_seed_2030.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP035\\seed_2026",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP035",
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP035_seed_2026.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP035\\seed_2027",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP035",
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP035_seed_2027.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP035\\seed_2029",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP035",
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP035_seed_2029.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP035\\seed_2028",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP035",
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP035_seed_2028.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP035\\seed_2030",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP035",
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP035_seed_2030.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP070\\seed_2026",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP070",
+    "seed": 2026,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP070_seed_2026.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP070\\seed_2027",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP070",
+    "seed": 2027,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP070_seed_2027.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP070\\seed_2029",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP070",
+    "seed": 2029,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP070_seed_2029.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP070\\seed_2028",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP070",
+    "seed": 2028,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP070_seed_2028.stderr.log"
+  },
+  {
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\runs\\V25_CAP070\\seed_2030",
+    "pid": null,
+    "returncode": 0,
+    "scenario": "V25_CAP070",
+    "seed": 2030,
+    "status": "PASS",
+    "stderr": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_value_capacity_sensitivity_multiseed_dual_thermal_v1\\attempt_002\\logs\\V25_CAP070_seed_2030.stderr.log"
+  }
+]

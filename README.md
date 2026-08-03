@@ -148,5 +148,58 @@ README 和代码注释都刻意使用以下表述：
 - `profile-calibrated estimate`
 - `simulation-observed feedback`
 
+## Parameter Tuning
+
+The main tunable parameters are centralized under `configs/`.
+
+- Model E/L/Q profiles:
+  Edit `configs/model_pool.yaml`.
+  Change `energy_j`, `latency_s`, `quality_base`, and `robustness_to_difficulty` under `profiles`.
+
+- Payload size and information factors:
+  Edit `configs/payload_profiles.yaml`.
+  Change `size_mb`, `information_factor`, and `priority_weight`.
+
+- Joint action space:
+  Edit `configs/action_space.yaml`.
+  Each action keeps the joint structure:
+  `action = (model_profile, payload_profile, transmission_option)`.
+
+- Reward and utility weights:
+  Edit `configs/reward.yaml`.
+  Key fields include `energy_penalty`, `latency_penalty`, `queue_penalty`, `violation_penalty`,
+  `deadline_miss_penalty`, `high_value_bonus`, `delivery_weight`, and `information_weight`.
+
+- Communication, queue, and battery parameters:
+  Edit `configs/simulator.yaml`.
+  Key fields include `battery_init`, `battery_min`, `thermal_init`, `thermal_max`,
+  `queue_max_mb`, `queue_safe_threshold_mb`, `slot_seconds`, `tx_power_w`, and `downlink_efficiency`.
+
+## Default Proposed Method
+
+The current WC default proposed method is:
+
+`proposed_lyapunov_rule_mode_safe_bandit`
+
+It means:
+
+- Lyapunov-inspired pricing + rule-based resource mode control + safe utility-aware bandit.
+- Lyapunov-inspired base pricing is formula-driven and does not require training.
+- `RuleBasedModeController` currently occupies the same interface position that a future DDQN-based mode controller may reuse.
+- DDQN is an optional future extension through the same `BaseModeController` interface, but it is not trained or enabled in the current default method.
+
+You can enable or disable upper-layer resource modulation via:
+
+- `configs/lyapunov_pricing.yaml -> enabled`
+- `configs/mode_controller.yaml -> enabled`
+- `configs/mode_controller.yaml -> type`
+
+Trajectory files now expose:
+
+- base prices: `lambda_E_base`, `lambda_L_base`, `lambda_Q_base`, `lambda_S_base`
+- mode state: `mode_name`
+- modulated prices: `lambda_E`, `lambda_L`, `lambda_Q`, `lambda_S`
+- guidance summary: `guidance_bundle_summary`
+
 这样做是为了明确：当前版本是严谨、可扩展、可替换、可调试的 case study scaffold，  
 而不是宣称所有数据、模型、资源 trace 和链路 trace 来自同一颗卫星同一时刻的真实同步在轨闭环实验。

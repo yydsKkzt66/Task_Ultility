@@ -1,0 +1,20 @@
+version: V1-V2-COMBINED-SINGLE-SEED-v1
+scenario:
+  seed: 2026
+  duration_s: 86400
+  slot_s: 20
+  capacity_multiplier: 0.5
+  task_count: 268
+  task_hash: c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa
+methods:
+  V0-CURRENT-BASELINE: []
+  V1-SAFE-SET-CONSISTENT-FALLBACK: [safe_set_consistent_fallback]
+  V2-HV-METADATA-RESIDUAL-REPAIR: [hv_metadata_residual_repair]
+  V12-SAFE-CONSISTENT-HV-METADATA-REPAIR:
+    - safe_set_consistent_fallback
+    - hv_metadata_residual_repair
+execution:
+  V0_regression_gate_first: true
+  remaining_methods_parallel_processes: 3
+  fresh_state_per_method: true
+  overwrite_old_results: false

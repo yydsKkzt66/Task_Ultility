@@ -1,0 +1,18 @@
+{
+  "D:\\wt\\pilot\\configs\\methods\\offload_eft_thermal_aligned_v1.yaml": "7a9d964b60e0eec28bebe955f0d9648cf6b7e689058ab70a4acf706682b58660",
+  "D:\\wt\\pilot\\src\\baselines\\offload_eft.py": "8de3b08ee8487573475bd877c6f2dc7dc035679e65979ba2f37840c9717ea84c",
+  "D:\\wt\\pilot\\src\\baselines\\offload_eft_thermal_aligned.py": "cb21dac3e7a20f5e060b535defa861a0513853e30becc8a860dd861ef7a23e00",
+  "D:\\wt\\pilot_frozen_runtime_native_direct_v1\\src\\baselines\\b1_enhanced.py": "7014ba3639e911a23a33a44cbe61de9ddbc604d927003b55d8e0af2cabae541c",
+  "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_headroom.py": "908589cec582e6e83c3d277f861b1830e2d279f2be92f1a4c5bf88c0bfc27c5d",
+  "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\energy\\thermal_update.py": "a890c3c3fd5dbfef82bcc6aa475ab07ee6cf17b37555b7ac1e3df8d2e80f60e4",
+  "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\simulator\\predictors.py": "3039a2d3cf3c3b4473e26669d1763e9a3dfe0510993efdc6de5616eb833cd630",
+  "D:\\wt\\pilot_updated_prop_ground_ack_v1\\src\\simulator\\step_runner.py": "daa2bf36adac24ce559d2204519ac0970e35628a04dd852c54b0822122f21dc2",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\configs\\bupt1_measured_power_v1.yaml": "8234a0ef3bcdb9f065633f7c13c54bd11d84d34aa855aa1d8ddd0ad1791d7d18",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\configs\\prop_v2_safe_metadata_current_v1.yaml": "0972ddacf606a42b2b061d2147b5406c2e10fcc89492a8b54ef0ff60e40d97d5",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\bundle_contract.json": "064617840147c5f62f2574775b9cbacb323a25c770c105342453cc0dc953d13e",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\slot_trace.csv": "63566543c19c25d18b9cade7e8f909c466ba363f4bc3497c0df55a174b2ca98f",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_hv_balanced_to_high_single_seed_counterfactual_audit_v1\\scenario\\ordinary_random_restored_seed2026\\task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\scripts\\b1_common_ground_runtime.py": "11894847429f60bc1955d25db3b26a6415e2076fdc4ec1c8effa0968743fee10",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\scripts\\run_normal_scenario_tut_proxy_ground_recovery_v1.py": "b9434301e3424db1de01995ca4117929ba31bb55980dbe0c94024b4c34dd4547",
+  "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\src\\routers\\myopic_e2e_utility_greedy.py": "923854a19f09d82e7fcb34a73d1fa2b06f3f54dc51f430fccf5fe660618383a5"
+}

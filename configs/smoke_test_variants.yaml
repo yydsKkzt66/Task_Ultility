@@ -1,0 +1,20 @@
+description: 1-day single-seed smoke-test variant set. Stage-local aliases are for reporting only.
+variants:
+  - short_name: PROP-Z
+    full_name: proposed_calibrated_payload_plus_z_guided
+  - short_name: PROP-PAY
+    full_name: proposed_calibrated_payload_profile
+  - short_name: PROP-COMB
+    full_name: proposed_payload_repaired_combined
+  - short_name: UTIL
+    full_name: utility_rule
+  - short_name: NO-MODE
+    full_name: no_mode
+  - short_name: NO-LYA
+    full_name: no_lyapunov
+  - short_name: FIX-L
+    full_name: fixed_lightweight
+  - short_name: FIX-H
+    full_name: fixed_high_accuracy
+  - short_name: PROP-UCB
+    full_name: proposed_calibrated_payload_plus_cost_aware_ucb

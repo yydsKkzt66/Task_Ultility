@@ -13,18 +13,16 @@ class ModelRegistry:
 
     def __init__(self, model_pool_cfg: dict[str, object]) -> None:
         self.model_pool_cfg = model_pool_cfg
-        self.profiling_store = ProfilingStore(model_pool_cfg.get("profile_overrides"))
+        self.profiling_store = ProfilingStore(
+            profile_definitions=model_pool_cfg.get("profiles"),
+            profile_overrides=model_pool_cfg.get("profile_overrides"),
+        )
         self.error_model_cfg = model_pool_cfg.get("error_model")
         self._model_table = {}
 
         for item in model_pool_cfg.get("models", []):
-            self._model_table[item["name"]] = dict(item)
-
-        self._model_table["delay_store"] = {
-            "name": "delay_store",
-            "backend": "mock",
-            "profile_name": "defer",
-        }
+            if bool(item.get("enabled", True)):
+                self._model_table[item["name"]] = dict(item)
 
     def get_profile(self, model_name: str) -> ProfileMetrics:
         """根据抽象模型名获取 profile。"""

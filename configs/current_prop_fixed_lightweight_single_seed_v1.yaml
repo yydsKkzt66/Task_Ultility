@@ -1,0 +1,19 @@
+version: CURRENT-PROP-FIXED-LIGHTWEIGHT-SINGLE-SEED-v1
+scenario:
+  seed: 2026
+  duration_s: 86400
+  slot_s: 20
+  capacity_multiplier: 0.5
+  task_hash: c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa
+methods:
+  PROP-V2-SAFE-METADATA-CURRENT-v1:
+    model_space: [lightweight, balanced, high_accuracy]
+  A2L-FIXED-LIGHTWEIGHT:
+    model_space: [lightweight]
+unchanged:
+  - safe_set_consistent_fallback
+  - hv_metadata_residual_repair
+  - product_policy
+  - long_term_control
+  - hard_safe_filter
+  - public_evaluator

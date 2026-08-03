@@ -1,0 +1,43 @@
+{
+  "calibration_candidate_id": "Q_MEAN__E_1.00x__B_1.00x",
+  "calibration_seeds": [
+    3101,
+    3102
+  ],
+  "formal_test_seeds": [
+    2026
+  ],
+  "online_lyapunov_baseline": {
+    "base_lambda_E": 0.0828128109527007,
+    "base_lambda_L": 0.2,
+    "base_lambda_Q": 471.16216605405054,
+    "base_lambda_S": 471.16216605405054
+  },
+  "public_prices": {
+    "downlink_price_per_MB": 0.09202386055743175,
+    "energy_price_per_Wh": 2.981261194297225,
+    "terminal_backlog_price_per_MB": 0.09202386055743175
+  },
+  "q_eff": {
+    "balanced": 0.7342411587001637,
+    "high_accuracy": 0.8215028271304525,
+    "lightweight": 0.5697178218395861
+  },
+  "q_id": "Q_MEAN",
+  "q_is_proxy_not_real_measurement": true,
+  "selected_without_method_ranking": true,
+  "selection_rule": "constraint pass then q-priority and log-distance to 1x budget-derived center",
+  "unchanged_lyapunov_pressure_alphas": {
+    "alpha_deadline": 0.75,
+    "alpha_egress": 1.1,
+    "alpha_energy": 1.2,
+    "alpha_queue": 0.9,
+    "alpha_thermal": 0.8
+  },
+  "validation_passed": true,
+  "validation_seeds": [
+    4101,
+    4102
+  ],
+  "version": "CONDITIONAL-DECOUPLED-V2-CALIBRATION-v1"
+}

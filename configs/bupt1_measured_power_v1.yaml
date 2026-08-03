@@ -1,0 +1,28 @@
+battery_capacity_Wh: 230.0
+initial_soc: 0.85
+soc_warning_threshold: 0.70
+
+orbit_period_s: 5760
+daylight_duration_s: 3600
+eclipse_duration_s: 2160
+
+solar_target_energy_per_orbit_Wh: 16.0
+solar_peak_power_W: 40.0
+
+tx_active_power_W: 38.0
+
+charge_efficiency: 0.90
+charge_efficiency_source: frozen_bupt1_true_rerun_seed2026_v1
+discharge_efficiency: 0.95
+discharge_efficiency_source: configs/simulator_sarfish_formal_nominal_bupt1_1day_20s.yaml
+
+slot_s: 20
+duration_s: 86400
+seed: 2026
+capacity: 0.35
+value_profile: V25-MAIN-v1
+
+notes:
+  - Initial SOC is 0.85 for this calibration to avoid early upper clipping hiding daylight recovery.
+  - The platform_other_power_W value is selected by scripts/run_bupt1_power_calibrated_seed2026_v1.py.
+  - The compute active power model is not changed; existing per-method compute/encoding energy logs are reused.

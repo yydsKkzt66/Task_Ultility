@@ -1,0 +1,37 @@
+[
+  {
+    "method": "PROP-V2-SAFE-METADATA-CURRENT-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\PROP_V2_SAFE_METADATA_CURRENT_v1",
+    "pid": 46924,
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "method": "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\B1_COMMON_GROUND_THERMAL_CORRECTED",
+    "pid": 26584,
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "method": "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\OFFLOAD_EFT_THERMAL_ALIGNED_2NODE_DIAGNOSTIC",
+    "pid": 27484,
+    "returncode": 4294967295,
+    "status": "FAIL"
+  },
+  {
+    "method": "TUT-PROXY-THERMAL-CORRECTED",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\TUT_PROXY_THERMAL_CORRECTED",
+    "pid": 13952,
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "method": "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "output": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\outputs\\_current_prop_four_independent_baselines_single_seed_v1\\attempt_001\\runs\\MYOPIC_E2E_UTILITY_GREEDY_STANDALONE_v1",
+    "pid": 38192,
+    "returncode": 0,
+    "status": "PASS"
+  }
+]

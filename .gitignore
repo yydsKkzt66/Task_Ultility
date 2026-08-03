@@ -16,3 +16,52 @@ env/
 
 Thumbs.db
 .DS_Store
+
+# Local agent/audit scratch and preservation workspaces.
+.codex_method_preservation_audit_v1/
+.codex_staging/
+.codex_vgd_stage/
+.codex_worktrees/
+_audit_staging/
+tmp_*/
+
+# Raw datasets and generated local indexes are external experiment inputs.
+# Keep datasets/README.md and the source adapters/configuration in Git.
+datasets/SARFishSample/
+data/indexes/
+
+# Full experiment outputs contain multi-GB per-slot and per-task traces.
+# Compact, reviewed result evidence may still be force-added explicitly.
+outputs/
+
+# Rollback packages preserve local dirty-worktree snapshots and should not be
+# published as source. Frozen scenario manifests remain trackable.
+artifacts/rollback/
+
+# Local logs and Windows shortcuts.
+run_log_*.txt
+*.lnk
+
+# Intermediate publication-figure iterations. Keep only the two reviewed
+# final figure directories plus their generator scripts.
+scripts/auxiliary_metric_figures*/
+scripts/combined_primary_auxiliary_metrics*/
+!scripts/combined_primary_auxiliary_metrics_boxed_titles/
+!scripts/combined_primary_auxiliary_metrics_boxed_titles/**
+scripts/compact_sensitivity_analysis/
+scripts/ieee_metrics_figure/
+scripts/sensitivity_ablation_2x2_*/
+!scripts/sensitivity_ablation_2x2_zoom_legends_v1/
+!scripts/sensitivity_ablation_2x2_zoom_legends_v1/**
+scripts/three_primary_metrics/
+scripts/*.png
+
+# Obsolete local cleanup helpers and workstation-only utilities.
+cleanup_plan.md
+cleanup_safe.ps1
+pytest.py
+scripts/reset_codex_html_renderer.ps1
+scripts/overall_net_utility_*.pdf
+
+# Keep shortcuts ignored even inside explicitly retained figure directories.
+*.lnk

@@ -1,0 +1,310 @@
+{
+  "seeds": [
+    {
+      "arrival_statistics": {
+        "high": {
+          "count": 54,
+          "first_12h": 26,
+          "mean_s": 42666.2962962963,
+          "median_s": 47010.0,
+          "q1_s": 17620.0,
+          "q3_s": 65810.0,
+          "second_12h": 28
+        },
+        "low": {
+          "count": 54,
+          "first_12h": 36,
+          "mean_s": 40575.92592592593,
+          "median_s": 29390.0,
+          "q1_s": 26150.0,
+          "q3_s": 58450.0,
+          "second_12h": 18
+        },
+        "medium": {
+          "count": 139,
+          "first_12h": 71,
+          "mean_s": 42941.0071942446,
+          "median_s": 41020.0,
+          "q1_s": 15640.0,
+          "q3_s": 69390.0,
+          "second_12h": 68
+        },
+        "urgent": {
+          "count": 21,
+          "first_12h": 6,
+          "mean_s": 56876.19047619047,
+          "median_s": 51180.0,
+          "q1_s": 40960.0,
+          "q3_s": 81740.0,
+          "second_12h": 15
+        }
+      },
+      "assignment_rule": "trusted_exact_ordinary_seed2026",
+      "assignment_sha256": "ee897dad374557e4cd159dd604dad66a2a721b19b88ff1c55ac0159e7bc0c37f",
+      "checks": {
+        "arrival_slot_multiset_preserved": true,
+        "assignment_value_blind_by_construction": true,
+        "late_hv_forcing_absent": true,
+        "task_count_268": true,
+        "unique_arrival_slots": true,
+        "unique_task_ids": true,
+        "value_counts_exact": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "environment_hash": "b50470d166246436baebbd58519042d45cac925d83f0a2cf9061cc538f8f7020",
+      "moved_task_count": 0,
+      "seed": 2026,
+      "task_hash": "c31d50bf0633e0d7395f78a785768c2ac492eb5f707c02a9e5be93b1226b37fa"
+    },
+    {
+      "arrival_statistics": {
+        "high": {
+          "count": 54,
+          "first_12h": 24,
+          "mean_s": 47157.77777777778,
+          "median_s": 49670.0,
+          "q1_s": 26305.0,
+          "q3_s": 70110.0,
+          "second_12h": 30
+        },
+        "low": {
+          "count": 54,
+          "first_12h": 34,
+          "mean_s": 37711.11111111111,
+          "median_s": 28150.0,
+          "q1_s": 15180.0,
+          "q3_s": 64525.0,
+          "second_12h": 20
+        },
+        "medium": {
+          "count": 139,
+          "first_12h": 71,
+          "mean_s": 43933.09352517986,
+          "median_s": 41900.0,
+          "q1_s": 19860.0,
+          "q3_s": 67360.0,
+          "second_12h": 68
+        },
+        "urgent": {
+          "count": 21,
+          "first_12h": 10,
+          "mean_s": 46126.666666666664,
+          "median_s": 45180.0,
+          "q1_s": 26720.0,
+          "q3_s": 59020.0,
+          "second_12h": 11
+        }
+      },
+      "assignment_rule": "sha256(seed,task_id) over all tasks; value/requirement excluded",
+      "assignment_sha256": "0e5f83659e63b5da22dc8f32e07c6f9c0ff0d1f79c31e239f2c40c03cde54359",
+      "checks": {
+        "arrival_slot_multiset_preserved": true,
+        "assignment_value_blind_by_construction": true,
+        "late_hv_forcing_absent": true,
+        "task_count_268": true,
+        "unique_arrival_slots": true,
+        "unique_task_ids": true,
+        "value_counts_exact": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "environment_hash": "22503f378512eba7055b80a1edd0880c2b892a29ae921a9060e91581bcdefd69",
+      "moved_task_count": 265,
+      "seed": 2027,
+      "task_hash": "2d21dd7bebe7da43d62050ba38e290f0b62434a9de31585194758e74888b2600"
+    },
+    {
+      "arrival_statistics": {
+        "high": {
+          "count": 54,
+          "first_12h": 27,
+          "mean_s": 40149.25925925926,
+          "median_s": 43160.0,
+          "q1_s": 15470.0,
+          "q3_s": 58570.0,
+          "second_12h": 27
+        },
+        "low": {
+          "count": 54,
+          "first_12h": 22,
+          "mean_s": 51222.59259259259,
+          "median_s": 58880.0,
+          "q1_s": 26140.0,
+          "q3_s": 78310.0,
+          "second_12h": 32
+        },
+        "medium": {
+          "count": 139,
+          "first_12h": 81,
+          "mean_s": 40162.446043165466,
+          "median_s": 36020.0,
+          "q1_s": 17580.0,
+          "q3_s": 62380.0,
+          "second_12h": 58
+        },
+        "urgent": {
+          "count": 21,
+          "first_12h": 9,
+          "mean_s": 54362.857142857145,
+          "median_s": 54000.0,
+          "q1_s": 32720.0,
+          "q3_s": 78400.0,
+          "second_12h": 12
+        }
+      },
+      "assignment_rule": "sha256(seed,task_id) over all tasks; value/requirement excluded",
+      "assignment_sha256": "83fedddc81f4387d2cfb5d279d435ac648072aa4b0f4a3cfaee845453007fecb",
+      "checks": {
+        "arrival_slot_multiset_preserved": true,
+        "assignment_value_blind_by_construction": true,
+        "late_hv_forcing_absent": true,
+        "task_count_268": true,
+        "unique_arrival_slots": true,
+        "unique_task_ids": true,
+        "value_counts_exact": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "environment_hash": "35f317d750b147d86bf72444df12ae61dd864bca7bb1a02fddf108b3e849078e",
+      "moved_task_count": 266,
+      "seed": 2028,
+      "task_hash": "d67316099e74c3abba0e649e79cc2bc99594d566f688e688a8f4204cc557bb1f"
+    },
+    {
+      "arrival_statistics": {
+        "high": {
+          "count": 54,
+          "first_12h": 27,
+          "mean_s": 44731.11111111111,
+          "median_s": 43840.0,
+          "q1_s": 17620.0,
+          "q3_s": 72530.0,
+          "second_12h": 27
+        },
+        "low": {
+          "count": 54,
+          "first_12h": 27,
+          "mean_s": 42890.37037037037,
+          "median_s": 43540.0,
+          "q1_s": 19870.0,
+          "q3_s": 59050.0,
+          "second_12h": 27
+        },
+        "medium": {
+          "count": 139,
+          "first_12h": 73,
+          "mean_s": 43645.323741007196,
+          "median_s": 41020.0,
+          "q1_s": 21750.0,
+          "q3_s": 66540.0,
+          "second_12h": 66
+        },
+        "urgent": {
+          "count": 21,
+          "first_12h": 12,
+          "mean_s": 40953.333333333336,
+          "median_s": 38480.0,
+          "q1_s": 15280.0,
+          "q3_s": 67360.0,
+          "second_12h": 9
+        }
+      },
+      "assignment_rule": "sha256(seed,task_id) over all tasks; value/requirement excluded",
+      "assignment_sha256": "81490db526aa974bba865082db50d3e25b0e338a0981be9e8ec431c7b6bbb0c3",
+      "checks": {
+        "arrival_slot_multiset_preserved": true,
+        "assignment_value_blind_by_construction": true,
+        "late_hv_forcing_absent": true,
+        "task_count_268": true,
+        "unique_arrival_slots": true,
+        "unique_task_ids": true,
+        "value_counts_exact": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "environment_hash": "0abc9c92cc6ed8213ceb846b8b82e50359f01f98e2f36f5ff46b9ad3ee704a50",
+      "moved_task_count": 266,
+      "seed": 2029,
+      "task_hash": "251065a721adb157c6d04ac7ce49f44e9648c8939d7cc19d4f28ec17de80ba98"
+    },
+    {
+      "arrival_statistics": {
+        "high": {
+          "count": 54,
+          "first_12h": 26,
+          "mean_s": 43780.0,
+          "median_s": 47040.0,
+          "q1_s": 17530.0,
+          "q3_s": 71900.0,
+          "second_12h": 28
+        },
+        "low": {
+          "count": 54,
+          "first_12h": 29,
+          "mean_s": 43164.07407407407,
+          "median_s": 40960.0,
+          "q1_s": 17740.0,
+          "q3_s": 67245.0,
+          "second_12h": 25
+        },
+        "medium": {
+          "count": 139,
+          "first_12h": 74,
+          "mean_s": 43467.625899280574,
+          "median_s": 38540.0,
+          "q1_s": 19860.0,
+          "q3_s": 66930.0,
+          "second_12h": 65
+        },
+        "urgent": {
+          "count": 21,
+          "first_12h": 10,
+          "mean_s": 43871.42857142857,
+          "median_s": 48240.0,
+          "q1_s": 26720.0,
+          "q3_s": 58940.0,
+          "second_12h": 11
+        }
+      },
+      "assignment_rule": "sha256(seed,task_id) over all tasks; value/requirement excluded",
+      "assignment_sha256": "7a8781e6f134972512081a72f8ec5d79f19d1560fb6164a654f6bd6ad5d8477b",
+      "checks": {
+        "arrival_slot_multiset_preserved": true,
+        "assignment_value_blind_by_construction": true,
+        "late_hv_forcing_absent": true,
+        "task_count_268": true,
+        "unique_arrival_slots": true,
+        "unique_task_ids": true,
+        "value_counts_exact": true
+      },
+      "counts": {
+        "high": 54,
+        "low": 54,
+        "medium": 139,
+        "urgent": 21
+      },
+      "environment_hash": "5fdff163808b60a77dc1e9a1bd7f40f2a43fbf9a14822a09c899f9de19278131",
+      "moved_task_count": 267,
+      "seed": 2030,
+      "task_hash": "8d62548a6aa6868c2a3154cc360442870a36dc4ba6606411bfa0f3a29ce90119"
+    }
+  ],
+  "status": "PASS"
+}

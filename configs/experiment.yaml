@@ -4,6 +4,10 @@ routers:
   - comm_conservative
   - utility_rule
   - safe_linucb
+  - safe_bandit_only
+  - no_lyapunov
+  - no_mode
+  - proposed_lyapunov_rule_mode_safe_bandit
 
 metrics:
   - mission_utility

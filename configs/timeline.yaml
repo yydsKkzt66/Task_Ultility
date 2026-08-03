@@ -1,4 +1,15 @@
-slot_seconds: 10
+use_num_days: true
+num_days: 1
+slot_seconds: 60
 num_slots: 300
 task_arrival: one_per_slot
 trace_mode: synthetic
+orbit_period_min: 90
+sunlight_fraction: 0.62
+day_cycle_orbits: 16
+solar_charge_power_w: 6.5
+idle_power_w: 2.0
+resource_power_variation_w: 0.35
+sunlit_temperature_c: 18.0
+eclipse_temperature_c: 4.0
+temperature_cycle_variation_c: 2.0
