@@ -1,0 +1,6 @@
+use_num_days: false
+slot_seconds: 20
+num_slots: 4320
+task_arrival: one_per_slot
+trace_mode: synthetic
+resource_profile: configs/resource_sarfish_energy_shadow_stress.yaml

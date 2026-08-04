@@ -1,0 +1,86 @@
+{
+  "source_label_csv_path": "datasets/SARFishSample/GRD/validation/GRD_validation.csv",
+  "product_type": "GRD",
+  "split": "validation",
+  "total_label_rows": 19222,
+  "total_objects_with_valid_bbox": 19047,
+  "invalid_bbox_rows": 175,
+  "unique_scene_id_count": 50,
+  "unique_product_identifier_count": 50,
+  "matched_local_product_count": 50,
+  "bbox_width": {
+    "count": 19047,
+    "min": 1.0,
+    "mean": 9.816717,
+    "median": 8.0,
+    "p25": 6.0,
+    "p75": 11.0,
+    "p90": 18.0,
+    "p95": 24.0,
+    "max": 63.0
+  },
+  "bbox_height": {
+    "count": 19047,
+    "min": 1.0,
+    "mean": 11.889064,
+    "median": 9.0,
+    "p25": 7.0,
+    "p75": 14.0,
+    "p90": 22.0,
+    "p95": 29.0,
+    "max": 101.0
+  },
+  "bbox_area": {
+    "count": 19047,
+    "min": 2.0,
+    "mean": 161.028823,
+    "median": 72.0,
+    "p25": 36.0,
+    "p75": 156.0,
+    "p90": 372.0,
+    "p95": 638.0,
+    "max": 5151.0
+  },
+  "target_count_per_scene_id": {
+    "count": 50,
+    "min": 62.0,
+    "mean": 380.94,
+    "median": 360.0,
+    "p25": 235.5,
+    "p75": 481.5,
+    "p90": 575.1,
+    "p95": 686.65,
+    "max": 1076.0
+  },
+  "vessel_length_m": {
+    "count": 6942,
+    "min": 6.6,
+    "mean": 61.330464,
+    "median": 38.747265,
+    "p25": 21.7,
+    "p75": 83.088161,
+    "p90": 148.715943,
+    "p95": 176.23703,
+    "max": 477.0
+  },
+  "is_vessel_distribution": {
+    "false": 7110,
+    "true": 11918,
+    "missing": 19
+  },
+  "is_fishing_distribution": {
+    "missing": 15194,
+    "false": 2913,
+    "true": 940
+  },
+  "confidence_distribution": {
+    "MEDIUM": 6533,
+    "LOW": 3334,
+    "HIGH": 9180
+  },
+  "size_class_distribution": {
+    "medium": 6740,
+    "large": 4842,
+    "small": 7465
+  }
+}

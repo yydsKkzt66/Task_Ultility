@@ -1,0 +1,57 @@
+actions:
+  - action_name: lightweight+metadata
+    model_name: lightweight
+    payload_policy: metadata
+    payload_plan: metadata
+    transmission_option: contact_aware
+    expected_payload_level: 0.20
+    expected_compute_level: 0.20
+    enabled: true
+  - action_name: balanced+metadata
+    model_name: balanced
+    payload_policy: metadata
+    payload_plan: metadata
+    transmission_option: contact_aware
+    expected_payload_level: 0.20
+    expected_compute_level: 0.55
+    enabled: true
+  - action_name: balanced+roi
+    model_name: balanced
+    payload_policy: roi
+    payload_plan: roi
+    transmission_option: contact_aware
+    expected_payload_level: 0.55
+    expected_compute_level: 0.55
+    enabled: true
+  - action_name: balanced+metadata_then_roi
+    model_name: balanced
+    payload_policy: metadata_then_roi
+    payload_plan: metadata_then_roi
+    transmission_option: contact_aware
+    expected_payload_level: 0.25
+    expected_compute_level: 0.55
+    enabled: true
+  - action_name: high_accuracy+metadata_then_roi_context
+    model_name: high_accuracy
+    payload_policy: metadata_then_roi_context
+    payload_plan: metadata_then_roi_context
+    transmission_option: contact_aware
+    expected_payload_level: 0.25
+    expected_compute_level: 0.95
+    enabled: true
+  - action_name: high_accuracy+roi_context
+    model_name: high_accuracy
+    payload_policy: roi_context
+    payload_plan: roi_context
+    transmission_option: contact_aware
+    expected_payload_level: 0.95
+    expected_compute_level: 0.95
+    enabled: true
+  - action_name: delay/store
+    model_name: delay_store
+    payload_policy: defer
+    payload_plan: defer
+    transmission_option: store
+    expected_payload_level: 0.00
+    expected_compute_level: 0.00
+    enabled: true

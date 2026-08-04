@@ -1,0 +1,64 @@
+guarantee:
+  enabled: false
+  mode: dynamic_age_miss_debt
+  full_method_aliases:
+    - proposed_lyapunov_rule_mode_safe_bandit
+  allow_utility_rule: false
+  eligible_value_levels:
+    - high
+    - urgent
+  eligible_product_requirements:
+    - context
+    - evidence
+  lambda_H: 0.35
+  lambda_H_grid: [0.0, 0.20, 0.35, 0.50, 0.75, 1.00, 1.50]
+  z_age_max: 2.0
+  z_miss_max: 4.0
+  z_total_max: 6.0
+  z_max: 6.0
+  z_max_grid: [2.0, 4.0, 6.0]
+  gamma_age_high_per_slot: 0.01
+  gamma_age_urgent_per_slot: 0.015
+  gamma_miss_high: 1.0
+  gamma_miss_urgent: 1.25
+  min_stage_miss_weight: 1.0
+  target_stage_miss_weight: 0.5
+  progress_credit_min_stage: 1.5
+  progress_credit_target_stage: 3.0
+  reset_debt_when_min_stage_reached: false
+  reset_debt_when_task_closed: true
+  update_timing: dynamic_age_miss
+  missed_opportunity_only: false
+  minimum_stage_for_context: ROI
+  minimum_stage_for_evidence: ROI
+  target_stage_for_context: ROI+Ctx
+  target_stage_for_evidence: ROI+Ctx
+  target_stage_requires_positive_marginal_utility: true
+  marginal_utility_floor_main: 0.0
+  marginal_utility_floor_stress: -0.01
+  marginal_utility_floor: 0.0
+  guarantee_window_budget_fraction: 0.30
+  beta_H: 0.30
+  beta_H_grid: [0.15, 0.30, 0.45, 0.60]
+  guarantee_window_budget_fraction_grid: [0.15, 0.30, 0.45]
+  normalize_priority_components: true
+  component_normalization: window_candidate_minmax
+  waiting_limit_windows_for_target_progress: 1
+  starvation_window_threshold: 2
+  update_age_debt_each_slot: true
+  update_miss_debt_at_contact_window_end: true
+  recompute_priority_each_scheduler_step: true
+  carry_debt_across_windows: true
+  require_future_contact_for_age_debt: true
+  no_future_contact_no_age_growth: true
+  no_contact_slots_do_not_increase_miss_debt: true
+  hard_safety_veto: true
+  low_medium_debt_forbidden: true
+  roi_cannot_close_evidence: true
+  w_density: 0.35
+  w_abs: 0.25
+  lambda_D: 0.10
+  lambda_C: 0.10
+  lambda_A: 0.10
+  lambda_P: 0.05
+  waiting_age_norm_slots: 100.0

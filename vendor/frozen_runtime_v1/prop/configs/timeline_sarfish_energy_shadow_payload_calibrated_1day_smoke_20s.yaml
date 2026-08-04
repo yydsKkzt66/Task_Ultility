@@ -1,0 +1,6 @@
+use_num_days: true
+num_days: 1
+slot_seconds: 20
+task_arrival: observation_window
+trace_mode: synthetic
+physical_horizon_s: 86400

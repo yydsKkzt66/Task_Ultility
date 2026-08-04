@@ -1,0 +1,252 @@
+{
+  "allow_online_update": false,
+  "feature_list": [
+    "predicted_success_raw",
+    "predicted_latency_raw_s"
+  ],
+  "heldout_seeds_not_used": [
+    1301,
+    1302,
+    1303,
+    1304
+  ],
+  "latency_calibration": {
+    "alpha": 3.0,
+    "beta": 1000,
+    "method": "affine"
+  },
+  "legacy_seed_not_used": 2026,
+  "preprocessing_constants": {
+    "latency_floor_s": 0.0,
+    "success_clip": [
+      1e-06,
+      0.999999
+    ]
+  },
+  "public_cost": {
+    "controllable_mission_energy_wh": 10.0,
+    "lambda_E_common": 1.0
+  },
+  "script_sha256": "f8ba2aee46a1288833d2382c12320316f74262836847781bc2b683183a4ff799",
+  "source_commit": "96a90f5a95cf6bddea312b31a5c2986f3059608c",
+  "success_calibration": {
+    "a": 0.25,
+    "b": -2.0,
+    "ceil": 1.0,
+    "floor": 0.0,
+    "method": "platt_grid_l2_proxy"
+  },
+  "task_environment_generator_identity": [
+    {
+      "environment_hash": "a9d89d4648b756abff3f61b03b9805989087168dd26eb60c1abec51e4b382e4f",
+      "seed": 1101,
+      "split": "calibration",
+      "task_count": 288,
+      "task_hash": "d0270993622cf0b66eac58a66546ed942389ffc7af80d2f1772addba41cbffe2",
+      "value_level_counts": {
+        "high": 136,
+        "medium": 119,
+        "urgent": 33
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "81398950184231d6285e7251853c7f24d22fad88af7a9c0b9224fef897f00b46",
+      "seed": 1102,
+      "split": "calibration",
+      "task_count": 294,
+      "task_hash": "3f58a7a58e49d19577e9f589e9ed05856028658a7da67e39aef9ff3c4bd176e7",
+      "value_level_counts": {
+        "high": 124,
+        "medium": 96,
+        "urgent": 74
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "5825bf6d4d7a113b76e934da0cdfb189550e159f06ea904d86b459ebb70f017f",
+      "seed": 1103,
+      "split": "calibration",
+      "task_count": 269,
+      "task_hash": "f5dc22548042a0a21f68a836d34fbd16ff69d0fb2e5c2c0af15fcb6f7d79d387",
+      "value_level_counts": {
+        "high": 104,
+        "medium": 108,
+        "urgent": 57
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "86d1b4f01c0900fcb1c5c7a470313223a1ec9055fa817b2e7ce34e636410b0ed",
+      "seed": 1104,
+      "split": "calibration",
+      "task_count": 317,
+      "task_hash": "8c892fffe12a1e85a1af439478462ed5f2e2d97a81b9c540823d3fb1482c201b",
+      "value_level_counts": {
+        "high": 103,
+        "medium": 154,
+        "urgent": 60
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "c7702b358ad04634fd208b4a4ae28d10567244d41b5a8c58c075435ded45ad10",
+      "seed": 1201,
+      "split": "validation",
+      "task_count": 280,
+      "task_hash": "4fee965b40b3d8346b898c7810f0a8e7f65e203d751d359aaf821281078b60eb",
+      "value_level_counts": {
+        "high": 99,
+        "medium": 125,
+        "urgent": 56
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "07431cd5615b3775e0f3bb29fd9539436bbba0f77f39d76ae14e49070e3e8543",
+      "seed": 1202,
+      "split": "validation",
+      "task_count": 319,
+      "task_hash": "bac1eddcaa5e810692619cff91a68ba80abeca73022e6675e2789acee10fdd40",
+      "value_level_counts": {
+        "high": 109,
+        "medium": 165,
+        "urgent": 45
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "fdf84cfa4411284b4a9a6dd009c837201dc77df6b553b80ea51ae7ca887b3ddc",
+      "seed": 1301,
+      "split": "heldout",
+      "task_count": 263,
+      "task_hash": "6a1dafd0e943a351f56cc2e1426dbbe5a74315b776aadbc1d087fa57c473c618",
+      "value_level_counts": {
+        "high": 103,
+        "medium": 110,
+        "urgent": 50
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "eb7c3975aeebb8c74635605b396aea49d378317e4a402c1bc4b8eaa37f7ec521",
+      "seed": 1301,
+      "split": "heldout",
+      "task_count": 263,
+      "task_hash": "eb9091f4ed715e22c24becba74de9696bfcab566d936b83466624ab61de1afeb",
+      "value_level_counts": {
+        "high": 33,
+        "low": 110,
+        "medium": 70,
+        "urgent": 50
+      },
+      "value_profile": "V30_MEAN_NORMALIZED"
+    },
+    {
+      "environment_hash": "8a8df23d21e86f84c61f25302a646fe46175c59016883d70f70aa766afe0d8b3",
+      "seed": 1302,
+      "split": "heldout",
+      "task_count": 309,
+      "task_hash": "591566c0b5018655e131e8910cbe68d1f0e6f83f328e392c0869eb81eb59fe25",
+      "value_level_counts": {
+        "high": 126,
+        "medium": 142,
+        "urgent": 41
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "71a62566a574455ac50674628d6f9a6f711297df55b1a0fa4b311fc21e5ee080",
+      "seed": 1302,
+      "split": "heldout",
+      "task_count": 309,
+      "task_hash": "12465328bd815d4af6963ce95a32bd5b8cc7a9aeacb871bbd78dcfd766201075",
+      "value_level_counts": {
+        "high": 35,
+        "low": 142,
+        "medium": 91,
+        "urgent": 41
+      },
+      "value_profile": "V30_MEAN_NORMALIZED"
+    },
+    {
+      "environment_hash": "2e80c26d330cf89e792a171a2a249270c3a83d9ace5f22ad7e78b4134fda60e0",
+      "seed": 1303,
+      "split": "heldout",
+      "task_count": 295,
+      "task_hash": "0f5824a127a82e937a66dd4ab11be9b7678d999c82fbbbb6bc5d66e79884a9a0",
+      "value_level_counts": {
+        "high": 96,
+        "medium": 143,
+        "urgent": 56
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "80a7929bf297f10aa9479058745bf51ed7629a475f06da028cd349caa1e7ca16",
+      "seed": 1303,
+      "split": "heldout",
+      "task_count": 295,
+      "task_hash": "27f12e41bc495d94eb1ea3de81b175f25c632d707db4db10e1ee99d0180add89",
+      "value_level_counts": {
+        "high": 59,
+        "low": 143,
+        "medium": 37,
+        "urgent": 56
+      },
+      "value_profile": "V30_MEAN_NORMALIZED"
+    },
+    {
+      "environment_hash": "3bbc78574d3272dd63cc94e145869540e87705429b7ae4a8468acb9eafeb5643",
+      "seed": 1304,
+      "split": "heldout",
+      "task_count": 266,
+      "task_hash": "ef45bd345b37956b4dad1eca2234ac38b659405461432677c87562caa66cb701",
+      "value_level_counts": {
+        "high": 126,
+        "medium": 101,
+        "urgent": 39
+      },
+      "value_profile": "V10"
+    },
+    {
+      "environment_hash": "3a72cb4babc3e806f5d695c34662ab39d5dfbf749dee604728ddec5230df3de9",
+      "seed": 1304,
+      "split": "heldout",
+      "task_count": 266,
+      "task_hash": "3982881b8b3ceb5dfc10588b46dfe918299026b057aea60b45b113f036a365b6",
+      "value_level_counts": {
+        "high": 36,
+        "low": 101,
+        "medium": 90,
+        "urgent": 39
+      },
+      "value_profile": "V30_MEAN_NORMALIZED"
+    },
+    {
+      "environment_hash": "df2776eb79ed5cb74063ce624f16e8cfee8b24a5f9c2f810ec1f8760485082f0",
+      "seed": 2026,
+      "split": "legacy_compare_only",
+      "task_count": 268,
+      "task_hash": "49c704997b59648d902ed9413a4116d0b45e5b404d0d20ece9d3826a7d6d38cd",
+      "value_level_counts": {
+        "high": 127,
+        "medium": 99,
+        "urgent": 42
+      },
+      "value_profile": "V10"
+    }
+  ],
+  "timestamp": "2026-07-20T13:46:36.700919+00:00",
+  "training_seeds": [
+    1101,
+    1102,
+    1103,
+    1104
+  ],
+  "validation_seeds": [
+    1201,
+    1202
+  ],
+  "version": "myopic_frozen_calibration_v1"
+}

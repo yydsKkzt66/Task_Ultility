@@ -1,0 +1,23 @@
+description: BUPT-1-grounded nominal resource candidate for 1-day SARFish validation.
+reference_platform:
+  name: BUPT-1-like 12U COTS LEO satellite
+  orbit_altitude_km: 500
+  inclination_deg: 97
+  battery_capacity_wh: 230
+  battery_capacity_j: 828000
+  thermal_internal_range_c: [-10, 30]
+  nominal_dod_guard: 0.30
+orbit_period_s: 5700
+eclipse_duration_s: 2100
+sunlit_duration_s: 3600
+orbit_phase_offset_s: 0
+solar_peak_w: 14.5
+idle_power_w: 4.8
+resource_power_variation_w: 0.65
+sunlit_temperature_c: 18.0
+eclipse_temperature_c: 0.0
+temperature_cycle_variation_c: 2.5
+day_cycle_orbits: 15
+dod_guard: 0.30
+soc_soft_guard: 0.70
+soc_hard_floor: 0.55

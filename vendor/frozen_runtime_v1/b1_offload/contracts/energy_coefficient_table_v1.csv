@@ -1,0 +1,7 @@
+﻿coefficient,value,unit,status,source
+battery_capacity,230,Wh,PROXY,resource/simulator config
+solar_peak,14.5,W,PROXY,resource config
+platform_idle,4.8,W,PROXY,resource config
+transmit_power,35,W,PROXY,simulator config
+charge_efficiency,0.92,ratio,PROXY,simulator config
+discharge_efficiency,0.95,ratio,PROXY,simulator config

@@ -1,0 +1,55 @@
+energy_penalty: 0.3
+latency_penalty: 0.2
+queue_penalty: 0.1
+violation_penalty: 2.0
+deadline_miss_penalty: 0.0
+high_value_bonus: 0.0
+delivery_weight: 1.0
+information_weight: 1.0
+quality_base_requirement: 0.40
+quality_value_weight: 0.18
+quality_difficulty_weight: 0.22
+quality_uncertainty_weight: 0.16
+quality_urgency_weight: 0.12
+quality_gap_penalty: 0.60
+information_gap_penalty: 0.35
+lambda_L: 0.2
+lambda_Q: 0.1
+lambda_Omega: 2.0
+lambda_E_base: 0.3
+eta_B: 1.0
+eta_Theta: 0.5
+dynamic_energy_weight: true
+info_base: 0.25
+info_value_weight: 0.35
+info_difficulty_weight: 0.20
+info_uncertainty_weight: 0.25
+info_urgency_weight: 0.20
+deferred_delivery_credit: 0.15
+high_value_threshold: 0.75
+utility_calibration:
+  enable_value_cost_calibration: false
+  value_scale:
+    a: 1.0
+    b: 0.0
+    clip_min: 0.05
+    clip_max: 0.95
+  cost_penalty_scale:
+    beta_resource_cost: 1.0
+    beta_requirement_penalty: 1.0
+    beta_hard_penalty: 1.0
+  diagnostic_logging: true
+  shadow_only: false
+lifecycle_utility:
+  enable_lifecycle_utility: false
+  reserved_only: true
+  stage_weights:
+    alert: null
+    confirmation: null
+    evidence: null
+  stage_deadlines:
+    alert_fraction: null
+    alert_max_seconds: null
+    confirmation_fraction: null
+    evidence_fraction: null
+  notes: "Reserved for future lifecycle utility. Must not affect current results."

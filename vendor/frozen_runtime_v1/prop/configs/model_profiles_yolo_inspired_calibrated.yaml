@@ -1,0 +1,33 @@
+description: YOLO-inspired relative profile calibration for SARFish system-level ablation. Values are not real SARFish YOLO measurements.
+baseline:
+  profile_name: tiny
+  latency_s: 0.90
+  compute_energy_j: 10.80
+profile_overrides:
+  tiny:
+    quality_base: 0.74
+    robustness_to_difficulty: 0.70
+    latency_s: 0.90
+    energy_j: 10.80
+    false_negative_risk_scale: 1.00
+    latency_scale: 1.00
+    compute_energy_scale: 1.00
+    thermal_gain_scale: 1.00
+  small:
+    quality_base: 0.87
+    robustness_to_difficulty: 0.84
+    latency_s: 1.44
+    energy_j: 21.60
+    false_negative_risk_scale: 0.72
+    latency_scale: 1.60
+    compute_energy_scale: 2.00
+    thermal_gain_scale: 1.60
+  medium:
+    quality_base: 0.94
+    robustness_to_difficulty: 0.91
+    latency_s: 2.79
+    energy_j: 51.84
+    false_negative_risk_scale: 0.58
+    latency_scale: 3.10
+    compute_energy_scale: 4.80
+    thermal_gain_scale: 3.00

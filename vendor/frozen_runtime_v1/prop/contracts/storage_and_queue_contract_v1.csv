@@ -1,0 +1,6 @@
+﻿resource,limit,unit,classification,behavior
+raw_observation_storage,UNKNOWN,MB,UNKNOWN,not separately represented
+product/downlink_queue,5120,MB,ENFORCED,lowest-priority eviction on overflow
+downlink_safe_threshold,4096,MB,ENFORCED,policy safety threshold
+compute_queue,UNKNOWN,items,CONFIGURED_BUT_INACTIVE,no persistent cross-slot compute queue
+generation_request_queue,UNKNOWN,items,UNKNOWN,persistent request logic has no numeric cap found

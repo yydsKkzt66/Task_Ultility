@@ -79,14 +79,18 @@ Do not commit:
 - local rollback packages and agent scratch workspaces;
 - intermediate figure iterations.
 
-## Current portability limitation
+## Portable clean-clone reproduction
 
-The canonical runners still resolve frozen implementations and native adapters
-from local `D:/wt/...` worktrees. The submitted source records these paths and
-their identities, but a clean clone is not yet fully portable. Before declaring
-a standalone archival release, vendor the exact frozen method snapshots or
-replace the absolute paths with a hash-checked configurable dependency layout,
-then pass a fresh single-seed reproduction gate.
+The former `D:/wt/...` runtime dependencies are now vendored under
+`vendor/frozen_runtime_v1`.  `scripts/portable_runtime_paths_v1.py` prefers the
+Git-tracked bundle and retains environment-variable and legacy-path fallbacks
+only for audited overrides.  Every vendored file is protected by
+`artifacts/reproducibility/frozen_runtime_v1_sha256.json`.
+
+Use `python scripts/reproduce_on_new_computer_v1.py` to verify the bundle and
+regenerate both final figure sets.  Use `--scope single` for a fresh seed-2026
+five-method run or `--scope main` for all 25 main runs from fresh state.  Full
+setup instructions are in `docs/reproduce_on_new_computer_v1.md`.
 
 ## Pre-commit validation
 
@@ -99,3 +103,6 @@ then pass a fresh single-seed reproduction gate.
   detected.
 - GitHub large-file gate: PASS; the largest staged file is below 5 MB.
 - Main comparison, ablation, and sensitivity completion markers: PASS.
+- Portable B1, OFFLOAD, and TUT source-identity gates: PASS.
+- Portable PROP configuration/calibration load: PASS.
+- Clean-clone figure entry: PASS; both reviewed PDF/PNG sets regenerated.

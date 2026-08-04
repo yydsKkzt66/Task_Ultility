@@ -1,0 +1,11 @@
+experiment:
+  experiment_id: tut_uoi_rate_lite_v2_smoke_v1
+  method_id: TUT-v2-energy-fixed
+  seeds: [2026]
+  capacities: [0.50]
+  smoke_slots: 900
+  output_root: D:/wt/pilot/outputs/_progressive_utility_switch_reaudit_v1/tut_v2/smoke_v1
+  allowed_phases: [preflight, smoke]
+  forbidden_methods: [B1-COMMON-THERMAL, OFFLOAD-EFT-THERMAL-ALIGNED, PROP-HEADROOM]
+simulator_overrides:
+  tut_predicted_energy_fix_enabled: true

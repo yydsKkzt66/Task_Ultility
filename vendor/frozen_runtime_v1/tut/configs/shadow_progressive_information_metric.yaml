@@ -1,0 +1,19 @@
+description: Diagnostic-only progressive information sufficiency metric. This file is not used by router, reward, queue priority, task generation, or delivered-only metrics.
+payload_set_sufficiency:
+  empty: 0.00
+  metadata: 0.45
+  roi: 0.65
+  roi_context: 0.75
+  metadata_roi: 0.80
+  metadata_roi_context: 0.90
+  metadata_roi_roi_context: 1.00
+level_mapping:
+  alert:
+    - metadata
+  verification:
+    - roi
+  context:
+    - roi_context
+notes:
+  - Values are shadow diagnostics only and must not be used for action selection, reward computation, queue priority, or formal delivered-only metrics.
+  - The key metadata_roi_roi_context represents delivered metadata plus ROI plus ROI-context evidence.

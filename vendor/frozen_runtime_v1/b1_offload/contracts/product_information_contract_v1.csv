@@ -1,0 +1,6 @@
+﻿code_name,semantic_meaning,requirements_satisfied,size_mb,size_source,measured_or_proxy,quality_definition,generation_latency,generation_energy,thermal_cost,minimum_model,partial_transmission_supported,ground_evaluation_rule
+metadata,compact detections/metadata,alert; partial verification/context/evidence,0.002,fixed fallback plus record formula,PROXY,model quality proxy,0.18 s/MB * 0.10,2.4 J/MB * 0.05,from charged generation energy,tiny,True,requirement utility table
+roi,target region chips,verification; partial context/evidence,0.85,formula clamped 0.08..3.5 MB; fallback shown,PROXY,model quality proxy,0.18 s/MB,2.4 J/MB,from charged generation energy,tiny,True,requirement utility table
+roi_context,ROI with contextual evidence,context;evidence;verification,2.7,formula clamped 0.25..8 MB; fallback shown,PROXY,model quality proxy,0.18 s/MB * 1.9,2.4 J/MB * 2.2,from charged generation energy,tiny,True,requirement utility table
+full_frame,B1 full observation,all information requirements,4.0,32 MB / fixed proxy ratio 8,PROXY,fixed retention/ground proxy,11 s,1.4 W * 11 s active runtime,charged compression energy,B1 path,False,information factor 1.0; quality/deadline still evaluated
+defer,no product now,none,0,fixed,ACTIVE,zero,0,0,0,none,False,no closure

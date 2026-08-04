@@ -1,0 +1,35 @@
+profiles:
+  - name: metadata
+    size_mb: 0.10
+    information_factor: 0.35
+    priority_weight: 1.0
+    enabled: true
+  - name: roi
+    size_mb: 0.80
+    information_factor: 0.72
+    priority_weight: 1.0
+    enabled: true
+  - name: roi_context
+    size_mb: 1.60
+    information_factor: 1.00
+    priority_weight: 1.0
+    enabled: true
+  - name: metadata_then_roi
+    size_mb: 0.10
+    information_factor: 0.35
+    priority_weight: 1.0
+    staged_first_product: metadata
+    residual_product: roi
+    enabled: true
+  - name: metadata_then_roi_context
+    size_mb: 0.10
+    information_factor: 0.35
+    priority_weight: 1.0
+    staged_first_product: metadata
+    residual_product: roi_context
+    enabled: true
+  - name: defer
+    size_mb: 0.00
+    information_factor: 0.05
+    priority_weight: 1.0
+    enabled: true

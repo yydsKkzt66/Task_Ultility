@@ -1,0 +1,3943 @@
+{
+  "action_space": {
+    "actions": [
+      {
+        "action_name": "lightweight+metadata",
+        "enabled": true,
+        "expected_compute_level": 0.2,
+        "expected_payload_level": 0.2,
+        "model_name": "lightweight",
+        "payload_plan": "metadata",
+        "payload_policy": "metadata",
+        "transmission_option": "contact_aware"
+      },
+      {
+        "action_name": "balanced+metadata",
+        "enabled": true,
+        "expected_compute_level": 0.55,
+        "expected_payload_level": 0.2,
+        "model_name": "balanced",
+        "payload_plan": "metadata",
+        "payload_policy": "metadata",
+        "transmission_option": "contact_aware"
+      },
+      {
+        "action_name": "balanced+roi",
+        "enabled": true,
+        "expected_compute_level": 0.55,
+        "expected_payload_level": 0.55,
+        "model_name": "balanced",
+        "payload_plan": "roi",
+        "payload_policy": "roi",
+        "transmission_option": "contact_aware"
+      },
+      {
+        "action_name": "balanced+metadata_then_roi",
+        "enabled": true,
+        "expected_compute_level": 0.55,
+        "expected_payload_level": 0.25,
+        "model_name": "balanced",
+        "payload_plan": "metadata_then_roi",
+        "payload_policy": "metadata_then_roi",
+        "transmission_option": "contact_aware"
+      },
+      {
+        "action_name": "high_accuracy+metadata_then_roi_context",
+        "enabled": true,
+        "expected_compute_level": 0.95,
+        "expected_payload_level": 0.25,
+        "model_name": "high_accuracy",
+        "payload_plan": "metadata_then_roi_context",
+        "payload_policy": "metadata_then_roi_context",
+        "transmission_option": "contact_aware"
+      },
+      {
+        "action_name": "high_accuracy+roi_context",
+        "enabled": true,
+        "expected_compute_level": 0.95,
+        "expected_payload_level": 0.95,
+        "model_name": "high_accuracy",
+        "payload_plan": "roi_context",
+        "payload_policy": "roi_context",
+        "transmission_option": "contact_aware"
+      },
+      {
+        "action_name": "delay/store",
+        "enabled": true,
+        "expected_compute_level": 0.0,
+        "expected_payload_level": 0.0,
+        "model_name": "delay_store",
+        "payload_plan": "defer",
+        "payload_policy": "defer",
+        "transmission_option": "store"
+      }
+    ]
+  },
+  "baseline_b1_enhanced": {
+    "baseline_version": "b1_enhanced_contact_compressed_v2",
+    "compression": {
+      "compression_power_assumption_source": "engineering_assumption_for_current_simulator_not_reported_phi_sat2_power",
+      "compression_power_w": 6.8,
+      "compression_ratio": 8.0,
+      "downstream_quality_retention": 1.0,
+      "latency_scaling": "linear_by_raw_mb",
+      "paper_accelerator_power_w": 1.4,
+      "reconstructed_ssim_proxy": 0.96,
+      "reference_compressed_size_mb": 4.0,
+      "reference_onboard_latency_s": 11.0,
+      "reference_raw_size_mb": 32.0
+    },
+    "enabled": false,
+    "ground": {
+      "decode_latency_s_per_reference_image": 1.5,
+      "ground_energy_not_counted_in_satellite_soc": true,
+      "inference_latency_s": null,
+      "inference_model_name": "high_accuracy"
+    },
+    "name": "contact_aware_compressed_ground_processing",
+    "raw_size": {
+      "default_raw_size_mb": 32.0,
+      "metadata_keys": [
+        "raw_payload_mb",
+        "raw_size_mb",
+        "image_raw_size_mb",
+        "source_image_mb"
+      ]
+    },
+    "scheduler": {
+      "deadline_urgency_tau_s": 120.0,
+      "hard_safety_epsilon": 1e-09,
+      "non_preemptive_once_started": true,
+      "policy": "enhanced",
+      "require_full_fit_in_current_contact": true,
+      "w_age": 0.1,
+      "w_density": 0.55,
+      "w_fit": 0.1,
+      "w_urgency": 0.25
+    }
+  },
+  "baseline_b1_enhanced_dryrun": {
+    "baseline_b1_enhanced": {
+      "enabled": true
+    },
+    "simulator": {
+      "slot_seconds": 10
+    },
+    "task_stream": {
+      "mode": "one_task_per_slot",
+      "slot_seconds": 10
+    },
+    "timeline": {
+      "contact": {
+        "contact_duration_s": 30,
+        "contact_period_s": 60,
+        "contact_phase_offset_s": 10,
+        "throughput_max_mbps": 64,
+        "throughput_min_mbps": 16
+      },
+      "num_slots": 48,
+      "slot_seconds": 10,
+      "use_num_days": false
+    }
+  },
+  "benchmark_environment_v1": {
+    "battery": {
+      "capacity_wh": {
+        "notes": "",
+        "source": "active simulator/resource config",
+        "status": "PROXY",
+        "unit": "Wh",
+        "value": 230.0
+      },
+      "charge_efficiency": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "ratio",
+        "value": 0.92
+      },
+      "discharge_efficiency": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "ratio",
+        "value": 0.95
+      },
+      "hard_soc_floor": {
+        "notes": "Physical SafeFilter/resource floor; not the 0.70/0.50 policy regions.",
+        "source": "active simulator/resource config",
+        "status": "ACTIVE",
+        "unit": "fraction",
+        "value": 0.55
+      },
+      "initial_soc": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "fraction",
+        "value": 0.9
+      },
+      "policy_guard_50": {
+        "notes": "Policy partition only, below the active physical floor.",
+        "source": "PROP follow-up policy",
+        "status": "ACTIVE",
+        "unit": "fraction",
+        "value": 0.5
+      },
+      "policy_guard_70": {
+        "notes": "",
+        "source": "resource/PROP config",
+        "status": "ACTIVE",
+        "unit": "fraction",
+        "value": 0.7
+      },
+      "soc_clipping": {
+        "notes": "",
+        "source": "src/energy/battery_update.py",
+        "status": "ACTIVE",
+        "unit": "fraction",
+        "value": [
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "communication": {
+      "capacity_multipliers": {
+        "notes": "Multiplier scales configured throughput.",
+        "source": "scripts/run_sarfish_thermal_headroom_multiseed.py",
+        "status": "ACTIVE",
+        "unit": "ratio",
+        "value": [
+          1.0,
+          0.5,
+          0.35
+        ]
+      },
+      "cross_contact_resume": {
+        "notes": "",
+        "source": "src/link/downlink_queue.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      },
+      "cross_slot_resume": {
+        "notes": "",
+        "source": "src/link/downlink_queue.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      },
+      "headroom_enabled_by_default": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "INACTIVE",
+        "unit": "boolean",
+        "value": false
+      },
+      "minimum_transfer_granularity": {
+        "notes": "",
+        "source": "src/link/downlink_queue.py",
+        "status": "PROXY",
+        "unit": "bytes",
+        "value": "floating-point byte accounting"
+      },
+      "partial_transmission": {
+        "notes": "",
+        "source": "src/link/downlink_queue.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      },
+      "thermal_heat_per_j": {
+        "notes": "",
+        "source": "src/energy/thermal_update.py",
+        "status": "PROXY",
+        "unit": "normalized/J",
+        "value": 0.0015
+      },
+      "throughput_max_mbps": {
+        "notes": "",
+        "source": "timeline config",
+        "status": "PROXY",
+        "unit": "Mbit/s",
+        "value": 65.0
+      },
+      "throughput_min_mbps": {
+        "notes": "",
+        "source": "timeline config",
+        "status": "PROXY",
+        "unit": "Mbit/s",
+        "value": 35.0
+      },
+      "tx_power_w": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "W",
+        "value": 35.0
+      }
+    },
+    "compute": {
+      "concurrency": {
+        "notes": "",
+        "source": "src/simulator/step_runner.py",
+        "status": "PROXY",
+        "unit": "logical action/slot",
+        "value": 1
+      },
+      "cores": {
+        "notes": "",
+        "source": "not modeled",
+        "status": "UNKNOWN",
+        "unit": "cores",
+        "value": null
+      },
+      "cross_slot_compute": {
+        "notes": "Latency is accounted, but compute is instantiated within the action slot.",
+        "source": "src/simulator/step_runner.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      },
+      "hardware": {
+        "notes": "No CPU/GPU/chip model is simulated.",
+        "source": "resource/model configs",
+        "status": "PROXY",
+        "unit": "description",
+        "value": "BUPT-1-like abstract COTS compute"
+      },
+      "preemption": {
+        "notes": "",
+        "source": "same",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      },
+      "thermal_heat_per_j": {
+        "notes": "",
+        "source": "src/energy/thermal_update.py",
+        "status": "PROXY",
+        "unit": "normalized/J",
+        "value": 0.0025
+      }
+    },
+    "contacts": {
+      "duration_s": {
+        "notes": "",
+        "source": "timeline config",
+        "status": "PROXY",
+        "unit": "s",
+        "value": 600
+      },
+      "ground_station_count": {
+        "notes": "",
+        "source": "not represented by active config",
+        "status": "UNKNOWN",
+        "unit": "stations",
+        "value": null
+      },
+      "period_s": {
+        "notes": "",
+        "source": "timeline config",
+        "status": "PROXY",
+        "unit": "s",
+        "value": 5700
+      },
+      "phase_offset_s": {
+        "notes": "",
+        "source": "timeline config",
+        "status": "PROXY",
+        "unit": "s",
+        "value": 420
+      },
+      "propagation_delay_s": {
+        "notes": "",
+        "source": "not represented",
+        "status": "UNKNOWN",
+        "unit": "s",
+        "value": null
+      },
+      "protocol_overhead": {
+        "notes": "",
+        "source": "not represented",
+        "status": "UNKNOWN",
+        "unit": "fraction",
+        "value": null
+      },
+      "trace_source": {
+        "notes": "",
+        "source": "timeline config",
+        "status": "PROXY",
+        "unit": "source",
+        "value": "synthetic periodic contact"
+      }
+    },
+    "dataset": {
+      "name": {
+        "notes": "",
+        "source": "configs/dataset_sarfish_grd_validation.yaml",
+        "status": "ACTIVE",
+        "unit": "name",
+        "value": "SARFishSample"
+      },
+      "pixels_read_online": {
+        "notes": "Tasks use indexed metadata; policies do not run image codecs.",
+        "source": "src/data/sarfish_task_builder.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      },
+      "product": {
+        "notes": "",
+        "source": "configs/dataset_sarfish_grd_validation.yaml",
+        "status": "ACTIVE",
+        "unit": "product",
+        "value": "GRD"
+      },
+      "root": {
+        "notes": "",
+        "source": "configs/dataset_sarfish_grd_validation.yaml",
+        "status": "ACTIVE",
+        "unit": "repository-relative path",
+        "value": "datasets/SARFishSample"
+      },
+      "scene_index": {
+        "notes": "",
+        "source": "configs/dataset_sarfish_grd_validation.yaml",
+        "status": "ACTIVE",
+        "unit": "path",
+        "value": "data/indexes/sarfishsample_scene_index.csv"
+      },
+      "source_scene_count": {
+        "notes": "Usable GRD validation index rows; scenes are sampled with replacement across tasks.",
+        "source": "data/indexes/sarfishsample_scene_index.csv",
+        "status": "ACTIVE",
+        "unit": "scenes",
+        "value": 50
+      },
+      "split": {
+        "notes": "",
+        "source": "configs/dataset_sarfish_grd_validation.yaml",
+        "status": "ACTIVE",
+        "unit": "split",
+        "value": "validation"
+      },
+      "true_labels_online": {
+        "notes": "Labels and annotations are evaluation/task-generation inputs, not online policy future knowledge.",
+        "source": "task/evaluator audit",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      }
+    },
+    "energy": {
+      "common_minimum_soc": {
+        "notes": "",
+        "source": "reserved",
+        "status": "FUTURE",
+        "unit": "fraction",
+        "value": null
+      },
+      "consumed_energy": {
+        "notes": "",
+        "source": "reserved",
+        "status": "FUTURE",
+        "unit": "Wh",
+        "value": null
+      },
+      "eclipse_duration_s": {
+        "notes": "",
+        "source": "resource config",
+        "status": "PROXY",
+        "unit": "s/orbit",
+        "value": 2100
+      },
+      "idle_power_w": {
+        "notes": "",
+        "source": "resource config",
+        "status": "PROXY",
+        "unit": "W",
+        "value": 4.8
+      },
+      "maximum_controllable_energy_budget": {
+        "notes": "",
+        "source": "reserved for matched-energy experiments",
+        "status": "FUTURE",
+        "unit": "Wh",
+        "value": null
+      },
+      "predicted_post_action_soc": {
+        "notes": "",
+        "source": "reserved",
+        "status": "FUTURE",
+        "unit": "fraction",
+        "value": null
+      },
+      "remaining_energy": {
+        "notes": "",
+        "source": "reserved",
+        "status": "FUTURE",
+        "unit": "Wh",
+        "value": null
+      },
+      "reserved_energy": {
+        "notes": "",
+        "source": "reserved",
+        "status": "FUTURE",
+        "unit": "Wh",
+        "value": null
+      },
+      "resource_power_variation_w": {
+        "notes": "",
+        "source": "resource config",
+        "status": "PROXY",
+        "unit": "W",
+        "value": 0.65
+      },
+      "solar_peak_w": {
+        "notes": "",
+        "source": "resource config",
+        "status": "PROXY",
+        "unit": "W",
+        "value": 14.5
+      },
+      "sunlit_duration_s": {
+        "notes": "",
+        "source": "resource config",
+        "status": "PROXY",
+        "unit": "s/orbit",
+        "value": 3600
+      }
+    },
+    "evaluator": {
+      "closure_rule": {
+        "notes": "",
+        "source": "src/evaluation/unified_ground_received_accounting.py",
+        "status": "ACTIVE",
+        "unit": "rule",
+        "value": "information and quality requirements met by deadline"
+      },
+      "config_source": {
+        "notes": "",
+        "source": "prop_configs/b1_config",
+        "status": "ACTIVE",
+        "unit": "path",
+        "value": "configs/unified_ground_received_accounting.yaml"
+      },
+      "deadline_utility_after_deadline": {
+        "notes": "",
+        "source": "unified evaluator config",
+        "status": "ACTIVE",
+        "unit": "utility factor",
+        "value": 0.0
+      },
+      "internal_score_is_common_utility": {
+        "notes": "",
+        "source": "controller/evaluator audit",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      },
+      "net_utility_rule": {
+        "notes": "",
+        "source": "src/evaluation/unified_ground_received_accounting.py",
+        "status": "ACTIVE",
+        "unit": "formula",
+        "value": "gross - energy - backlog - safety costs"
+      },
+      "one_closure_reward_per_task": {
+        "notes": "",
+        "source": "ground lifecycle/evaluator",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      },
+      "requirement_utility_source": {
+        "notes": "",
+        "source": "common evaluator",
+        "status": "ACTIVE",
+        "unit": "path",
+        "value": "configs/product_requirement_utility.yaml"
+      }
+    },
+    "fairness": {
+      "immutable_roots": {
+        "notes": "",
+        "source": "contracts/fairness_contract_v1.md",
+        "status": "ACTIVE",
+        "unit": "paths",
+        "value": [
+          "dataset",
+          "scenario_generation",
+          "tasks",
+          "contacts",
+          "communication",
+          "compute",
+          "storage",
+          "queues",
+          "battery",
+          "energy",
+          "thermal",
+          "evaluator",
+          "simulation"
+        ]
+      },
+      "method_state_may_diverge": {
+        "notes": "",
+        "source": "fairness contract",
+        "status": "ACTIVE",
+        "unit": "fields",
+        "value": [
+          "model_selection",
+          "product_selection",
+          "queues",
+          "actual_soc",
+          "actual_thermal",
+          "transmitted_bytes",
+          "closures",
+          "utility",
+          "latency"
+        ]
+      }
+    },
+    "future_extensions": {
+      "multisatellite_offloading": {
+        "notes": "",
+        "source": "fairness contract",
+        "status": "FUTURE",
+        "unit": "rule",
+        "value": "must account for ISL TX/RX/wait/remote compute and single closure reward"
+      }
+    },
+    "metadata": {
+      "authoritative_multiscenario_commit": {
+        "notes": "",
+        "source": "validated study record",
+        "status": "ACTIVE",
+        "unit": "git commit",
+        "value": "57b5567312f32bee255b2c52cd06a840998cff98"
+      },
+      "contract_id": {
+        "notes": "",
+        "source": "this contract",
+        "status": "ACTIVE",
+        "unit": "identifier",
+        "value": "benchmark_environment_v1"
+      },
+      "proxy_disclosure": {
+        "notes": "System-level proxy; not end-to-end image processing.",
+        "source": "source config descriptions",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      }
+    },
+    "models": {
+      "backend": {
+        "notes": "",
+        "source": "src/models/mock_detector.py",
+        "status": "PROXY",
+        "unit": "backend",
+        "value": "mock detector profiles"
+      },
+      "profiles_source": {
+        "notes": "",
+        "source": "prop_configs",
+        "status": "ACTIVE",
+        "unit": "path",
+        "value": "configs/model_profiles_yolo_inspired_calibrated.yaml"
+      },
+      "real_onboard_inference": {
+        "notes": "",
+        "source": "src/models/inference_runner.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      }
+    },
+    "products": {
+      "b1_full_frame_size_mb": {
+        "notes": "32 MB / fixed ratio 8; no real codec execution.",
+        "source": "configs/baseline_b1_enhanced.yaml",
+        "status": "PROXY",
+        "unit": "MB",
+        "value": 4.0
+      },
+      "b1_real_compression": {
+        "notes": "",
+        "source": "src/baselines/b1_enhanced.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      },
+      "profiles_source": {
+        "notes": "",
+        "source": "prop_configs",
+        "status": "ACTIVE",
+        "unit": "path",
+        "value": "configs/payload_profiles_roi_compression_calibrated.yaml"
+      },
+      "quality_is_proxy": {
+        "notes": "",
+        "source": "payload/model profiles",
+        "status": "PROXY",
+        "unit": "boolean",
+        "value": true
+      },
+      "sizes_measured_from_encoding": {
+        "notes": "",
+        "source": "payload profile description",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": false
+      }
+    },
+    "queues": {
+      "compute": {
+        "capacity_items": {
+          "notes": "",
+          "source": "no persistent compute queue",
+          "status": "UNKNOWN",
+          "unit": "items",
+          "value": null
+        }
+      },
+      "downlink": {
+        "capacity_mb": {
+          "notes": "",
+          "source": "active simulator config",
+          "status": "ACTIVE",
+          "unit": "MB",
+          "value": 5120.0
+        },
+        "safe_mb": {
+          "notes": "",
+          "source": "active simulator config",
+          "status": "ACTIVE",
+          "unit": "MB",
+          "value": 4096.0
+        }
+      },
+      "duplicate_suppression": {
+        "notes": "",
+        "source": "src/link/downlink_queue.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      },
+      "generation_request": {
+        "capacity_items": {
+          "notes": "",
+          "source": "no numeric cap found",
+          "status": "UNKNOWN",
+          "unit": "items",
+          "value": null
+        }
+      },
+      "overflow_eviction": {
+        "notes": "",
+        "source": "src/link/downlink_queue.py",
+        "status": "ACTIVE",
+        "unit": "policy",
+        "value": "lowest priority until within byte cap"
+      }
+    },
+    "scenario_generation": {
+      "arrival_interval_slots": {
+        "notes": "",
+        "source": "configs/task_stream_sarfish_formal_nominal_bupt1_deadline_minutes.yaml",
+        "status": "PROXY",
+        "unit": "slots",
+        "value": [
+          2,
+          3
+        ]
+      },
+      "background_arrival_probability": {
+        "notes": "",
+        "source": "same task-stream config",
+        "status": "PROXY",
+        "unit": "probability/slot",
+        "value": 0.005
+      },
+      "mode": {
+        "notes": "",
+        "source": "configs/task_stream_sarfish_formal_nominal_bupt1_deadline_minutes.yaml",
+        "status": "PROXY",
+        "unit": "mode",
+        "value": "observation_window"
+      },
+      "seeds": {
+        "notes": "",
+        "source": "outputs/_sarfish_thermal_headroom_multiseed/scenario_manifest.csv",
+        "status": "ACTIVE",
+        "unit": "seed",
+        "value": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ]
+      }
+    },
+    "simulation": {
+      "deadline_inclusive": {
+        "notes": "Completion <= deadline + 1e-9 is on time.",
+        "source": "src/evaluation/run_event_adapters.py",
+        "status": "ACTIVE",
+        "unit": "boolean",
+        "value": true
+      },
+      "end_time_s_exclusive": {
+        "notes": "",
+        "source": "timeline contract",
+        "status": "ACTIVE",
+        "unit": "s",
+        "value": 86400
+      },
+      "horizon_s": {
+        "notes": "",
+        "source": "configs/timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s.yaml:physical_horizon_s",
+        "status": "ACTIVE",
+        "unit": "s",
+        "value": 86400
+      },
+      "slot_count": {
+        "notes": "",
+        "source": "physical_horizon_s / slot_seconds",
+        "status": "ACTIVE",
+        "unit": "slots",
+        "value": 4320
+      },
+      "slot_seconds": {
+        "notes": "",
+        "source": "configs/timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s.yaml:slot_seconds",
+        "status": "ACTIVE",
+        "unit": "s",
+        "value": 20
+      },
+      "start_time_s": {
+        "notes": "",
+        "source": "src/timeline/timeline_builder.py",
+        "status": "ACTIVE",
+        "unit": "s",
+        "value": 0
+      }
+    },
+    "storage": {
+      "product_storage_capacity_mb": {
+        "notes": "",
+        "source": "downlink queue is the enforced product store",
+        "status": "UNKNOWN",
+        "unit": "MB",
+        "value": null
+      },
+      "raw_observation_capacity_mb": {
+        "notes": "",
+        "source": "not separately modeled",
+        "status": "UNKNOWN",
+        "unit": "MB",
+        "value": null
+      }
+    },
+    "tasks": {
+      "counts_by_seed": {
+        "notes": "",
+        "source": "scenario manifest",
+        "status": "ACTIVE",
+        "unit": "tasks",
+        "value": {
+          "2026": 268,
+          "2027": 285,
+          "2028": 255,
+          "2029": 306,
+          "2030": 285
+        }
+      },
+      "high_deadline_minutes": {
+        "notes": "",
+        "source": "task-stream config",
+        "status": "PROXY",
+        "unit": "min",
+        "value": [
+          45,
+          120
+        ]
+      },
+      "ordinary_deadline_minutes": {
+        "notes": "",
+        "source": "task-stream config",
+        "status": "PROXY",
+        "unit": "min",
+        "value": [
+          90,
+          240
+        ]
+      },
+      "task_id_format": {
+        "notes": "",
+        "source": "src/data/sarfish_task_builder.py",
+        "status": "ACTIVE",
+        "unit": "identifier",
+        "value": "generated deterministic string"
+      },
+      "urgent_deadline_minutes": {
+        "notes": "",
+        "source": "task-stream config",
+        "status": "PROXY",
+        "unit": "min",
+        "value": [
+          20,
+          90
+        ]
+      },
+      "value_class_mapping": {
+        "notes": "",
+        "source": "src/evaluation/canonical_sarfish_environment.py",
+        "status": "ACTIVE",
+        "unit": "mapping",
+        "value": {
+          "emergency": "urgent",
+          "high_value": "high",
+          "routine": "medium"
+        }
+      }
+    },
+    "thermal": {
+      "active_cooling": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "normalized/reference-slot",
+        "value": 0.045
+      },
+      "eclipse_bonus": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "normalized/reference-slot",
+        "value": 0.03
+      },
+      "guard_threshold": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "normalized",
+        "value": 0.85
+      },
+      "hard_threshold": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "normalized",
+        "value": 0.92
+      },
+      "headroom_binary_search_iterations": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "iterations",
+        "value": 40
+      },
+      "headroom_tolerance": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "normalized",
+        "value": 1e-10
+      },
+      "initial_state": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "normalized",
+        "value": 0.52
+      },
+      "passive_cooling": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "normalized/reference-slot",
+        "value": 0.12
+      },
+      "reference_slot_s": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "s",
+        "value": 60.0
+      },
+      "state_clipping": {
+        "notes": "",
+        "source": "src/energy/thermal_update.py",
+        "status": "ACTIVE",
+        "unit": "normalized",
+        "value": [
+          0.0,
+          1.0
+        ]
+      },
+      "state_meaning": {
+        "notes": "",
+        "source": "src/energy/thermal_update.py",
+        "status": "PROXY",
+        "unit": "dimensionless",
+        "value": "normalized thermal pressure"
+      },
+      "sunlight_gain": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "PROXY",
+        "unit": "normalized/reference-slot",
+        "value": 0.015
+      }
+    }
+  },
+  "bounded_guarantee_virtual_queue": {
+    "guarantee": {
+      "allow_utility_rule": false,
+      "beta_H": 0.3,
+      "beta_H_grid": [
+        0.15,
+        0.3,
+        0.45,
+        0.6
+      ],
+      "carry_debt_across_windows": true,
+      "component_normalization": "window_candidate_minmax",
+      "eligible_product_requirements": [
+        "context",
+        "evidence"
+      ],
+      "eligible_value_levels": [
+        "high",
+        "urgent"
+      ],
+      "enabled": false,
+      "full_method_aliases": [
+        "proposed_lyapunov_rule_mode_safe_bandit"
+      ],
+      "gamma_age_high_per_slot": 0.01,
+      "gamma_age_urgent_per_slot": 0.015,
+      "gamma_miss_high": 1.0,
+      "gamma_miss_urgent": 1.25,
+      "guarantee_window_budget_fraction": 0.3,
+      "guarantee_window_budget_fraction_grid": [
+        0.15,
+        0.3,
+        0.45
+      ],
+      "hard_safety_veto": true,
+      "lambda_A": 0.1,
+      "lambda_C": 0.1,
+      "lambda_D": 0.1,
+      "lambda_H": 0.35,
+      "lambda_H_grid": [
+        0.0,
+        0.2,
+        0.35,
+        0.5,
+        0.75,
+        1.0,
+        1.5
+      ],
+      "lambda_P": 0.05,
+      "low_medium_debt_forbidden": true,
+      "marginal_utility_floor": 0.0,
+      "marginal_utility_floor_main": 0.0,
+      "marginal_utility_floor_stress": -0.01,
+      "min_stage_miss_weight": 1.0,
+      "minimum_stage_for_context": "ROI",
+      "minimum_stage_for_evidence": "ROI",
+      "missed_opportunity_only": false,
+      "mode": "dynamic_age_miss_debt",
+      "no_contact_slots_do_not_increase_miss_debt": true,
+      "no_future_contact_no_age_growth": true,
+      "normalize_priority_components": true,
+      "progress_credit_min_stage": 1.5,
+      "progress_credit_target_stage": 3.0,
+      "recompute_priority_each_scheduler_step": true,
+      "require_future_contact_for_age_debt": true,
+      "reset_debt_when_min_stage_reached": false,
+      "reset_debt_when_task_closed": true,
+      "roi_cannot_close_evidence": true,
+      "starvation_window_threshold": 2,
+      "target_stage_for_context": "ROI+Ctx",
+      "target_stage_for_evidence": "ROI+Ctx",
+      "target_stage_miss_weight": 0.5,
+      "target_stage_requires_positive_marginal_utility": true,
+      "update_age_debt_each_slot": true,
+      "update_miss_debt_at_contact_window_end": true,
+      "update_timing": "dynamic_age_miss",
+      "w_abs": 0.25,
+      "w_density": 0.35,
+      "waiting_age_norm_slots": 100.0,
+      "waiting_limit_windows_for_target_progress": 1,
+      "z_age_max": 2.0,
+      "z_max": 6.0,
+      "z_max_grid": [
+        2.0,
+        4.0,
+        6.0
+      ],
+      "z_miss_max": 4.0,
+      "z_total_max": 6.0
+    }
+  },
+  "contact": {
+    "contact_duration_s": 600,
+    "contact_period_s": 5700,
+    "contact_phase_offset_s": 420,
+    "link_quality_period_s": 1800,
+    "link_quality_phase": 0.5,
+    "snr_min_db": 8.0,
+    "snr_span_db": 12.0,
+    "throughput_max_mbps": 65.0,
+    "throughput_min_mbps": 35.0
+  },
+  "contact_sarfish_physical_20s": {
+    "contact_duration_s": 220,
+    "contact_period_s": 1080,
+    "contact_phase_offset_s": 180,
+    "link_quality_period_s": 960,
+    "link_quality_phase": 0.5,
+    "outage_windows_s": [
+      [
+        4200,
+        6000
+      ],
+      [
+        8820,
+        9600
+      ]
+    ],
+    "snr_min_db": 4.0,
+    "snr_span_db": 10.0,
+    "throughput_max_mbps": 3.2,
+    "throughput_min_mbps": 0.8
+  },
+  "dataset": {
+    "dataset_name": "sarfishsample",
+    "product_type": "GRD",
+    "root": "datasets/SARFishSample",
+    "scene_index_path": "data/indexes/sarfishsample_scene_index.csv",
+    "seed": 2026,
+    "source_image_root": "A:/6.22Dataset",
+    "source_image_root_env": "SARFISH_DATASET_ROOT",
+    "split": "validation",
+    "task_state_profile_path": "data/indexes/sarfishsample_task_state_profile.json"
+  },
+  "dataset_sarfish_grd_validation": {
+    "dataset_name": "sarfishsample",
+    "product_type": "GRD",
+    "root": "datasets/SARFishSample",
+    "scene_index_path": "data/indexes/sarfishsample_scene_index.csv",
+    "seed": 2026,
+    "source_image_root": "A:/6.22Dataset",
+    "source_image_root_env": "SARFISH_DATASET_ROOT",
+    "split": "validation",
+    "task_state_profile_path": "data/indexes/sarfishsample_task_state_profile.json"
+  },
+  "dataset_sarfishsample": {
+    "dataset_name": "sarfishsample",
+    "product_type": "GRD",
+    "root": "datasets/SARFishSample",
+    "scene_index_path": "data/indexes/sarfishsample_scene_index.csv",
+    "seed": 2026,
+    "split": "validation",
+    "task_state_profile_path": "data/indexes/sarfishsample_task_state_profile.json"
+  },
+  "downlink_capacity_multiplier": 0.35,
+  "experiment": {
+    "routers": [
+      "proposed_lyapunov_rule_mode_safe_bandit"
+    ]
+  },
+  "lyapunov_pricing": {
+    "alpha_deadline": 0.75,
+    "alpha_egress": 1.1,
+    "alpha_energy": 1.2,
+    "alpha_queue": 0.9,
+    "alpha_thermal": 0.8,
+    "base_lambda_E": 0.3,
+    "base_lambda_L": 0.2,
+    "base_lambda_Q": 0.15,
+    "base_lambda_S": 0.12,
+    "enabled": true
+  },
+  "mode_controller": {
+    "enabled": true,
+    "modes": {
+      "balanced": {
+        "exploration_scale": 1.0,
+        "high_value_bonus_scale": 1.0,
+        "model_complexity_bias": 0.0,
+        "payload_size_bias": 0.0,
+        "price_multipliers": {
+          "lambda_E": 1.0,
+          "lambda_L": 1.0,
+          "lambda_Q": 1.0,
+          "lambda_S": 1.0
+        },
+        "safety_margin_scale": 1.0
+      },
+      "egress_conservative": {
+        "exploration_scale": 0.9,
+        "high_value_bonus_scale": 1.0,
+        "model_complexity_bias": -0.06,
+        "payload_size_bias": -0.25,
+        "price_multipliers": {
+          "lambda_E": 1.05,
+          "lambda_L": 1.05,
+          "lambda_Q": 1.1,
+          "lambda_S": 1.45
+        },
+        "safety_margin_scale": 1.15
+      },
+      "energy_saving": {
+        "exploration_scale": 0.9,
+        "high_value_bonus_scale": 0.95,
+        "model_complexity_bias": -0.18,
+        "payload_size_bias": -0.05,
+        "price_multipliers": {
+          "lambda_E": 1.45,
+          "lambda_L": 1.05,
+          "lambda_Q": 1.0,
+          "lambda_S": 1.1
+        },
+        "safety_margin_scale": 1.25
+      },
+      "latency_critical": {
+        "exploration_scale": 0.9,
+        "high_value_bonus_scale": 1.05,
+        "model_complexity_bias": 0.08,
+        "payload_size_bias": -0.05,
+        "price_multipliers": {
+          "lambda_E": 1.0,
+          "lambda_L": 1.4,
+          "lambda_Q": 1.0,
+          "lambda_S": 1.0
+        },
+        "safety_margin_scale": 1.05
+      },
+      "mission_priority": {
+        "exploration_scale": 1.05,
+        "high_value_bonus_scale": 1.3,
+        "model_complexity_bias": 0.1,
+        "payload_size_bias": 0.08,
+        "price_multipliers": {
+          "lambda_E": 0.95,
+          "lambda_L": 0.9,
+          "lambda_Q": 1.0,
+          "lambda_S": 0.95
+        },
+        "safety_margin_scale": 1.0
+      },
+      "queue_draining": {
+        "exploration_scale": 0.95,
+        "high_value_bonus_scale": 1.0,
+        "model_complexity_bias": -0.05,
+        "payload_size_bias": -0.22,
+        "price_multipliers": {
+          "lambda_E": 1.0,
+          "lambda_L": 1.0,
+          "lambda_Q": 1.35,
+          "lambda_S": 1.4
+        },
+        "safety_margin_scale": 1.1
+      }
+    },
+    "thresholds": {
+      "battery_low": 0.3,
+      "deadline_pressure_high": 0.65,
+      "high_value_ratio_high": 0.1,
+      "next_contact_long_s": 120.0,
+      "queue_high": 0.65,
+      "thermal_high": 0.8
+    },
+    "type": "rule_based",
+    "update_interval_slots": 10
+  },
+  "model_pool": {
+    "error_model": {
+      "base_miss_probability": 0.03,
+      "difficulty_weight": 0.3,
+      "enabled": false,
+      "false_alarm_scale": 0.35,
+      "high_value_bonus": 0.0,
+      "high_value_threshold": 0.75,
+      "low_quality_weight": 0.55,
+      "low_robustness_weight": 0.18,
+      "max_error_probability": 0.95,
+      "min_error_probability": 0.02,
+      "uncertainty_weight": 0.22
+    },
+    "models": [
+      {
+        "backend": "mock",
+        "enabled": true,
+        "name": "lightweight",
+        "profile_name": "tiny"
+      },
+      {
+        "backend": "mock",
+        "enabled": true,
+        "name": "balanced",
+        "profile_name": "small"
+      },
+      {
+        "backend": "mock",
+        "enabled": true,
+        "name": "high_accuracy",
+        "profile_name": "medium"
+      },
+      {
+        "backend": "mock",
+        "enabled": true,
+        "name": "delay_store",
+        "profile_name": "defer"
+      }
+    ],
+    "profile_overrides": {
+      "medium": {
+        "compute_energy_scale": 4.8,
+        "energy_j": 51.84,
+        "false_negative_risk_scale": 0.58,
+        "latency_s": 2.79,
+        "latency_scale": 3.1,
+        "quality_base": 0.94,
+        "robustness_to_difficulty": 0.91,
+        "thermal_gain_scale": 3.0
+      },
+      "small": {
+        "compute_energy_scale": 2.0,
+        "energy_j": 21.6,
+        "false_negative_risk_scale": 0.72,
+        "latency_s": 1.44,
+        "latency_scale": 1.6,
+        "quality_base": 0.87,
+        "robustness_to_difficulty": 0.84,
+        "thermal_gain_scale": 1.6
+      },
+      "tiny": {
+        "compute_energy_scale": 1.0,
+        "energy_j": 10.8,
+        "false_negative_risk_scale": 1.0,
+        "latency_s": 0.9,
+        "latency_scale": 1.0,
+        "quality_base": 0.74,
+        "robustness_to_difficulty": 0.7,
+        "thermal_gain_scale": 1.0
+      }
+    },
+    "profiles": [
+      {
+        "enabled": true,
+        "energy_j": 6.4,
+        "latency_s": 0.8,
+        "name": "tiny",
+        "quality_base": 0.58,
+        "robustness_to_difficulty": 0.52
+      },
+      {
+        "enabled": true,
+        "energy_j": 20.8,
+        "latency_s": 1.6,
+        "name": "small",
+        "quality_base": 0.74,
+        "robustness_to_difficulty": 0.68
+      },
+      {
+        "enabled": true,
+        "energy_j": 53.2,
+        "latency_s": 2.8,
+        "name": "medium",
+        "quality_base": 0.88,
+        "robustness_to_difficulty": 0.82
+      },
+      {
+        "enabled": true,
+        "energy_j": 0.0,
+        "latency_s": 0.0,
+        "name": "defer",
+        "quality_base": 0.0,
+        "robustness_to_difficulty": 0.0
+      }
+    ]
+  },
+  "model_profiles_yolo_inspired_calibrated": {
+    "baseline": {
+      "compute_energy_j": 10.8,
+      "latency_s": 0.9,
+      "profile_name": "tiny"
+    },
+    "description": "YOLO-inspired relative profile calibration for SARFish system-level ablation. Values are not real SARFish YOLO measurements.",
+    "profile_overrides": {
+      "medium": {
+        "compute_energy_scale": 4.8,
+        "energy_j": 51.84,
+        "false_negative_risk_scale": 0.58,
+        "latency_s": 2.79,
+        "latency_scale": 3.1,
+        "quality_base": 0.94,
+        "robustness_to_difficulty": 0.91,
+        "thermal_gain_scale": 3.0
+      },
+      "small": {
+        "compute_energy_scale": 2.0,
+        "energy_j": 21.6,
+        "false_negative_risk_scale": 0.72,
+        "latency_s": 1.44,
+        "latency_scale": 1.6,
+        "quality_base": 0.87,
+        "robustness_to_difficulty": 0.84,
+        "thermal_gain_scale": 1.6
+      },
+      "tiny": {
+        "compute_energy_scale": 1.0,
+        "energy_j": 10.8,
+        "false_negative_risk_scale": 1.0,
+        "latency_s": 0.9,
+        "latency_scale": 1.0,
+        "quality_base": 0.74,
+        "robustness_to_difficulty": 0.7,
+        "thermal_gain_scale": 1.0
+      }
+    }
+  },
+  "payload_profile_ablation": {
+    "payload_profile_variants": {
+      "fixed_high_accuracy": "calibrated",
+      "fixed_lightweight": "calibrated",
+      "no_lyapunov": "calibrated",
+      "no_mode": "calibrated",
+      "proposed_calibrated_payload_plus_cost_aware_ucb": "calibrated",
+      "proposed_calibrated_payload_plus_z_guided": "calibrated",
+      "proposed_calibrated_payload_profile": "calibrated",
+      "proposed_payload_repaired_combined": "calibrated",
+      "proposed_payload_specific_delivery_proxy": "calibrated",
+      "proposed_yolo_profile_policy_repair_baseline": "original",
+      "utility_rule": "calibrated"
+    },
+    "policy_repair_defaults": {
+      "cost_aware_ucb": {
+        "deadline_reason_threshold": 0.7,
+        "deadline_weight": 0.14,
+        "dod_reason_threshold": 0.3,
+        "dod_weight": 0.38,
+        "eclipse_weight": 0.22,
+        "energy_ref_j": 55.0,
+        "energy_weight": 0.28,
+        "latency_ref_s": 3.0,
+        "latency_weight": 0.1,
+        "min_discount": 0.18,
+        "no_contact_weight": 0.28,
+        "payload_ref_mb": 2.7,
+        "payload_weight": 0.22,
+        "queue_reason_threshold": 0.2,
+        "queue_weight": 0.18,
+        "thermal_delta_ref": 0.1,
+        "thermal_weight": 0.22
+      },
+      "delivery_aware_info_gain": {
+        "contact_shortfall_weight": 0.18,
+        "deadline_reason_threshold": 0.5,
+        "deadline_weight": 0.34,
+        "eclipse_weight": 0.08,
+        "low_soc_weight": 0.12,
+        "metadata_floor": 0.85,
+        "metadata_info_threshold": 0.55,
+        "min_proxy": 0.3,
+        "no_contact_weight": 0.28,
+        "payload_reason_threshold": 0.8,
+        "payload_ref_mb": 2.7,
+        "payload_weight": 0.38,
+        "queue_reason_threshold": 0.2,
+        "queue_weight": 0.28,
+        "soc_guard": 0.7
+      },
+      "enable_cost_aware_ucb": false,
+      "enable_delivery_aware_info_gain": false,
+      "enable_payload_specific_delivery_proxy": false,
+      "enable_z_guided_coupling": false,
+      "z_guided_coupling": {
+        "dod_beta_multiplier": 0.8,
+        "dod_lambda_E_multiplier": 1.45,
+        "dod_threshold": 0.3,
+        "eclipse_beta_multiplier": 0.88,
+        "eclipse_lambda_E_multiplier": 1.25,
+        "eclipse_lambda_S_multiplier": 1.12,
+        "min_beta_scale": 0.35,
+        "no_contact_beta_multiplier": 0.88,
+        "no_contact_lambda_Q_multiplier": 1.12,
+        "no_contact_lambda_S_multiplier": 1.3,
+        "queue_lambda_Q_multiplier": 1.35,
+        "queue_lambda_S_multiplier": 1.25,
+        "queue_threshold": 0.15,
+        "thermal_beta_multiplier": 0.82,
+        "thermal_lambda_E_multiplier": 1.18,
+        "thermal_lambda_S_multiplier": 1.45,
+        "thermal_threshold": 0.85
+      }
+    },
+    "variant_overrides": {
+      "proposed_calibrated_payload_plus_cost_aware_ucb": {
+        "enable_cost_aware_ucb": true
+      },
+      "proposed_calibrated_payload_plus_z_guided": {
+        "enable_z_guided_coupling": true
+      },
+      "proposed_payload_repaired_combined": {
+        "enable_cost_aware_ucb": true,
+        "enable_delivery_aware_info_gain": true,
+        "enable_payload_specific_delivery_proxy": true,
+        "enable_z_guided_coupling": true
+      },
+      "proposed_payload_specific_delivery_proxy": {
+        "enable_delivery_aware_info_gain": true,
+        "enable_payload_specific_delivery_proxy": true
+      }
+    },
+    "variants": [
+      "proposed_yolo_profile_policy_repair_baseline",
+      "proposed_calibrated_payload_profile",
+      "proposed_payload_specific_delivery_proxy",
+      "proposed_calibrated_payload_plus_cost_aware_ucb",
+      "proposed_calibrated_payload_plus_z_guided",
+      "proposed_payload_repaired_combined",
+      "utility_rule",
+      "no_mode",
+      "no_lyapunov",
+      "fixed_lightweight",
+      "fixed_high_accuracy"
+    ]
+  },
+  "payload_profiles": {
+    "calibrated_profile": {
+      "defaults": {
+        "encoding_energy_j_per_mb": 2.4,
+        "encoding_latency_s_per_mb": 0.18
+      },
+      "enabled": true
+    },
+    "profiles": [
+      {
+        "base_size_kb": 2.0,
+        "contact_sensitivity": 0.2,
+        "deadline_sensitivity": 0.35,
+        "delivery_risk_sensitivity": 0.25,
+        "enabled": true,
+        "encoding_energy_scale": 0.05,
+        "encoding_latency_scale": 0.1,
+        "information_factor": 0.48,
+        "min_delivery_proxy": 0.85,
+        "name": "metadata",
+        "per_detection_record_bytes": 120,
+        "priority_weight": 1.05,
+        "queue_sensitivity": 0.25,
+        "raw_info_gain": 0.48,
+        "size_mb": 0.002
+      },
+      {
+        "bytes_per_pixel": 2.0,
+        "chip_area_padding_factor": 1.4,
+        "compression_ratio": 8.0,
+        "contact_sensitivity": 0.75,
+        "context_margin_factor": 1.35,
+        "deadline_sensitivity": 0.85,
+        "delivery_risk_sensitivity": 0.85,
+        "enabled": true,
+        "encoding_energy_scale": 1.0,
+        "encoding_latency_scale": 1.0,
+        "estimated_roi_count_fraction": 0.06,
+        "fallback_roi_size_mb": 0.85,
+        "fallback_size_mb": 0.85,
+        "information_factor": 0.8,
+        "max_chip_area_px": 524288,
+        "max_estimated_roi_count": 16,
+        "max_payload_mb": 3.5,
+        "min_chip_area_px": 196608,
+        "min_delivery_proxy": 0.6,
+        "min_estimated_roi_count": 1,
+        "min_payload_mb": 0.08,
+        "name": "roi",
+        "priority_weight": 1.0,
+        "queue_sensitivity": 0.8,
+        "raw_info_gain": 0.8,
+        "size_mb": 0.85,
+        "small_target_area_multiplier": 0.15
+      },
+      {
+        "contact_sensitivity": 1.35,
+        "context_margin_factor": 2.6,
+        "context_multiplier": 3.2,
+        "deadline_sensitivity": 1.35,
+        "delivery_risk_sensitivity": 1.45,
+        "enabled": true,
+        "encoding_energy_scale": 2.2,
+        "encoding_latency_scale": 1.9,
+        "fallback_roi_size_mb": 0.85,
+        "fallback_size_mb": 2.7,
+        "information_factor": 0.89,
+        "marginal_info_gain_cap_relative_to_roi": 0.09,
+        "max_payload_mb": 8.0,
+        "min_delivery_proxy": 0.35,
+        "min_payload_mb": 0.25,
+        "name": "roi_context",
+        "priority_weight": 0.96,
+        "queue_sensitivity": 1.35,
+        "raw_info_gain": 0.89,
+        "size_mb": 2.7
+      },
+      {
+        "base_size_kb": 2.0,
+        "contact_sensitivity": 0.2,
+        "deadline_sensitivity": 0.35,
+        "delivery_risk_sensitivity": 0.25,
+        "enabled": true,
+        "encoding_energy_scale": 0.05,
+        "encoding_latency_scale": 0.1,
+        "information_factor": 0.48,
+        "min_delivery_proxy": 0.85,
+        "name": "metadata_then_roi",
+        "per_detection_record_bytes": 120,
+        "priority_weight": 1.05,
+        "queue_sensitivity": 0.25,
+        "raw_info_gain": 0.48,
+        "residual_product": "roi",
+        "size_mb": 0.002,
+        "staged_first_product": "metadata"
+      },
+      {
+        "base_size_kb": 2.0,
+        "contact_sensitivity": 0.2,
+        "deadline_sensitivity": 0.35,
+        "delivery_risk_sensitivity": 0.25,
+        "enabled": true,
+        "encoding_energy_scale": 0.05,
+        "encoding_latency_scale": 0.1,
+        "information_factor": 0.48,
+        "min_delivery_proxy": 0.85,
+        "name": "metadata_then_roi_context",
+        "per_detection_record_bytes": 120,
+        "priority_weight": 1.05,
+        "queue_sensitivity": 0.25,
+        "raw_info_gain": 0.48,
+        "residual_product": "roi_context",
+        "size_mb": 0.002,
+        "staged_first_product": "metadata"
+      },
+      {
+        "contact_sensitivity": 0.0,
+        "deadline_sensitivity": 0.0,
+        "delivery_risk_sensitivity": 0.0,
+        "delivery_status": "deferred",
+        "enabled": true,
+        "encoding_energy_scale": 0.0,
+        "encoding_latency_scale": 0.0,
+        "immediate_info_gain": 0.0,
+        "information_factor": 0.0,
+        "min_delivery_proxy": 0.0,
+        "name": "defer",
+        "priority_weight": 1.0,
+        "queue_sensitivity": 0.0,
+        "raw_info_gain": 0.0,
+        "size_mb": 0.0
+      }
+    ]
+  },
+  "payload_profiles_roi_compression_calibrated": {
+    "calibrated_profile": {
+      "defaults": {
+        "encoding_energy_j_per_mb": 2.4,
+        "encoding_latency_s_per_mb": 0.18
+      },
+      "enabled": true
+    },
+    "profiles": [
+      {
+        "base_size_kb": 2.0,
+        "contact_sensitivity": 0.2,
+        "deadline_sensitivity": 0.35,
+        "delivery_risk_sensitivity": 0.25,
+        "enabled": true,
+        "encoding_energy_scale": 0.05,
+        "encoding_latency_scale": 0.1,
+        "information_factor": 0.48,
+        "min_delivery_proxy": 0.85,
+        "name": "metadata",
+        "per_detection_record_bytes": 120,
+        "priority_weight": 1.05,
+        "queue_sensitivity": 0.25,
+        "raw_info_gain": 0.48,
+        "size_mb": 0.002
+      },
+      {
+        "bytes_per_pixel": 2.0,
+        "chip_area_padding_factor": 1.4,
+        "compression_ratio": 8.0,
+        "contact_sensitivity": 0.75,
+        "context_margin_factor": 1.35,
+        "deadline_sensitivity": 0.85,
+        "delivery_risk_sensitivity": 0.85,
+        "enabled": true,
+        "encoding_energy_scale": 1.0,
+        "encoding_latency_scale": 1.0,
+        "estimated_roi_count_fraction": 0.06,
+        "fallback_roi_size_mb": 0.85,
+        "fallback_size_mb": 0.85,
+        "information_factor": 0.8,
+        "max_chip_area_px": 524288,
+        "max_estimated_roi_count": 16,
+        "max_payload_mb": 3.5,
+        "min_chip_area_px": 196608,
+        "min_delivery_proxy": 0.6,
+        "min_estimated_roi_count": 1,
+        "min_payload_mb": 0.08,
+        "name": "roi",
+        "priority_weight": 1.0,
+        "queue_sensitivity": 0.8,
+        "raw_info_gain": 0.8,
+        "size_mb": 0.85,
+        "small_target_area_multiplier": 0.15
+      },
+      {
+        "contact_sensitivity": 1.35,
+        "context_margin_factor": 2.6,
+        "context_multiplier": 3.2,
+        "deadline_sensitivity": 1.35,
+        "delivery_risk_sensitivity": 1.45,
+        "enabled": true,
+        "encoding_energy_scale": 2.2,
+        "encoding_latency_scale": 1.9,
+        "fallback_roi_size_mb": 0.85,
+        "fallback_size_mb": 2.7,
+        "information_factor": 0.89,
+        "marginal_info_gain_cap_relative_to_roi": 0.09,
+        "max_payload_mb": 8.0,
+        "min_delivery_proxy": 0.35,
+        "min_payload_mb": 0.25,
+        "name": "roi_context",
+        "priority_weight": 0.96,
+        "queue_sensitivity": 1.35,
+        "raw_info_gain": 0.89,
+        "size_mb": 2.7
+      },
+      {
+        "base_size_kb": 2.0,
+        "contact_sensitivity": 0.2,
+        "deadline_sensitivity": 0.35,
+        "delivery_risk_sensitivity": 0.25,
+        "enabled": true,
+        "encoding_energy_scale": 0.05,
+        "encoding_latency_scale": 0.1,
+        "information_factor": 0.48,
+        "min_delivery_proxy": 0.85,
+        "name": "metadata_then_roi",
+        "per_detection_record_bytes": 120,
+        "priority_weight": 1.05,
+        "queue_sensitivity": 0.25,
+        "raw_info_gain": 0.48,
+        "residual_product": "roi",
+        "size_mb": 0.002,
+        "staged_first_product": "metadata"
+      },
+      {
+        "base_size_kb": 2.0,
+        "contact_sensitivity": 0.2,
+        "deadline_sensitivity": 0.35,
+        "delivery_risk_sensitivity": 0.25,
+        "enabled": true,
+        "encoding_energy_scale": 0.05,
+        "encoding_latency_scale": 0.1,
+        "information_factor": 0.48,
+        "min_delivery_proxy": 0.85,
+        "name": "metadata_then_roi_context",
+        "per_detection_record_bytes": 120,
+        "priority_weight": 1.05,
+        "queue_sensitivity": 0.25,
+        "raw_info_gain": 0.48,
+        "residual_product": "roi_context",
+        "size_mb": 0.002,
+        "staged_first_product": "metadata"
+      },
+      {
+        "contact_sensitivity": 0.0,
+        "deadline_sensitivity": 0.0,
+        "delivery_risk_sensitivity": 0.0,
+        "delivery_status": "deferred",
+        "enabled": true,
+        "encoding_energy_scale": 0.0,
+        "encoding_latency_scale": 0.0,
+        "immediate_info_gain": 0.0,
+        "information_factor": 0.0,
+        "min_delivery_proxy": 0.0,
+        "name": "defer",
+        "priority_weight": 1.0,
+        "queue_sensitivity": 0.0,
+        "raw_info_gain": 0.0,
+        "size_mb": 0.0
+      }
+    ]
+  },
+  "policy_repair_ablation": {
+    "policy_repair_defaults": {
+      "cost_aware_ucb": {
+        "deadline_reason_threshold": 0.7,
+        "deadline_weight": 0.14,
+        "dod_reason_threshold": 0.3,
+        "dod_weight": 0.38,
+        "eclipse_weight": 0.22,
+        "energy_ref_j": 55.0,
+        "energy_weight": 0.28,
+        "latency_ref_s": 3.0,
+        "latency_weight": 0.1,
+        "min_discount": 0.18,
+        "no_contact_weight": 0.28,
+        "payload_ref_mb": 1.6,
+        "payload_weight": 0.22,
+        "queue_reason_threshold": 0.2,
+        "queue_weight": 0.18,
+        "thermal_delta_ref": 0.1,
+        "thermal_weight": 0.22
+      },
+      "delivery_aware_info_gain": {
+        "contact_shortfall_weight": 0.25,
+        "deadline_reason_threshold": 0.5,
+        "deadline_weight": 0.5,
+        "eclipse_weight": 0.12,
+        "low_soc_weight": 0.16,
+        "metadata_floor": 0.75,
+        "metadata_info_threshold": 0.36,
+        "min_proxy": 0.18,
+        "no_contact_weight": 0.4,
+        "payload_reason_threshold": 0.8,
+        "payload_ref_mb": 1.6,
+        "payload_weight": 0.65,
+        "queue_reason_threshold": 0.2,
+        "queue_weight": 0.4,
+        "soc_guard": 0.7
+      },
+      "enable_cost_aware_ucb": false,
+      "enable_delivery_aware_info_gain": false,
+      "enable_staged_feasibility_filter": false,
+      "enable_z_guided_coupling": false,
+      "staged_feasibility_filter": {
+        "enabled": false,
+        "passive_nominal_latency_slots": 3
+      },
+      "z_guided_coupling": {
+        "dod_beta_multiplier": 0.8,
+        "dod_lambda_E_multiplier": 1.45,
+        "dod_threshold": 0.3,
+        "eclipse_beta_multiplier": 0.88,
+        "eclipse_lambda_E_multiplier": 1.25,
+        "eclipse_lambda_S_multiplier": 1.12,
+        "min_beta_scale": 0.35,
+        "no_contact_beta_multiplier": 0.88,
+        "no_contact_lambda_Q_multiplier": 1.12,
+        "no_contact_lambda_S_multiplier": 1.3,
+        "queue_lambda_Q_multiplier": 1.35,
+        "queue_lambda_S_multiplier": 1.25,
+        "queue_threshold": 0.15,
+        "thermal_beta_multiplier": 0.82,
+        "thermal_lambda_E_multiplier": 1.18,
+        "thermal_lambda_S_multiplier": 1.45,
+        "thermal_threshold": 0.85
+      }
+    },
+    "variant_overrides": {
+      "proposed_cost_aware_ucb": {
+        "enable_cost_aware_ucb": true
+      },
+      "proposed_delivery_aware_info_gain": {
+        "enable_delivery_aware_info_gain": true
+      },
+      "proposed_repaired_combined": {
+        "enable_cost_aware_ucb": true,
+        "enable_delivery_aware_info_gain": true,
+        "enable_z_guided_coupling": true
+      },
+      "proposed_ucb_plus_delivery": {
+        "enable_cost_aware_ucb": true,
+        "enable_delivery_aware_info_gain": true
+      },
+      "proposed_z_guided_coupling": {
+        "enable_z_guided_coupling": true
+      }
+    },
+    "variants": [
+      "proposed_yolo_calibrated_baseline",
+      "proposed_cost_aware_ucb",
+      "proposed_delivery_aware_info_gain",
+      "proposed_z_guided_coupling",
+      "proposed_ucb_plus_delivery",
+      "proposed_repaired_combined",
+      "utility_rule",
+      "no_mode",
+      "no_lyapunov",
+      "fixed_lightweight",
+      "fixed_high_accuracy"
+    ]
+  },
+  "policy_repair_utility_guided_safe_linucb": {
+    "cost_aware_ucb": {
+      "deadline_reason_threshold": 0.7,
+      "deadline_weight": 0.14,
+      "dod_reason_threshold": 0.3,
+      "dod_weight": 0.38,
+      "eclipse_weight": 0.22,
+      "energy_ref_j": 55.0,
+      "energy_weight": 0.28,
+      "latency_ref_s": 3.0,
+      "latency_weight": 0.1,
+      "min_discount": 0.18,
+      "no_contact_weight": 0.28,
+      "payload_ref_mb": 2.7,
+      "payload_weight": 0.22,
+      "queue_reason_threshold": 0.2,
+      "queue_weight": 0.18,
+      "thermal_delta_ref": 0.1,
+      "thermal_weight": 0.22
+    },
+    "enable_cost_aware_ucb": true,
+    "enable_delivery_aware_info_gain": false,
+    "enable_payload_specific_delivery_proxy": false,
+    "enable_staged_feasibility_filter": false,
+    "enable_utility_guided_scoring": true,
+    "enable_z_guided_coupling": true,
+    "utility_guided_scoring": {
+      "exploration_weight": 1.0,
+      "fallback_if_zero_variance": true,
+      "learned_correction_weight": 0.2,
+      "preserve_legacy_score_logging": true,
+      "score_component_normalization": "zscore_by_candidate_set",
+      "utility_prior_weight": 1.0
+    },
+    "z_guided_coupling": {
+      "dod_beta_multiplier": 0.8,
+      "dod_lambda_E_multiplier": 1.45,
+      "dod_threshold": 0.3,
+      "eclipse_beta_multiplier": 0.88,
+      "eclipse_lambda_E_multiplier": 1.25,
+      "eclipse_lambda_S_multiplier": 1.12,
+      "min_beta_scale": 0.35,
+      "no_contact_beta_multiplier": 0.88,
+      "no_contact_lambda_Q_multiplier": 1.12,
+      "no_contact_lambda_S_multiplier": 1.3,
+      "queue_lambda_Q_multiplier": 1.35,
+      "queue_lambda_S_multiplier": 1.25,
+      "queue_threshold": 0.15,
+      "thermal_beta_multiplier": 0.82,
+      "thermal_lambda_E_multiplier": 1.18,
+      "thermal_lambda_S_multiplier": 1.45,
+      "thermal_threshold": 0.85
+    }
+  },
+  "product_requirement_utility": {
+    "utility_table": {
+      "empty": {
+        "alert": 0.0,
+        "context": 0.0,
+        "evidence": 0.0,
+        "verification": 0.0
+      },
+      "metadata": {
+        "alert": 0.8,
+        "context": 0.2,
+        "evidence": 0.15,
+        "verification": 0.35
+      },
+      "metadata+roi": {
+        "alert": 0.9,
+        "context": 0.55,
+        "evidence": 0.65,
+        "verification": 0.9
+      },
+      "metadata+roi_context": {
+        "alert": 0.95,
+        "context": 0.92,
+        "evidence": 0.95,
+        "verification": 0.96
+      },
+      "roi": {
+        "alert": 0.9,
+        "context": 0.55,
+        "evidence": 0.65,
+        "verification": 0.9
+      },
+      "roi_context": {
+        "alert": 0.95,
+        "context": 0.92,
+        "evidence": 0.95,
+        "verification": 0.96
+      }
+    }
+  },
+  "resource": {
+    "day_cycle_orbits": 15,
+    "description": "BUPT-1-grounded nominal resource candidate for 1-day SARFish validation.",
+    "dod_guard": 0.3,
+    "eclipse_duration_s": 2100,
+    "eclipse_temperature_c": 0.0,
+    "idle_power_w": 4.8,
+    "orbit_period_s": 5700,
+    "orbit_phase_offset_s": 0,
+    "reference_platform": {
+      "battery_capacity_j": 828000,
+      "battery_capacity_wh": 230,
+      "inclination_deg": 97,
+      "name": "BUPT-1-like 12U COTS LEO satellite",
+      "nominal_dod_guard": 0.3,
+      "orbit_altitude_km": 500,
+      "thermal_internal_range_c": [
+        -10,
+        30
+      ]
+    },
+    "resource_power_variation_w": 0.65,
+    "soc_hard_floor": 0.55,
+    "soc_soft_guard": 0.7,
+    "solar_peak_w": 14.5,
+    "sunlit_duration_s": 3600,
+    "sunlit_temperature_c": 18.0,
+    "temperature_cycle_variation_c": 2.5
+  },
+  "resource_sarfish_bupt1_balanced_long_horizon": {
+    "battery_capacity_wh": 230.0,
+    "battery_init": 0.85,
+    "battery_initial_soc": 0.85,
+    "battery_min": 0.2,
+    "battery_soft_target": 0.7,
+    "battery_strong_guard": 0.5,
+    "comm_power_w": {
+      "contact_standby": 18.0,
+      "tx_nominal": 25.0,
+      "tx_peak": 38.0
+    },
+    "compute_power_w": {
+      "Medium": 10.2,
+      "Small": 8.5,
+      "Tiny": 6.8
+    },
+    "description": "BUPT-1 inspired nominal long-horizon energy-health profile, intended for sustainable operation audits.",
+    "eclipse_solar_power_w": 0.0,
+    "idle_power_w": 14.0,
+    "orbit_period_min": 90,
+    "profile_name": "bupt1_balanced_long_horizon",
+    "soc_band_policy": {
+      "enabled": true,
+      "hard_high_value_bonus_scale": 0.6,
+      "hard_lambda_E_multiplier": 4.0,
+      "hard_min": 0.2,
+      "hard_model_complexity_bias_delta": -0.7,
+      "hard_payload_size_bias_delta": -0.65,
+      "hard_safety_margin_scale": 2.0,
+      "soft_high_value_bonus_scale": 0.95,
+      "soft_lambda_E_multiplier": 1.45,
+      "soft_model_complexity_bias_delta": -0.12,
+      "soft_payload_size_bias_delta": -0.08,
+      "soft_safety_margin_scale": 1.15,
+      "soft_target": 0.7,
+      "strong_guard": 0.5,
+      "strong_high_value_bonus_scale": 0.8,
+      "strong_lambda_E_multiplier": 2.2,
+      "strong_model_complexity_bias_delta": -0.35,
+      "strong_payload_size_bias_delta": -0.3,
+      "strong_safety_margin_scale": 1.45
+    },
+    "solar_peak_w": 38.0,
+    "solar_shape": "sinusoidal",
+    "sunlight_fraction": 0.6
+  },
+  "resource_sarfish_energy_shadow_stress": {
+    "description": "energy-scarce stress case, not nominal sustainable operation",
+    "dod_guard": 0.3,
+    "eclipse_duration_s": 2040,
+    "eclipse_temperature_c": 2.0,
+    "idle_power_w": 4.2,
+    "orbit_period_s": 5400,
+    "orbit_phase_offset_s": 0,
+    "profile_name": "energy_shadow_stress",
+    "resource_power_variation_w": 0.45,
+    "solar_peak_w": 5.5,
+    "sunlit_duration_s": 3360,
+    "sunlit_temperature_c": 21.0,
+    "temperature_cycle_variation_c": 3.0
+  },
+  "resource_sarfish_formal_nominal_bupt1": {
+    "day_cycle_orbits": 15,
+    "description": "BUPT-1-grounded nominal resource candidate for 1-day SARFish validation.",
+    "dod_guard": 0.3,
+    "eclipse_duration_s": 2100,
+    "eclipse_temperature_c": 0.0,
+    "idle_power_w": 4.8,
+    "orbit_period_s": 5700,
+    "orbit_phase_offset_s": 0,
+    "reference_platform": {
+      "battery_capacity_j": 828000,
+      "battery_capacity_wh": 230,
+      "inclination_deg": 97,
+      "name": "BUPT-1-like 12U COTS LEO satellite",
+      "nominal_dod_guard": 0.3,
+      "orbit_altitude_km": 500,
+      "thermal_internal_range_c": [
+        -10,
+        30
+      ]
+    },
+    "resource_power_variation_w": 0.65,
+    "soc_hard_floor": 0.55,
+    "soc_soft_guard": 0.7,
+    "solar_peak_w": 14.5,
+    "sunlit_duration_s": 3600,
+    "sunlit_temperature_c": 18.0,
+    "temperature_cycle_variation_c": 2.5
+  },
+  "resource_sarfish_formal_stress_bupt1": {
+    "day_cycle_orbits": 15,
+    "description": "BUPT-1-grounded stress resource candidate for 1-day SARFish validation.",
+    "dod_guard": 0.3,
+    "eclipse_duration_s": 2250,
+    "eclipse_temperature_c": 1.0,
+    "idle_power_w": 5.6,
+    "orbit_period_s": 5700,
+    "orbit_phase_offset_s": 300,
+    "reference_platform": {
+      "battery_capacity_j": 828000,
+      "battery_capacity_wh": 230,
+      "inclination_deg": 97,
+      "name": "BUPT-1-like 12U COTS LEO satellite",
+      "nominal_dod_guard": 0.3,
+      "orbit_altitude_km": 500,
+      "thermal_internal_range_c": [
+        -10,
+        30
+      ]
+    },
+    "resource_power_variation_w": 0.8,
+    "soc_hard_floor": 0.5,
+    "soc_soft_guard": 0.7,
+    "solar_peak_w": 11.0,
+    "sunlit_duration_s": 3450,
+    "sunlit_temperature_c": 20.0,
+    "temperature_cycle_variation_c": 3.5
+  },
+  "reward": {
+    "deadline_miss_penalty": 0.0,
+    "deferred_delivery_credit": 0.15,
+    "delivery_weight": 1.0,
+    "dynamic_energy_weight": true,
+    "energy_penalty": 0.3,
+    "eta_B": 1.0,
+    "eta_Theta": 0.5,
+    "high_value_bonus": 0.0,
+    "high_value_threshold": 0.75,
+    "info_base": 0.25,
+    "info_difficulty_weight": 0.2,
+    "info_uncertainty_weight": 0.25,
+    "info_urgency_weight": 0.2,
+    "info_value_weight": 0.35,
+    "information_gap_penalty": 0.35,
+    "information_weight": 1.0,
+    "lambda_E_base": 0.3,
+    "lambda_L": 0.2,
+    "lambda_Omega": 2.0,
+    "lambda_Q": 0.1,
+    "latency_penalty": 0.2,
+    "lifecycle_utility": {
+      "enable_lifecycle_utility": false,
+      "notes": "Reserved for future lifecycle utility. Must not affect current results.",
+      "reserved_only": true,
+      "stage_deadlines": {
+        "alert_fraction": null,
+        "alert_max_seconds": null,
+        "confirmation_fraction": null,
+        "evidence_fraction": null
+      },
+      "stage_weights": {
+        "alert": null,
+        "confirmation": null,
+        "evidence": null
+      }
+    },
+    "quality_base_requirement": 0.4,
+    "quality_difficulty_weight": 0.22,
+    "quality_gap_penalty": 0.6,
+    "quality_uncertainty_weight": 0.16,
+    "quality_urgency_weight": 0.12,
+    "quality_value_weight": 0.18,
+    "queue_penalty": 0.1,
+    "utility_calibration": {
+      "cost_penalty_scale": {
+        "beta_hard_penalty": 1.0,
+        "beta_requirement_penalty": 1.0,
+        "beta_resource_cost": 1.0
+      },
+      "diagnostic_logging": true,
+      "enable_value_cost_calibration": false,
+      "shadow_only": false,
+      "value_scale": {
+        "a": 1.0,
+        "b": 0.0,
+        "clip_max": 0.95,
+        "clip_min": 0.05
+      }
+    },
+    "violation_penalty": 2.0
+  },
+  "shadow_progressive_information_metric": {
+    "description": "Diagnostic-only progressive information sufficiency metric. This file is not used by router, reward, queue priority, task generation, or delivered-only metrics.",
+    "level_mapping": {
+      "alert": [
+        "metadata"
+      ],
+      "context": [
+        "roi_context"
+      ],
+      "verification": [
+        "roi"
+      ]
+    },
+    "notes": [
+      "Values are shadow diagnostics only and must not be used for action selection, reward computation, queue priority, or formal delivered-only metrics.",
+      "The key metadata_roi_roi_context represents delivered metadata plus ROI plus ROI-context evidence."
+    ],
+    "payload_set_sufficiency": {
+      "empty": 0.0,
+      "metadata": 0.45,
+      "metadata_roi": 0.8,
+      "metadata_roi_context": 0.9,
+      "metadata_roi_roi_context": 1.0,
+      "roi": 0.65,
+      "roi_context": 0.75
+    }
+  },
+  "simulator": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_j_reference": 828000.0,
+    "battery_capacity_wh": 230.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.9,
+    "battery_min": 0.55,
+    "battery_soft_guard": 0.7,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 35.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enable_thermal_headroom_capacity": true,
+      "enable_thermal_headroom_hysteresis": false,
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_headroom_search_iterations": 40,
+      "thermal_headroom_tolerance": 1e-10,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "guarantee": {
+      "allow_utility_rule": false,
+      "beta_H": 0.3,
+      "beta_H_grid": [
+        0.15,
+        0.3,
+        0.45,
+        0.6
+      ],
+      "carry_debt_across_windows": true,
+      "component_normalization": "window_candidate_minmax",
+      "eligible_product_requirements": [
+        "context",
+        "evidence"
+      ],
+      "eligible_value_levels": [
+        "high",
+        "urgent"
+      ],
+      "enabled": true,
+      "full_method_aliases": [
+        "proposed_lyapunov_rule_mode_safe_bandit"
+      ],
+      "gamma_age_high_per_slot": 0.01,
+      "gamma_age_urgent_per_slot": 0.015,
+      "gamma_miss_high": 1.0,
+      "gamma_miss_urgent": 1.25,
+      "guarantee_window_budget_fraction": 0.3,
+      "guarantee_window_budget_fraction_grid": [
+        0.15,
+        0.3,
+        0.45
+      ],
+      "hard_safety_veto": true,
+      "lambda_A": 0.1,
+      "lambda_C": 0.1,
+      "lambda_D": 0.1,
+      "lambda_H": 0.35,
+      "lambda_H_grid": [
+        0.0,
+        0.2,
+        0.35,
+        0.5,
+        0.75,
+        1.0,
+        1.5
+      ],
+      "lambda_P": 0.05,
+      "low_medium_debt_forbidden": true,
+      "marginal_utility_floor": 0.0,
+      "marginal_utility_floor_main": 0.0,
+      "marginal_utility_floor_stress": -0.01,
+      "min_stage_miss_weight": 1.0,
+      "minimum_stage_for_context": "ROI",
+      "minimum_stage_for_evidence": "ROI",
+      "missed_opportunity_only": false,
+      "mode": "dynamic_age_miss_debt",
+      "no_contact_slots_do_not_increase_miss_debt": true,
+      "no_future_contact_no_age_growth": true,
+      "normalize_priority_components": true,
+      "progress_credit_min_stage": 1.5,
+      "progress_credit_target_stage": 3.0,
+      "recompute_priority_each_scheduler_step": true,
+      "require_future_contact_for_age_debt": true,
+      "reset_debt_when_min_stage_reached": false,
+      "reset_debt_when_task_closed": true,
+      "roi_cannot_close_evidence": true,
+      "starvation_window_threshold": 2,
+      "target_stage_for_context": "ROI+Ctx",
+      "target_stage_for_evidence": "ROI+Ctx",
+      "target_stage_miss_weight": 0.5,
+      "target_stage_requires_positive_marginal_utility": true,
+      "update_age_debt_each_slot": true,
+      "update_miss_debt_at_contact_window_end": true,
+      "update_timing": "dynamic_age_miss",
+      "w_abs": 0.25,
+      "w_density": 0.35,
+      "waiting_age_norm_slots": 100.0,
+      "waiting_limit_windows_for_target_progress": 1,
+      "z_age_max": 2.0,
+      "z_max": 4.0,
+      "z_max_grid": [
+        2.0,
+        4.0,
+        6.0
+      ],
+      "z_miss_max": 4.0,
+      "z_total_max": 4.0
+    },
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "progressive_payload": {
+      "phase6_proactive_followup": {
+        "battery_guard_threshold": 0.5,
+        "enabled": true,
+        "eriv_threshold": 0.03,
+        "full_method_aliases": [
+          "proposed_lyapunov_rule_mode_safe_bandit"
+        ],
+        "max_proactive_residuals_per_contact": 2,
+        "max_proactive_residuals_per_slot": 1,
+        "min_remaining_deadline_s": 30.0,
+        "proactive_queue_bonus": 0.3,
+        "queue_pressure_threshold": 0.72,
+        "require_contact_opportunity": true,
+        "residual_utility_threshold": 0.01,
+        "thermal_guard_threshold": 0.88
+      },
+      "phase6_residual_candidate_carryover": {
+        "enabled": true,
+        "max_candidate_age_s": 600,
+        "max_candidates_per_slot": 2,
+        "re_evaluate_once_per_slot": true,
+        "remove_on_closed": true,
+        "remove_on_duplicate_enqueued": false,
+        "remove_on_expired": true,
+        "remove_on_residual_delivered": true,
+        "require_metadata_delivered": true,
+        "require_pending_residual": true,
+        "require_positive_residual_utility": true
+      },
+      "phase6_same_slot_carryover": {
+        "enable_queue_fallback_on_insufficient_capacity": false,
+        "enabled": true,
+        "enforce_no_queue_policy_change": true,
+        "enforce_no_reward_change": true,
+        "max_same_slot_eval_per_slot": 1,
+        "only_after_lifecycle_update": true,
+        "reuse_existing_guards": true,
+        "strict_mode": true
+      },
+      "roi_context_after_roi": {
+        "enabled": true,
+        "residual_utility_threshold": 0.01
+      },
+      "value_aware_staged_delivery_queue": {
+        "allow_pending_without_future_contact": true,
+        "allow_utility_rule": false,
+        "deadline_urgency_lambda": 0.15,
+        "enable_close_task_protection": false,
+        "enable_contact_capacity_reservation": false,
+        "enable_displacement_net_guard": false,
+        "enable_future_contact_generation": false,
+        "enable_generation_side_guarantee": false,
+        "enable_persistent_closing_requests": true,
+        "enable_request_disable_replay": false,
+        "enabled": true,
+        "eriv_threshold": 0.0,
+        "force_all_tasks_staged": false,
+        "full_method_aliases": [
+          "proposed_lyapunov_rule_mode_safe_bandit"
+        ],
+        "max_admissions_per_contact_window": 6,
+        "max_admissions_per_slot": 3,
+        "min_value_density": 0.0,
+        "priority_inversion_fix_enabled": false,
+        "require_future_contact_before_deadline": true,
+        "residual_utility_threshold": 0.0,
+        "timeliness_floor": 0.05
+      }
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 5120.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 4096.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20.0,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "thermal_upper_bound_c": 30.0,
+    "tx_power_w": 35.0
+  },
+  "simulator_bupt1_long_horizon_energy_health": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 1.0,
+    "battery_capacity_wh": 230.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.85,
+    "battery_min": 0.2,
+    "battery_soft_target": 0.7,
+    "battery_strong_guard": 0.5,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 25.0,
+    "cooling_per_slot": 0.05,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "guarantee": {
+      "enabled": false,
+      "lambda_H": 0.0,
+      "mode": "dynamic_age_miss_debt"
+    },
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.8,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "progressive_payload": {
+      "phase5_virtual_continue": {
+        "enabled": false
+      },
+      "phase6_proactive_followup": {
+        "enabled": false
+      },
+      "phase6_residual_candidate_carryover": {
+        "enabled": false
+      },
+      "phase6_same_slot_carryover": {
+        "enabled": false
+      }
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "soc_band_policy": {
+      "enabled": true,
+      "hard_high_value_bonus_scale": 0.6,
+      "hard_lambda_E_multiplier": 4.0,
+      "hard_min": 0.2,
+      "hard_model_complexity_bias_delta": -0.7,
+      "hard_payload_size_bias_delta": -0.65,
+      "hard_safety_margin_scale": 2.0,
+      "soft_high_value_bonus_scale": 0.95,
+      "soft_lambda_E_multiplier": 1.45,
+      "soft_model_complexity_bias_delta": -0.12,
+      "soft_payload_size_bias_delta": -0.08,
+      "soft_safety_margin_scale": 1.15,
+      "soft_target": 0.7,
+      "strong_guard": 0.5,
+      "strong_high_value_bonus_scale": 0.8,
+      "strong_lambda_E_multiplier": 2.2,
+      "strong_model_complexity_bias_delta": -0.35,
+      "strong_payload_size_bias_delta": -0.3,
+      "strong_safety_margin_scale": 1.45
+    },
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.25,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 25.0
+  },
+  "simulator_sarfish_20s_dryrun": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 1.0,
+    "battery_capacity_wh": 35.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.85,
+    "battery_min": 0.18,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 8.0,
+    "cooling_per_slot": 0.05,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.8,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.25,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 8.0
+  },
+  "simulator_sarfish_energy_shadow_payload_calibrated_1day_smoke_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_wh": 35.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.76,
+    "battery_min": 0.18,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 8.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 8.0
+  },
+  "simulator_sarfish_energy_shadow_payload_profile_ablation_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_wh": 35.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.76,
+    "battery_min": 0.18,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 8.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 8.0
+  },
+  "simulator_sarfish_energy_shadow_policy_repair_ablation_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_wh": 35.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.76,
+    "battery_min": 0.18,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 8.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 8.0
+  },
+  "simulator_sarfish_energy_shadow_stress_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_wh": 35.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.76,
+    "battery_min": 0.18,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 8.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 8.0
+  },
+  "simulator_sarfish_energy_shadow_yolo_profile_ablation_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_wh": 35.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.76,
+    "battery_min": 0.18,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 8.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 64.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 48.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "tx_power_w": 8.0
+  },
+  "simulator_sarfish_formal_nominal_bupt1_1day_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_j_reference": 828000.0,
+    "battery_capacity_wh": 230.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.9,
+    "battery_min": 0.55,
+    "battery_soft_guard": 0.7,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 35.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 5120.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 4096.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "thermal_upper_bound_c": 30.0,
+    "tx_power_w": 35.0
+  },
+  "simulator_sarfish_formal_nominal_bupt1_deadline_minutes_1day_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_j_reference": 828000.0,
+    "battery_capacity_wh": 230.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.9,
+    "battery_min": 0.55,
+    "battery_soft_guard": 0.7,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 35.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 5120.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 4096.0,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "thermal_upper_bound_c": 30.0,
+    "tx_power_w": 35.0
+  },
+  "simulator_sarfish_formal_stress_bupt1_1day_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_j_reference": 828000.0,
+    "battery_capacity_wh": 230.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.85,
+    "battery_min": 0.5,
+    "battery_soft_guard": 0.7,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 35.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 3072.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 2457.6,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "thermal_upper_bound_c": 30.0,
+    "tx_power_w": 35.0
+  },
+  "simulator_sarfish_formal_stress_bupt1_deadline_minutes_1day_20s": {
+    "E_AI_ref": 100.0,
+    "E_ref": 100.0,
+    "ai_budget_init": 0.92,
+    "battery_capacity_j_reference": 828000.0,
+    "battery_capacity_wh": 230.0,
+    "battery_charge_efficiency": 0.92,
+    "battery_discharge_efficiency": 0.95,
+    "battery_init": 0.85,
+    "battery_min": 0.5,
+    "battery_soft_guard": 0.7,
+    "comm_alpha_gamma": 0.6,
+    "comm_power_w": 35.0,
+    "cooling_per_slot": 0.045,
+    "delivery_beta": 0.5,
+    "downlink_efficiency": 1.0,
+    "downlink_safety_throttle": {
+      "enabled": true,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "throttle_mode": "pause_when_hot"
+    },
+    "epsilon": 1e-09,
+    "high_value_threshold": 0.75,
+    "long_term_risk_penalty": {
+      "battery_guard_threshold": 0.7,
+      "battery_reserve_weight": 0.04,
+      "downlink_burden_weight_per_mb": 0.01,
+      "enabled": true,
+      "queue_risk_weight": 0.05,
+      "terminal_battery_weight": 5.0,
+      "terminal_queue_weight": 2.0,
+      "terminal_thermal_weight": 4.0,
+      "thermal_guard_threshold": 0.85,
+      "thermal_hard_threshold": 0.92,
+      "thermal_risk_weight": 0.08
+    },
+    "queue_age_bonus": 0.01,
+    "queue_high_value_bonus": 0.2,
+    "queue_init_mb": 0.0,
+    "queue_max_mb": 3072.0,
+    "queue_meta_first_bonus": 0.25,
+    "queue_priority_expire_bonus": 0.2,
+    "queue_priority_tau_d": 60.0,
+    "queue_safe_threshold_mb": 2457.6,
+    "safety_fallback_strategy": "predicted_effective_utility",
+    "safety_terminal_fallback_candidates": [
+      "delay/store",
+      "lightweight+metadata"
+    ],
+    "slot_seconds": 20,
+    "thermal_eclipse_cooling_bonus": 0.03,
+    "thermal_init": 0.52,
+    "thermal_max": 0.92,
+    "thermal_passive_cooling": 0.12,
+    "thermal_reference_max_c": 30.0,
+    "thermal_reference_min_c": -10.0,
+    "thermal_reference_slot_seconds": 60,
+    "thermal_sunlight_gain": 0.015,
+    "thermal_upper_bound_c": 30.0,
+    "tx_power_w": 35.0
+  },
+  "smoke_test_variants": {
+    "description": "1-day single-seed smoke-test variant set. Stage-local aliases are for reporting only.",
+    "variants": [
+      {
+        "full_name": "proposed_calibrated_payload_plus_z_guided",
+        "short_name": "PROP-Z"
+      },
+      {
+        "full_name": "proposed_calibrated_payload_profile",
+        "short_name": "PROP-PAY"
+      },
+      {
+        "full_name": "proposed_payload_repaired_combined",
+        "short_name": "PROP-COMB"
+      },
+      {
+        "full_name": "utility_rule",
+        "short_name": "UTIL"
+      },
+      {
+        "full_name": "no_mode",
+        "short_name": "NO-MODE"
+      },
+      {
+        "full_name": "no_lyapunov",
+        "short_name": "NO-LYA"
+      },
+      {
+        "full_name": "fixed_lightweight",
+        "short_name": "FIX-L"
+      },
+      {
+        "full_name": "fixed_high_accuracy",
+        "short_name": "FIX-H"
+      },
+      {
+        "full_name": "proposed_calibrated_payload_plus_cost_aware_ucb",
+        "short_name": "PROP-UCB"
+      }
+    ]
+  },
+  "task_stream": {
+    "background_task_probability": 0.005,
+    "deadline_policy": "authority_grounded_minutes",
+    "deadline_policy_notes": "Deadlines are mission-level service latency priors from task class, not label-derived target content.",
+    "description": "SARFishSample 1-day nominal BUPT-1 task stream with authority-grounded minute-scale deadlines.",
+    "emergency_deadline_max_minutes": 90,
+    "emergency_deadline_min_minutes": 20,
+    "emergency_window_probability": 0.12,
+    "forced_windows_s": [],
+    "high_value_deadline_max_minutes": 120,
+    "high_value_deadline_min_minutes": 45,
+    "high_value_window_probability": 0.28,
+    "intra_window_task_interval_slots": [
+      2,
+      3
+    ],
+    "mode": "observation_window",
+    "num_days": 1,
+    "observation_windows_per_orbit": [
+      2,
+      3
+    ],
+    "orbit_period_min": 95,
+    "ordinary_deadline_max_minutes": 240,
+    "ordinary_deadline_min_minutes": 90,
+    "seed": 2026,
+    "slot_seconds": 20,
+    "window_duration_s_range": [
+      240,
+      360
+    ]
+  },
+  "task_stream_sarfish_20s_dryrun": {
+    "background_task_probability": 0.03,
+    "emergency_window_probability": 0.15,
+    "high_value_window_probability": 0.25,
+    "intra_window_task_interval_slots": [
+      1,
+      2
+    ],
+    "mode": "observation_window",
+    "num_days": 1,
+    "observation_windows_per_orbit": [
+      2,
+      4
+    ],
+    "orbit_period_min": 90,
+    "slot_seconds": 20,
+    "window_duration_s_range": [
+      120,
+      300
+    ]
+  },
+  "task_stream_sarfish_energy_shadow_stress": {
+    "background_task_probability": 0.02,
+    "emergency_window_probability": 0.2,
+    "forced_windows_s": [
+      {
+        "end_s": 4380,
+        "interval_s": 40,
+        "replace_existing": true,
+        "start_s": 3300,
+        "task_class": "emergency",
+        "window_id": "eclipse_burst_0"
+      },
+      {
+        "end_s": 9780,
+        "interval_s": 40,
+        "replace_existing": true,
+        "start_s": 8700,
+        "task_class": "high_value",
+        "window_id": "eclipse_burst_1"
+      }
+    ],
+    "high_value_window_probability": 0.35,
+    "intra_window_task_interval_slots": [
+      1,
+      2
+    ],
+    "mode": "observation_window",
+    "num_days": 1,
+    "observation_windows_per_orbit": [
+      2,
+      3
+    ],
+    "orbit_period_min": 90,
+    "slot_seconds": 20,
+    "window_duration_s_range": [
+      180,
+      360
+    ]
+  },
+  "task_stream_sarfish_formal_nominal_bupt1_deadline_minutes": {
+    "background_task_probability": 0.005,
+    "deadline_policy": "authority_grounded_minutes",
+    "deadline_policy_notes": "Deadlines are mission-level service latency priors from task class, not label-derived target content.",
+    "description": "SARFishSample 1-day nominal BUPT-1 task stream with authority-grounded minute-scale deadlines.",
+    "emergency_deadline_max_minutes": 90,
+    "emergency_deadline_min_minutes": 20,
+    "emergency_window_probability": 0.12,
+    "forced_windows_s": [],
+    "high_value_deadline_max_minutes": 120,
+    "high_value_deadline_min_minutes": 45,
+    "high_value_window_probability": 0.28,
+    "intra_window_task_interval_slots": [
+      2,
+      3
+    ],
+    "mode": "observation_window",
+    "num_days": 1,
+    "observation_windows_per_orbit": [
+      2,
+      3
+    ],
+    "orbit_period_min": 95,
+    "ordinary_deadline_max_minutes": 240,
+    "ordinary_deadline_min_minutes": 90,
+    "slot_seconds": 20,
+    "window_duration_s_range": [
+      240,
+      360
+    ]
+  },
+  "task_stream_sarfish_formal_stress_bupt1_deadline_minutes": {
+    "background_task_probability": 0.015,
+    "deadline_policy": "authority_grounded_minutes",
+    "deadline_policy_notes": "Deadlines are mission-level service latency priors from task class, not label-derived target content.",
+    "description": "SARFishSample 1-day stress BUPT-1 task stream with authority-grounded minute-scale deadlines.",
+    "emergency_deadline_max_minutes": 60,
+    "emergency_deadline_min_minutes": 15,
+    "emergency_window_probability": 0.18,
+    "forced_windows_s": [
+      {
+        "end_s": 4380,
+        "interval_s": 40,
+        "replace_existing": true,
+        "start_s": 3300,
+        "task_class": "emergency",
+        "window_id": "bupt1_stress_eclipse_burst_0"
+      },
+      {
+        "end_s": 9780,
+        "interval_s": 40,
+        "replace_existing": true,
+        "start_s": 8700,
+        "task_class": "high_value",
+        "window_id": "bupt1_stress_high_value_burst_1"
+      }
+    ],
+    "high_value_deadline_max_minutes": 90,
+    "high_value_deadline_min_minutes": 30,
+    "high_value_window_probability": 0.35,
+    "intra_window_task_interval_slots": [
+      1,
+      2
+    ],
+    "mode": "observation_window",
+    "num_days": 1,
+    "observation_windows_per_orbit": [
+      2,
+      3
+    ],
+    "orbit_period_min": 95,
+    "ordinary_deadline_max_minutes": 180,
+    "ordinary_deadline_min_minutes": 60,
+    "slot_seconds": 20,
+    "window_duration_s_range": [
+      180,
+      360
+    ]
+  },
+  "timeline": {
+    "contact": {
+      "contact_duration_s": 600,
+      "contact_period_s": 5700,
+      "contact_phase_offset_s": 420,
+      "link_quality_period_s": 1800,
+      "link_quality_phase": 0.5,
+      "snr_min_db": 8.0,
+      "snr_span_db": 12.0,
+      "throughput_max_mbps": 22.75,
+      "throughput_min_mbps": 12.25
+    },
+    "description": "1-day BUPT-1 nominal timeline for minute-scale deadline smoke tests.",
+    "num_days": 1,
+    "orbit_reference": {
+      "altitude_km": 500,
+      "inclination_deg": 97,
+      "orbit_type": "sun_synchronous_like"
+    },
+    "physical_horizon_s": 86400,
+    "resource": {
+      "day_cycle_orbits": 15,
+      "description": "BUPT-1-grounded nominal resource candidate for 1-day SARFish validation.",
+      "dod_guard": 0.3,
+      "eclipse_duration_s": 2100,
+      "eclipse_temperature_c": 0.0,
+      "idle_power_w": 4.8,
+      "orbit_period_s": 5700,
+      "orbit_phase_offset_s": 0,
+      "reference_platform": {
+        "battery_capacity_j": 828000,
+        "battery_capacity_wh": 230,
+        "inclination_deg": 97,
+        "name": "BUPT-1-like 12U COTS LEO satellite",
+        "nominal_dod_guard": 0.3,
+        "orbit_altitude_km": 500,
+        "thermal_internal_range_c": [
+          -10,
+          30
+        ]
+      },
+      "resource_power_variation_w": 0.65,
+      "soc_hard_floor": 0.55,
+      "soc_soft_guard": 0.7,
+      "solar_peak_w": 14.5,
+      "sunlit_duration_s": 3600,
+      "sunlit_temperature_c": 18.0,
+      "temperature_cycle_variation_c": 2.5
+    },
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "trace_mode": "synthetic",
+    "use_num_days": true
+  },
+  "timeline_bupt1_energy_shadow_stress_24h_20s": {
+    "num_slots": 4320,
+    "resource_profile": "configs/resource_sarfish_energy_shadow_stress.yaml",
+    "slot_seconds": 20,
+    "task_arrival": "one_per_slot",
+    "trace_mode": "synthetic",
+    "use_num_days": false
+  },
+  "timeline_bupt1_nominal_24h_20s": {
+    "num_slots": 4320,
+    "resource_profile": "configs/resource_sarfish_bupt1_balanced_long_horizon.yaml",
+    "slot_seconds": 20,
+    "task_arrival": "one_per_slot",
+    "trace_mode": "synthetic",
+    "use_num_days": false
+  },
+  "timeline_bupt1_nominal_48h_20s": {
+    "num_slots": 8640,
+    "resource_profile": "configs/resource_sarfish_bupt1_balanced_long_horizon.yaml",
+    "slot_seconds": 20,
+    "task_arrival": "one_per_slot",
+    "trace_mode": "synthetic",
+    "use_num_days": false
+  },
+  "timeline_sarfish_20s_dryrun": {
+    "day_cycle_orbits": 16,
+    "eclipse_temperature_c": 4.0,
+    "idle_power_w": 2.0,
+    "num_days": 0.125,
+    "num_slots": 540,
+    "orbit_period_min": 90,
+    "resource_power_variation_w": 0.35,
+    "slot_seconds": 20,
+    "solar_charge_power_w": 6.5,
+    "sunlight_fraction": 0.62,
+    "sunlit_temperature_c": 18.0,
+    "task_arrival": "one_per_slot",
+    "temperature_cycle_variation_c": 2.0,
+    "trace_mode": "synthetic",
+    "use_num_days": false
+  },
+  "timeline_sarfish_energy_shadow_payload_calibrated_1day_smoke_20s": {
+    "num_days": 1,
+    "physical_horizon_s": 86400,
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "trace_mode": "synthetic",
+    "use_num_days": true
+  },
+  "timeline_sarfish_energy_shadow_stress_20s": {
+    "num_slots": 540,
+    "physical_horizon_s": 10800,
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "trace_mode": "synthetic",
+    "use_num_days": false
+  },
+  "timeline_sarfish_formal_nominal_bupt1_20s": {
+    "contact": {
+      "contact_duration_s": 600,
+      "contact_period_s": 5700,
+      "contact_phase_offset_s": 420,
+      "link_quality_period_s": 1800,
+      "link_quality_phase": 0.5,
+      "snr_min_db": 8.0,
+      "snr_span_db": 12.0,
+      "throughput_max_mbps": 65.0,
+      "throughput_min_mbps": 35.0
+    },
+    "deadline_distribution_status": "target_only_current_dataset_adapter_uses_hardcoded_seconds",
+    "deadline_distribution_target_minutes": {
+      "emergency": [
+        15,
+        60
+      ],
+      "high_value": [
+        20,
+        90
+      ],
+      "routine": [
+        30,
+        180
+      ]
+    },
+    "description": "1-day BUPT-1-grounded nominal timeline candidate. Contact/task fields are consumed by validation scripts without changing generator code.",
+    "num_days": 1,
+    "orbit_reference": {
+      "altitude_km": 500,
+      "inclination_deg": 97,
+      "orbit_type": "sun_synchronous_like"
+    },
+    "physical_horizon_s": 86400,
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "task_stream_overrides": {
+      "background_task_probability": 0.005,
+      "emergency_window_probability": 0.12,
+      "forced_windows_s": [],
+      "high_value_window_probability": 0.28,
+      "intra_window_task_interval_slots": [
+        2,
+        3
+      ],
+      "observation_windows_per_orbit": [
+        2,
+        3
+      ],
+      "window_duration_s_range": [
+        240,
+        360
+      ]
+    },
+    "trace_mode": "synthetic",
+    "use_num_days": true
+  },
+  "timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s": {
+    "contact": {
+      "contact_duration_s": 600,
+      "contact_period_s": 5700,
+      "contact_phase_offset_s": 420,
+      "link_quality_period_s": 1800,
+      "link_quality_phase": 0.5,
+      "snr_min_db": 8.0,
+      "snr_span_db": 12.0,
+      "throughput_max_mbps": 65.0,
+      "throughput_min_mbps": 35.0
+    },
+    "description": "1-day BUPT-1 nominal timeline for minute-scale deadline smoke tests.",
+    "num_days": 1,
+    "orbit_reference": {
+      "altitude_km": 500,
+      "inclination_deg": 97,
+      "orbit_type": "sun_synchronous_like"
+    },
+    "physical_horizon_s": 86400,
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "trace_mode": "synthetic",
+    "use_num_days": true
+  },
+  "timeline_sarfish_formal_stress_bupt1_20s": {
+    "contact": {
+      "contact_duration_s": 300,
+      "contact_period_s": 5700,
+      "contact_phase_offset_s": 420,
+      "link_quality_period_s": 1800,
+      "link_quality_phase": 0.5,
+      "outage_windows_s": [
+        [
+          15600,
+          21300
+        ],
+        [
+          38400,
+          44100
+        ],
+        [
+          61200,
+          66900
+        ]
+      ],
+      "snr_min_db": 5.0,
+      "snr_span_db": 10.0,
+      "throughput_max_mbps": 30.0,
+      "throughput_min_mbps": 20.0
+    },
+    "deadline_distribution_status": "target_only_current_dataset_adapter_uses_hardcoded_seconds",
+    "deadline_distribution_target_minutes": {
+      "emergency": [
+        10,
+        45
+      ],
+      "high_value": [
+        15,
+        60
+      ],
+      "routine": [
+        20,
+        120
+      ]
+    },
+    "description": "1-day BUPT-1-grounded stress timeline candidate. Contact/task fields are consumed by validation scripts without changing generator code.",
+    "num_days": 1,
+    "orbit_reference": {
+      "altitude_km": 500,
+      "inclination_deg": 97,
+      "orbit_type": "sun_synchronous_like"
+    },
+    "physical_horizon_s": 86400,
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "task_stream_overrides": {
+      "background_task_probability": 0.015,
+      "emergency_window_probability": 0.18,
+      "forced_windows_s": [
+        {
+          "end_s": 4380,
+          "interval_s": 40,
+          "replace_existing": true,
+          "start_s": 3300,
+          "task_class": "emergency",
+          "window_id": "bupt1_stress_eclipse_burst_0"
+        },
+        {
+          "end_s": 9780,
+          "interval_s": 40,
+          "replace_existing": true,
+          "start_s": 8700,
+          "task_class": "high_value",
+          "window_id": "bupt1_stress_high_value_burst_1"
+        }
+      ],
+      "high_value_window_probability": 0.35,
+      "intra_window_task_interval_slots": [
+        1,
+        2
+      ],
+      "observation_windows_per_orbit": [
+        2,
+        3
+      ],
+      "window_duration_s_range": [
+        180,
+        360
+      ]
+    },
+    "trace_mode": "synthetic",
+    "use_num_days": true
+  },
+  "timeline_sarfish_formal_stress_bupt1_deadline_minutes_20s": {
+    "contact": {
+      "contact_duration_s": 300,
+      "contact_period_s": 5700,
+      "contact_phase_offset_s": 420,
+      "link_quality_period_s": 1800,
+      "link_quality_phase": 0.5,
+      "outage_windows_s": [
+        [
+          15600,
+          21300
+        ],
+        [
+          38400,
+          44100
+        ],
+        [
+          61200,
+          66900
+        ]
+      ],
+      "snr_min_db": 5.0,
+      "snr_span_db": 10.0,
+      "throughput_max_mbps": 30.0,
+      "throughput_min_mbps": 20.0
+    },
+    "description": "1-day BUPT-1 stress timeline for minute-scale deadline smoke tests.",
+    "num_days": 1,
+    "orbit_reference": {
+      "altitude_km": 500,
+      "inclination_deg": 97,
+      "orbit_type": "sun_synchronous_like"
+    },
+    "physical_horizon_s": 86400,
+    "slot_seconds": 20,
+    "task_arrival": "observation_window",
+    "trace_mode": "synthetic",
+    "use_num_days": true
+  },
+  "unified_ground_received_accounting": {
+    "backlog_normalization": {
+      "terminal_backlog_mb": 64.0
+    },
+    "energy_normalization": {
+      "controllable_mission_energy_wh": 10.0
+    },
+    "full_frame_information_mapping": 1.0,
+    "lambda_E_common": 1.0,
+    "lambda_Q_common": 1.0,
+    "lambda_safe_common": 10.0,
+    "late_delivery_policy": "zero_utility_after_deadline",
+    "quality_policy": "method_ground_result_quality",
+    "requirement_completion_policy": "reaches_requirement_target_utility",
+    "thermal_soft_limit": 0.85,
+    "timeliness_policy": "existing_linear_deadline_curve",
+    "version": "unified_ground_received_accounting_v1"
+  },
+  "variant_aliases": {
+    "variants": [
+      {
+        "config_path": "configs/simulator_sarfish_20s_dryrun.yaml",
+        "enabled_features": "lyapunov_pricing,rule_mode,safe_linucb",
+        "full_name": "proposed_lyapunov_rule_mode_safe_bandit",
+        "one_sentence_description": "Nominal SARFish 20s proposed controller before energy-shadow/profile repair.",
+        "output_dir": "outputs/sarfish_20s_dry_run",
+        "short_name": "PROP-BASE",
+        "stage": "nominal_sarfish_20s"
+      },
+      {
+        "config_path": "configs/simulator_sarfish_energy_shadow_stress_20s.yaml",
+        "enabled_features": "lyapunov_pricing,rule_mode,safe_linucb,energy_shadow_stress",
+        "full_name": "proposed_lyapunov_rule_mode_safe_bandit",
+        "one_sentence_description": "Energy-shadow stress proposed controller before profile and policy repair.",
+        "output_dir": "outputs/sarfish_energy_shadow_stress",
+        "short_name": "PROP-BASE",
+        "stage": "energy_shadow_stress"
+      },
+      {
+        "config_path": "configs/simulator_sarfish_energy_shadow_yolo_profile_ablation_20s.yaml",
+        "enabled_features": "original_model_profile",
+        "full_name": "proposed_original_profile",
+        "one_sentence_description": "Proposed controller with the pre-calibration model profile.",
+        "output_dir": "outputs/sarfish_yolo_profile_ablation",
+        "short_name": "PROP-OLD",
+        "stage": "yolo_profile_ablation"
+      },
+      {
+        "config_path": "configs/policy_repair_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile",
+        "full_name": "proposed_yolo_calibrated_baseline",
+        "one_sentence_description": "YOLO-calibrated proposed baseline before policy repair switches.",
+        "output_dir": "outputs/sarfish_policy_repair",
+        "short_name": "PROP-BASE",
+        "stage": "policy_repair_ablation"
+      },
+      {
+        "config_path": "configs/payload_profile_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,original_payload_profile",
+        "full_name": "proposed_yolo_profile_policy_repair_baseline",
+        "one_sentence_description": "Payload calibration baseline using the previous payload profile and policy-repair context.",
+        "output_dir": "outputs/sarfish_payload_profile_calibration",
+        "short_name": "PROP-BASE",
+        "stage": "payload_profile_calibration"
+      },
+      {
+        "config_path": "configs/model_profiles_yolo_inspired_calibrated.yaml",
+        "enabled_features": "yolo_calibrated_profile",
+        "full_name": "proposed_yolo_calibrated_profile",
+        "one_sentence_description": "Proposed controller with the calibrated YOLO-inspired model profile.",
+        "output_dir": "outputs/sarfish_yolo_profile_ablation",
+        "short_name": "PROP-YOLO",
+        "stage": "yolo_profile_ablation"
+      },
+      {
+        "config_path": "configs/model_profiles_yolo_inspired_calibrated.yaml",
+        "enabled_features": "yolo_calibrated_profile,no_ucb_bonus_probe",
+        "full_name": "proposed_yolo_calibrated_no_ucb_bonus",
+        "one_sentence_description": "YOLO-calibrated proposed probe with UCB bonus suppressed.",
+        "output_dir": "outputs/sarfish_yolo_profile_ablation",
+        "short_name": "PROP-NO-UCB",
+        "stage": "yolo_profile_ablation"
+      },
+      {
+        "config_path": "configs/model_profiles_yolo_inspired_calibrated.yaml",
+        "enabled_features": "yolo_calibrated_profile,no_mission_priority_boost_probe",
+        "full_name": "proposed_yolo_calibrated_no_mission_priority_boost",
+        "one_sentence_description": "YOLO-calibrated proposed probe without mission-priority score boost.",
+        "output_dir": "outputs/sarfish_yolo_profile_ablation",
+        "short_name": "PROP-NO-MISS",
+        "stage": "yolo_profile_ablation"
+      },
+      {
+        "config_path": "configs/model_profiles_yolo_inspired_calibrated.yaml",
+        "enabled_features": "yolo_calibrated_profile,stronger_resource_price_probe",
+        "full_name": "proposed_yolo_calibrated_stronger_resource_price",
+        "one_sentence_description": "YOLO-calibrated proposed probe with stronger resource-price pressure.",
+        "output_dir": "outputs/sarfish_yolo_profile_ablation",
+        "short_name": "PROP-RES",
+        "stage": "yolo_profile_ablation"
+      },
+      {
+        "config_path": "configs/policy_repair_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,cost_aware_ucb",
+        "full_name": "proposed_cost_aware_ucb",
+        "one_sentence_description": "Proposed policy-repair variant enabling cost-aware UCB only.",
+        "output_dir": "outputs/sarfish_policy_repair",
+        "short_name": "PROP-UCB",
+        "stage": "policy_repair_ablation"
+      },
+      {
+        "config_path": "configs/policy_repair_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,delivery_aware_info_gain",
+        "full_name": "proposed_delivery_aware_info_gain",
+        "one_sentence_description": "Proposed policy-repair variant enabling delivery-aware information gain only.",
+        "output_dir": "outputs/sarfish_policy_repair",
+        "short_name": "PROP-DELIV",
+        "stage": "policy_repair_ablation"
+      },
+      {
+        "config_path": "configs/policy_repair_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,z_guided_coupling",
+        "full_name": "proposed_z_guided_coupling",
+        "one_sentence_description": "Proposed policy-repair variant enabling z-guided lambda/exploration coupling only.",
+        "output_dir": "outputs/sarfish_policy_repair",
+        "short_name": "PROP-Z",
+        "stage": "policy_repair_ablation"
+      },
+      {
+        "config_path": "configs/policy_repair_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,cost_aware_ucb,delivery_aware_info_gain",
+        "full_name": "proposed_ucb_plus_delivery",
+        "one_sentence_description": "Proposed repair variant combining cost-aware UCB and delivery-aware information gain.",
+        "output_dir": "outputs/sarfish_policy_repair",
+        "short_name": "PROP-U+D",
+        "stage": "policy_repair_ablation"
+      },
+      {
+        "config_path": "configs/policy_repair_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,cost_aware_ucb,delivery_aware_info_gain,z_guided_coupling",
+        "full_name": "proposed_repaired_combined",
+        "one_sentence_description": "Proposed policy-repair variant with all policy-repair switches enabled.",
+        "output_dir": "outputs/sarfish_policy_repair",
+        "short_name": "PROP-REPAIR",
+        "stage": "policy_repair_ablation"
+      },
+      {
+        "config_path": "configs/payload_profile_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,calibrated_payload_profile",
+        "full_name": "proposed_calibrated_payload_profile",
+        "one_sentence_description": "Proposed variant with calibrated payload size/info/cost profile only.",
+        "output_dir": "outputs/sarfish_payload_profile_calibration",
+        "short_name": "PROP-PAY",
+        "stage": "payload_profile_calibration"
+      },
+      {
+        "config_path": "configs/payload_profile_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,calibrated_payload_profile,payload_specific_delivery_proxy",
+        "full_name": "proposed_payload_specific_delivery_proxy",
+        "one_sentence_description": "Proposed payload-calibrated variant with payload-specific delivery proxy enabled.",
+        "output_dir": "outputs/sarfish_payload_profile_calibration",
+        "short_name": "PROP-PROXY",
+        "stage": "payload_profile_calibration"
+      },
+      {
+        "config_path": "configs/payload_profile_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,calibrated_payload_profile,cost_aware_ucb",
+        "full_name": "proposed_calibrated_payload_plus_cost_aware_ucb",
+        "one_sentence_description": "Payload-calibrated proposed variant with cost-aware UCB enabled.",
+        "output_dir": "outputs/sarfish_payload_profile_calibration",
+        "short_name": "PROP-UCB",
+        "stage": "payload_profile_calibration"
+      },
+      {
+        "config_path": "configs/payload_profile_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,calibrated_payload_profile,z_guided_coupling",
+        "full_name": "proposed_calibrated_payload_plus_z_guided",
+        "one_sentence_description": "Payload-calibrated proposed variant with z-guided coupling enabled.",
+        "output_dir": "outputs/sarfish_payload_profile_calibration",
+        "short_name": "PROP-Z",
+        "stage": "payload_profile_calibration"
+      },
+      {
+        "config_path": "configs/payload_profile_ablation.yaml",
+        "enabled_features": "yolo_calibrated_profile,calibrated_payload_profile,cost_aware_ucb,payload_specific_delivery_proxy,z_guided_coupling",
+        "full_name": "proposed_payload_repaired_combined",
+        "one_sentence_description": "Payload-calibrated proposed variant with all payload/policy repair switches enabled.",
+        "output_dir": "outputs/sarfish_payload_profile_calibration",
+        "short_name": "PROP-COMB",
+        "stage": "payload_profile_calibration"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "utility_rule_baseline",
+        "full_name": "utility_rule",
+        "one_sentence_description": "Rule-based utility baseline used as an interpretable upper/comparison baseline within a stage.",
+        "output_dir": "outputs/*",
+        "short_name": "UTIL",
+        "stage": "all"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "lyapunov_pricing,no_mode_controller",
+        "full_name": "no_mode",
+        "one_sentence_description": "SafeLinUCB baseline without mode-controller guidance.",
+        "output_dir": "outputs/*",
+        "short_name": "NO-MODE",
+        "stage": "all"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "mode_controller,no_lyapunov_pricing",
+        "full_name": "no_lyapunov",
+        "one_sentence_description": "SafeLinUCB baseline without Lyapunov resource pricing.",
+        "output_dir": "outputs/*",
+        "short_name": "NO-LYA",
+        "stage": "all"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "safe_linucb",
+        "full_name": "safe_linucb",
+        "one_sentence_description": "Legacy safe LinUCB baseline used in earlier nominal/demo runs.",
+        "output_dir": "outputs/*",
+        "short_name": "SAFE-LINUCB",
+        "stage": "nominal_or_legacy"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "safe_bandit_only",
+        "full_name": "safe_bandit_only",
+        "one_sentence_description": "Legacy safe-bandit-only baseline without the full proposed controller stack.",
+        "output_dir": "outputs/*",
+        "short_name": "SAFE-BANDIT",
+        "stage": "nominal_or_legacy"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "communication_conservative_rule",
+        "full_name": "comm_conservative",
+        "one_sentence_description": "Older communication-conservative rule baseline.",
+        "output_dir": "outputs/*",
+        "short_name": "COMM-CONS",
+        "stage": "nominal_or_legacy"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "fixed_lightweight_metadata",
+        "full_name": "fixed_lightweight",
+        "one_sentence_description": "Fixed lightweight metadata action baseline.",
+        "output_dir": "outputs/*",
+        "short_name": "FIX-L",
+        "stage": "all"
+      },
+      {
+        "config_path": "configs/experiment.yaml",
+        "enabled_features": "fixed_high_accuracy_roi_context",
+        "full_name": "fixed_high_accuracy",
+        "one_sentence_description": "Fixed high-accuracy ROI+context action baseline.",
+        "output_dir": "outputs/*",
+        "short_name": "FIX-H",
+        "stage": "all"
+      }
+    ]
+  }
+}

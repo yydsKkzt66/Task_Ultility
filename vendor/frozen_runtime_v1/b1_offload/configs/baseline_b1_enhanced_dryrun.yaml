@@ -1,0 +1,20 @@
+baseline_b1_enhanced:
+  enabled: true
+
+timeline:
+  use_num_days: false
+  num_slots: 48
+  slot_seconds: 10
+  contact:
+    contact_period_s: 60
+    contact_duration_s: 30
+    contact_phase_offset_s: 10
+    throughput_min_mbps: 16
+    throughput_max_mbps: 64
+
+task_stream:
+  mode: one_task_per_slot
+  slot_seconds: 10
+
+simulator:
+  slot_seconds: 10

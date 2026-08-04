@@ -1,0 +1,18 @@
+experiment:
+  experiment_id: three_method_minimal_robustness_v1
+  scenario_seeds: [2026, 2027, 2028, 2029, 2030]
+  capacities: [1.00, 0.50, 0.35]
+  methods: [B1-COMMON-THERMAL, OFFLOAD-EFT-THERMAL-ALIGNED, PROP-HEADROOM]
+  output_directories:
+    capacity: outputs/_three_method_capacity_robustness_v1/
+    window_loss20: outputs/_three_method_window_loss20_robustness_v1/
+  reporting_options:
+    compact: false
+    paired_within_scenario: true
+    bootstrap_samples: 5000
+  perturbation:
+    enabled_by_default: false
+    type: complete_ground_contact_window_removal
+    removal_fraction: 0.20
+    selection_rule: sha256_rank_window_loss20_v1_seed_start_end_select_nearest_integer_count
+  mode: full_after_smoke

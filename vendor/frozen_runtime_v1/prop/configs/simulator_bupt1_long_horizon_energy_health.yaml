@@ -1,0 +1,88 @@
+battery_init: 0.85
+ai_budget_init: 1.0
+thermal_init: 0.25
+queue_init_mb: 0.0
+battery_min: 0.20
+battery_soft_target: 0.70
+battery_strong_guard: 0.50
+thermal_max: 0.92
+queue_max_mb: 64.0
+queue_safe_threshold_mb: 48.0
+epsilon: 1.0e-9
+E_ref: 100.0
+E_AI_ref: 100.0
+battery_capacity_wh: 230.0
+battery_charge_efficiency: 0.92
+battery_discharge_efficiency: 0.95
+tx_power_w: 25.0
+comm_power_w: 25.0
+slot_seconds: 20
+delivery_beta: 0.5
+downlink_efficiency: 1.0
+queue_priority_tau_d: 60.0
+queue_age_bonus: 0.01
+queue_meta_first_bonus: 0.25
+queue_high_value_bonus: 0.20
+comm_alpha_gamma: 0.6
+cooling_per_slot: 0.05
+thermal_passive_cooling: 0.12
+thermal_sunlight_gain: 0.015
+thermal_eclipse_cooling_bonus: 0.03
+thermal_reference_min_c: -10.0
+thermal_reference_max_c: 30.0
+queue_priority_expire_bonus: 0.2
+high_value_threshold: 0.75
+safety_fallback_strategy: predicted_effective_utility
+safety_terminal_fallback_candidates:
+  - delay/store
+  - lightweight+metadata
+downlink_safety_throttle:
+  enabled: true
+  thermal_guard_threshold: 0.85
+  thermal_hard_threshold: 0.92
+  throttle_mode: pause_when_hot
+long_term_risk_penalty:
+  enabled: true
+  thermal_guard_threshold: 0.85
+  thermal_hard_threshold: 0.92
+  thermal_risk_weight: 0.08
+  battery_guard_threshold: 0.80
+  battery_reserve_weight: 0.04
+  downlink_burden_weight_per_mb: 0.01
+  queue_risk_weight: 0.05
+  terminal_battery_weight: 5.0
+  terminal_thermal_weight: 4.0
+  terminal_queue_weight: 2.0
+soc_band_policy:
+  enabled: true
+  soft_target: 0.70
+  strong_guard: 0.50
+  hard_min: 0.20
+  soft_lambda_E_multiplier: 1.45
+  strong_lambda_E_multiplier: 2.20
+  hard_lambda_E_multiplier: 4.00
+  soft_model_complexity_bias_delta: -0.12
+  strong_model_complexity_bias_delta: -0.35
+  hard_model_complexity_bias_delta: -0.70
+  soft_payload_size_bias_delta: -0.08
+  strong_payload_size_bias_delta: -0.30
+  hard_payload_size_bias_delta: -0.65
+  soft_high_value_bonus_scale: 0.95
+  strong_high_value_bonus_scale: 0.80
+  hard_high_value_bonus_scale: 0.60
+  soft_safety_margin_scale: 1.15
+  strong_safety_margin_scale: 1.45
+  hard_safety_margin_scale: 2.00
+guarantee:
+  enabled: false
+  mode: dynamic_age_miss_debt
+  lambda_H: 0.0
+progressive_payload:
+  phase5_virtual_continue:
+    enabled: false
+  phase6_proactive_followup:
+    enabled: false
+  phase6_residual_candidate_carryover:
+    enabled: false
+  phase6_same_slot_carryover:
+    enabled: false

@@ -1,0 +1,190 @@
+variants:
+  - short_name: PROP-BASE
+    full_name: proposed_lyapunov_rule_mode_safe_bandit
+    stage: nominal_sarfish_20s
+    enabled_features: lyapunov_pricing,rule_mode,safe_linucb
+    config_path: configs/simulator_sarfish_20s_dryrun.yaml
+    output_dir: outputs/sarfish_20s_dry_run
+    one_sentence_description: Nominal SARFish 20s proposed controller before energy-shadow/profile repair.
+  - short_name: PROP-BASE
+    full_name: proposed_lyapunov_rule_mode_safe_bandit
+    stage: energy_shadow_stress
+    enabled_features: lyapunov_pricing,rule_mode,safe_linucb,energy_shadow_stress
+    config_path: configs/simulator_sarfish_energy_shadow_stress_20s.yaml
+    output_dir: outputs/sarfish_energy_shadow_stress
+    one_sentence_description: Energy-shadow stress proposed controller before profile and policy repair.
+  - short_name: PROP-OLD
+    full_name: proposed_original_profile
+    stage: yolo_profile_ablation
+    enabled_features: original_model_profile
+    config_path: configs/simulator_sarfish_energy_shadow_yolo_profile_ablation_20s.yaml
+    output_dir: outputs/sarfish_yolo_profile_ablation
+    one_sentence_description: Proposed controller with the pre-calibration model profile.
+  - short_name: PROP-BASE
+    full_name: proposed_yolo_calibrated_baseline
+    stage: policy_repair_ablation
+    enabled_features: yolo_calibrated_profile
+    config_path: configs/policy_repair_ablation.yaml
+    output_dir: outputs/sarfish_policy_repair
+    one_sentence_description: YOLO-calibrated proposed baseline before policy repair switches.
+  - short_name: PROP-BASE
+    full_name: proposed_yolo_profile_policy_repair_baseline
+    stage: payload_profile_calibration
+    enabled_features: yolo_calibrated_profile,original_payload_profile
+    config_path: configs/payload_profile_ablation.yaml
+    output_dir: outputs/sarfish_payload_profile_calibration
+    one_sentence_description: Payload calibration baseline using the previous payload profile and policy-repair context.
+  - short_name: PROP-YOLO
+    full_name: proposed_yolo_calibrated_profile
+    stage: yolo_profile_ablation
+    enabled_features: yolo_calibrated_profile
+    config_path: configs/model_profiles_yolo_inspired_calibrated.yaml
+    output_dir: outputs/sarfish_yolo_profile_ablation
+    one_sentence_description: Proposed controller with the calibrated YOLO-inspired model profile.
+  - short_name: PROP-NO-UCB
+    full_name: proposed_yolo_calibrated_no_ucb_bonus
+    stage: yolo_profile_ablation
+    enabled_features: yolo_calibrated_profile,no_ucb_bonus_probe
+    config_path: configs/model_profiles_yolo_inspired_calibrated.yaml
+    output_dir: outputs/sarfish_yolo_profile_ablation
+    one_sentence_description: YOLO-calibrated proposed probe with UCB bonus suppressed.
+  - short_name: PROP-NO-MISS
+    full_name: proposed_yolo_calibrated_no_mission_priority_boost
+    stage: yolo_profile_ablation
+    enabled_features: yolo_calibrated_profile,no_mission_priority_boost_probe
+    config_path: configs/model_profiles_yolo_inspired_calibrated.yaml
+    output_dir: outputs/sarfish_yolo_profile_ablation
+    one_sentence_description: YOLO-calibrated proposed probe without mission-priority score boost.
+  - short_name: PROP-RES
+    full_name: proposed_yolo_calibrated_stronger_resource_price
+    stage: yolo_profile_ablation
+    enabled_features: yolo_calibrated_profile,stronger_resource_price_probe
+    config_path: configs/model_profiles_yolo_inspired_calibrated.yaml
+    output_dir: outputs/sarfish_yolo_profile_ablation
+    one_sentence_description: YOLO-calibrated proposed probe with stronger resource-price pressure.
+  - short_name: PROP-UCB
+    full_name: proposed_cost_aware_ucb
+    stage: policy_repair_ablation
+    enabled_features: yolo_calibrated_profile,cost_aware_ucb
+    config_path: configs/policy_repair_ablation.yaml
+    output_dir: outputs/sarfish_policy_repair
+    one_sentence_description: Proposed policy-repair variant enabling cost-aware UCB only.
+  - short_name: PROP-DELIV
+    full_name: proposed_delivery_aware_info_gain
+    stage: policy_repair_ablation
+    enabled_features: yolo_calibrated_profile,delivery_aware_info_gain
+    config_path: configs/policy_repair_ablation.yaml
+    output_dir: outputs/sarfish_policy_repair
+    one_sentence_description: Proposed policy-repair variant enabling delivery-aware information gain only.
+  - short_name: PROP-Z
+    full_name: proposed_z_guided_coupling
+    stage: policy_repair_ablation
+    enabled_features: yolo_calibrated_profile,z_guided_coupling
+    config_path: configs/policy_repair_ablation.yaml
+    output_dir: outputs/sarfish_policy_repair
+    one_sentence_description: Proposed policy-repair variant enabling z-guided lambda/exploration coupling only.
+  - short_name: PROP-U+D
+    full_name: proposed_ucb_plus_delivery
+    stage: policy_repair_ablation
+    enabled_features: yolo_calibrated_profile,cost_aware_ucb,delivery_aware_info_gain
+    config_path: configs/policy_repair_ablation.yaml
+    output_dir: outputs/sarfish_policy_repair
+    one_sentence_description: Proposed repair variant combining cost-aware UCB and delivery-aware information gain.
+  - short_name: PROP-REPAIR
+    full_name: proposed_repaired_combined
+    stage: policy_repair_ablation
+    enabled_features: yolo_calibrated_profile,cost_aware_ucb,delivery_aware_info_gain,z_guided_coupling
+    config_path: configs/policy_repair_ablation.yaml
+    output_dir: outputs/sarfish_policy_repair
+    one_sentence_description: Proposed policy-repair variant with all policy-repair switches enabled.
+  - short_name: PROP-PAY
+    full_name: proposed_calibrated_payload_profile
+    stage: payload_profile_calibration
+    enabled_features: yolo_calibrated_profile,calibrated_payload_profile
+    config_path: configs/payload_profile_ablation.yaml
+    output_dir: outputs/sarfish_payload_profile_calibration
+    one_sentence_description: Proposed variant with calibrated payload size/info/cost profile only.
+  - short_name: PROP-PROXY
+    full_name: proposed_payload_specific_delivery_proxy
+    stage: payload_profile_calibration
+    enabled_features: yolo_calibrated_profile,calibrated_payload_profile,payload_specific_delivery_proxy
+    config_path: configs/payload_profile_ablation.yaml
+    output_dir: outputs/sarfish_payload_profile_calibration
+    one_sentence_description: Proposed payload-calibrated variant with payload-specific delivery proxy enabled.
+  - short_name: PROP-UCB
+    full_name: proposed_calibrated_payload_plus_cost_aware_ucb
+    stage: payload_profile_calibration
+    enabled_features: yolo_calibrated_profile,calibrated_payload_profile,cost_aware_ucb
+    config_path: configs/payload_profile_ablation.yaml
+    output_dir: outputs/sarfish_payload_profile_calibration
+    one_sentence_description: Payload-calibrated proposed variant with cost-aware UCB enabled.
+  - short_name: PROP-Z
+    full_name: proposed_calibrated_payload_plus_z_guided
+    stage: payload_profile_calibration
+    enabled_features: yolo_calibrated_profile,calibrated_payload_profile,z_guided_coupling
+    config_path: configs/payload_profile_ablation.yaml
+    output_dir: outputs/sarfish_payload_profile_calibration
+    one_sentence_description: Payload-calibrated proposed variant with z-guided coupling enabled.
+  - short_name: PROP-COMB
+    full_name: proposed_payload_repaired_combined
+    stage: payload_profile_calibration
+    enabled_features: yolo_calibrated_profile,calibrated_payload_profile,cost_aware_ucb,payload_specific_delivery_proxy,z_guided_coupling
+    config_path: configs/payload_profile_ablation.yaml
+    output_dir: outputs/sarfish_payload_profile_calibration
+    one_sentence_description: Payload-calibrated proposed variant with all payload/policy repair switches enabled.
+  - short_name: UTIL
+    full_name: utility_rule
+    stage: all
+    enabled_features: utility_rule_baseline
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: Rule-based utility baseline used as an interpretable upper/comparison baseline within a stage.
+  - short_name: NO-MODE
+    full_name: no_mode
+    stage: all
+    enabled_features: lyapunov_pricing,no_mode_controller
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: SafeLinUCB baseline without mode-controller guidance.
+  - short_name: NO-LYA
+    full_name: no_lyapunov
+    stage: all
+    enabled_features: mode_controller,no_lyapunov_pricing
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: SafeLinUCB baseline without Lyapunov resource pricing.
+  - short_name: SAFE-LINUCB
+    full_name: safe_linucb
+    stage: nominal_or_legacy
+    enabled_features: safe_linucb
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: Legacy safe LinUCB baseline used in earlier nominal/demo runs.
+  - short_name: SAFE-BANDIT
+    full_name: safe_bandit_only
+    stage: nominal_or_legacy
+    enabled_features: safe_bandit_only
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: Legacy safe-bandit-only baseline without the full proposed controller stack.
+  - short_name: COMM-CONS
+    full_name: comm_conservative
+    stage: nominal_or_legacy
+    enabled_features: communication_conservative_rule
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: Older communication-conservative rule baseline.
+  - short_name: FIX-L
+    full_name: fixed_lightweight
+    stage: all
+    enabled_features: fixed_lightweight_metadata
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: Fixed lightweight metadata action baseline.
+  - short_name: FIX-H
+    full_name: fixed_high_accuracy
+    stage: all
+    enabled_features: fixed_high_accuracy_roi_context
+    config_path: configs/experiment.yaml
+    output_dir: outputs/*
+    one_sentence_description: Fixed high-accuracy ROI+context action baseline.

@@ -1,0 +1,49 @@
+profile_name: bupt1_balanced_long_horizon
+description: BUPT-1 inspired nominal long-horizon energy-health profile, intended for sustainable operation audits.
+
+battery_capacity_wh: 230.0
+
+orbit_period_min: 90
+sunlight_fraction: 0.60
+solar_shape: sinusoidal
+eclipse_solar_power_w: 0.0
+
+battery_initial_soc: 0.85
+battery_init: 0.85
+battery_soft_target: 0.70
+battery_strong_guard: 0.50
+battery_min: 0.20
+
+solar_peak_w: 38.0
+idle_power_w: 14.0
+
+compute_power_w:
+  Tiny: 6.8
+  Small: 8.5
+  Medium: 10.2
+
+comm_power_w:
+  contact_standby: 18.0
+  tx_nominal: 25.0
+  tx_peak: 38.0
+
+soc_band_policy:
+  enabled: true
+  soft_target: 0.70
+  strong_guard: 0.50
+  hard_min: 0.20
+  soft_lambda_E_multiplier: 1.45
+  strong_lambda_E_multiplier: 2.20
+  hard_lambda_E_multiplier: 4.00
+  soft_model_complexity_bias_delta: -0.12
+  strong_model_complexity_bias_delta: -0.35
+  hard_model_complexity_bias_delta: -0.70
+  soft_payload_size_bias_delta: -0.08
+  strong_payload_size_bias_delta: -0.30
+  hard_payload_size_bias_delta: -0.65
+  soft_high_value_bonus_scale: 0.95
+  strong_high_value_bonus_scale: 0.80
+  hard_high_value_bonus_scale: 0.60
+  soft_safety_margin_scale: 1.15
+  strong_safety_margin_scale: 1.45
+  hard_safety_margin_scale: 2.00

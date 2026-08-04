@@ -1,0 +1,8 @@
+experiment:
+  experiment_id: FILL_ME
+  scenario_seeds: [2026]
+  capacities: [0.50]
+  methods: [FILL_ME]
+  output_directory: outputs/_FILL_ME/
+  reporting_options: {compact: true}
+  mode: smoke

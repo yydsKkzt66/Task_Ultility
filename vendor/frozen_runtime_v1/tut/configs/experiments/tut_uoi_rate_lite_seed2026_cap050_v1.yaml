@@ -1,0 +1,10 @@
+experiment:
+  experiment_id: tut_uoi_rate_lite_seed2026_cap050_v1
+  scenario_seeds: [2026]
+  capacities: [0.50]
+  methods: [TUT-UOI-PRODUCT-LITE]
+  output_directory: D:/wt/pilot/outputs/_tut_uoi_rate_lite_seed2026_cap050_v1/
+  reporting_options:
+    compact: false
+    common_evaluator: true
+  mode: pilot

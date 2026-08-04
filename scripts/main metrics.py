@@ -1215,6 +1215,11 @@ fig.savefig(
     pdf_path,
     bbox_inches="tight",
     facecolor="white",
+    metadata={
+        "Creator": "leo_onboard_codesign_case_study_v2",
+        "CreationDate": None,
+        "ModDate": None,
+    },
 )
 
 

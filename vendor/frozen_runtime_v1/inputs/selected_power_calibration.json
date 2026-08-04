@@ -1,0 +1,10 @@
+{
+  "max_energy_balance_residual_Wh": 1.4183099139586375e-14,
+  "mean_daylight_soc_recovery": 0.0268388133043046,
+  "mean_eclipse_soc_drop": 0.024329519450804526,
+  "mean_stable_net_soc_delta": 0.002509293853500072,
+  "orbit2_net_soc_delta": 0.002509293853500072,
+  "orbit3_net_soc_delta": 0.002509293853500072,
+  "passed": 1,
+  "platform_other_power_W": 8.86
+}

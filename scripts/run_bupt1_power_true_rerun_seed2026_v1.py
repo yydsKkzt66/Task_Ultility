@@ -20,22 +20,24 @@ from typing import Any
 
 import yaml
 
+from scripts import portable_runtime_paths_v1 as portable
+
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "_v25_bupt1_power_true_rerun_seed2026_v1"
 POWER_CONFIG = ROOT / "configs" / "bupt1_measured_power_v1.yaml"
 PREVIOUS_POWER_OUT = ROOT / "outputs" / "_v25_bupt1_power_calibrated_seed2026_v1"
-SOLAR_TRACE = PREVIOUS_POWER_OUT / "calibration" / "solar_trace_one_orbit.csv"
-SELECTED_CALIBRATION = PREVIOUS_POWER_OUT / "config" / "selected_power_calibration.json"
+SOLAR_TRACE = portable.SOLAR_TRACE
+SELECTED_CALIBRATION = portable.SELECTED_POWER_CALIBRATION
 FROZEN_MANIFEST = ROOT / "artifacts" / "frozen_scenarios" / "v25_main_seed2026_manifest_4c23cf3184f1.csv"
 
-SOURCE_BUNDLE = Path("D:/wt/pilot/outputs/_updated_prop_ground_ack_v1/bundles/V25-MAIN-v1")
-TOOL_DIR = Path("D:/wt/pilot_late_hv_native_direct_v1/tools/late_hv_native_direct_final_v6")
-SOURCE_PROP = Path("D:/wt/pilot_updated_prop_ground_ack_v1")
-SOURCE_B1_OFFLOAD = Path("D:/wt/pilot_frozen_runtime_native_direct_v1")
-SOURCE_TUT = Path("D:/wt/tut_uoi_rate_lite")
-SOURCE_MYOPIC = Path("D:/wt/pilot_myopic_frozen_calibrated_v1")
-MYOPIC_PARAM = Path("D:/wt/pilot/outputs/_myopic_frozen_calibrated_v1/myopic_frozen_calibration_v1.json")
+SOURCE_BUNDLE = portable.SOURCE_BUNDLE
+TOOL_DIR = portable.TOOL_DIR
+SOURCE_PROP = portable.SOURCE_PROP
+SOURCE_B1_OFFLOAD = portable.SOURCE_B1_OFFLOAD
+SOURCE_TUT = portable.SOURCE_TUT
+SOURCE_MYOPIC = portable.SOURCE_MYOPIC
+MYOPIC_PARAM = portable.MYOPIC_PARAM
 SHARED_PRIOR_CALIBRATION = MYOPIC_PARAM
 
 EXPECTED_TASK_HASH = "4c23cf3184f137733495f95a7c5bd7631adf95b3fbc4eb057351f27dac2f2ab5"

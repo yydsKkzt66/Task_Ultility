@@ -1,0 +1,206 @@
+{
+  "target_count_distribution": {
+    "count": 50,
+    "min": 62.0,
+    "mean": 380.94,
+    "median": 360.0,
+    "p25": 235.5,
+    "p75": 481.5,
+    "p90": 575.1,
+    "p95": 686.65,
+    "max": 1076.0
+  },
+  "bbox_size_distribution": {
+    "width": {
+      "count": 19047,
+      "min": 1.0,
+      "mean": 9.816717,
+      "median": 8.0,
+      "p25": 6.0,
+      "p75": 11.0,
+      "p90": 18.0,
+      "p95": 24.0,
+      "max": 63.0
+    },
+    "height": {
+      "count": 19047,
+      "min": 1.0,
+      "mean": 11.889064,
+      "median": 9.0,
+      "p25": 7.0,
+      "p75": 14.0,
+      "p90": 22.0,
+      "p95": 29.0,
+      "max": 101.0
+    },
+    "area": {
+      "count": 19047,
+      "min": 2.0,
+      "mean": 161.028823,
+      "median": 72.0,
+      "p25": 36.0,
+      "p75": 156.0,
+      "p90": 372.0,
+      "p95": 638.0,
+      "max": 5151.0
+    }
+  },
+  "vessel_length_distribution": {
+    "count": 6942,
+    "min": 6.6,
+    "mean": 61.330464,
+    "median": 38.747265,
+    "p25": 21.7,
+    "p75": 83.088161,
+    "p90": 148.715943,
+    "p95": 176.23703,
+    "max": 477.0
+  },
+  "small_medium_large_vessel_ratio": {
+    "large": 0.254213,
+    "medium": 0.353862,
+    "small": 0.391925
+  },
+  "recommended_difficulty_bins": {
+    "easy": {
+      "range": [
+        0.05,
+        0.35
+      ],
+      "description": "low target density, larger targets, low ambiguity"
+    },
+    "medium": {
+      "range": [
+        0.35,
+        0.65
+      ],
+      "description": "moderate density or mixed target sizes"
+    },
+    "hard": {
+      "range": [
+        0.65,
+        1.0
+      ],
+      "description": "dense scenes, small targets, ambiguous labels, or low confidence"
+    },
+    "scene_distribution": {
+      "count": 50,
+      "min": 0.684003,
+      "mean": 0.76458,
+      "median": 0.767108,
+      "p25": 0.720772,
+      "p75": 0.79641,
+      "p90": 0.835892,
+      "p95": 0.84299,
+      "max": 0.88013
+    },
+    "target_count_reference": {
+      "median": 360.0,
+      "p75": 481.5
+    }
+  },
+  "recommended_uncertainty_bins": {
+    "low": {
+      "range": [
+        0.05,
+        0.3
+      ]
+    },
+    "medium": {
+      "range": [
+        0.3,
+        0.6
+      ]
+    },
+    "high": {
+      "range": [
+        0.6,
+        1.0
+      ]
+    },
+    "scene_distribution": {
+      "count": 50,
+      "min": 0.460963,
+      "mean": 0.59684,
+      "median": 0.591001,
+      "p25": 0.562721,
+      "p75": 0.629869,
+      "p90": 0.680118,
+      "p95": 0.700451,
+      "max": 0.728732
+    }
+  },
+  "recommended_task_value_ranges": {
+    "routine": [
+      0.5,
+      0.6
+    ],
+    "high_value": [
+      0.75,
+      0.85
+    ],
+    "emergency": [
+      0.88,
+      0.98
+    ],
+    "note": "Use scenario-level prior, not direct ground-truth target presence."
+  },
+  "recommended_deadline_s_ranges": {
+    "routine": [
+      90,
+      120
+    ],
+    "high_value": [
+      60,
+      90
+    ],
+    "emergency": [
+      30,
+      60
+    ]
+  },
+  "recommended_quality_requirement_ranges": {
+    "routine": [
+      0.55,
+      0.65
+    ],
+    "high_value": [
+      0.75,
+      0.82
+    ],
+    "emergency": [
+      0.85,
+      0.92
+    ]
+  },
+  "recommended_information_requirement_ranges": {
+    "routine": [
+      0.45,
+      0.6
+    ],
+    "high_value": [
+      0.72,
+      0.8
+    ],
+    "emergency": [
+      0.85,
+      0.93
+    ]
+  },
+  "recommended_payload_size_estimates_mb": {
+    "metadata": "0.10 + 0.02 * roi_count",
+    "roi": "0.80 + 0.18 * roi_count",
+    "roi_context": "1.60 + 0.35 * roi_count",
+    "scene_roi_distribution": {
+      "count": 50,
+      "min": 11.96,
+      "mean": 69.3692,
+      "median": 65.6,
+      "p25": 43.19,
+      "p75": 87.47,
+      "p90": 104.318,
+      "p95": 124.397,
+      "max": 194.48
+    }
+  }
+}

@@ -1,0 +1,715 @@
+metadata:
+  contract_id:
+    value: benchmark_environment_v1
+    unit: identifier
+    status: ACTIVE
+    source: this contract
+    notes: ''
+  authoritative_multiscenario_commit:
+    value: 57b5567312f32bee255b2c52cd06a840998cff98
+    unit: git commit
+    status: ACTIVE
+    source: validated study record
+    notes: ''
+  proxy_disclosure:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: source config descriptions
+    notes: System-level proxy; not end-to-end image processing.
+simulation:
+  horizon_s:
+    value: 86400
+    unit: s
+    status: ACTIVE
+    source: configs/timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s.yaml:physical_horizon_s
+    notes: ''
+  slot_seconds:
+    value: 20
+    unit: s
+    status: ACTIVE
+    source: configs/timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s.yaml:slot_seconds
+    notes: ''
+  slot_count:
+    value: 4320
+    unit: slots
+    status: ACTIVE
+    source: physical_horizon_s / slot_seconds
+    notes: ''
+  start_time_s:
+    value: 0
+    unit: s
+    status: ACTIVE
+    source: src/timeline/timeline_builder.py
+    notes: ''
+  end_time_s_exclusive:
+    value: 86400
+    unit: s
+    status: ACTIVE
+    source: timeline contract
+    notes: ''
+  deadline_inclusive:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: src/evaluation/run_event_adapters.py
+    notes: Completion <= deadline + 1e-9 is on time.
+dataset:
+  name:
+    value: SARFishSample
+    unit: name
+    status: ACTIVE
+    source: configs/dataset_sarfish_grd_validation.yaml
+    notes: ''
+  root:
+    value: datasets/SARFishSample
+    unit: repository-relative path
+    status: ACTIVE
+    source: configs/dataset_sarfish_grd_validation.yaml
+    notes: ''
+  product:
+    value: GRD
+    unit: product
+    status: ACTIVE
+    source: configs/dataset_sarfish_grd_validation.yaml
+    notes: ''
+  split:
+    value: validation
+    unit: split
+    status: ACTIVE
+    source: configs/dataset_sarfish_grd_validation.yaml
+    notes: ''
+  scene_index:
+    value: data/indexes/sarfishsample_scene_index.csv
+    unit: path
+    status: ACTIVE
+    source: configs/dataset_sarfish_grd_validation.yaml
+    notes: ''
+  source_scene_count:
+    value: 50
+    unit: scenes
+    status: ACTIVE
+    source: data/indexes/sarfishsample_scene_index.csv
+    notes: Usable GRD validation index rows; scenes are sampled with replacement across
+      tasks.
+  pixels_read_online:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: src/data/sarfish_task_builder.py
+    notes: Tasks use indexed metadata; policies do not run image codecs.
+  true_labels_online:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: task/evaluator audit
+    notes: Labels and annotations are evaluation/task-generation inputs, not online
+      policy future knowledge.
+scenario_generation:
+  mode:
+    value: observation_window
+    unit: mode
+    status: PROXY
+    source: configs/task_stream_sarfish_formal_nominal_bupt1_deadline_minutes.yaml
+    notes: ''
+  seeds:
+    value:
+    - 2026
+    - 2027
+    - 2028
+    - 2029
+    - 2030
+    unit: seed
+    status: ACTIVE
+    source: outputs/_sarfish_thermal_headroom_multiseed/scenario_manifest.csv
+    notes: ''
+  arrival_interval_slots:
+    value:
+    - 2
+    - 3
+    unit: slots
+    status: PROXY
+    source: configs/task_stream_sarfish_formal_nominal_bupt1_deadline_minutes.yaml
+    notes: ''
+  background_arrival_probability:
+    value: 0.005
+    unit: probability/slot
+    status: PROXY
+    source: same task-stream config
+    notes: ''
+tasks:
+  counts_by_seed:
+    value:
+      '2026': 268
+      '2027': 285
+      '2028': 255
+      '2029': 306
+      '2030': 285
+    unit: tasks
+    status: ACTIVE
+    source: scenario manifest
+    notes: ''
+  ordinary_deadline_minutes:
+    value:
+    - 90
+    - 240
+    unit: min
+    status: PROXY
+    source: task-stream config
+    notes: ''
+  high_deadline_minutes:
+    value:
+    - 45
+    - 120
+    unit: min
+    status: PROXY
+    source: task-stream config
+    notes: ''
+  urgent_deadline_minutes:
+    value:
+    - 20
+    - 90
+    unit: min
+    status: PROXY
+    source: task-stream config
+    notes: ''
+  value_class_mapping:
+    value:
+      routine: medium
+      high_value: high
+      emergency: urgent
+    unit: mapping
+    status: ACTIVE
+    source: src/evaluation/canonical_sarfish_environment.py
+    notes: ''
+  task_id_format:
+    value: generated deterministic string
+    unit: identifier
+    status: ACTIVE
+    source: src/data/sarfish_task_builder.py
+    notes: ''
+contacts:
+  trace_source:
+    value: synthetic periodic contact
+    unit: source
+    status: PROXY
+    source: timeline config
+    notes: ''
+  period_s:
+    value: 5700
+    unit: s
+    status: PROXY
+    source: timeline config
+    notes: ''
+  duration_s:
+    value: 600
+    unit: s
+    status: PROXY
+    source: timeline config
+    notes: ''
+  phase_offset_s:
+    value: 420
+    unit: s
+    status: PROXY
+    source: timeline config
+    notes: ''
+  ground_station_count:
+    value: null
+    unit: stations
+    status: UNKNOWN
+    source: not represented by active config
+    notes: ''
+  propagation_delay_s:
+    value: null
+    unit: s
+    status: UNKNOWN
+    source: not represented
+    notes: ''
+  protocol_overhead:
+    value: null
+    unit: fraction
+    status: UNKNOWN
+    source: not represented
+    notes: ''
+communication:
+  throughput_min_mbps:
+    value: 35.0
+    unit: Mbit/s
+    status: PROXY
+    source: timeline config
+    notes: ''
+  throughput_max_mbps:
+    value: 65.0
+    unit: Mbit/s
+    status: PROXY
+    source: timeline config
+    notes: ''
+  capacity_multipliers:
+    value:
+    - 1.0
+    - 0.5
+    - 0.35
+    unit: ratio
+    status: ACTIVE
+    source: scripts/run_sarfish_thermal_headroom_multiseed.py
+    notes: Multiplier scales configured throughput.
+  partial_transmission:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: src/link/downlink_queue.py
+    notes: ''
+  cross_slot_resume:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: src/link/downlink_queue.py
+    notes: ''
+  cross_contact_resume:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: src/link/downlink_queue.py
+    notes: ''
+  minimum_transfer_granularity:
+    value: floating-point byte accounting
+    unit: bytes
+    status: PROXY
+    source: src/link/downlink_queue.py
+    notes: ''
+  tx_power_w:
+    value: 35.0
+    unit: W
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  thermal_heat_per_j:
+    value: 0.0015
+    unit: normalized/J
+    status: PROXY
+    source: src/energy/thermal_update.py
+    notes: ''
+  headroom_enabled_by_default:
+    value: false
+    unit: boolean
+    status: INACTIVE
+    source: active simulator config
+    notes: ''
+compute:
+  hardware:
+    value: BUPT-1-like abstract COTS compute
+    unit: description
+    status: PROXY
+    source: resource/model configs
+    notes: No CPU/GPU/chip model is simulated.
+  cores:
+    value: null
+    unit: cores
+    status: UNKNOWN
+    source: not modeled
+    notes: ''
+  concurrency:
+    value: 1
+    unit: logical action/slot
+    status: PROXY
+    source: src/simulator/step_runner.py
+    notes: ''
+  cross_slot_compute:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: src/simulator/step_runner.py
+    notes: Latency is accounted, but compute is instantiated within the action slot.
+  preemption:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: same
+    notes: ''
+  thermal_heat_per_j:
+    value: 0.0025
+    unit: normalized/J
+    status: PROXY
+    source: src/energy/thermal_update.py
+    notes: ''
+models:
+  backend:
+    value: mock detector profiles
+    unit: backend
+    status: PROXY
+    source: src/models/mock_detector.py
+    notes: ''
+  real_onboard_inference:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: src/models/inference_runner.py
+    notes: ''
+  profiles_source:
+    value: configs/model_profiles_yolo_inspired_calibrated.yaml
+    unit: path
+    status: ACTIVE
+    source: prop_configs
+    notes: ''
+products:
+  profiles_source:
+    value: configs/payload_profiles_roi_compression_calibrated.yaml
+    unit: path
+    status: ACTIVE
+    source: prop_configs
+    notes: ''
+  sizes_measured_from_encoding:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: payload profile description
+    notes: ''
+  quality_is_proxy:
+    value: true
+    unit: boolean
+    status: PROXY
+    source: payload/model profiles
+    notes: ''
+  b1_full_frame_size_mb:
+    value: 4.0
+    unit: MB
+    status: PROXY
+    source: configs/baseline_b1_enhanced.yaml
+    notes: 32 MB / fixed ratio 8; no real codec execution.
+  b1_real_compression:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: src/baselines/b1_enhanced.py
+    notes: ''
+storage:
+  raw_observation_capacity_mb:
+    value: null
+    unit: MB
+    status: UNKNOWN
+    source: not separately modeled
+    notes: ''
+  product_storage_capacity_mb:
+    value: null
+    unit: MB
+    status: UNKNOWN
+    source: downlink queue is the enforced product store
+    notes: ''
+queues:
+  downlink:
+    capacity_mb:
+      value: 5120.0
+      unit: MB
+      status: ACTIVE
+      source: active simulator config
+      notes: ''
+    safe_mb:
+      value: 4096.0
+      unit: MB
+      status: ACTIVE
+      source: active simulator config
+      notes: ''
+  compute:
+    capacity_items:
+      value: null
+      unit: items
+      status: UNKNOWN
+      source: no persistent compute queue
+      notes: ''
+  generation_request:
+    capacity_items:
+      value: null
+      unit: items
+      status: UNKNOWN
+      source: no numeric cap found
+      notes: ''
+  duplicate_suppression:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: src/link/downlink_queue.py
+    notes: ''
+  overflow_eviction:
+    value: lowest priority until within byte cap
+    unit: policy
+    status: ACTIVE
+    source: src/link/downlink_queue.py
+    notes: ''
+battery:
+  capacity_wh:
+    value: 230.0
+    unit: Wh
+    status: PROXY
+    source: active simulator/resource config
+    notes: ''
+  initial_soc:
+    value: 0.9
+    unit: fraction
+    status: ACTIVE
+    source: active simulator config
+    notes: ''
+  hard_soc_floor:
+    value: 0.55
+    unit: fraction
+    status: ACTIVE
+    source: active simulator/resource config
+    notes: Physical SafeFilter/resource floor; not the 0.70/0.50 policy regions.
+  policy_guard_70:
+    value: 0.7
+    unit: fraction
+    status: ACTIVE
+    source: resource/PROP config
+    notes: ''
+  policy_guard_50:
+    value: 0.5
+    unit: fraction
+    status: ACTIVE
+    source: PROP follow-up policy
+    notes: Policy partition only, below the active physical floor.
+  charge_efficiency:
+    value: 0.92
+    unit: ratio
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  discharge_efficiency:
+    value: 0.95
+    unit: ratio
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  soc_clipping:
+    value:
+    - 0.0
+    - 1.0
+    unit: fraction
+    status: ACTIVE
+    source: src/energy/battery_update.py
+    notes: ''
+energy:
+  solar_peak_w:
+    value: 14.5
+    unit: W
+    status: PROXY
+    source: resource config
+    notes: ''
+  idle_power_w:
+    value: 4.8
+    unit: W
+    status: PROXY
+    source: resource config
+    notes: ''
+  resource_power_variation_w:
+    value: 0.65
+    unit: W
+    status: PROXY
+    source: resource config
+    notes: ''
+  sunlit_duration_s:
+    value: 3600
+    unit: s/orbit
+    status: PROXY
+    source: resource config
+    notes: ''
+  eclipse_duration_s:
+    value: 2100
+    unit: s/orbit
+    status: PROXY
+    source: resource config
+    notes: ''
+  maximum_controllable_energy_budget:
+    value: null
+    unit: Wh
+    status: FUTURE
+    source: reserved for matched-energy experiments
+    notes: ''
+  reserved_energy:
+    value: null
+    unit: Wh
+    status: FUTURE
+    source: reserved
+    notes: ''
+  consumed_energy:
+    value: null
+    unit: Wh
+    status: FUTURE
+    source: reserved
+    notes: ''
+  remaining_energy:
+    value: null
+    unit: Wh
+    status: FUTURE
+    source: reserved
+    notes: ''
+  common_minimum_soc:
+    value: null
+    unit: fraction
+    status: FUTURE
+    source: reserved
+    notes: ''
+  predicted_post_action_soc:
+    value: null
+    unit: fraction
+    status: FUTURE
+    source: reserved
+    notes: ''
+thermal:
+  state_meaning:
+    value: normalized thermal pressure
+    unit: dimensionless
+    status: PROXY
+    source: src/energy/thermal_update.py
+    notes: ''
+  initial_state:
+    value: 0.52
+    unit: normalized
+    status: ACTIVE
+    source: active simulator config
+    notes: ''
+  guard_threshold:
+    value: 0.85
+    unit: normalized
+    status: ACTIVE
+    source: active simulator config
+    notes: ''
+  hard_threshold:
+    value: 0.92
+    unit: normalized
+    status: ACTIVE
+    source: active simulator config
+    notes: ''
+  passive_cooling:
+    value: 0.12
+    unit: normalized/reference-slot
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  active_cooling:
+    value: 0.045
+    unit: normalized/reference-slot
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  reference_slot_s:
+    value: 60.0
+    unit: s
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  sunlight_gain:
+    value: 0.015
+    unit: normalized/reference-slot
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  eclipse_bonus:
+    value: 0.03
+    unit: normalized/reference-slot
+    status: PROXY
+    source: active simulator config
+    notes: ''
+  state_clipping:
+    value:
+    - 0.0
+    - 1.0
+    unit: normalized
+    status: ACTIVE
+    source: src/energy/thermal_update.py
+    notes: ''
+  headroom_binary_search_iterations:
+    value: 40
+    unit: iterations
+    status: ACTIVE
+    source: active simulator config
+    notes: ''
+  headroom_tolerance:
+    value: 1.0e-10
+    unit: normalized
+    status: ACTIVE
+    source: active simulator config
+    notes: ''
+evaluator:
+  config_source:
+    value: configs/unified_ground_received_accounting.yaml
+    unit: path
+    status: ACTIVE
+    source: prop_configs/b1_config
+    notes: ''
+  requirement_utility_source:
+    value: configs/product_requirement_utility.yaml
+    unit: path
+    status: ACTIVE
+    source: common evaluator
+    notes: ''
+  closure_rule:
+    value: information and quality requirements met by deadline
+    unit: rule
+    status: ACTIVE
+    source: src/evaluation/unified_ground_received_accounting.py
+    notes: ''
+  deadline_utility_after_deadline:
+    value: 0.0
+    unit: utility factor
+    status: ACTIVE
+    source: unified evaluator config
+    notes: ''
+  one_closure_reward_per_task:
+    value: true
+    unit: boolean
+    status: ACTIVE
+    source: ground lifecycle/evaluator
+    notes: ''
+  net_utility_rule:
+    value: gross - energy - backlog - safety costs
+    unit: formula
+    status: ACTIVE
+    source: src/evaluation/unified_ground_received_accounting.py
+    notes: ''
+  internal_score_is_common_utility:
+    value: false
+    unit: boolean
+    status: ACTIVE
+    source: controller/evaluator audit
+    notes: ''
+fairness:
+  immutable_roots:
+    value:
+    - dataset
+    - scenario_generation
+    - tasks
+    - contacts
+    - communication
+    - compute
+    - storage
+    - queues
+    - battery
+    - energy
+    - thermal
+    - evaluator
+    - simulation
+    unit: paths
+    status: ACTIVE
+    source: contracts/fairness_contract_v1.md
+    notes: ''
+  method_state_may_diverge:
+    value:
+    - model_selection
+    - product_selection
+    - queues
+    - actual_soc
+    - actual_thermal
+    - transmitted_bytes
+    - closures
+    - utility
+    - latency
+    unit: fields
+    status: ACTIVE
+    source: fairness contract
+    notes: ''
+future_extensions:
+  multisatellite_offloading:
+    value: must account for ISL TX/RX/wait/remote compute and single closure reward
+    unit: rule
+    status: FUTURE
+    source: fairness contract
+    notes: ''

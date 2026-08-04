@@ -1,0 +1,6 @@
+method:
+  method_id: TUT-v2-energy-fixed
+  parent_method_id: TUT-v1-energy-double-counted
+  feature_flags:
+    tut_predicted_energy_fix_enabled: true
+  scientific_parameter_changes: []

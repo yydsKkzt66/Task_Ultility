@@ -1,0 +1,9 @@
+method:
+  method_id: example-method
+  model_selection_policy: existing_default
+  product_selection_policy: existing_default
+  scheduling_policy: existing_default
+  staged_delivery: false
+  onboard_inference: true
+  feature_flags: {}
+  notes: Method differences only; environment overrides are forbidden.

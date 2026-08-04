@@ -1,0 +1,15 @@
+version: unified_ground_received_accounting_v1
+timeliness_policy: existing_linear_deadline_curve
+late_delivery_policy: zero_utility_after_deadline
+quality_policy: method_ground_result_quality
+full_frame_information_mapping: 1.0
+requirement_completion_policy: reaches_requirement_target_utility
+energy_normalization:
+  controllable_mission_energy_wh: 10.0
+backlog_normalization:
+  terminal_backlog_mb: 64.0
+lambda_E_common: 1.0
+lambda_Q_common: 1.0
+lambda_safe_common: 10.0
+thermal_soft_limit: 0.85
+

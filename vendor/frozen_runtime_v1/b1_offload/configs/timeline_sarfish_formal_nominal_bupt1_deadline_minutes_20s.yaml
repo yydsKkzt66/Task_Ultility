@@ -1,0 +1,21 @@
+description: 1-day BUPT-1 nominal timeline for minute-scale deadline smoke tests.
+use_num_days: true
+num_days: 1
+slot_seconds: 20
+task_arrival: observation_window
+trace_mode: synthetic
+physical_horizon_s: 86400
+orbit_reference:
+  orbit_type: sun_synchronous_like
+  altitude_km: 500
+  inclination_deg: 97
+contact:
+  contact_period_s: 5700
+  contact_duration_s: 600
+  contact_phase_offset_s: 420
+  throughput_min_mbps: 35.0
+  throughput_max_mbps: 65.0
+  snr_min_db: 8.0
+  snr_span_db: 12.0
+  link_quality_period_s: 1800
+  link_quality_phase: 0.5

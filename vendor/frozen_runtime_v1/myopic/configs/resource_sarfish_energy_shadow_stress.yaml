@@ -1,0 +1,13 @@
+profile_name: energy_shadow_stress
+description: energy-scarce stress case, not nominal sustainable operation
+orbit_period_s: 5400
+eclipse_duration_s: 2040
+sunlit_duration_s: 3360
+orbit_phase_offset_s: 0
+solar_peak_w: 5.5
+idle_power_w: 4.2
+resource_power_variation_w: 0.45
+sunlit_temperature_c: 21.0
+eclipse_temperature_c: 2.0
+temperature_cycle_variation_c: 3.0
+dod_guard: 0.30

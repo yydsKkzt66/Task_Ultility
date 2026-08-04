@@ -1,0 +1,86 @@
+variants:
+  - proposed_yolo_calibrated_baseline
+  - proposed_cost_aware_ucb
+  - proposed_delivery_aware_info_gain
+  - proposed_z_guided_coupling
+  - proposed_ucb_plus_delivery
+  - proposed_repaired_combined
+  - utility_rule
+  - no_mode
+  - no_lyapunov
+  - fixed_lightweight
+  - fixed_high_accuracy
+policy_repair_defaults:
+  enable_cost_aware_ucb: false
+  enable_delivery_aware_info_gain: false
+  enable_z_guided_coupling: false
+  enable_staged_feasibility_filter: false
+  cost_aware_ucb:
+    min_discount: 0.18
+    energy_ref_j: 55.0
+    latency_ref_s: 3.0
+    payload_ref_mb: 1.6
+    thermal_delta_ref: 0.10
+    energy_weight: 0.28
+    latency_weight: 0.10
+    payload_weight: 0.22
+    thermal_weight: 0.22
+    dod_weight: 0.38
+    eclipse_weight: 0.22
+    no_contact_weight: 0.28
+    queue_weight: 0.18
+    deadline_weight: 0.14
+    dod_reason_threshold: 0.30
+    queue_reason_threshold: 0.20
+    deadline_reason_threshold: 0.70
+  delivery_aware_info_gain:
+    min_proxy: 0.18
+    metadata_floor: 0.75
+    metadata_info_threshold: 0.36
+    payload_ref_mb: 1.6
+    soc_guard: 0.70
+    queue_weight: 0.40
+    payload_weight: 0.65
+    deadline_weight: 0.50
+    no_contact_weight: 0.40
+    contact_shortfall_weight: 0.25
+    eclipse_weight: 0.12
+    low_soc_weight: 0.16
+    queue_reason_threshold: 0.20
+    payload_reason_threshold: 0.80
+    deadline_reason_threshold: 0.50
+  z_guided_coupling:
+    min_beta_scale: 0.35
+    dod_threshold: 0.30
+    thermal_threshold: 0.85
+    queue_threshold: 0.15
+    dod_lambda_E_multiplier: 1.45
+    dod_beta_multiplier: 0.80
+    eclipse_lambda_E_multiplier: 1.25
+    eclipse_lambda_S_multiplier: 1.12
+    eclipse_beta_multiplier: 0.88
+    thermal_lambda_S_multiplier: 1.45
+    thermal_lambda_E_multiplier: 1.18
+    thermal_beta_multiplier: 0.82
+    queue_lambda_Q_multiplier: 1.35
+    queue_lambda_S_multiplier: 1.25
+    no_contact_lambda_S_multiplier: 1.30
+    no_contact_lambda_Q_multiplier: 1.12
+    no_contact_beta_multiplier: 0.88
+  staged_feasibility_filter:
+    enabled: false
+    passive_nominal_latency_slots: 3
+variant_overrides:
+  proposed_cost_aware_ucb:
+    enable_cost_aware_ucb: true
+  proposed_delivery_aware_info_gain:
+    enable_delivery_aware_info_gain: true
+  proposed_z_guided_coupling:
+    enable_z_guided_coupling: true
+  proposed_ucb_plus_delivery:
+    enable_cost_aware_ucb: true
+    enable_delivery_aware_info_gain: true
+  proposed_repaired_combined:
+    enable_cost_aware_ucb: true
+    enable_delivery_aware_info_gain: true
+    enable_z_guided_coupling: true

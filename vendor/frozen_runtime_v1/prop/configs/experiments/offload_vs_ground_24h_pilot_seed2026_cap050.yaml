@@ -1,0 +1,8 @@
+experiment:
+  experiment_id: offload_vs_ground_24h_pilot_seed2026_cap050
+  scenario_seeds: [2026]
+  capacities: [0.50]
+  methods: [GROUND-ONLY, OFFLOAD-EFT-THERMAL-ALIGNED]
+  output_directory: outputs/_offload_vs_ground_24h_pilot_seed2026_cap050_v1/
+  reporting_options: {compact: false, formal_result: false, paired_task_analysis: true}
+  mode: full

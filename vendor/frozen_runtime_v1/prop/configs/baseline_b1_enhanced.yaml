@@ -1,0 +1,40 @@
+enabled: false
+name: contact_aware_compressed_ground_processing
+baseline_version: b1_enhanced_contact_compressed_v2
+
+compression:
+  compression_ratio: 8.0
+  reference_raw_size_mb: 32.0
+  reference_onboard_latency_s: 11.0
+  reference_compressed_size_mb: 4.0
+  paper_accelerator_power_w: 1.4
+  reconstructed_ssim_proxy: 0.96
+  downstream_quality_retention: 1.0
+  compression_power_w: 6.8
+  compression_power_assumption_source: engineering_assumption_for_current_simulator_not_reported_phi_sat2_power
+  latency_scaling: linear_by_raw_mb
+
+ground:
+  decode_latency_s_per_reference_image: 1.5
+  inference_model_name: high_accuracy
+  inference_latency_s: null
+  ground_energy_not_counted_in_satellite_soc: true
+
+scheduler:
+  policy: enhanced
+  require_full_fit_in_current_contact: true
+  non_preemptive_once_started: true
+  w_density: 0.55
+  w_urgency: 0.25
+  w_age: 0.10
+  w_fit: 0.10
+  deadline_urgency_tau_s: 120.0
+  hard_safety_epsilon: 1.0e-9
+
+raw_size:
+  default_raw_size_mb: 32.0
+  metadata_keys:
+    - raw_payload_mb
+    - raw_size_mb
+    - image_raw_size_mb
+    - source_image_mb

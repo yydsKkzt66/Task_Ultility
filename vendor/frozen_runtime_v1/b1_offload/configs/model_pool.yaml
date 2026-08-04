@@ -1,0 +1,56 @@
+profiles:
+  - name: tiny
+    energy_j: 6.4
+    latency_s: 0.8
+    quality_base: 0.58
+    robustness_to_difficulty: 0.52
+    enabled: true
+  - name: small
+    energy_j: 20.8
+    latency_s: 1.6
+    quality_base: 0.74
+    robustness_to_difficulty: 0.68
+    enabled: true
+  - name: medium
+    energy_j: 53.2
+    latency_s: 2.8
+    quality_base: 0.88
+    robustness_to_difficulty: 0.82
+    enabled: true
+  - name: defer
+    energy_j: 0.0
+    latency_s: 0.0
+    quality_base: 0.0
+    robustness_to_difficulty: 0.0
+    enabled: true
+
+models:
+  - name: lightweight
+    backend: mock
+    profile_name: tiny
+    enabled: true
+  - name: balanced
+    backend: mock
+    profile_name: small
+    enabled: true
+  - name: high_accuracy
+    backend: mock
+    profile_name: medium
+    enabled: true
+  - name: delay_store
+    backend: mock
+    profile_name: defer
+    enabled: true
+
+error_model:
+  enabled: false
+  high_value_threshold: 0.75
+  high_value_bonus: 0.0
+  base_miss_probability: 0.03
+  difficulty_weight: 0.30
+  uncertainty_weight: 0.22
+  low_quality_weight: 0.55
+  low_robustness_weight: 0.18
+  false_alarm_scale: 0.35
+  min_error_probability: 0.02
+  max_error_probability: 0.95

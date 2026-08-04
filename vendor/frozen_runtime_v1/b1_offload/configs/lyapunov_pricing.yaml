@@ -1,0 +1,10 @@
+enabled: true
+base_lambda_E: 0.30
+base_lambda_L: 0.20
+base_lambda_Q: 0.15
+base_lambda_S: 0.12
+alpha_energy: 1.20
+alpha_thermal: 0.80
+alpha_queue: 0.90
+alpha_deadline: 0.75
+alpha_egress: 1.10

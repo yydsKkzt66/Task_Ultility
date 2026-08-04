@@ -1,0 +1,16 @@
+method:
+  method_id: OFFLOAD-EFT
+  decision_mode: one_shot_earliest_finish_time
+  local_model: high_accuracy
+  local_result_product: roi
+  ground_observation_product: b1_compressed_full_frame
+  ground_compute_servers: 1
+  ground_queue_policy: fifo
+  ground_queue_capacity: 32
+  tie_tolerance_s: 1.0e-6
+  tie_break_rule: [earliest_finish, lower_tx_bytes, lower_sat_energy, local]
+  allow_migration: false
+  allow_replication: false
+  offloading_policy: {enabled: false, implementation: src.baselines.offload_eft}
+  feature_flags: {offload_eft_enabled: false}
+  notes: Ground compute is a finite single-server FIFO PROXY derived from existing B1 decode and high_accuracy inference latency.

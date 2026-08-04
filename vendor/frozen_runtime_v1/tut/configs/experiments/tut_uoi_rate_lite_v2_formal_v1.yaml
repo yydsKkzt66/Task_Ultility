@@ -1,0 +1,11 @@
+experiment:
+  experiment_id: tut_uoi_rate_lite_v2_formal_v1
+  method_id: TUT-v2-energy-fixed
+  seeds: [2026, 2027, 2028, 2029, 2030]
+  capacities: [1.00, 0.50, 0.35]
+  output_root: D:/wt/pilot/outputs/_progressive_utility_switch_reaudit_v1/tut_v2/formal_v1
+  allowed_phases: [preflight, run-seed, analyze]
+  formal_run_requires_explicit_task8_approval: true
+  forbidden_methods: [B1-COMMON-THERMAL, OFFLOAD-EFT-THERMAL-ALIGNED, PROP-HEADROOM]
+simulator_overrides:
+  tut_predicted_energy_fix_enabled: true

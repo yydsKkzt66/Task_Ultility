@@ -1,0 +1,17 @@
+﻿contact_id,start_slot,end_slot,duration_slots,nominal_capacity_mb,source,contact_hash
+contact_01,21,51,30,4248.804738173,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,c904bc8b349d5d1a564bdddbe0628c59b8e327c4426658be2adaf412960268b8
+contact_02,306,336,30,3014.08586837,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,9b69b27cbf1995ac075718e798044b60078f18a1b100db7f3e37e52be2117165
+contact_03,591,621,30,4272.631601334,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,835e26a1726cbd9e64164017eb17eb466b7c8643e19fc700fa2223e532dad496
+contact_04,876,906,30,2991.050219174,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,31f1cc924a6462c701227ce7721ae48f5737193f30a9d6550bca8659580ebfb6
+contact_05,1161,1191,30,4294.86155467,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,7fe679abcc73ba5b4087d20af005a5973be87345ff649cd32ade98a20bd8b983
+contact_06,1446,1476,30,2969.639937074,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,3074c964f5061d0e2c16f1106b51b6f2ff08258f317f2a581f2103b3d7d1873f
+contact_07,1731,1761,30,4315.438705464,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,99905b1b0022fd174890811c00541e20c71965f4069adcb2f022a98f98bbe26c
+contact_08,2016,2046,30,2949.908853888,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,e87a89130e2b7d37afe386d3331ec4a3e3adecd1ed0bfa7a45abb0222819751b
+contact_09,2301,2331,30,4334.311316638,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,b8e4450d1e235c083f471357d0c732da6b1aa10559ae83f7cecccacb57a160ed
+contact_10,2586,2616,30,2931.906579432,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,4ec0c88bb48c398a53a77a43fabc0694989750efa0136f8e4c0ed8b38871a79d
+contact_11,2871,2901,30,4351.43193683,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,a263fcb2a9cfcb99928b9ddbf8d31c4772abf2ad151cd2ee52501112033b601a
+contact_12,3156,3186,30,2915.678376779,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,e918365757742959c450c90bc5de72272f24463644d9617b2544e08204c2c1c1
+contact_13,3441,3471,30,4366.757519708,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,f51ee19046b42fb23621a337d4810796bcd78468c1344472f09c9f9a7115ffbd
+contact_14,3726,3756,30,2901.26504846,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,3485b3962c7830a8bc91f524083ce877e9febf19c38c6ed127f5db8dc00f1318
+contact_15,4011,4041,30,4380.249532195,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,a78eee9571c5d9d4e4c06b0800dc9648ff97198de9c399045a80d2439adacdd8
+contact_16,4296,4320,24,2316.486112411,synthetic periodic contact; timeline config and src/timeline/link_trace_loader.py,050113d7ac228b4a26625b06c56b194e512e414b86e314eb2bbc8e3083e2590c

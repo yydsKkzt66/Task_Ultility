@@ -1,0 +1,5 @@
+﻿model_id,complexity_level,inference_latency_s,inference_energy_j,quality,supported_products,memory_requirement,status,source
+tiny,lightweight,0.9,10.8,0.74,metadata;roi;roi_context,UNKNOWN,PROXY,configs/model_profiles_yolo_inspired_calibrated.yaml
+small,balanced,1.44,21.6,0.87,metadata;roi;roi_context,UNKNOWN,PROXY,same
+medium,high_accuracy,2.79,51.84,0.94,metadata;roi;roi_context,UNKNOWN,PROXY,same
+defer,none,0,0,0,defer,NOT_APPLICABLE,ACTIVE,configs/model_pool.yaml

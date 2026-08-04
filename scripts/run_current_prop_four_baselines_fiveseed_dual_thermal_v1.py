@@ -3,8 +3,9 @@
 The trusted, already completed seed-2026 five-method run is reused only after
 identity/hash checks.  Seeds 2027--2030 are executed fresh in independent
 processes on the ordinary value-blind V25 bundles and the shared calibrated
-two-node thermal model.  Existing source, configuration and result assets are
-read-only.
+two-node thermal model.  Pass ``--fresh-all`` on a clean clone to execute all
+five seeds, including 2026, from fresh state without relying on historical run
+directories.  Existing source, configuration and result assets are read-only.
 """
 
 from __future__ import annotations
@@ -134,9 +135,9 @@ def child_run(spec: Mapping[str, Any]) -> int:
     return single.child_run(spec)
 
 
-def make_specs(attempt: Path, thermal_model: Path) -> list[dict[str, Any]]:
+def make_specs(attempt: Path, thermal_model: Path, fresh_seeds: Iterable[int] = NEW_SEEDS) -> list[dict[str, Any]]:
     result = []
-    for seed in NEW_SEEDS:
+    for seed in fresh_seeds:
         bundle = bundle_for_seed(seed)
         contract = read_json(bundle / "bundle_contract.json")
         for method in METHODS:
@@ -190,12 +191,19 @@ def reference_run(method: str) -> Path:
     raise FileNotFoundError({"seed_2026_reference_missing": method, "candidates": [str(path) for path in candidates]})
 
 
-def evaluate_one(seed: int, method: str, run: Path, bundle: Path) -> dict[str, Any]:
+def evaluate_one(
+    seed: int,
+    method: str,
+    run: Path,
+    bundle: Path,
+    *,
+    trusted_precomputed: bool = False,
+) -> dict[str, Any]:
     contract = read_json(bundle / "bundle_contract.json")
     set_seed_context(seed, bundle, str(contract["task_hash"]))
     # The trusted seed-2026 bundle is strictly read-only.  Its public metrics
     # were already completed and audited by the single-seed runner.
-    metric = read_json(run / "frozen_public_metrics.json") if seed == 2026 else single.evaluate(method, run)
+    metric = read_json(run / "frozen_public_metrics.json") if trusted_precomputed else single.evaluate(method, run)
     row = single.summary_row(method, run, metric)
     row = {"seed": seed, **row}
     row.update({
@@ -275,15 +283,22 @@ def paired_deltas(per_run: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--child-spec", type=Path, help=argparse.SUPPRESS)
+    parser.add_argument(
+        "--fresh-all",
+        action="store_true",
+        help="Run all 5 seeds x 5 methods from fresh state; required for a clean clone.",
+    )
     args = parser.parse_args()
     if args.child_spec:
         return child_run(read_json(args.child_spec))
 
     attempt = next_attempt()
     thermal_model = adapted.reference_thermal_model()
-    reference_completion = read_json(REFERENCE_2026 / "completion.json")
-    if reference_completion.get("status") != "PASS":
-        raise RuntimeError("SEED_2026_REFERENCE_INCOMPLETE")
+    fresh_seeds = SEEDS if args.fresh_all else NEW_SEEDS
+    if not args.fresh_all:
+        reference_completion = read_json(REFERENCE_2026 / "completion.json")
+        if reference_completion.get("status") != "PASS":
+            raise RuntimeError("SEED_2026_REFERENCE_INCOMPLETE")
 
     scenario_audit = []
     for seed in SEEDS:
@@ -301,18 +316,18 @@ def main() -> int:
         raise RuntimeError("ORDINARY_SCENARIO_IDENTITY_FAILED")
     write_json(attempt / "audit" / "scenario_identity.json", {"status": "PASS", "seeds": scenario_audit})
 
-    specs = make_specs(attempt, thermal_model)
+    specs = make_specs(attempt, thermal_model, fresh_seeds)
     statuses = []
     with ThreadPoolExecutor(max_workers=MAX_PARALLEL) as pool:
         futures = {pool.submit(launch_one, spec, attempt): spec for spec in specs}
         for future in as_completed(futures):
             status = future.result()
             statuses.append(status)
-            print(f"[{len(statuses):02d}/20] {status['status']} seed={status['seed']} {status['method']}", flush=True)
+            print(f"[{len(statuses):02d}/{len(specs)}] {status['status']} seed={status['seed']} {status['method']}", flush=True)
     write_json(attempt / "audit" / "process_status.json", statuses)
     failures = [row for row in statuses if row["status"] != "PASS"]
     if failures:
-        raise RuntimeError({"FRESH_FOUR_SEED_RUNTIME_FAILED": failures})
+        raise RuntimeError({"FRESH_RUNTIME_FAILED": failures})
 
     spec_by = {(i(spec["seed"]), str(spec["method"])): spec for spec in specs}
     per_run = []
@@ -320,13 +335,17 @@ def main() -> int:
     for seed in SEEDS:
         bundle = bundle_for_seed(seed)
         for method in METHODS:
-            if seed == 2026:
+            if seed == 2026 and not args.fresh_all:
                 run = reference_run(method)
                 reuse_rows.append({"seed": seed, "method": method, "run": str(run.resolve()), "reuse": "HASH_GATED_TRUSTED_COMPLETE"})
             else:
                 run = Path(spec_by[(seed, method)]["output"])
-            per_run.append(evaluate_one(seed, method, run, bundle))
-    write_json(attempt / "audit" / "seed_2026_reuse.json", {"status": "PASS", "rows": reuse_rows})
+            per_run.append(evaluate_one(seed, method, run, bundle, trusted_precomputed=seed == 2026 and not args.fresh_all))
+    write_json(attempt / "audit" / "seed_2026_reuse.json", {
+        "status": "PASS",
+        "mode": "FRESH" if args.fresh_all else "HASH_GATED_TRUSTED_COMPLETE",
+        "rows": reuse_rows,
+    })
 
     summary = aggregate(per_run)
     paired, paired_summary = paired_deltas(per_run)
@@ -357,12 +376,13 @@ def main() -> int:
     write_csv(attempt / "tables" / "hv_layered_delivery_mean_std.csv", hv_summary)
     write_md(attempt / "tables" / "hv_layered_delivery_mean_std.md", hv_summary)
 
-    fresh = [row for row in per_run if i(row["seed"]) in NEW_SEEDS]
+    fresh = [row for row in per_run if i(row["seed"]) in fresh_seeds]
+    expected_fresh_runs = len(fresh_seeds) * len(METHODS)
     checks = {
         "five_methods_x_five_seeds": len(per_run) == 25 and all(sum(row["method"] == method for row in per_run) == 5 for method in METHODS),
-        "seed_2026_trusted_complete_reused": len(reuse_rows) == 5,
-        "twenty_new_runs_completed": len(statuses) == 20 and not failures,
-        "twenty_new_unique_processes": len({i(row["pid"]) for row in fresh}) == 20,
+        "seed_2026_execution_mode_valid": len(reuse_rows) == (0 if args.fresh_all else 5),
+        "fresh_runs_completed": len(statuses) == expected_fresh_runs and not failures,
+        "fresh_runs_use_unique_processes": len({i(row["pid"]) for row in fresh}) == expected_fresh_runs,
         "same_task_hash_within_each_seed": all(len({row["runtime_task_hash"] for row in per_run if i(row["seed"]) == seed}) == 1 for seed in SEEDS),
         "runtime_task_hash_matches_bundle": all(row["runtime_task_hash"] == row["task_hash"] for row in per_run),
         "same_link_trace_all_runs": len({row["link_trace_hash"] for row in per_run}) == 1,
@@ -373,11 +393,15 @@ def main() -> int:
     status = "PASS" if all(checks.values()) else "FAIL"
     audit = {
         "status": status, "version": VERSION, "checks": checks, "methods": METHODS,
-        "seeds": SEEDS, "fresh_seeds": NEW_SEEDS, "capacity": CAPACITY, "duration_s": 86400,
+        "seeds": SEEDS, "fresh_seeds": fresh_seeds, "capacity": CAPACITY, "duration_s": 86400,
         "power_environment": "corrected 40 W", "max_parallel_processes": MAX_PARALLEL,
         "thermal_model": str(thermal_model.resolve()), "thermal_model_sha256": sha256_file(thermal_model),
         "thermal_parameter_hash": per_run[0]["thermal_parameter_hash"],
-        "execution": "seed 2026 reused after identity gate; seeds 2027-2030 freshly executed in independent processes",
+        "execution": (
+            "all seeds 2026-2030 freshly executed in independent processes"
+            if args.fresh_all
+            else "seed 2026 reused after identity gate; seeds 2027-2030 freshly executed in independent processes"
+        ),
     }
     write_json(attempt / "audit" / "method_environment_thermal_audit.json", audit)
     (attempt / "test_report.txt").write_text(
@@ -404,7 +428,7 @@ def main() -> int:
     (attempt / "final_assessment.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     write_json(attempt / "completion.json", {"status": status, "marker": COMPLETION, "completed_utc": datetime.now(timezone.utc).isoformat(), "output": str(attempt)})
     print("OUTPUT:", attempt)
-    print("NEW RUNS: 20; MAX PARALLEL:", MAX_PARALLEL)
+    print(f"NEW RUNS: {expected_fresh_runs}; MAX PARALLEL:", MAX_PARALLEL)
     print(COMPLETION if status == "PASS" else "CURRENT_PROP_FOUR_BASELINES_FIVESEED_DUAL_THERMAL_FAILED")
     return 0 if status == "PASS" else 2
 

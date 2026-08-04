@@ -1,0 +1,7 @@
+﻿coefficient,value,unit,status,source
+guard,0.85,normalized,ACTIVE,simulator config
+hard,0.92,normalized,ACTIVE,simulator config
+compute_heat,0.0025,normalized/J,PROXY,thermal_update.py
+communication_heat,0.0015,normalized/J,PROXY,thermal_update.py
+passive_cooling,0.12,normalized/ref-slot,PROXY,simulator config
+active_cooling,0.045,normalized/ref-slot,PROXY,simulator config

@@ -1,0 +1,324 @@
+{
+  "dataset_root": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\datasets\\SARFishSample",
+  "total_files": 78,
+  "image_count": 12,
+  "annotation_count": 26,
+  "other_label_like_count": 14,
+  "image_extension_counts": {
+    ".tiff": 8,
+    ".png": 4
+  },
+  "annotation_extension_counts": {
+    ".xml": 24,
+    ".kml": 2
+  },
+  "other_label_like_extension_counts": {
+    ".npy": 8,
+    ".msk": 6
+  },
+  "same_stem_image_matches": 0,
+  "images_without_same_stem_label": 12,
+  "labels_without_same_stem_image": 26,
+  "one_to_one_match": false,
+  "bad_image_count": 6,
+  "bad_image_examples": [
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001_SARFish.tiff",
+      "error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001_SARFish.tiff'"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004_SARFish.tiff",
+      "error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004_SARFish.tiff'"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw2-slc-vh-20200803t075721-20200803t075746-022756-02b2ff-002_SARFish.tiff",
+      "error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw2-slc-vh-20200803t075721-20200803t075746-022756-02b2ff-002_SARFish.tiff'"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw2-slc-vv-20200803t075721-20200803t075746-022756-02b2ff-005_SARFish.tiff",
+      "error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw2-slc-vv-20200803t075721-20200803t075746-022756-02b2ff-005_SARFish.tiff'"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw3-slc-vh-20200803t075722-20200803t075747-022756-02b2ff-003_SARFish.tiff",
+      "error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw3-slc-vh-20200803t075722-20200803t075747-022756-02b2ff-003_SARFish.tiff'"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw3-slc-vv-20200803t075722-20200803t075747-022756-02b2ff-006_SARFish.tiff",
+      "error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw3-slc-vv-20200803t075722-20200803t075747-022756-02b2ff-006_SARFish.tiff'"
+    }
+  ],
+  "bad_label_count": 0,
+  "bad_label_examples": [],
+  "empty_label_count": 26,
+  "detected_label_format_counts": {
+    "unrecognized_xml": 24,
+    "unsupported_kml": 2
+  },
+  "label_format_verdict": "No parseable detection bbox labels found in scanned files.",
+  "yolo_normalized_verdict": "No YOLO txt labels detected.",
+  "parsed_bbox_count": 0,
+  "positive_image_count": 0,
+  "explicit_negative_image_count": 0,
+  "objects_per_image": {
+    "count": 12,
+    "min": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "p90": 0.0,
+    "max": 0.0
+  },
+  "class_distribution": {},
+  "bbox_width": {
+    "count": 0,
+    "min": null,
+    "mean": null,
+    "median": null,
+    "p90": null,
+    "max": null
+  },
+  "bbox_height": {
+    "count": 0,
+    "min": null,
+    "mean": null,
+    "median": null,
+    "p90": null,
+    "max": null
+  },
+  "bbox_area": {
+    "count": 0,
+    "min": null,
+    "mean": null,
+    "median": null,
+    "p90": null,
+    "max": null
+  },
+  "bbox_area_ratio": {
+    "count": 0,
+    "min": null,
+    "mean": null,
+    "median": null,
+    "p90": null,
+    "max": null
+  },
+  "size_class_distribution": {},
+  "roi_crop": {
+    "width": {
+      "count": 0,
+      "min": null,
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "max": null
+    },
+    "height": {
+      "count": 0,
+      "min": null,
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "max": null
+    },
+    "area": {
+      "count": 0,
+      "min": null,
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "max": null
+    }
+  },
+  "unrecognized_label_examples": [
+    {
+      "path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/annotation/calibration/calibration-s1b-iw-grd-vh-20200803t075721-20200803t075746-022756-02b2ff-002.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>GRD</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW</swath> <startTime>2020-08-03T07:57:21.931958</startTime> <stopTime>2020-08-03T07:57:46.930977</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>002</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/annotation/calibration/calibration-s1b-iw-grd-vv-20200803t075721-20200803t075746-022756-02b2ff-001.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>GRD</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW</swath> <startTime>2020-08-03T07:57:21.931958</startTime> <stopTime>2020-08-03T07:57:46.930977</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>001</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/annotation/calibration/noise-s1b-iw-grd-vh-20200803t075721-20200803t075746-022756-02b2ff-002.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>GRD</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW</swath> <startTime>2020-08-03T07:57:21.931958</startTime> <stopTime>2020-08-03T07:57:46.930977</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>002</imageNumber> </adsHeader> <noiseRangeVectorList count=\"26\">"
+    },
+    {
+      "path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/annotation/calibration/noise-s1b-iw-grd-vv-20200803t075721-20200803t075746-022756-02b2ff-001.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>GRD</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW</swath> <startTime>2020-08-03T07:57:21.931958</startTime> <stopTime>2020-08-03T07:57:46.930977</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>001</imageNumber> </adsHeader> <noiseRangeVectorList count=\"26\">"
+    },
+    {
+      "path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/annotation/s1b-iw-grd-vh-20200803t075721-20200803t075746-022756-02b2ff-002.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <product> <adsHeader> <missionId>S1B</missionId> <productType>GRD</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW</swath> <startTime>2020-08-03T07:57:21.931958</startTime> <stopTime>2020-08-03T07:57:46.930977</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>002</imageNumber> </adsHeader> <qualityInformation> <produc"
+    },
+    {
+      "path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/annotation/s1b-iw-grd-vv-20200803t075721-20200803t075746-022756-02b2ff-001.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <product> <adsHeader> <missionId>S1B</missionId> <productType>GRD</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW</swath> <startTime>2020-08-03T07:57:21.931958</startTime> <stopTime>2020-08-03T07:57:46.930977</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>001</imageNumber> </adsHeader> <qualityInformation> <produc"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/calibration-s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW1</swath> <startTime>2020-08-03T07:57:20.470794</startTime> <stopTime>2020-08-03T07:57:48.368804</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>001</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/calibration-s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW1</swath> <startTime>2020-08-03T07:57:20.470794</startTime> <stopTime>2020-08-03T07:57:48.368804</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>004</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/calibration-s1b-iw2-slc-vh-20200803t075721-20200803t075746-022756-02b2ff-002.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW2</swath> <startTime>2020-08-03T07:57:21.426628</startTime> <stopTime>2020-08-03T07:57:46.578415</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>002</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/calibration-s1b-iw2-slc-vv-20200803t075721-20200803t075746-022756-02b2ff-005.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW2</swath> <startTime>2020-08-03T07:57:21.426628</startTime> <stopTime>2020-08-03T07:57:46.578415</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>005</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/calibration-s1b-iw3-slc-vh-20200803t075722-20200803t075747-022756-02b2ff-003.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW3</swath> <startTime>2020-08-03T07:57:22.370128</startTime> <stopTime>2020-08-03T07:57:47.544526</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>003</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/calibration-s1b-iw3-slc-vv-20200803t075722-20200803t075747-022756-02b2ff-006.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <calibration> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW3</swath> <startTime>2020-08-03T07:57:22.370128</startTime> <stopTime>2020-08-03T07:57:47.544526</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>006</imageNumber> </adsHeader> <calibrationInformation>"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/noise-s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW1</swath> <startTime>2020-08-03T07:57:20.470794</startTime> <stopTime>2020-08-03T07:57:48.368804</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>001</imageNumber> </adsHeader> <noiseRangeVectorList count=\"11\">"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/noise-s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW1</swath> <startTime>2020-08-03T07:57:20.470794</startTime> <stopTime>2020-08-03T07:57:48.368804</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>004</imageNumber> </adsHeader> <noiseRangeVectorList count=\"11\">"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/noise-s1b-iw2-slc-vh-20200803t075721-20200803t075746-022756-02b2ff-002.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW2</swath> <startTime>2020-08-03T07:57:21.426628</startTime> <stopTime>2020-08-03T07:57:46.578415</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>002</imageNumber> </adsHeader> <noiseRangeVectorList count=\"10\">"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/noise-s1b-iw2-slc-vv-20200803t075721-20200803t075746-022756-02b2ff-005.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW2</swath> <startTime>2020-08-03T07:57:21.426628</startTime> <stopTime>2020-08-03T07:57:46.578415</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>005</imageNumber> </adsHeader> <noiseRangeVectorList count=\"10\">"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/noise-s1b-iw3-slc-vh-20200803t075722-20200803t075747-022756-02b2ff-003.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW3</swath> <startTime>2020-08-03T07:57:22.370128</startTime> <stopTime>2020-08-03T07:57:47.544526</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>003</imageNumber> </adsHeader> <noiseRangeVectorList count=\"10\">"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/calibration/noise-s1b-iw3-slc-vv-20200803t075722-20200803t075747-022756-02b2ff-006.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <noise> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW3</swath> <startTime>2020-08-03T07:57:22.370128</startTime> <stopTime>2020-08-03T07:57:47.544526</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>006</imageNumber> </adsHeader> <noiseRangeVectorList count=\"10\">"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <product> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VH</polarisation> <mode>IW</mode> <swath>IW1</swath> <startTime>2020-08-03T07:57:20.470794</startTime> <stopTime>2020-08-03T07:57:48.368804</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>001</imageNumber> </adsHeader> <qualityInformation> <produ"
+    },
+    {
+      "path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/annotation/s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004.xml",
+      "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <product> <adsHeader> <missionId>S1B</missionId> <productType>SLC</productType> <polarisation>VV</polarisation> <mode>IW</mode> <swath>IW1</swath> <startTime>2020-08-03T07:57:20.470794</startTime> <stopTime>2020-08-03T07:57:48.368804</stopTime> <absoluteOrbitNumber>22756</absoluteOrbitNumber> <missionDataTakeId>176895</missionDataTakeId> <imageNumber>004</imageNumber> </adsHeader> <qualityInformation> <produ"
+    }
+  ],
+  "sample_rows": [
+    {
+      "random_sample": 1,
+      "image_path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/measurement/s1b-iw-grd-vv-20200803t075721-20200803t075746-022756-02b2ff-001_SARFish.tiff",
+      "label_path": "",
+      "image_width": 25306,
+      "image_height": 16644,
+      "image_error": "",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/preview/icons/logo.png",
+      "label_path": "",
+      "image_width": 960,
+      "image_height": 120,
+      "image_error": "",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "GRD/validation/GRD/validation/S1B_IW_GRDH_1SDV_20200803T075721_20200803T075746_022756_02B2FF_033A.SAFE/preview/quick-look.png",
+      "label_path": "",
+      "image_width": 504,
+      "image_height": 340,
+      "image_error": "",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001_SARFish.tiff",
+      "label_path": "",
+      "image_width": "",
+      "image_height": "",
+      "image_error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw1-slc-vh-20200803t075720-20200803t075748-022756-02b2ff-001_SARFish.tiff'",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004_SARFish.tiff",
+      "label_path": "",
+      "image_width": "",
+      "image_height": "",
+      "image_error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw1-slc-vv-20200803t075720-20200803t075748-022756-02b2ff-004_SARFish.tiff'",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw2-slc-vv-20200803t075721-20200803t075746-022756-02b2ff-005_SARFish.tiff",
+      "label_path": "",
+      "image_width": "",
+      "image_height": "",
+      "image_error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw2-slc-vv-20200803t075721-20200803t075746-022756-02b2ff-005_SARFish.tiff'",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw3-slc-vh-20200803t075722-20200803t075747-022756-02b2ff-003_SARFish.tiff",
+      "label_path": "",
+      "image_width": "",
+      "image_height": "",
+      "image_error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw3-slc-vh-20200803t075722-20200803t075747-022756-02b2ff-003_SARFish.tiff'",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/measurement/s1b-iw3-slc-vv-20200803t075722-20200803t075747-022756-02b2ff-006_SARFish.tiff",
+      "label_path": "",
+      "image_width": "",
+      "image_height": "",
+      "image_error": "cannot identify image file '\\\\\\\\?\\\\D:\\\\北邮work\\\\5.15多状态感知轻量化星上agent\\\\leo_onboard_codesign_case_study_v2\\\\datasets\\\\SARFishSample\\\\SLC\\\\validation\\\\SLC\\\\validation\\\\S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE\\\\measurement\\\\s1b-iw3-slc-vv-20200803t075722-20200803t075747-022756-02b2ff-006_SARFish.tiff'",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/preview/icons/logo.png",
+      "label_path": "",
+      "image_width": 960,
+      "image_height": 120,
+      "image_error": "",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    },
+    {
+      "random_sample": 1,
+      "image_path": "SLC/validation/SLC/validation/S1B_IW_SLC__1SDV_20200803T075720_20200803T075748_022756_02B2FF_E5D2.SAFE/preview/quick-look.png",
+      "label_path": "",
+      "image_width": 1457,
+      "image_height": 2263,
+      "image_error": "",
+      "label_format": "",
+      "parsed_bbox_count": 0,
+      "label_preview": ""
+    }
+  ]
+}

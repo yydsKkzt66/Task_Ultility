@@ -1,0 +1,855 @@
+{
+  "battery": {
+    "capacity_wh": {
+      "notes": "",
+      "source": "active simulator/resource config",
+      "status": "PROXY",
+      "unit": "Wh",
+      "value": 230.0
+    },
+    "charge_efficiency": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "ratio",
+      "value": 0.92
+    },
+    "discharge_efficiency": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "ratio",
+      "value": 0.95
+    },
+    "hard_soc_floor": {
+      "notes": "Physical SafeFilter/resource floor; not the 0.70/0.50 policy regions.",
+      "source": "active simulator/resource config",
+      "status": "ACTIVE",
+      "unit": "fraction",
+      "value": 0.55
+    },
+    "initial_soc": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "ACTIVE",
+      "unit": "fraction",
+      "value": 0.9
+    },
+    "policy_guard_50": {
+      "notes": "Policy partition only, below the active physical floor.",
+      "source": "PROP follow-up policy",
+      "status": "ACTIVE",
+      "unit": "fraction",
+      "value": 0.5
+    },
+    "policy_guard_70": {
+      "notes": "",
+      "source": "resource/PROP config",
+      "status": "ACTIVE",
+      "unit": "fraction",
+      "value": 0.7
+    },
+    "soc_clipping": {
+      "notes": "",
+      "source": "src/energy/battery_update.py",
+      "status": "ACTIVE",
+      "unit": "fraction",
+      "value": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "communication": {
+    "capacity_multipliers": {
+      "notes": "Multiplier scales configured throughput.",
+      "source": "scripts/run_sarfish_thermal_headroom_multiseed.py",
+      "status": "ACTIVE",
+      "unit": "ratio",
+      "value": [
+        1.0,
+        0.5,
+        0.35
+      ]
+    },
+    "cross_contact_resume": {
+      "notes": "",
+      "source": "src/link/downlink_queue.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    },
+    "cross_slot_resume": {
+      "notes": "",
+      "source": "src/link/downlink_queue.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    },
+    "headroom_enabled_by_default": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "INACTIVE",
+      "unit": "boolean",
+      "value": false
+    },
+    "minimum_transfer_granularity": {
+      "notes": "",
+      "source": "src/link/downlink_queue.py",
+      "status": "PROXY",
+      "unit": "bytes",
+      "value": "floating-point byte accounting"
+    },
+    "partial_transmission": {
+      "notes": "",
+      "source": "src/link/downlink_queue.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    },
+    "thermal_heat_per_j": {
+      "notes": "",
+      "source": "src/energy/thermal_update.py",
+      "status": "PROXY",
+      "unit": "normalized/J",
+      "value": 0.0015
+    },
+    "throughput_max_mbps": {
+      "notes": "",
+      "source": "timeline config",
+      "status": "PROXY",
+      "unit": "Mbit/s",
+      "value": 65.0
+    },
+    "throughput_min_mbps": {
+      "notes": "",
+      "source": "timeline config",
+      "status": "PROXY",
+      "unit": "Mbit/s",
+      "value": 35.0
+    },
+    "tx_power_w": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "W",
+      "value": 35.0
+    }
+  },
+  "compute": {
+    "concurrency": {
+      "notes": "",
+      "source": "src/simulator/step_runner.py",
+      "status": "PROXY",
+      "unit": "logical action/slot",
+      "value": 1
+    },
+    "cores": {
+      "notes": "",
+      "source": "not modeled",
+      "status": "UNKNOWN",
+      "unit": "cores",
+      "value": null
+    },
+    "cross_slot_compute": {
+      "notes": "Latency is accounted, but compute is instantiated within the action slot.",
+      "source": "src/simulator/step_runner.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    },
+    "hardware": {
+      "notes": "No CPU/GPU/chip model is simulated.",
+      "source": "resource/model configs",
+      "status": "PROXY",
+      "unit": "description",
+      "value": "BUPT-1-like abstract COTS compute"
+    },
+    "preemption": {
+      "notes": "",
+      "source": "same",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    },
+    "thermal_heat_per_j": {
+      "notes": "",
+      "source": "src/energy/thermal_update.py",
+      "status": "PROXY",
+      "unit": "normalized/J",
+      "value": 0.0025
+    }
+  },
+  "contacts": {
+    "duration_s": {
+      "notes": "",
+      "source": "timeline config",
+      "status": "PROXY",
+      "unit": "s",
+      "value": 600
+    },
+    "ground_station_count": {
+      "notes": "",
+      "source": "not represented by active config",
+      "status": "UNKNOWN",
+      "unit": "stations",
+      "value": null
+    },
+    "period_s": {
+      "notes": "",
+      "source": "timeline config",
+      "status": "PROXY",
+      "unit": "s",
+      "value": 5700
+    },
+    "phase_offset_s": {
+      "notes": "",
+      "source": "timeline config",
+      "status": "PROXY",
+      "unit": "s",
+      "value": 420
+    },
+    "propagation_delay_s": {
+      "notes": "",
+      "source": "not represented",
+      "status": "UNKNOWN",
+      "unit": "s",
+      "value": null
+    },
+    "protocol_overhead": {
+      "notes": "",
+      "source": "not represented",
+      "status": "UNKNOWN",
+      "unit": "fraction",
+      "value": null
+    },
+    "trace_source": {
+      "notes": "",
+      "source": "timeline config",
+      "status": "PROXY",
+      "unit": "source",
+      "value": "synthetic periodic contact"
+    }
+  },
+  "dataset": {
+    "name": {
+      "notes": "",
+      "source": "configs/dataset_sarfish_grd_validation.yaml",
+      "status": "ACTIVE",
+      "unit": "name",
+      "value": "SARFishSample"
+    },
+    "pixels_read_online": {
+      "notes": "Tasks use indexed metadata; policies do not run image codecs.",
+      "source": "src/data/sarfish_task_builder.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    },
+    "product": {
+      "notes": "",
+      "source": "configs/dataset_sarfish_grd_validation.yaml",
+      "status": "ACTIVE",
+      "unit": "product",
+      "value": "GRD"
+    },
+    "root": {
+      "notes": "",
+      "source": "configs/dataset_sarfish_grd_validation.yaml",
+      "status": "ACTIVE",
+      "unit": "repository-relative path",
+      "value": "datasets/SARFishSample"
+    },
+    "scene_index": {
+      "notes": "",
+      "source": "configs/dataset_sarfish_grd_validation.yaml",
+      "status": "ACTIVE",
+      "unit": "path",
+      "value": "data/indexes/sarfishsample_scene_index.csv"
+    },
+    "source_scene_count": {
+      "notes": "Usable GRD validation index rows; scenes are sampled with replacement across tasks.",
+      "source": "data/indexes/sarfishsample_scene_index.csv",
+      "status": "ACTIVE",
+      "unit": "scenes",
+      "value": 50
+    },
+    "split": {
+      "notes": "",
+      "source": "configs/dataset_sarfish_grd_validation.yaml",
+      "status": "ACTIVE",
+      "unit": "split",
+      "value": "validation"
+    },
+    "true_labels_online": {
+      "notes": "Labels and annotations are evaluation/task-generation inputs, not online policy future knowledge.",
+      "source": "task/evaluator audit",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    }
+  },
+  "energy": {
+    "common_minimum_soc": {
+      "notes": "",
+      "source": "reserved",
+      "status": "FUTURE",
+      "unit": "fraction",
+      "value": null
+    },
+    "consumed_energy": {
+      "notes": "",
+      "source": "reserved",
+      "status": "FUTURE",
+      "unit": "Wh",
+      "value": null
+    },
+    "eclipse_duration_s": {
+      "notes": "",
+      "source": "resource config",
+      "status": "PROXY",
+      "unit": "s/orbit",
+      "value": 2100
+    },
+    "idle_power_w": {
+      "notes": "",
+      "source": "resource config",
+      "status": "PROXY",
+      "unit": "W",
+      "value": 4.8
+    },
+    "maximum_controllable_energy_budget": {
+      "notes": "",
+      "source": "reserved for matched-energy experiments",
+      "status": "FUTURE",
+      "unit": "Wh",
+      "value": null
+    },
+    "predicted_post_action_soc": {
+      "notes": "",
+      "source": "reserved",
+      "status": "FUTURE",
+      "unit": "fraction",
+      "value": null
+    },
+    "remaining_energy": {
+      "notes": "",
+      "source": "reserved",
+      "status": "FUTURE",
+      "unit": "Wh",
+      "value": null
+    },
+    "reserved_energy": {
+      "notes": "",
+      "source": "reserved",
+      "status": "FUTURE",
+      "unit": "Wh",
+      "value": null
+    },
+    "resource_power_variation_w": {
+      "notes": "",
+      "source": "resource config",
+      "status": "PROXY",
+      "unit": "W",
+      "value": 0.65
+    },
+    "solar_peak_w": {
+      "notes": "",
+      "source": "resource config",
+      "status": "PROXY",
+      "unit": "W",
+      "value": 14.5
+    },
+    "sunlit_duration_s": {
+      "notes": "",
+      "source": "resource config",
+      "status": "PROXY",
+      "unit": "s/orbit",
+      "value": 3600
+    }
+  },
+  "evaluator": {
+    "closure_rule": {
+      "notes": "",
+      "source": "src/evaluation/unified_ground_received_accounting.py",
+      "status": "ACTIVE",
+      "unit": "rule",
+      "value": "information and quality requirements met by deadline"
+    },
+    "config_source": {
+      "notes": "",
+      "source": "prop_configs/b1_config",
+      "status": "ACTIVE",
+      "unit": "path",
+      "value": "configs/unified_ground_received_accounting.yaml"
+    },
+    "deadline_utility_after_deadline": {
+      "notes": "",
+      "source": "unified evaluator config",
+      "status": "ACTIVE",
+      "unit": "utility factor",
+      "value": 0.0
+    },
+    "internal_score_is_common_utility": {
+      "notes": "",
+      "source": "controller/evaluator audit",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    },
+    "net_utility_rule": {
+      "notes": "",
+      "source": "src/evaluation/unified_ground_received_accounting.py",
+      "status": "ACTIVE",
+      "unit": "formula",
+      "value": "gross - energy - backlog - safety costs"
+    },
+    "one_closure_reward_per_task": {
+      "notes": "",
+      "source": "ground lifecycle/evaluator",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    },
+    "requirement_utility_source": {
+      "notes": "",
+      "source": "common evaluator",
+      "status": "ACTIVE",
+      "unit": "path",
+      "value": "configs/product_requirement_utility.yaml"
+    }
+  },
+  "fairness": {
+    "immutable_roots": {
+      "notes": "",
+      "source": "contracts/fairness_contract_v1.md",
+      "status": "ACTIVE",
+      "unit": "paths",
+      "value": [
+        "dataset",
+        "scenario_generation",
+        "tasks",
+        "contacts",
+        "communication",
+        "compute",
+        "storage",
+        "queues",
+        "battery",
+        "energy",
+        "thermal",
+        "evaluator",
+        "simulation"
+      ]
+    },
+    "method_state_may_diverge": {
+      "notes": "",
+      "source": "fairness contract",
+      "status": "ACTIVE",
+      "unit": "fields",
+      "value": [
+        "model_selection",
+        "product_selection",
+        "queues",
+        "actual_soc",
+        "actual_thermal",
+        "transmitted_bytes",
+        "closures",
+        "utility",
+        "latency"
+      ]
+    }
+  },
+  "future_extensions": {
+    "multisatellite_offloading": {
+      "notes": "",
+      "source": "fairness contract",
+      "status": "FUTURE",
+      "unit": "rule",
+      "value": "must account for ISL TX/RX/wait/remote compute and single closure reward"
+    }
+  },
+  "metadata": {
+    "authoritative_multiscenario_commit": {
+      "notes": "",
+      "source": "validated study record",
+      "status": "ACTIVE",
+      "unit": "git commit",
+      "value": "57b5567312f32bee255b2c52cd06a840998cff98"
+    },
+    "contract_id": {
+      "notes": "",
+      "source": "this contract",
+      "status": "ACTIVE",
+      "unit": "identifier",
+      "value": "benchmark_environment_v1"
+    },
+    "proxy_disclosure": {
+      "notes": "System-level proxy; not end-to-end image processing.",
+      "source": "source config descriptions",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    }
+  },
+  "models": {
+    "backend": {
+      "notes": "",
+      "source": "src/models/mock_detector.py",
+      "status": "PROXY",
+      "unit": "backend",
+      "value": "mock detector profiles"
+    },
+    "profiles_source": {
+      "notes": "",
+      "source": "prop_configs",
+      "status": "ACTIVE",
+      "unit": "path",
+      "value": "configs/model_profiles_yolo_inspired_calibrated.yaml"
+    },
+    "real_onboard_inference": {
+      "notes": "",
+      "source": "src/models/inference_runner.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    }
+  },
+  "products": {
+    "b1_full_frame_size_mb": {
+      "notes": "32 MB / fixed ratio 8; no real codec execution.",
+      "source": "configs/baseline_b1_enhanced.yaml",
+      "status": "PROXY",
+      "unit": "MB",
+      "value": 4.0
+    },
+    "b1_real_compression": {
+      "notes": "",
+      "source": "src/baselines/b1_enhanced.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    },
+    "profiles_source": {
+      "notes": "",
+      "source": "prop_configs",
+      "status": "ACTIVE",
+      "unit": "path",
+      "value": "configs/payload_profiles_roi_compression_calibrated.yaml"
+    },
+    "quality_is_proxy": {
+      "notes": "",
+      "source": "payload/model profiles",
+      "status": "PROXY",
+      "unit": "boolean",
+      "value": true
+    },
+    "sizes_measured_from_encoding": {
+      "notes": "",
+      "source": "payload profile description",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": false
+    }
+  },
+  "queues": {
+    "compute": {
+      "capacity_items": {
+        "notes": "",
+        "source": "no persistent compute queue",
+        "status": "UNKNOWN",
+        "unit": "items",
+        "value": null
+      }
+    },
+    "downlink": {
+      "capacity_mb": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "MB",
+        "value": 5120.0
+      },
+      "safe_mb": {
+        "notes": "",
+        "source": "active simulator config",
+        "status": "ACTIVE",
+        "unit": "MB",
+        "value": 4096.0
+      }
+    },
+    "duplicate_suppression": {
+      "notes": "",
+      "source": "src/link/downlink_queue.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    },
+    "generation_request": {
+      "capacity_items": {
+        "notes": "",
+        "source": "no numeric cap found",
+        "status": "UNKNOWN",
+        "unit": "items",
+        "value": null
+      }
+    },
+    "overflow_eviction": {
+      "notes": "",
+      "source": "src/link/downlink_queue.py",
+      "status": "ACTIVE",
+      "unit": "policy",
+      "value": "lowest priority until within byte cap"
+    }
+  },
+  "scenario_generation": {
+    "arrival_interval_slots": {
+      "notes": "",
+      "source": "configs/task_stream_sarfish_formal_nominal_bupt1_deadline_minutes.yaml",
+      "status": "PROXY",
+      "unit": "slots",
+      "value": [
+        2,
+        3
+      ]
+    },
+    "background_arrival_probability": {
+      "notes": "",
+      "source": "same task-stream config",
+      "status": "PROXY",
+      "unit": "probability/slot",
+      "value": 0.005
+    },
+    "mode": {
+      "notes": "",
+      "source": "configs/task_stream_sarfish_formal_nominal_bupt1_deadline_minutes.yaml",
+      "status": "PROXY",
+      "unit": "mode",
+      "value": "observation_window"
+    },
+    "seeds": {
+      "notes": "",
+      "source": "outputs/_sarfish_thermal_headroom_multiseed/scenario_manifest.csv",
+      "status": "ACTIVE",
+      "unit": "seed",
+      "value": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ]
+    }
+  },
+  "simulation": {
+    "deadline_inclusive": {
+      "notes": "Completion <= deadline + 1e-9 is on time.",
+      "source": "src/evaluation/run_event_adapters.py",
+      "status": "ACTIVE",
+      "unit": "boolean",
+      "value": true
+    },
+    "end_time_s_exclusive": {
+      "notes": "",
+      "source": "timeline contract",
+      "status": "ACTIVE",
+      "unit": "s",
+      "value": 86400
+    },
+    "horizon_s": {
+      "notes": "",
+      "source": "configs/timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s.yaml:physical_horizon_s",
+      "status": "ACTIVE",
+      "unit": "s",
+      "value": 86400
+    },
+    "slot_count": {
+      "notes": "",
+      "source": "physical_horizon_s / slot_seconds",
+      "status": "ACTIVE",
+      "unit": "slots",
+      "value": 4320
+    },
+    "slot_seconds": {
+      "notes": "",
+      "source": "configs/timeline_sarfish_formal_nominal_bupt1_deadline_minutes_20s.yaml:slot_seconds",
+      "status": "ACTIVE",
+      "unit": "s",
+      "value": 20
+    },
+    "start_time_s": {
+      "notes": "",
+      "source": "src/timeline/timeline_builder.py",
+      "status": "ACTIVE",
+      "unit": "s",
+      "value": 0
+    }
+  },
+  "storage": {
+    "product_storage_capacity_mb": {
+      "notes": "",
+      "source": "downlink queue is the enforced product store",
+      "status": "UNKNOWN",
+      "unit": "MB",
+      "value": null
+    },
+    "raw_observation_capacity_mb": {
+      "notes": "",
+      "source": "not separately modeled",
+      "status": "UNKNOWN",
+      "unit": "MB",
+      "value": null
+    }
+  },
+  "tasks": {
+    "counts_by_seed": {
+      "notes": "",
+      "source": "scenario manifest",
+      "status": "ACTIVE",
+      "unit": "tasks",
+      "value": {
+        "2026": 268,
+        "2027": 285,
+        "2028": 255,
+        "2029": 306,
+        "2030": 285
+      }
+    },
+    "high_deadline_minutes": {
+      "notes": "",
+      "source": "task-stream config",
+      "status": "PROXY",
+      "unit": "min",
+      "value": [
+        45,
+        120
+      ]
+    },
+    "ordinary_deadline_minutes": {
+      "notes": "",
+      "source": "task-stream config",
+      "status": "PROXY",
+      "unit": "min",
+      "value": [
+        90,
+        240
+      ]
+    },
+    "task_id_format": {
+      "notes": "",
+      "source": "src/data/sarfish_task_builder.py",
+      "status": "ACTIVE",
+      "unit": "identifier",
+      "value": "generated deterministic string"
+    },
+    "urgent_deadline_minutes": {
+      "notes": "",
+      "source": "task-stream config",
+      "status": "PROXY",
+      "unit": "min",
+      "value": [
+        20,
+        90
+      ]
+    },
+    "value_class_mapping": {
+      "notes": "",
+      "source": "src/evaluation/canonical_sarfish_environment.py",
+      "status": "ACTIVE",
+      "unit": "mapping",
+      "value": {
+        "emergency": "urgent",
+        "high_value": "high",
+        "routine": "medium"
+      }
+    }
+  },
+  "thermal": {
+    "active_cooling": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "normalized/reference-slot",
+      "value": 0.045
+    },
+    "eclipse_bonus": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "normalized/reference-slot",
+      "value": 0.03
+    },
+    "guard_threshold": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "ACTIVE",
+      "unit": "normalized",
+      "value": 0.85
+    },
+    "hard_threshold": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "ACTIVE",
+      "unit": "normalized",
+      "value": 0.92
+    },
+    "headroom_binary_search_iterations": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "ACTIVE",
+      "unit": "iterations",
+      "value": 40
+    },
+    "headroom_tolerance": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "ACTIVE",
+      "unit": "normalized",
+      "value": 1e-10
+    },
+    "initial_state": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "ACTIVE",
+      "unit": "normalized",
+      "value": 0.52
+    },
+    "passive_cooling": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "normalized/reference-slot",
+      "value": 0.12
+    },
+    "reference_slot_s": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "s",
+      "value": 60.0
+    },
+    "state_clipping": {
+      "notes": "",
+      "source": "src/energy/thermal_update.py",
+      "status": "ACTIVE",
+      "unit": "normalized",
+      "value": [
+        0.0,
+        1.0
+      ]
+    },
+    "state_meaning": {
+      "notes": "",
+      "source": "src/energy/thermal_update.py",
+      "status": "PROXY",
+      "unit": "dimensionless",
+      "value": "normalized thermal pressure"
+    },
+    "sunlight_gain": {
+      "notes": "",
+      "source": "active simulator config",
+      "status": "PROXY",
+      "unit": "normalized/reference-slot",
+      "value": 0.015
+    }
+  }
+}

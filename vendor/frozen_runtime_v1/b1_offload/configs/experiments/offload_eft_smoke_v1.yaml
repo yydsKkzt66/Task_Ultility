@@ -1,0 +1,8 @@
+experiment:
+  experiment_id: offload_eft_smoke_v1
+  scenario_seeds: [2026]
+  capacities: [0.50]
+  methods: [OFFLOAD-EFT]
+  output_directory: outputs/_offload_eft_smoke_v1/
+  reporting_options: {compact: true, formal_result: false}
+  mode: smoke

@@ -1,0 +1,6 @@
+# Preserve byte-identical frozen runtime snapshots across Windows/Linux clones.
+vendor/frozen_runtime_v1/** -text
+
+# Generated publication assets are binary.
+*.png binary
+*.pdf binary

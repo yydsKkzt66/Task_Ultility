@@ -1,0 +1,24 @@
+method:
+  method_id: TUT-UOI-PRODUCT-LITE
+  model_selection_policy: fixed_balanced
+  product_selection_policy: one_shot_adaptive_semantic_rate
+  scheduling_policy: uoi_density_then_deadline_value_bytes_task_id
+  staged_delivery: false
+  onboard_inference: true
+  feature_flags:
+    online_learning: false
+    progressive_delivery: false
+    uoi_density_priority: true
+    fixed_model: balanced
+    rate_mapping:
+      LOW_RATE: metadata
+      MEDIUM_RATE: roi
+      HIGH_RATE: roi_context
+      DEFER: defer
+    information_sufficiency_source: configs/product_requirement_utility.yaml
+    delivery_latency_weight: 0.5
+    information_gap_weight: 0.5
+    V_uoi: 1.0
+    energy_ref_j: 100.0
+    bytes_ref_mb: 2.70
+  notes: TUT-inspired task-oriented adaptive semantic-product baseline; not a full TUT, PMSC, JSCC, PPO, NOMA, or pixel-level semantic-coding reproduction.

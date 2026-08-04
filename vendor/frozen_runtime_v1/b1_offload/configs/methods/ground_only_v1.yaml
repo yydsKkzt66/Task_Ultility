@@ -1,0 +1,12 @@
+method:
+  method_id: GROUND-ONLY
+  decision_mode: forced_ground_once
+  ground_observation_product: b1_compressed_full_frame
+  ground_compute_servers: 1
+  ground_queue_policy: fifo
+  ground_queue_capacity: 32
+  allow_migration: false
+  allow_replication: false
+  offloading_policy: {enabled: false, implementation: src.baselines.ground_only}
+  feature_flags: {ground_only_enabled: false}
+  notes: Forced GROUND path using B1 compression, aligned FIFO downlink, and the OFFLOAD finite ground FIFO.

@@ -115,6 +115,24 @@ src/evaluation/ CSV 汇总与绘图
 python -m pip install -r requirements.txt
 ```
 
+## Final V25 clean-clone reproduction
+
+The final PROP, four baselines, ordinary-V25 scenario bundles, frozen thermal
+and utility parameters, and the formerly external runtime snapshots are stored
+in this repository.  For a new computer, use Python 3.9.13 and the pinned
+environment:
+
+```powershell
+python -m pip install -r requirements-reproduce.txt
+python scripts/verify_portable_reproduction_v1.py --strict-versions
+python scripts/reproduce_on_new_computer_v1.py
+```
+
+The last command performs a fast integrity check and regenerates the final main
+and sensitivity/ablation figures.  Simulation scopes are available through
+`--scope single`, `--scope main`, `--scope ablation`, `--scope sensitivity`, or
+`--scope all`.  See `docs/reproduce_on_new_computer_v1.md` for the full workflow.
+
 运行完整仿真：
 
 ```bash

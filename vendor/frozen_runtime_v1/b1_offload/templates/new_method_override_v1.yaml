@@ -1,0 +1,9 @@
+method:
+  method_id: FILL_ME
+  model_selection_policy: FILL_ME
+  product_selection_policy: FILL_ME
+  scheduling_policy: FILL_ME
+  staged_delivery: false
+  onboard_inference: true
+  feature_flags: {}
+  notes: Describe only the new mechanism.

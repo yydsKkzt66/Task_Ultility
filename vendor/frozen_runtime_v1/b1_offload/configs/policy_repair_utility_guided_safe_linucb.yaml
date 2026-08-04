@@ -1,0 +1,56 @@
+# Utility-guided SafeLinUCB diagnostic policy-repair config.
+# This file is not loaded by existing main runs unless a script explicitly
+# copies it into configs["simulator"]["policy_repair"].
+
+enable_utility_guided_scoring: true
+enable_cost_aware_ucb: true
+enable_delivery_aware_info_gain: false
+enable_payload_specific_delivery_proxy: false
+enable_z_guided_coupling: true
+enable_staged_feasibility_filter: false
+
+utility_guided_scoring:
+  utility_prior_weight: 1.0
+  learned_correction_weight: 0.20
+  exploration_weight: 1.0
+  score_component_normalization: zscore_by_candidate_set
+  fallback_if_zero_variance: true
+  preserve_legacy_score_logging: true
+
+cost_aware_ucb:
+  min_discount: 0.18
+  energy_ref_j: 55.0
+  latency_ref_s: 3.0
+  payload_ref_mb: 2.7
+  thermal_delta_ref: 0.10
+  energy_weight: 0.28
+  latency_weight: 0.10
+  payload_weight: 0.22
+  thermal_weight: 0.22
+  dod_weight: 0.38
+  eclipse_weight: 0.22
+  no_contact_weight: 0.28
+  queue_weight: 0.18
+  deadline_weight: 0.14
+  dod_reason_threshold: 0.30
+  queue_reason_threshold: 0.20
+  deadline_reason_threshold: 0.70
+
+z_guided_coupling:
+  min_beta_scale: 0.35
+  dod_threshold: 0.30
+  thermal_threshold: 0.85
+  queue_threshold: 0.15
+  dod_lambda_E_multiplier: 1.45
+  dod_beta_multiplier: 0.80
+  eclipse_lambda_E_multiplier: 1.25
+  eclipse_lambda_S_multiplier: 1.12
+  eclipse_beta_multiplier: 0.88
+  thermal_lambda_S_multiplier: 1.45
+  thermal_lambda_E_multiplier: 1.18
+  thermal_beta_multiplier: 0.82
+  queue_lambda_Q_multiplier: 1.35
+  queue_lambda_S_multiplier: 1.25
+  no_contact_lambda_S_multiplier: 1.30
+  no_contact_lambda_Q_multiplier: 1.12
+  no_contact_beta_multiplier: 0.88

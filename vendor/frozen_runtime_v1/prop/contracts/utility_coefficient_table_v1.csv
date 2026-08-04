@@ -1,0 +1,7 @@
+﻿parameter,value,unit,status,source
+deadline_after_expiry_factor,0,ratio,ACTIVE,unified evaluator config
+energy_normalization,10,Wh,ACTIVE,unified evaluator config
+backlog_normalization,64,MB,ACTIVE,unified evaluator config
+energy_cost_lambda,1,weight,ACTIVE,unified evaluator config
+backlog_cost_lambda,1,weight,ACTIVE,unified evaluator config
+safety_cost_lambda,10,weight,ACTIVE,unified evaluator config

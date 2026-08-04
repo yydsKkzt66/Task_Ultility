@@ -1,0 +1,8 @@
+experiment:
+  experiment_id: example-smoke
+  scenario_seeds: [2026]
+  capacities: [0.50]
+  methods: [example-method]
+  output_directory: outputs/_example_smoke/
+  reporting_options: {compact: true}
+  mode: smoke

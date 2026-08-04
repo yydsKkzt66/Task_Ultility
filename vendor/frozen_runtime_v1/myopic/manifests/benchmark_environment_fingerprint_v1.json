@@ -1,0 +1,22 @@
+{
+  "benchmark_environment_fingerprint": "07c4c14fa4740a7376df314a6a9ed96eab674bb28722609117e42102b49ffb84",
+  "components": {
+    "battery_model_source": "0895c4816ce86cac24f2aef8deb058f6de396089dcb52f4fb47273a21c29a5da",
+    "benchmark_environment_json": "3a745af847c700d58427525b3e087bfa8938ad80cad996aa47c69a08ae355e43",
+    "benchmark_environment_yaml": "1e690739a7f5fdd0fd95dcc464948ac24dd26ab686d56578da9bf1e55d91228b",
+    "common_evaluator_config": "0054884ed88209866d53683b0716c6bf4c5e685f835bcdf78f0de9727631073f",
+    "common_evaluator_source": "51c93629f3103ef386d637f3f395638562ef93555bada1b2325033387d6621b1",
+    "contact_manifest": "53c898a67e3698f714c44fbe262de847887b477c39d80f55270eb6081c878fc1",
+    "dataset_manifest": "eb3df40f18599a674c8613e7a2e9a4f292e578c5eb8515a9aef5c5eb314bc262",
+    "git_head": "76ab6640dc24894b9314c73c974d79c06d73538e",
+    "product_config": "1c39fa19ca8166fb760ed868dd23216cc2d6d1d4c4b47fe58ebeff2d0c438f88",
+    "queue_model_source": "f8ef069f541b4a684f82b38ed5adc943763be34a81805750dd91701bf424d1af",
+    "runner_source": "a7d31d0f8afd8a5be910297327e78e4333483d8eb0d768051ee42090fb35141e",
+    "scenario_manifest": "000744f902882006cb3cecbaf324db9c4b4e805744f6bd123236b3775faffd7d",
+    "thermal_headroom_source": "9bca9dc504a1f6a0c7f2700a53baa16b186cf268971e484b0b0510cd7a779c58",
+    "thermal_model_source": "a890c3c3fd5dbfef82bcc6aa475ab07ee6cf17b37555b7ac1e3df8d2e80f60e4"
+  },
+  "contact_object_hash": "2c6ad7e94cbc12c2dba8d663d2459cf6b3ed8630653bd96760936e0da74e961b",
+  "scenario_object_hash": "196e2747b955f5adbace3880ea0e6403687fab3cc5225f0c26f92a9f79d29952",
+  "schema_version": 1
+}

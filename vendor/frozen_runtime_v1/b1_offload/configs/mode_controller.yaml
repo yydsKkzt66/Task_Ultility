@@ -1,0 +1,77 @@
+enabled: true
+type: rule_based
+update_interval_slots: 10
+thresholds:
+  battery_low: 0.30
+  thermal_high: 0.80
+  queue_high: 0.65
+  deadline_pressure_high: 0.65
+  high_value_ratio_high: 0.10
+  next_contact_long_s: 120.0
+modes:
+  balanced:
+    price_multipliers:
+      lambda_E: 1.0
+      lambda_L: 1.0
+      lambda_Q: 1.0
+      lambda_S: 1.0
+    exploration_scale: 1.0
+    model_complexity_bias: 0.0
+    payload_size_bias: 0.0
+    high_value_bonus_scale: 1.0
+    safety_margin_scale: 1.0
+  energy_saving:
+    price_multipliers:
+      lambda_E: 1.45
+      lambda_L: 1.05
+      lambda_Q: 1.00
+      lambda_S: 1.10
+    exploration_scale: 0.90
+    model_complexity_bias: -0.18
+    payload_size_bias: -0.05
+    high_value_bonus_scale: 0.95
+    safety_margin_scale: 1.25
+  queue_draining:
+    price_multipliers:
+      lambda_E: 1.00
+      lambda_L: 1.00
+      lambda_Q: 1.35
+      lambda_S: 1.40
+    exploration_scale: 0.95
+    model_complexity_bias: -0.05
+    payload_size_bias: -0.22
+    high_value_bonus_scale: 1.00
+    safety_margin_scale: 1.10
+  mission_priority:
+    price_multipliers:
+      lambda_E: 0.95
+      lambda_L: 0.90
+      lambda_Q: 1.00
+      lambda_S: 0.95
+    exploration_scale: 1.05
+    model_complexity_bias: 0.10
+    payload_size_bias: 0.08
+    high_value_bonus_scale: 1.30
+    safety_margin_scale: 1.00
+  latency_critical:
+    price_multipliers:
+      lambda_E: 1.00
+      lambda_L: 1.40
+      lambda_Q: 1.00
+      lambda_S: 1.00
+    exploration_scale: 0.90
+    model_complexity_bias: 0.08
+    payload_size_bias: -0.05
+    high_value_bonus_scale: 1.05
+    safety_margin_scale: 1.05
+  egress_conservative:
+    price_multipliers:
+      lambda_E: 1.05
+      lambda_L: 1.05
+      lambda_Q: 1.10
+      lambda_S: 1.45
+    exploration_scale: 0.90
+    model_complexity_bias: -0.06
+    payload_size_bias: -0.25
+    high_value_bonus_scale: 1.00
+    safety_margin_scale: 1.15
