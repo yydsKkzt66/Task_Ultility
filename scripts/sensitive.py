@@ -10,10 +10,8 @@ from matplotlib.patches import Rectangle, ConnectionPatch
 # ============================================================
 # 1. Output settings
 # ============================================================
-OUTPUT_DIR = (
-    Path(__file__).resolve().parent
-    / "sensitivity_ablation_2x2_zoom_legends_v1"
-)
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT_DIR = ROOT / "artifacts" / "competition_release_v1" / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 SHOW_FIGURE = False
@@ -839,7 +837,7 @@ fig.text(
 # ============================================================
 # 17. Export normalized values for record
 # ============================================================
-csv_path = OUTPUT_DIR / "normalized_sensitivity_ablation_values.csv"
+csv_path = OUTPUT_DIR / "sensitivity_ablation_normalized_values.csv"
 rows = [
     ["group", "x", "metric", "normalized_mean_percent", "normalized_std_percent"],
 ]
@@ -895,8 +893,8 @@ np.savetxt(
 # ============================================================
 # 18. Export figures
 # ============================================================
-pdf_path = OUTPUT_DIR / "sensitivity_ablation_2x2_zoom_transparent_source_box.pdf"
-png_path = OUTPUT_DIR / "sensitivity_ablation_2x2_zoom_transparent_source_box.png"
+pdf_path = OUTPUT_DIR / "sensitivity_ablation_2x2.pdf"
+png_path = OUTPUT_DIR / "sensitivity_ablation_2x2.png"
 
 fig.savefig(
     pdf_path,

@@ -39,6 +39,10 @@ def main() -> int:
     if args.strict_versions:
         verify.append("--strict-versions")
     run("portable reproduction preflight", verify)
+    run(
+        "competition result consistency",
+        [PYTHON, str(ROOT / "scripts" / "verify_competition_results_v1.py")],
+    )
 
     if args.scope in {"single", "all"}:
         run("single-seed five-method experiment", [PYTHON, str(ROOT / "scripts" / "run_current_prop_four_independent_baselines_single_seed_v1.py")])

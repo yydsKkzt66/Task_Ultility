@@ -1,7 +1,10 @@
 dataset_name: sarfishsample
 root: datasets/SARFishSample
-source_image_root: A:/6.22Dataset
+source_image_root: ""
 source_image_root_env: SARFISH_DATASET_ROOT
+# The simulator consumes frozen scene metadata and does not read image pixels.
+# Set true only for an integration run that must verify every raw source file.
+require_source_files: false
 product_type: GRD
 split: validation
 scene_index_path: data/indexes/sarfishsample_scene_index.csv

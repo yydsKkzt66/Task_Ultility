@@ -1,4 +1,5 @@
 from pathlib import Path
+import csv
 import math
 
 import numpy as np
@@ -13,10 +14,8 @@ from matplotlib.ticker import MultipleLocator, AutoMinorLocator
 # ============================================================
 # 1. Output settings
 # ============================================================
-OUTPUT_DIR = (
-    Path(__file__).resolve().parent
-    / "combined_primary_auxiliary_metrics_boxed_titles"
-)
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT_DIR = ROOT / "artifacts" / "competition_release_v1" / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -165,16 +164,47 @@ def add_bar_value_label(ax, x_position, value, error, decimals=2):
 
 
 # ============================================================
-# 4. Latest five-seed main-experiment data
-#    Order: Myopic, B1, OFFLOAD, TUT, PROP
+# 4. Frozen five-seed main-experiment data
+#    Read the compact, Git-tracked simulation summary instead of duplicating
+#    publication numbers in this plotting script.
 # ============================================================
+RESULT_TABLE = (
+    ROOT
+    / "outputs"
+    / "_current_prop_four_baselines_fiveseed_dual_thermal_v1"
+    / "attempt_001"
+    / "tables"
+    / "mean_std_metrics.csv"
+)
+METHOD_IDS = [
+    "MYOPIC-E2E-UTILITY-GREEDY-STANDALONE-v1",
+    "B1-COMMON-GROUND-THERMAL-CORRECTED",
+    "OFFLOAD-EFT-THERMAL-ALIGNED-2NODE-DIAGNOSTIC",
+    "TUT-PROXY-THERMAL-CORRECTED",
+    "PROP-V2-SAFE-METADATA-CURRENT-v1",
+]
+
+with RESULT_TABLE.open("r", encoding="utf-8-sig", newline="") as stream:
+    rows_by_method = {row["method"]: row for row in csv.DictReader(stream)}
+
+missing_methods = [method for method in METHOD_IDS if method not in rows_by_method]
+if missing_methods:
+    raise RuntimeError(f"Missing methods in {RESULT_TABLE}: {missing_methods}")
+if any(int(rows_by_method[method]["seed_count"]) != 5 for method in METHOD_IDS):
+    raise RuntimeError(f"Expected five seeds per method in {RESULT_TABLE}")
+
+
+def metric_array(field: str) -> np.ndarray:
+    return np.array([float(rows_by_method[method][field]) for method in METHOD_IDS])
+
+
 primary_metrics = [
     {
         "panel": "(a)",
         "title": "Overall Net Utility",
         "ylabel": r"Overall Task Net Utility $J_{\mathrm{all}}^{\mathrm{net}}$",
-        "means": np.array([40.836, -15.143, 14.697, 38.787, 44.909]),
-        "stds": np.array([3.588, 4.835, 4.401, 4.152, 5.465]),
+        "means": metric_array("J_all_net_mean"),
+        "stds": metric_array("J_all_net_std"),
         "value_decimals": 2,
         "force_zero_bottom": False,
     },
@@ -182,8 +212,8 @@ primary_metrics = [
         "panel": "(b)",
         "title": "High-Value Net Utility",
         "ylabel": r"High-Value Net Utility $J_{\mathrm{HV}}^{\mathrm{net}}$",
-        "means": np.array([3.240, -9.648, 9.464, 26.379, 37.921]),
-        "stds": np.array([0.718, 2.751, 3.232, 3.851, 5.099]),
+        "means": metric_array("J_HV_net_mean"),
+        "stds": metric_array("J_HV_net_std"),
         "value_decimals": 2,
         "force_zero_bottom": False,
     },
@@ -191,8 +221,8 @@ primary_metrics = [
         "panel": "(c)",
         "title": "High-Value Task Closures",
         "ylabel": r"High-Value Task Closures $N_{\mathrm{HV}}^{\mathrm{closure}}$",
-        "means": np.array([8.6, 59.0, 59.2, 56.8, 56.2]),
-        "stds": np.array([0.9, 2.7, 2.9, 4.0, 3.1]),
+        "means": metric_array("HV_closure_count_mean"),
+        "stds": metric_array("HV_closure_count_std"),
         "value_decimals": 1,
         # Requested: panel (c) should sit on the horizontal axis.
         "force_zero_bottom": True,
@@ -201,21 +231,21 @@ primary_metrics = [
 
 
 # Panel (d): non-exclusive HV layer-delivery counts
-hv_metadata = np.array([0.0, 0.0, 0.0, 0.6, 24.0])
-hv_roi = np.array([57.6, 0.0, 3.8, 9.2, 0.0])
-hv_evidence = np.array([1.6, 59.0, 55.4, 49.4, 49.0])
+hv_metadata = metric_array("HV_metadata_delivered_count_mean")
+hv_roi = metric_array("HV_ROI_delivered_count_mean")
+hv_evidence = metric_array("HV_evidence_delivered_count_mean")
 hv_total = hv_metadata + hv_roi + hv_evidence
 
 
 # Panel (e): overall closure latency, seconds
-all_latency_mean = np.array([2572.0, 2659.0, 2489.0, 2444.0, 2434.0])
-all_latency_p95 = np.array([4509.0, 4653.0, 4435.0, 4473.0, 4605.0])
+all_latency_mean = metric_array("mean_closure_latency_s_mean")
+all_latency_p95 = metric_array("p95_closure_latency_s_mean")
 
 
 # Panel (f): utility-resource-downlink tradeoff
-hv_net_utility = np.array([3.240, -9.648, 9.464, 26.379, 37.921])
-energy_wh = np.array([2.837, 6.033, 7.408, 2.940, 2.339])
-downlink_mb = np.array([172.278, 925.600, 592.390, 234.916, 167.190])
+hv_net_utility = metric_array("J_HV_net_mean")
+energy_wh = metric_array("controllable_energy_Wh_mean")
+downlink_mb = metric_array("transmitted_MB_mean")
 
 
 # ============================================================
@@ -246,6 +276,7 @@ FONT_SCALE = 1.30
 
 ROW_TITLE_SIZE = round(28 * FONT_SCALE)
 PANEL_TITLE_SIZE = round(22 * FONT_SCALE * 1.25)  # six panel titles: 1.25x
+PANEL_INDEX_SIZE = round(22 * FONT_SCALE)
 AXIS_LABEL_SIZE = round(19 * FONT_SCALE)
 X_AXIS_LABEL_SIZE = round(21 * FONT_SCALE)
 METHOD_LABEL_SIZE = round(17 * FONT_SCALE * 1.35)
@@ -279,61 +310,33 @@ LEGEND_FRAME_ALPHA = 0.96
 
 
 # ============================================================
-# 7. Figure and GridSpec
+# 7. Figure and 2x2 GridSpec
 # ============================================================
-fig = plt.figure(figsize=(28, 19.2), facecolor="white")
+fig = plt.figure(figsize=(20, 17), facecolor="white")
 
 grid = fig.add_gridspec(
-    nrows=4,
-    ncols=3,
-    height_ratios=[0.085, 1.00, 0.085, 1.00],
-    width_ratios=[1.05, 1.05, 1.05],
-    hspace=0.34,
-    wspace=0.34,
+    nrows=2,
+    ncols=2,
+    hspace=0.52,
+    wspace=0.30,
 )
 
 
 # ============================================================
-# 8. Row headings
+# 8. Create plotting axes: (a)(b) above, (c)(d) below
 # ============================================================
-primary_heading_ax = fig.add_subplot(grid[0, :])
-primary_heading_ax.axis("off")
-primary_heading_ax.text(
-    0.5,
-    0.50,
-    "Primary Metrics",
-    ha="center",
-    va="center",
-    fontsize=ROW_TITLE_SIZE,
-    fontweight="bold",
-)
+primary_axes = [
+    fig.add_subplot(grid[0, 0]),
+    fig.add_subplot(grid[0, 1]),
+    fig.add_subplot(grid[1, 0]),
+]
+ax_f = fig.add_subplot(grid[1, 1])
 
-auxiliary_heading_ax = fig.add_subplot(grid[2, :])
-auxiliary_heading_ax.axis("off")
-auxiliary_heading_ax.text(
-    0.5,
-    0.06,
-    "Auxiliary Metrics",
-    ha="center",
-    va="center",
-    fontsize=ROW_TITLE_SIZE,
-    fontweight="bold",
-)
+all_plot_axes = [*primary_axes, ax_f]
 
 
 # ============================================================
-# 9. Create plotting axes
-# ============================================================
-primary_axes = [fig.add_subplot(grid[1, column]) for column in range(3)]
-ax_d = fig.add_subplot(grid[3, 0])
-ax_e = fig.add_subplot(grid[3, 1])
-ax_f = fig.add_subplot(grid[3, 2])
-
-all_plot_axes = [*primary_axes, ax_d, ax_e, ax_f]
-
-
-# ============================================================
-# 10. Top row: primary metrics
+# 9. Panels (a), (b), and (c): primary metrics
 # ============================================================
 for ax, metric in zip(primary_axes, primary_metrics):
     means = metric["means"]
@@ -402,7 +405,7 @@ for ax, metric in zip(primary_axes, primary_metrics):
         )
 
     ax.set_title(
-        f"{metric['panel']} {metric['title']}",
+        metric["title"],
         fontsize=PANEL_TITLE_SIZE,
         pad=14,
     )
@@ -448,6 +451,7 @@ for ax, metric in zip(primary_axes, primary_metrics):
 # ============================================================
 # 11. Panel (d): HV layer deliveries
 # ============================================================
+"""Legacy panels (d) and (e) intentionally omitted from the 2x2 figure.
 bar_width = 0.64
 
 for i in range(len(methods)):
@@ -869,9 +873,10 @@ legend_e.get_frame().set_alpha(
 )
 
 legend_e.set_zorder(20)
+"""
 
 # ============================================================
-# 13. Panel (f): Utility-resource-downlink tradeoff
+# 10. Panel (d): Utility-resource-downlink tradeoff
 # ============================================================
 bubble_scale = 2.6
 bubble_sizes = downlink_mb * bubble_scale
@@ -943,7 +948,7 @@ for i, method in enumerate(methods):
 # Panel title and axis labels
 # ------------------------------------------------------------
 ax_f.set_title(
-    "(f) Utility–Resource Tradeoff",
+    "Utility–Resource Tradeoff",
     fontsize=PANEL_TITLE_SIZE,
     pad=14,
 )
@@ -1035,28 +1040,29 @@ reference_volumes = [
 # Bubble legend parameters
 # ------------------------------------------------------------
 
-# Only changes legend bubbles, not real data bubbles
-LEGEND_BUBBLE_SCALE = 0.85
+# Reduce the complete bubble legend by 10% without changing data bubbles.
+LEGEND_SIZE_FACTOR = 0.90
+LEGEND_BUBBLE_SCALE = 0.85 * LEGEND_SIZE_FACTOR ** 2
 
 # Font size of "200 MB", "500 MB", and "900 MB"
-LEGEND_NUMBER_SIZE = BUBBLE_LEGEND_SIZE * 1.6
+LEGEND_NUMBER_SIZE = BUBBLE_LEGEND_SIZE * 1.6 * LEGEND_SIZE_FACTOR
 
 # Font size of "Downlink volume"
-LEGEND_TITLE_SIZE = BUBBLE_TITLE_SIZE * 1.5
+LEGEND_TITLE_SIZE = BUBBLE_TITLE_SIZE * 1.5 * LEGEND_SIZE_FACTOR
 
 # Vertical spacing between the three rows
-LEGEND_VERTICAL_SPACING = 1.15
+LEGEND_VERTICAL_SPACING = 0.85
 
 # Horizontal gap between bubble and number
-LEGEND_CIRCLE_TEXT_GAP = 0.30
+LEGEND_CIRCLE_TEXT_GAP = 0.27
 
 # Width reserved for bubble marker
-LEGEND_HANDLE_LENGTH = 2.80
+LEGEND_HANDLE_LENGTH = 2.80 * LEGEND_SIZE_FACTOR
 
 # Legend position
 LEGEND_POSITION = (
     1.0,
-    0.98,
+    0.995,
 )
 
 
@@ -1114,8 +1120,8 @@ bubble_legend = ax_f.legend(
     handletextpad=LEGEND_CIRCLE_TEXT_GAP,
     handlelength=LEGEND_HANDLE_LENGTH,
 
-    borderpad=0.38,
-    borderaxespad=0.12,
+    borderpad=0.30,
+    borderaxespad=0.08,
 
     alignment="left",
 )
@@ -1185,14 +1191,32 @@ for ax in all_plot_axes:
     )
 
 
+# Put each panel index directly below its own subplot.
+for ax, panel_index in zip(
+    all_plot_axes,
+    ["(a)", "(b)", "(c)", "(d)"],
+):
+    ax.text(
+        0.5,
+        -0.30,
+        panel_index,
+        transform=ax.transAxes,
+        ha="center",
+        va="top",
+        fontsize=PANEL_INDEX_SIZE,
+        fontweight="bold",
+        clip_on=False,
+    )
+
+
 # ============================================================
 # 16. Final layout
 # ============================================================
 fig.subplots_adjust(
-    left=0.055,
-    right=0.992,
-    top=0.985,
-    bottom=0.095,
+    left=0.085,
+    right=0.985,
+    top=0.965,
+    bottom=0.125,
 )
 
 
@@ -1201,12 +1225,12 @@ fig.subplots_adjust(
 # ============================================================
 pdf_path = (
     OUTPUT_DIR
-    / "primary_and_auxiliary_metrics_titles_1p25_e5500_darker_inward_ticks.pdf"
+    / "main_four_panel.pdf"
 )
 
 png_path = (
     OUTPUT_DIR
-    / "primary_and_auxiliary_metrics_titles_1p25_e5500_darker_inward_ticks.png"
+    / "main_four_panel.png"
 )
 
 

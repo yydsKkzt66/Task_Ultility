@@ -39,8 +39,8 @@ def test_loads_scene_index_and_task_state_profile():
     assert adapter.scene_index
     assert adapter.task_state_profile["target_count_distribution"]["count"] > 0
     assert all(scene["product_type"] == "GRD" for scene in adapter.scene_index)
-    assert all(Path(scene["image_path"]).exists() for scene in adapter.scene_index)
-    assert all(Path(scene["label_path"]).exists() for scene in adapter.scene_index)
+    assert all(scene["logical_image_path"].startswith("GRD/") for scene in adapter.scene_index)
+    assert all(not Path(scene["image_path"]).is_absolute() for scene in adapter.scene_index)
 
 
 def test_build_task_stream_returns_requested_length_and_observation_window_tasks():
@@ -53,7 +53,7 @@ def test_build_task_stream_returns_requested_length_and_observation_window_tasks
     assert any(task.observation_window_id for task in samples)
 
 
-def test_sarfishsample_tasks_have_real_paths_and_valid_online_fields():
+def test_sarfishsample_tasks_have_portable_paths_and_valid_online_fields():
     adapter = SARFishSampleDatasetAdapter(_dataset_cfg())
     tasks = adapter.build_task_stream(num_slots=180, slot_seconds=60.0, task_stream_cfg=_task_stream_cfg())
     samples = [task for task in tasks if task is not None]
@@ -61,8 +61,7 @@ def test_sarfishsample_tasks_have_real_paths_and_valid_online_fields():
     assert samples
     for task in samples:
         assert not task.image_path.startswith("mock://")
-        assert Path(task.image_path).exists()
-        assert Path(task.label_path).exists()
+        assert task.metadata["logical_image_path"].startswith("GRD/")
         assert task.task_class in {"routine", "high_value", "emergency"}
         assert 0.50 <= task.task_value <= 0.98
         assert 30.0 <= task.deadline_s <= 120.0

@@ -1,4 +1,45 @@
-# LEO Task-Utility Case Study Scaffold
+# Task-Utility-Driven LEO Onboard Co-Design
+
+**2026 IEEE ComSoc APB Communications Technology Competition source release.**
+
+This repository is the reproducible source package for a trace-driven,
+closed-loop system simulation of task-utility-driven onboard computation and
+downlink co-design. It includes the final five-method/five-seed experiment,
+ablations, sensitivity analysis, compact result evidence, frozen runtime
+snapshots, tests, and the submitted four-panel figure generators.
+
+> Scientific boundary: this release uses `MockDetector` with calibrated,
+> YOLO-inspired model profiles. It does **not** claim real YOLO/SAHI inference,
+> hardware-measured detector profiles, or an in-orbit experiment. Raw
+> SARFishSample imagery is optional and is not required for the submitted V25
+> experiments.
+
+Final ordinary-V25 result (mean across seeds 2026–2030): PROP obtains overall
+net utility **44.91**, high-value net utility **37.92**, **56.2** high-value
+task closures, **2.339 Wh** controllable energy, and **167.19 MB** downlink.
+Relative to TUT, this is **+15.8%** overall utility, **+43.8%** high-value
+utility, **−20.4%** energy, and **−28.8%** downlink volume.
+
+Quick reproduction (reference environment: Python 3.9.13):
+
+```bash
+python -m pip install -r requirements-reproduce.txt
+python scripts/verify_portable_reproduction_v1.py --strict-versions
+python scripts/reproduce_on_new_computer_v1.py
+```
+
+The default command verifies the frozen result evidence and regenerates only
+the submitted four-panel main figure plus the reviewed 2×2
+sensitivity/ablation figure. Full simulation commands and optional SAR dataset
+setup are documented in
+[`docs/reproduce_on_new_computer_v1.md`](docs/reproduce_on_new_computer_v1.md).
+
+No dataset, drive letter, or external workstation path is required for the
+default competition reproduction. The repository name `Task_Ultility` contains
+a historical spelling error and is intentionally unchanged so existing links
+remain valid.
+
+## System scope
 
 本项目服务于 **Task-Utility-Driven Computation-Communication Co-Design for Resource-Constrained LEO Satellites**。  
 当前版本不是最终在轨实验实现，而是一个 **trace-driven closed-loop case study scaffold**：使用 mock dataset、mock detector、synthetic resource trace 和 synthetic link trace，在统一的 **virtual timeline** 上跑通完整闭环。
@@ -70,9 +111,10 @@
 - 队列支持过期丢弃、优先级排序和当前任务交付状态返回；
 - reward 中同时使用 `delivery_status`、`S_down_total_mb`、`queue_next_mb`、`E_comm`、`L_comm`。
 
-## 当前默认组件
+## 组件与最终竞赛配置
 
-- 数据集：`MockDatasetAdapter`
+- 通用快速演示默认数据集：`MockDatasetAdapter`
+- 最终 V25 实验数据入口：冻结的 SARFishSample 场景元数据（原始影像可选）
 - 检测器：`MockDetector`
 - 模型层级：`lightweight / balanced / high_accuracy`
 - 路由器：`FixedRouter / RuleBasedRouter / SafeLinUCBRouter`
@@ -128,8 +170,9 @@ python scripts/verify_portable_reproduction_v1.py --strict-versions
 python scripts/reproduce_on_new_computer_v1.py
 ```
 
-The last command performs a fast integrity check and regenerates the final main
-and sensitivity/ablation figures.  Simulation scopes are available through
+The last command performs integrity and frozen-result consistency checks, then
+regenerates the final four-panel main and sensitivity/ablation figures.
+Simulation scopes are available through
 `--scope single`, `--scope main`, `--scope ablation`, `--scope sensitivity`, or
 `--scope all`.  See `docs/reproduce_on_new_computer_v1.md` for the full workflow.
 

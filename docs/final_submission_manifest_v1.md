@@ -41,6 +41,10 @@ claim of device-matched in-orbit thermal calibration.
   `scripts/run_dual_node_thermal_calibration_and_four_method_rerun_v1.py`
 - Main publication figure generator: `scripts/main metrics.py`
 - Sensitivity/ablation figure generator: `scripts/sensitive.py`
+- Canonical generated assets: `artifacts/competition_release_v1/figures/`
+- Frozen headline-result verifier: `scripts/verify_competition_results_v1.py`
+- Fresh-vs-frozen numeric table comparator:
+  `scripts/compare_numeric_result_tables_v1.py`
 
 ## Canonical ablations
 
@@ -88,9 +92,19 @@ only for audited overrides.  Every vendored file is protected by
 `artifacts/reproducibility/frozen_runtime_v1_sha256.json`.
 
 Use `python scripts/reproduce_on_new_computer_v1.py` to verify the bundle and
-regenerate both final figure sets.  Use `--scope single` for a fresh seed-2026
+the headline result table, then regenerate both final figure sets. The main
+figure is the submitted four-panel layout: overall net utility, high-value net
+utility, high-value task closures, and utility–resource tradeoff. The former
+high-value-layer-delivery and closure-latency panels are excluded. Use
+`--scope single` for a fresh seed-2026
 five-method run or `--scope main` for all 25 main runs from fresh state.  Full
 setup instructions are in `docs/reproduce_on_new_computer_v1.md`.
+
+The optional SARFishSample adapter reads `SARFISH_DATASET_ROOT`; the committed
+configuration contains no local drive path. Raw imagery and auxiliary probe
+indexes are excluded; the compact reviewed scene index and task-state profile
+needed for metadata-only replay are included. The final V25 workflow does not
+require raw imagery.
 
 ## Pre-commit validation
 
@@ -106,3 +120,12 @@ setup instructions are in `docs/reproduce_on_new_computer_v1.md`.
 - Portable B1, OFFLOAD, and TUT source-identity gates: PASS.
 - Portable PROP configuration/calibration load: PASS.
 - Clean-clone figure entry: PASS; both reviewed PDF/PNG sets regenerated.
+- Strict Python 3.9.13/package-version and vendored SHA256 preflight: PASS.
+- Fresh main comparison: PASS, 25/25 runs in local `attempt_003`.
+- Fresh five-ablation experiment: PASS, 25/25 runs in local `attempt_002`.
+- Fresh value/capacity sensitivity: PASS, 25/25 runs in local `attempt_003`.
+- Fresh-vs-frozen table comparison: PASS at `atol=rtol=1e-12`; maximum
+  absolute difference across the three mean/std tables was
+  `7.105427357601002e-15`.
+- Canonical competition figure entry: PASS; all five files regenerated under
+  `artifacts/competition_release_v1/figures/`.

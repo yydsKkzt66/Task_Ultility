@@ -8,7 +8,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path("D:/wt/pilot_frozen_runtime_native_direct_v1")
+SOURCE = ROOT / "vendor" / "frozen_runtime_v1" / "b1_offload"
 
 
 def test_config_has_registered_shared_ground_contract() -> None:

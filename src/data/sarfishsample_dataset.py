@@ -61,6 +61,7 @@ class SARFishSampleDatasetAdapter(DatasetAdapter):
         configured_root = str(dataset_cfg.get("source_image_root", "") or "")
         env_name = str(dataset_cfg.get("source_image_root_env", "SARFISH_DATASET_ROOT") or "SARFISH_DATASET_ROOT")
         self.source_image_root = Path(os.environ.get(env_name, configured_root)) if (os.environ.get(env_name) or configured_root) else None
+        self.require_source_files = bool(dataset_cfg.get("require_source_files", False))
         self.scene_index_path = self._resolve_path(
             str(dataset_cfg.get("scene_index_path", "data/indexes/sarfishsample_scene_index.csv"))
         )
@@ -111,7 +112,7 @@ class SARFishSampleDatasetAdapter(DatasetAdapter):
                     continue
                 image_path, logical_image_path = selected_image
                 label_path = self._resolve_path(str(row.get("label_csv_path", "")))
-                if not label_path.exists():
+                if self.require_source_files and not label_path.exists():
                     continue
                 scenes.append(
                     {
@@ -136,7 +137,7 @@ class SARFishSampleDatasetAdapter(DatasetAdapter):
 
         if not scenes:
             raise ValueError(
-                "No usable SARFishSample GRD validation scenes with local image_path entries were found in "
+                "No usable SARFishSample GRD validation scenes were found in "
                 f"{self.scene_index_path}"
             )
         return scenes
@@ -144,6 +145,8 @@ class SARFishSampleDatasetAdapter(DatasetAdapter):
     @staticmethod
     def _logical_image_path(candidate: str) -> str:
         normalized = str(candidate).replace("\\", "/")
+        if normalized.startswith("GRD/"):
+            return normalized
         marker = "/GRD/"
         if marker in normalized:
             return "GRD/" + normalized.split(marker, 1)[1]
@@ -153,12 +156,15 @@ class SARFishSampleDatasetAdapter(DatasetAdapter):
         candidates = [item.strip() for item in raw_image_path.split(";") if item.strip()]
         ordered = [candidate for candidate in candidates if Path(candidate).suffix.lower() in {".tif", ".tiff"} and "measurement" in candidate.replace("\\", "/")]
         ordered.extend(candidate for candidate in candidates if Path(candidate).suffix.lower() in {".tif", ".tiff"} and candidate not in ordered)
+        metadata_only_candidate: tuple[Path, str] | None = None
         for candidate in ordered:
             logical = self._logical_image_path(candidate)
-            path = self.source_image_root / Path(logical) if self.source_image_root is not None else self._resolve_path(candidate)
+            path = self.source_image_root / Path(logical) if self.source_image_root is not None else Path(logical)
             if self._path_exists(path):
                 return self._storage_path(path), logical
-        return None
+            if metadata_only_candidate is None:
+                metadata_only_candidate = (path, logical)
+        return None if self.require_source_files else metadata_only_candidate
 
     @staticmethod
     def _extended_windows_path(path: Path) -> str:

@@ -22,13 +22,17 @@ Thumbs.db
 .codex_staging/
 .codex_vgd_stage/
 .codex_worktrees/
+/.clean*/
 _audit_staging/
 tmp_*/
+.tmp_*/
 
 # Raw datasets and generated local indexes are external experiment inputs.
 # Keep datasets/README.md and the source adapters/configuration in Git.
 datasets/SARFishSample/
-data/indexes/
+data/indexes/*
+!data/indexes/sarfishsample_scene_index.csv
+!data/indexes/sarfishsample_task_state_profile.json
 
 # Full experiment outputs contain multi-GB per-slot and per-task traces.
 # Compact, reviewed result evidence may still be force-added explicitly.
@@ -37,10 +41,17 @@ outputs/
 # Rollback packages preserve local dirty-worktree snapshots and should not be
 # published as source. Frozen scenario manifests remain trackable.
 artifacts/rollback/
+artifacts/migration_safety_v1/
 
 # Local logs and Windows shortcuts.
 run_log_*.txt
+*.log
 *.lnk
+
+# Unrelated local image-editing drafts kept beside the research workspace.
+/music_*.png
+/_bar_project_v25.png
+/桌宠*.png
 
 # Intermediate publication-figure iterations. Keep only the two reviewed
 # final figure directories plus their generator scripts.

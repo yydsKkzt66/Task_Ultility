@@ -1,0 +1,5 @@
+communication_energy_wh,compression_energy_wh,compute_energy_wh,controllable_mission_energy_wh,delivered_mb,housekeeping_energy_wh,isl_energy_wh,method,payload_idle_energy_wh,total_spacecraft_energy_wh,variant
+3.1156210181938238,1.5742222222222166,0.0,4.689843240416041,428.0,54.15284302246072,0.0,b1_fifo,0.0,58.84268626287676,b1_fifo_paper_power_retention_1_00
+3.1156210181938238,1.5742222222222166,0.0,4.689843240416041,428.0,54.15284302246072,0.0,b1_enhanced_1p4w,0.0,58.84268626287676,b1_enhanced_paper_power_retention_1_00
+1.3744222846868752,4.945111111111089,0.0,6.319533395797964,180.0,54.15284302246072,0.0,b1_enhanced_6p8w,0.0,60.47237641825869,b1_enhanced_conservative_power_retention_1_00
+1.08635569661499,0.0,2.905888888888882,3.992244585503872,155.99000000000015,54.15284302246072,0.0,proposed,0.0,58.1450876079646,proposed_lyapunov_rule_mode_safe_bandit

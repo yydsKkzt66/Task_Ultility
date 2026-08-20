@@ -145,10 +145,10 @@ FROZEN_V25_MANIFEST = (
 )
 FROZEN_V25_BUNDLE_ROOT = (
     ROOT
-    / "outputs"
-    / "_v25_bupt1_tut_seed2026_cap050_v1"
-    / "config"
-    / "frozen_runtime_bundle"
+    / "vendor"
+    / "frozen_runtime_v1"
+    / "inputs"
+    / "V25-MAIN-v1"
 )
 FROZEN_V25_CONTRACT = FROZEN_V25_BUNDLE_ROOT / "bundle_contract.json"
 FROZEN_V25_ARRIVAL_SWAPS = FROZEN_V25_BUNDLE_ROOT / "arrival_swap_manifest.csv"
@@ -191,8 +191,11 @@ def configure_target_scenario_profile(value: str) -> None:
         raise ValueError(f"scenario profile must be one of {sorted(allowed)}")
     global TARGET_SCENARIO_PROFILE
     TARGET_SCENARIO_PROFILE = selected
-PILOT_FROZEN_ROOT = Path("D:/wt/pilot")
-TUT_FROZEN_ROOT = Path("D:/wt/tut_uoi_rate_lite")
+# Public reproduction always loads the Git-tracked frozen implementations.
+# Historical workstation locations are handled only by the canonical portable
+# resolver, never by this comparison module.
+PILOT_FROZEN_ROOT = ROOT / "vendor" / "frozen_runtime_v1" / "b1_offload"
+TUT_FROZEN_ROOT = ROOT / "vendor" / "frozen_runtime_v1" / "tut"
 EXTERNAL_METHOD_PATHS = {
     "offload_router": (
         PILOT_FROZEN_ROOT
@@ -247,9 +250,9 @@ def _value_profile_spec(value_profile: str) -> dict[str, Any]:
 POWER_CONFIG = ROOT / "configs" / "bupt1_measured_power_v1.yaml"
 SOLAR_TRACE = (
     ROOT
-    / "outputs"
-    / "_v25_bupt1_power_calibrated_seed2026_v1"
-    / "calibration"
+    / "vendor"
+    / "frozen_runtime_v1"
+    / "inputs"
     / "solar_trace_one_orbit.csv"
 )
 SELECTED_CONFIG_PATHS = {
@@ -320,6 +323,12 @@ def _sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _sha256_text_lf(path: Path) -> str:
+    """Hash a tracked text fixture independently of Git's CRLF checkout mode."""
+
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+
+
 def _read_csv(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8-sig", newline="") as stream:
         return list(csv.DictReader(stream))
@@ -354,7 +363,7 @@ def _load_frozen_v25_stress_manifest() -> tuple[dict[int, TaskSample], dict[str,
     contract = json.loads(FROZEN_V25_CONTRACT.read_text(encoding="utf-8"))
     swaps = _read_csv(FROZEN_V25_ARRIVAL_SWAPS)
     counts = _count_by(rows, "value_level")
-    manifest_sha256 = _sha256_file(FROZEN_V25_MANIFEST)
+    manifest_sha256 = _sha256_text_lf(FROZEN_V25_MANIFEST)
     recovered_hash = _frozen_v25_bundle_hash(rows)
     checks = {
         "task_count_is_268": len(rows) == 268,
@@ -1302,7 +1311,7 @@ def _environment_checksums(
                     "path": str(FROZEN_V25_MANIFEST.relative_to(ROOT)).replace(
                         "\\", "/"
                     ),
-                    "sha256": _sha256_file(FROZEN_V25_MANIFEST),
+                    "sha256": _sha256_text_lf(FROZEN_V25_MANIFEST),
                 },
                 "bundle_contract": {
                     "path": str(FROZEN_V25_CONTRACT.relative_to(ROOT)).replace(
