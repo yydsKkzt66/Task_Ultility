@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "unique_rows": 20,
+  "seeds_per_method": 5,
+  "sd_ddof": 1,
+  "per_seed_algebra_checks": 7,
+  "prop_tut_all_plot_values_unchanged": true,
+  "local_A_original_and_independent_audits": "4 strict original passes; GROUND/4102 independently accepted under author-approved numerical tolerance with original strict FAIL preserved; all 5 independent accounting audits PASS",
+  "B_evidence_boundary": "No raw B execution trajectories or original audit JSONs in the supplied ZIP; no local re-audit of those files claimed.",
+  "plot_input_sha256": "a385d01638d663d29058dcb6f2a23549e41ea563920753af3f601f793ec79a0d",
+  "normal_reference_n": 3,
+  "originals_unchanged": true
+}

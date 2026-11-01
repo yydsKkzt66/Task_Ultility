@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "archive": "D:\\北邮work\\5.20多状态...小论文magazine\\GROUND_PARALLEL_V1_B5_RESULTS_20261031.zip",
+  "archive_sha256": "298e659373a1541387bc3d5d76a9d2ae41418f755287471e497fe7e41c88a936",
+  "delivery_files_verified": 24,
+  "packaged_original_checks_passed": 100,
+  "closed_task_rows_independently_checked": 4476,
+  "subset_aggregates_recomputed": 116,
+  "local_evidence_boundary": "No raw B execution trajectories or original audit JSONs in the supplied ZIP; no local re-audit of those files claimed.",
+  "b_reported_source_files_verified": 331,
+  "source_identity_matches_local": true,
+  "records": [
+    {
+      "method": "GROUND",
+      "seed": 4104,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_GROUND_PARALLEL_20261031_01\\inputs\\B_RETURN\\GROUND_PARALLEL_V1_B5_RESULTS_20261031\\per_seed_metrics.csv",
+      "source_sha256": "cef2c4cd15c6c341081501656d8ac76a66f3d5ac947600d57bfe424e6a13e6a1",
+      "external_raw_result": "C:\\Users\\78689\\NetworkExperimentDelivery\\GROUND_PARALLEL_V1_B5_20261031\\4104_GROUND\\attempt_01\\RESULT",
+      "config": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4104.json",
+      "config_sha256": "c4fb8e49b32f78a01dba09297ea5961e30afe4bee3ad59b0fe812c94a8ffa0c1",
+      "tasks_sha256": "60f32d5acf5a06a31b7a5412bd70f97e6eb9a2444c9733070e82aa4ea7061303",
+      "audit_evidence": "20 checks reported PASS; summary/accounting/closed-task identities independently verified locally; raw trajectories not included"
+    },
+    {
+      "method": "GROUND",
+      "seed": 4105,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_GROUND_PARALLEL_20261031_01\\inputs\\B_RETURN\\GROUND_PARALLEL_V1_B5_RESULTS_20261031\\per_seed_metrics.csv",
+      "source_sha256": "cef2c4cd15c6c341081501656d8ac76a66f3d5ac947600d57bfe424e6a13e6a1",
+      "external_raw_result": "C:\\Users\\78689\\NetworkExperimentDelivery\\GROUND_PARALLEL_V1_B5_20261031\\4105_GROUND\\attempt_01\\RESULT",
+      "config": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4105.json",
+      "config_sha256": "cd12091727346092b840a32a6f3ccf289dd0579a064fe5129f9255c97f766cd0",
+      "tasks_sha256": "f77157ee6a0d7dadbbe25b7480132c5eed8ccc792100b38c509a57b2d88ab903",
+      "audit_evidence": "20 checks reported PASS; summary/accounting/closed-task identities independently verified locally; raw trajectories not included"
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_GROUND_PARALLEL_20261031_01\\inputs\\B_RETURN\\GROUND_PARALLEL_V1_B5_RESULTS_20261031\\per_seed_metrics.csv",
+      "source_sha256": "cef2c4cd15c6c341081501656d8ac76a66f3d5ac947600d57bfe424e6a13e6a1",
+      "external_raw_result": "C:\\Users\\78689\\NetworkExperimentDelivery\\GROUND_PARALLEL_V1_B5_20261031\\4103_OFFLOAD\\attempt_01\\RESULT",
+      "config": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4103.json",
+      "config_sha256": "cdc931fe03e11c86ac396e09a2f29259ba0f808fd2bc5dfd44bd1e3195687fc1",
+      "tasks_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "audit_evidence": "20 checks reported PASS; summary/accounting/closed-task identities independently verified locally; raw trajectories not included"
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4104,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_GROUND_PARALLEL_20261031_01\\inputs\\B_RETURN\\GROUND_PARALLEL_V1_B5_RESULTS_20261031\\per_seed_metrics.csv",
+      "source_sha256": "cef2c4cd15c6c341081501656d8ac76a66f3d5ac947600d57bfe424e6a13e6a1",
+      "external_raw_result": "C:\\Users\\78689\\NetworkExperimentDelivery\\GROUND_PARALLEL_V1_B5_20261031\\4104_OFFLOAD\\attempt_02\\RESULT",
+      "config": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4104.json",
+      "config_sha256": "c4fb8e49b32f78a01dba09297ea5961e30afe4bee3ad59b0fe812c94a8ffa0c1",
+      "tasks_sha256": "60f32d5acf5a06a31b7a5412bd70f97e6eb9a2444c9733070e82aa4ea7061303",
+      "audit_evidence": "20 checks reported PASS; summary/accounting/closed-task identities independently verified locally; raw trajectories not included"
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4105,
+      "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_GROUND_PARALLEL_20261031_01\\inputs\\B_RETURN\\GROUND_PARALLEL_V1_B5_RESULTS_20261031\\per_seed_metrics.csv",
+      "source_sha256": "cef2c4cd15c6c341081501656d8ac76a66f3d5ac947600d57bfe424e6a13e6a1",
+      "external_raw_result": "C:\\Users\\78689\\NetworkExperimentDelivery\\GROUND_PARALLEL_V1_B5_20261031\\4105_OFFLOAD\\attempt_02\\RESULT",
+      "config": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4105.json",
+      "config_sha256": "cd12091727346092b840a32a6f3ccf289dd0579a064fe5129f9255c97f766cd0",
+      "tasks_sha256": "f77157ee6a0d7dadbbe25b7480132c5eed8ccc792100b38c509a57b2d88ab903",
+      "audit_evidence": "20 checks reported PASS; summary/accounting/closed-task identities independently verified locally; raw trajectories not included"
+    }
+  ]
+}

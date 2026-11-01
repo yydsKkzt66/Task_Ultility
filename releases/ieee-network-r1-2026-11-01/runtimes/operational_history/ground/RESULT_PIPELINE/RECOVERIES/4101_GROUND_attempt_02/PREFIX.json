@@ -1,0 +1,83 @@
+{
+  "identity": {
+    "job": {
+      "seed": 4101,
+      "arm": "GROUND",
+      "method": "B1",
+      "variant": "incremental_ground_parallel_4101",
+      "config_sha256": "05293c77a2bb297fc229f56d92ba379d99885829c54f22a995bbeaeaeb0806e2",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "group": "main",
+      "stop_s": 21600.0,
+      "package": "A"
+    },
+    "manifests": {
+      "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+      "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9",
+      "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d"
+    },
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "time_s": 14780.0,
+  "pickle_sha256": "a5a8438e6d2632d757ae1b5339abf3bdbc05bcb88827f93893cad5790b9a978e",
+  "candidate_count": 1171,
+  "candidate_file": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_01\\candidates.jsonl",
+  "candidate_bytes": 3653992,
+  "status": {
+    "phase": "CHECKPOINT_COMPLETE",
+    "arm": "GROUND",
+    "method": "B1",
+    "seed": 4101,
+    "pid": 24076,
+    "process_created": 1793448731.9291384,
+    "updated_epoch": 1793451775.208448,
+    "time_s": 14780.0,
+    "arrivals": 1171,
+    "closed": 709,
+    "decisions": 1171,
+    "candidates": 1171,
+    "active_wall_s": 3482.750003599969,
+    "total_wall_s": 3492.2193274497986,
+    "original_start_epoch": 1793448282.9891205,
+    "cpu_s": 3451.28125,
+    "rss_bytes": 286711808,
+    "peak_rss_bytes": 321294336,
+    "task_id": null
+  },
+  "prefix_migration": {
+    "bad_arrivals": [
+      {
+        "task_id": "formal_4101_1104",
+        "time_s": 15084.14814848914,
+        "expected_s": 15084.148148489197,
+        "gap_s": 5.820766091346741e-11
+      }
+    ],
+    "first_bad_s": 15084.148148489197,
+    "checkpoint": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_01\\CHECKPOINTS\\T14780.pkl",
+    "old_audit_sha256": "b3bc7f0012e8961d02d480868edecc197042eae2a760b7e24e139907978c5c6e",
+    "old_identity_sha256": "9df50cadd54e73fe6f82bef083fc7359064068ce5d9cdd23649203618c25214d",
+    "prefix_time_s": 14780.0,
+    "prefix_arrivals": 1171,
+    "parent_checkpoint_sha256": "a5a8438e6d2632d757ae1b5339abf3bdbc05bcb88827f93893cad5790b9a978e",
+    "parent_metadata_sha256": "72a51145507c41556745899e8103c5c652e24f1b699243320adee65537b47797",
+    "exact_prefix_no_trigger": true,
+    "execution_overlay": {
+      "version": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2",
+      "sha256": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d",
+      "scope": "GROUND/OFFLOAD arrival registration only; original integrator/safety/fees; strict audit unchanged",
+      "frozen_dependencies": {
+        "src/network_revision/runtime.py": "28aafda6b6b35efd4b5cb2a3630f462c706fc23be9c4d70832493ee9fa996fa6",
+        "src/link/event_queue_runtime_v3.py": "260d6dfc5f83b06371bf6e4edca88234c6f402c92bfa62b50e7be6444a3cd504",
+        "formal_audit.py": "2efca189ac1c4cc84bba50704ab949ac1a8529f5221dfedefd9de76affb37d89"
+      }
+    },
+    "policy": "Original scientific parameters and strict final audit; actual positive tail integration"
+  }
+}

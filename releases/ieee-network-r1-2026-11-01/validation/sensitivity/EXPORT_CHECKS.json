@@ -1,0 +1,571 @@
+{
+  "font_family": "Times New Roman",
+  "font_fallback": false,
+  "minimum_text_pt": 8.5,
+  "tick_fontsize_pt": 9.5,
+  "legend_fontsize_pt": 9,
+  "panel_title_pt": 9.5,
+  "axis_label_pt": 9,
+  "figure_mm": [
+    182,
+    82
+  ],
+  "png_pixels": [
+    4299,
+    1937
+  ],
+  "png_dpi": [
+    599.9988,
+    599.9988
+  ],
+  "method_colors": {
+    "GROUND": "#78B6C8",
+    "OFFLOAD": "#F2D98E",
+    "TUT-Adapt": "#466F87",
+    "PROP": "#E48578"
+  },
+  "method_markers": {
+    "GROUND": "s",
+    "OFFLOAD": "D",
+    "TUT-Adapt": "^",
+    "PROP": "o"
+  },
+  "error_bars": "sample SD; ddof=1; no x displacement",
+  "source_style_sha256": "a93464b28a3e2d60f20393f6ae6c9921e34751866fc47d3815705cd2052ad6bb",
+  "pdfs": [
+    {
+      "file": "sensitivity.pdf",
+      "font_embedding": [
+        {
+          "name": "/FZLBNC+TimesNewRomanPSMT",
+          "embedded": true
+        },
+        {
+          "name": "/HAKEEV+TimesNewRomanPS-BoldMT",
+          "embedded": true
+        }
+      ],
+      "raster_images": [],
+      "width_mm": 181.99999999999164,
+      "height_mm": 82.00000000000361
+    }
+  ],
+  "figures": [
+    {
+      "kind": "main",
+      "figure_mm": [
+        182,
+        82
+      ],
+      "axes_count": 3,
+      "layout": "1x3",
+      "main_points": 80,
+      "restored_ground_points": 4,
+      "legend_count": 1,
+      "method_legend_entries": 4,
+      "metric_legend_entries": 2,
+      "legends_outside_axes": true,
+      "legend_overlap": false,
+      "text_outside_canvas": [],
+      "panel_title_overlap": false,
+      "all_error_envelopes_inside_axes": true,
+      "y_limits": [
+        -80,
+        450
+      ],
+      "capacity_x": [
+        0.15,
+        0.3,
+        0.5,
+        0.9
+      ],
+      "categorical_x": [
+        0,
+        1,
+        2
+      ],
+      "grid_axes": "both",
+      "grid_color": "#E4E6E8",
+      "grid_linewidth_pt": 0.45,
+      "zero_line_color": "#D5D8DC",
+      "zero_linewidth_pt": 0.45,
+      "tick_fontsize_pt": 9.5,
+      "legend_fontsize_pt": 9,
+      "series": [
+        {
+          "panel": "capacity",
+          "method": "GROUND",
+          "metric": "HV",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            177.398309927376,
+            230.63846168404677,
+            249.29513352656366,
+            269.1147492624927
+          ],
+          "color": "#78B6C8",
+          "line_style": "dashed",
+          "marker": "s",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "capacity",
+          "method": "OFFLOAD",
+          "metric": "HV",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            35.23768810027208,
+            80.25840273425918,
+            98.87296982550303,
+            107.33132587188322
+          ],
+          "color": "#F2D98E",
+          "line_style": "dashed",
+          "marker": "D",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "capacity",
+          "method": "TUT-Adapt",
+          "metric": "HV",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            218.83622088676307,
+            247.41710803014053,
+            254.15685366271634,
+            262.172498545953
+          ],
+          "color": "#466F87",
+          "line_style": "dashed",
+          "marker": "^",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "capacity",
+          "method": "PROP",
+          "metric": "HV",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            280.94970937341526,
+            300.5943876062173,
+            309.7553688103757,
+            315.42559221371437
+          ],
+          "color": "#E48578",
+          "line_style": "dashed",
+          "marker": "o",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "capacity",
+          "method": "GROUND",
+          "metric": "Overall",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            73.63086763836344,
+            53.59906171041418,
+            19.12002376851289,
+            55.761793686315286
+          ],
+          "color": "#78B6C8",
+          "line_style": "solid",
+          "marker": "s",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "capacity",
+          "method": "OFFLOAD",
+          "metric": "Overall",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            -20.025065573337855,
+            38.201219774795355,
+            65.0603567630084,
+            77.43296099226221
+          ],
+          "color": "#F2D98E",
+          "line_style": "solid",
+          "marker": "D",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "capacity",
+          "method": "TUT-Adapt",
+          "metric": "Overall",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            258.06395567720404,
+            288.3226644982246,
+            309.10496007124465,
+            333.4275105677312
+          ],
+          "color": "#466F87",
+          "line_style": "solid",
+          "marker": "^",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "capacity",
+          "method": "PROP",
+          "metric": "Overall",
+          "x": [
+            0.15,
+            0.3,
+            0.5,
+            0.9
+          ],
+          "y": [
+            336.2823012211751,
+            374.6801148373322,
+            391.20607944703335,
+            401.8044575902162
+          ],
+          "color": "#E48578",
+          "line_style": "solid",
+          "marker": "o",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "value",
+          "method": "GROUND",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            188.20854241204043,
+            249.29513352656366,
+            276.7145689494005
+          ],
+          "color": "#78B6C8",
+          "line_style": "dashed",
+          "marker": "s",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "value",
+          "method": "OFFLOAD",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            72.91888917130876,
+            98.87296982550303,
+            110.99459325248118
+          ],
+          "color": "#F2D98E",
+          "line_style": "dashed",
+          "marker": "D",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "value",
+          "method": "TUT-Adapt",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            195.15700563375495,
+            254.15685366271634,
+            277.30495137974566
+          ],
+          "color": "#466F87",
+          "line_style": "dashed",
+          "marker": "^",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "value",
+          "method": "PROP",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            243.86311058429033,
+            309.7553688103757,
+            341.452995244862
+          ],
+          "color": "#E48578",
+          "line_style": "dashed",
+          "marker": "o",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "value",
+          "method": "GROUND",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            14.36154836106247,
+            19.12002376851289,
+            21.02921434862939
+          ],
+          "color": "#78B6C8",
+          "line_style": "solid",
+          "marker": "s",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "value",
+          "method": "OFFLOAD",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            75.46874589767184,
+            65.0603567630084,
+            60.435271003531746
+          ],
+          "color": "#F2D98E",
+          "line_style": "solid",
+          "marker": "D",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "value",
+          "method": "TUT-Adapt",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            302.05197674579233,
+            309.10496007124465,
+            320.15326970111795
+          ],
+          "color": "#466F87",
+          "line_style": "solid",
+          "marker": "^",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "value",
+          "method": "PROP",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            373.7694669165761,
+            391.20607944703335,
+            404.9130165920611
+          ],
+          "color": "#E48578",
+          "line_style": "solid",
+          "marker": "o",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "service",
+          "method": "GROUND",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            249.29513352656366,
+            173.555727710181,
+            110.1621312535716
+          ],
+          "color": "#78B6C8",
+          "line_style": "dashed",
+          "marker": "s",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "service",
+          "method": "OFFLOAD",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            98.87296982550303,
+            71.36987938016946,
+            47.30961113093395
+          ],
+          "color": "#F2D98E",
+          "line_style": "dashed",
+          "marker": "D",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "service",
+          "method": "TUT-Adapt",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            254.15685366271634,
+            171.38641013245118,
+            108.03867200530705
+          ],
+          "color": "#466F87",
+          "line_style": "dashed",
+          "marker": "^",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "service",
+          "method": "PROP",
+          "metric": "HV",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            309.7553688103757,
+            212.59365283485792,
+            135.13810760768857
+          ],
+          "color": "#E48578",
+          "line_style": "dashed",
+          "marker": "o",
+          "marker_fill": "open"
+        },
+        {
+          "panel": "service",
+          "method": "GROUND",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            19.12002376851289,
+            -30.99250707291164,
+            -49.58721312796653
+          ],
+          "color": "#78B6C8",
+          "line_style": "solid",
+          "marker": "s",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "service",
+          "method": "OFFLOAD",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            65.0603567630084,
+            33.8819829478904,
+            10.978510895168313
+          ],
+          "color": "#F2D98E",
+          "line_style": "solid",
+          "marker": "D",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "service",
+          "method": "TUT-Adapt",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            309.10496007124465,
+            204.40162876311462,
+            130.4726689183122
+          ],
+          "color": "#466F87",
+          "line_style": "solid",
+          "marker": "^",
+          "marker_fill": "solid"
+        },
+        {
+          "panel": "service",
+          "method": "PROP",
+          "metric": "Overall",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            391.20607944703335,
+            269.4745466430669,
+            170.0704733867286
+          ],
+          "color": "#E48578",
+          "line_style": "solid",
+          "marker": "o",
+          "marker_fill": "solid"
+        }
+      ]
+    }
+  ],
+  "visual_review": "PENDING_ACTUAL_INSPECTION"
+}

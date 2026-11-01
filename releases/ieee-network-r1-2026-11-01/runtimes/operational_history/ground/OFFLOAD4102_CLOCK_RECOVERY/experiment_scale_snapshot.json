@@ -1,0 +1,4297 @@
+{
+  "identity": {
+    "seed": 4102,
+    "variant": "incremental_ground_parallel_4102",
+    "method": "OFFLOAD",
+    "input_hashes": {
+      "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+      "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+      "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+      "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+    }
+  },
+  "time": {
+    "full_horizon_s": 21600.0,
+    "macro_slot_s": 20,
+    "full_macro_slots": 1080,
+    "actual_prefix_s": 21600.0
+  },
+  "tasks": {
+    "full_count": 1600,
+    "full_class_counts": {
+      "medium": 830,
+      "high": 323,
+      "low": 322,
+      "urgent": 125
+    },
+    "actual_arrivals": 1600,
+    "prefix_classes": {
+      "medium": 830,
+      "high": 323,
+      "low": 322,
+      "urgent": 125
+    },
+    "full_values": {
+      "min": 0.17447916666666666,
+      "max": 4.361979166666667,
+      "sum": 1599.450520833346
+    },
+    "full_deadline_s": {
+      "min": 1223.279790160911,
+      "max": 14376.80653947615
+    }
+  },
+  "models": {
+    "balanced": {
+      "q": 0.7342411587001637,
+      "profile": {
+        "profile_name": "small",
+        "latency_s": 1.44,
+        "quality_base": 0.87,
+        "energy_j": 21.6,
+        "robustness_to_difficulty": 0.84,
+        "thermal_gain_scale": 1.6,
+        "enabled": true
+      }
+    },
+    "high_accuracy": {
+      "q": 0.8215028271304525,
+      "profile": {
+        "profile_name": "medium",
+        "latency_s": 2.79,
+        "quality_base": 0.94,
+        "energy_j": 51.84,
+        "robustness_to_difficulty": 0.91,
+        "thermal_gain_scale": 3.0,
+        "enabled": true
+      }
+    },
+    "lightweight": {
+      "q": 0.5697178218395861,
+      "profile": {
+        "profile_name": "tiny",
+        "latency_s": 0.9,
+        "quality_base": 0.74,
+        "energy_j": 10.8,
+        "robustness_to_difficulty": 0.7,
+        "thermal_gain_scale": 1.0,
+        "enabled": true
+      }
+    }
+  },
+  "actions": {
+    "delay/store": 904,
+    "OFFLOAD:GROUND": 357,
+    "OFFLOAD:LOCAL": 339
+  },
+  "communication": {
+    "full_contacts": 4,
+    "full_raw_business_mb": 7286.314621774066,
+    "actual_consumed_mb": 1716.1499999999899,
+    "reserved": "NO_HARD_RESERVATION_LEGACY_DISABLED",
+    "per_candidate_executable": "candidate log; not actual bytes"
+  },
+  "energy": {
+    "by_task": {
+      "formal_4102_0834": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1165": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1359": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0381": {
+        "inference_j": 51.84000000000012,
+        "encoding_j": 2.0400000000000773,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0892": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0440": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0302": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0174": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1060": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0211": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 18.45965115840812,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0775": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0022": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0739": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0767": {
+        "inference_j": 51.84000000000038,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0497": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662785538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1284": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0422": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.4596511584336,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0434": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1194": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0662": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.86894662788086,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1275": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 86.93143329573918,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1033": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041330133,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0465": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0658": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0144": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1147": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041330133,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1567": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041327581,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0252": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0910": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041327581,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0416": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0092": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1257": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041330132,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0081": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0273": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0759": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041327581,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0714": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041327581,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1392": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041330132,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1517": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041327581,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1168": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.14607041327581,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1041": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.518539962820473,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1193": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.21896095839315,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1448": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0602": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.42134484637174,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0956": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.57703577985591,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0581": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0923": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1280": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0234": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.42134484637174,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0259": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1371": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0347": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.4213448463462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0771": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.57703577985591,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0970": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.57703577985591,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1133": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.42134484637174,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1311": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.42134484637174,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0842": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.57703577985591,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0086": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.577035779855912,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0159": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.57703577985591,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1276": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.61068765806067,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0306": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1489": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631276722,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0569": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631276722,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0232": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1370": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631276722,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0004": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1146": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631276724,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0328": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631276724,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0108": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1397": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631276724,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0865": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631279279,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0981": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631279279,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0106": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0428": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631279279,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0355": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.69470631279279,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0983": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0301": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.635125091471984,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1574": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.79206824622813,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1238": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.692794345764042,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1495": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103884745,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0715": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887305,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0316": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887306,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1454": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887306,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0399": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 87.96609103884747,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0837": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.692794345764042,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0612": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103884747,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0874": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.692794345764042,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1538": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887306,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0975": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887305,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0438": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887306,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1227": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887306,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1101": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 18.692794345764042,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1215": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 87.96609103887306,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0792": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.07728829387287,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0856": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511712487,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0914": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.750029962402806,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0280": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.750029962402806,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0736": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511712487,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0880": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 88.23543511712487,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0648": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511712487,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0386": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511715049,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1107": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511715049,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0780": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511715049,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1388": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511715049,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0738": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511715049,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1592": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511715049,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0344": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.750029962402806,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0357": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.750029962402806,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0290": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.750029962402806,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0791": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.750029962377184,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0383": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.23543511712487,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0862": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.78466662082834,
+        "downlink_mb": 0.8499999999999999
+      },
+      "formal_4102_1082": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.806818338142175,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0408": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237794,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0365": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0610": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.806818338142175,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1583": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1241": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.806818338142175,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0498": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0609": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.80681833811653,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0109": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.80681833811653,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1225": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1512": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237794,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0822": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237794,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0010": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.806818338142175,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0179": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.806818338142175,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1045": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.806818338142175,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0601": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1262": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0265": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.80681833811653,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1575": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.50267453237795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0796": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.58120412469549,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0281": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1008": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518838,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1365": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0459": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0514": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.863145852524333,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0708": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518840568,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0605": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 88.76774518838,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0277": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.863145852524333,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1143": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.863145852550005,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0871": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0994": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518837999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0177": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1078": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518838,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0521": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1220": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518838,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1295": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.86314585252433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0788": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 88.76774518837999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1584": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518837999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1266": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518837999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1307": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.76774518837999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0510": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.95173076510727,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0585": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1172": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.03058293516202,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0064": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0852": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0413": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0819": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0245": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0448": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0012": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 18.91899887373028,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0352": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.29112359683,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0330": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.80505700198196,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1180": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 90.3090325675787,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1043": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 19.24338933230083,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0905": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 19.347106476805322,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1012": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 19.347106476805322,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0420": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 91.75611152739967,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1377": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 91.75611152739967,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1394": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 92.21517121826571,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0458": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 19.643510980243626,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0958": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 93.0953606663265,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0664": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 93.30715147763634,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1335": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 93.7204078282389,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0317": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.958373235744542,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0264": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0986": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.40583044001352,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0282": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0307": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479386,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0882": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0385": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0800": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1015": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0203": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0810": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0469": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0470": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0249": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0823": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0841": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1010": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.40583044001351,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0904": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1299": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1006": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.40583043993183,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0011": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0452": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1252": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0087": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0496": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0014": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1055": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1089": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0157": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1239": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0954": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0020": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0615": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.923738968479388,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1030": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.40583044001352,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0644": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.405830439931826,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0813": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89392467595394,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0071": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0149": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0511": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1129": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0515": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0016": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1430": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1556": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0766": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0567": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1485": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1562": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.25896754307381,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0731": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1316": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1547": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0544": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1585": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1162": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0132": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0500": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.2589675430738,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0499": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0550": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0338": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0692": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1509": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.25896754315538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0524": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.25896754315538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0990": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.89253060288075,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1014": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.19123197697541,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0372": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071774751,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0003": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.861763402512182,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0965": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071782897,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0674": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.861763402512182,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1390": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071774751,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1196": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0566": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.861763402512182,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1396": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071774751,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0113": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.861763402512182,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1393": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.114180717828965,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1599": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1493": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1425": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071774751,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1166": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071774751,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0311": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.861763402512182,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1572": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1516": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1594": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0443": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.861763402512182,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1086": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.11418071782897,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1320": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.1141807177475,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1300": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 51.082819700792385,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1407": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0573": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0115": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0130": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0538": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159288194,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0166": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0361": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.9714715929633,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0224": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0427": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.9714715929633,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1040": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.9714715929633,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1160": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 50.97147159296329,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0200": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1288": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159296329,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1247": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.9714715929633,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0522": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1560": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159296329,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1251": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159288194,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1383": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.9714715929633,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0876": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1221": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159296329,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1406": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0379": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.9714715929633,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0495": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0027": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1204": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159288194,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1469": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0536": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.831437713498598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1197": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.97147159288195,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1181": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.880543746623275,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0411": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1581": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0933": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0463": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0331": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0801": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0073": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1112": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1077": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0673": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1550": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0833": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1207": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.83084168876914,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1552": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0906": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0148": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0614": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0246": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0532": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0718": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.8015538588736,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0636": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0571": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0883": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0196": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0486": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0471": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.830841688687904,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0652": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0168": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.801553858873598,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1385": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.79466830614691,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1445": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0333": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1580": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.6922924202353,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_1099": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0481": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0050": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0091": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0635": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0239": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0256": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0540": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242031643,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0319": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139238136,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0506": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242031643,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0761": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1391": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0350": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0374": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1273": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0267": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0903": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1566": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0626": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0721": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1228": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139238137,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0163": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0740": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0727": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0741": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0230": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.772112139319269,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1274": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 50.69229242023529,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1183": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.65461554640171,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1075": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 50.55582510196875,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1403": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.42144095088689,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0336": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.18387455832146,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0806": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 49.904757172970754,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0075": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.604760899290502,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1037": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 49.42147869540089,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0908": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 49.42147869540089,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1235": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 49.1923793083854,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0183": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.406474467562061,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0562": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 48.86441469265151,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0483": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.339449110473982,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0928": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 48.26497176911684,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0710": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 48.172387940317876,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1213": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 48.08189644017413,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1219": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0564": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1104": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0429": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0242": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0097": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0229": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0063": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690046444,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1038": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0340": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0143": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0477": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1211": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1458": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0184": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0548": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1198": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0827": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1027": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.10461030641423,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0295": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690046444,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0030": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.722229690148875,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0600": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.25337946081167,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0254": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434726,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0423": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0127": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428332184,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0341": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0527": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0192": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1136": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434726,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1000": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0107": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1378": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0893": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0154": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1131": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0147": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434726,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0171": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0984": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1125": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0518": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1155": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0895": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1499": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0737": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0639": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.779237428434723,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1525": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.3728820160488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0216": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.83156530779417,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0725": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0047": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0541": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0349": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0946": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0922": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1444": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0214": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0292": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1013": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0911": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0198": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1138": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0847": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0250": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0683": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0897": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907636,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0709": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0337": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0172": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.835790935899215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1281": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.63901616907637,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0825": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.6425610295151,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0370": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820623,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0151": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1347": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820623,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0031": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0565": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820623,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1144": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0869": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0421": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0403": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820623,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1222": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820623,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0462": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1460": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820623,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0247": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0189": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0543": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585564876,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1412": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0017": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1182": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0298": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1595": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 88.90294863820624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0060": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585667635,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0513": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.891876585564876,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0770": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.909453648221657,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0816": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.947480742036348,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0661": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0952": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1422": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0176": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.947480742036348,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0744": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0098": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.947480742036348,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0695": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1361": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0838": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1150": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0322": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1248": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0456": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.16461525667795,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0630": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.947480742036348,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0294": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.947480742036348,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1002": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.947480742036348,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0855": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.33514144762681,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1338": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1049": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0272": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1446": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0111": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0529": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0723": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.4239518461767,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1190": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0886": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1514": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184607375,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0764": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0900": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1386": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0860": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0059": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1596": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.42395184617672,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0534": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.002589767309978,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1264": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.54837586586925,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1470": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424565498,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1544": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424575805,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0126": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0763": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424575805,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0437": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1231": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1267": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424565497,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0401": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.05719002724034,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1570": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424565498,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0485": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424575805,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1009": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0070": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0436": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424575805,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1263": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424565497,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1062": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0026": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.05719002724034,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0755": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.057190027240335,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1337": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424565498,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1305": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.68089424575805,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0613": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.05719002724034,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0006": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.10413417536733,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1217": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 89.93537834033485,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0651": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834023168,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1176": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834033485,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0519": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834043804,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1336": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834023168,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0598": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0400": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0193": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1051": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834033485,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0932": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1079": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1374": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834033485,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0131": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0545": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 89.93537834033485,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1163": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 89.93537834023168,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0043": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032983,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0719": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 89.93537834033486,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0887": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.111267897325025,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1405": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 90.0035074671609,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0858": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 90.68344096631,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1110": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 91.40708146891996,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0696": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 91.40708146891996,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0419": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.523458218366066,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1519": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 92.3310010037488,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0077": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.714538329032965,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0243": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.80595655354473,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0454": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 93.4145429485803,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0065": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.894490561623513,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0821": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 19.98004044633225,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0884": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 20.062508452361694,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1413": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 94.6002675206769,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1569": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0750": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0976": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0039": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0687": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0818": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0158": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0681": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0604": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0889": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0181": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0424": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520232209,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0121": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0432": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.759461271986616,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0693": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0814": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0240": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1016": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1553": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214898,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0225": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0717": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0576": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214898,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1488": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0062": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0199": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.786385520232209,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0705": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.759461271986616,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0407": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1145": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214898,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1411": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214898,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0446": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.75946127214899,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0653": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0720": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0617": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1070": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.786385520394578,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0641": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.774095874343558,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0363": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0556": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1341": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.621980557267555,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0393": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.621980557267555,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1537": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0769": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.621980557267555,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0577": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0474": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1333": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.621980557267555,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0326": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1308": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0616": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1389": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0079": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0360": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1355": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1244": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0028": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1272": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0872": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0689": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0890": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0321": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0215": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1098": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.62198055726755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0002": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1298": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.757170868399086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1546": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.58922407760765,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0169": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0468": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0698": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0955": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242927558,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0293": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0000": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1044": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0119": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1593": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 50.48658242927558,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0549": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0817": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0093": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0849": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0045": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0493": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0037": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0747": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0072": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0859": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1195": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242927558,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1415": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0320": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0746": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0951": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242927558,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0552": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242927558,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0278": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0629": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0716": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0558": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1416": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.48658242911364,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0275": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.728398766156284,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0523": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 50.42886947079716,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0722": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0356": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1171": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0067": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1429": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1421": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0579": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1317": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1210": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0241": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0623": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1591": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.353268056817974,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0588": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1106": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0288": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0005": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.700069462013172,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0054": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0402": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0753": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0409": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0268": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1201": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665624,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0266": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0100": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1157": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.35326805665625,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1061": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0008": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0779": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0587": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.70006946201317,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0987": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.330284178852594,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1259": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.222038517036495,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0439": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0868": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1202": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0269": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0729": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0772": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.222038517198015,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1260": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851719801,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0431": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851719801,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0208": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0797": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.222038517198015,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0048": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0390": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851703649,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0088": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0405": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851703649,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0843": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851703649,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1436": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851703649,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1548": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851703649,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0078": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0323": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0046": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0748": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0173": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0597": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.22203851719801,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0815": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.222038517198015,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0426": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0621": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 50.222038517198015,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0478": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 10.672183184904577,
+        "downlink_mb": 0.85
+      }
+    },
+    "background_j": 191375.9999999995,
+    "solar_j": 230342.74219476865,
+    "battery_delta_j": -58106.306658075206,
+    "curtailed_solar_j": 0.0,
+    "controlled_j": 75277.98288756773,
+    "downlink_mb": 1716.1499999999899,
+    "backlog_mb": 0.0,
+    "unmaterialized_committed_mb": 0.0,
+    "expired_mb": 0.0
+  },
+  "lifecycle": {
+    "ground": 696,
+    "closure": 696,
+    "q_coverage": 1.0
+  },
+  "detector": {
+    "backend": "MockDetector engineering profiles",
+    "pixels_read": [],
+    "labels_read": [],
+    "declared_input": "frozen task metadata contains historical offline label summary; unchanged legacy boundary"
+  },
+  "D_arm_comparison": "NOT_APPLICABLE_NETWORK_ENGINEERING_REVISION",
+  "recovery_scope_note": "Census read from preserved failed final21600s attempt; does not mark final result accepted."
+}

@@ -1,0 +1,12 @@
+{
+  "user_authorized": true,
+  "date_local": "2026-10-31",
+  "job": {"method": "GROUND", "seed": 4102},
+  "request": "3.3×10^-11 秒的浮点尾差这种一般影响不大就算过就行，我时间紧，影响大再重来",
+  "scope": "Accept immaterial numerical roundoff after independent identity/causality/accounting checks; stop unnecessary continuation; preserve original audit and result values.",
+  "absolute_time_tolerance_s": 1e-7,
+  "tolerance_source": "Original AUDIT.json tolerances.time_s; no parameter or utility change",
+  "data_used": "A_RUNS/4102_GROUND/attempt_02 complete 21600 s result",
+  "excluded_data": "attempt_03 partial recovery is corroborating evidence only, not a source of final values",
+  "original_failure_must_remain": true
+}

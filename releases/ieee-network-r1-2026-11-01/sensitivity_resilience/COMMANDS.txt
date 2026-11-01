@@ -1,0 +1,3 @@
+python merge_data.py --collect --b-root USER_PROVIDED_B20_DIRECTORY
+python check_merge.py
+python merge_data.py --output recomputed_tables

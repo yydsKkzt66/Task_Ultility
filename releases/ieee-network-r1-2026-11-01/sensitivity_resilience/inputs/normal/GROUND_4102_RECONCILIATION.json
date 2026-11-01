@@ -1,0 +1,31 @@
+{
+  "source_attempt": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02",
+  "source_hashes": {
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\RESULT\\AUDITED_SUMMARY.json": "8dd86df4fb44a0b5f227bc912bbba03a267625d418b1b6a4d2ffd23a2479f452",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\RESULT\\CONFIG_EFFECTIVE.json": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\RESULT\\task_accounting.csv": "cac85f8f043333da15a3acd2d1106963c239c8de10ddaec6793a31fc39fb2943",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\RESULT\\ground_ledger.json": "d426a5a54275e6f01c632ae3ac8cfc791604ea265fe4e15484caaf6c371424df",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\RESULT\\terminal_state.json": "eb4221d5439c0034ae309a20827b44ee112d67fd86d0d88af79ee07bcd2f039c",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\IDENTITY.json": "0ff8ad8fb2259e5caabd01c5ba44f30611c8bb843b325eb5f02251cb64753710",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\STATUS.json": "eb89528c570d9e15a78d87b71a803a2e1b2f4b85a6e9235c0ff663654238d646",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\AUDIT.json": "b3bc7f0012e8961d02d480868edecc197042eae2a760b7e24e139907978c5c6e"
+  },
+  "ground_version": {
+    "policy": "independent_fixed",
+    "service_s": 4.29,
+    "receive_capacity": "nonbinding",
+    "version": "GROUND_PARALLEL_V1"
+  },
+  "execution_manifests": {
+    "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+    "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9"
+  },
+  "original_audit_pass": false,
+  "original_failures": [
+    "arrival_identity"
+  ],
+  "strict_completion_marker": false,
+  "metric_reconciliation_pass": true,
+  "simulations_run": 0,
+  "qualification": "Metric reconciliation only; never replaces physical audit or grants exception acceptance."
+}

@@ -1,0 +1,38 @@
+{
+  "pass_": true,
+  "checks": {
+    "no_trigger_physics_parity": true,
+    "no_trigger_policy_parity": true,
+    "no_trigger_ground_parity": true,
+    "original_kernel_skips_reproduced_tail": true,
+    "tail_reaches_exact_clock": true,
+    "actual_physics_interval_retained": true,
+    "no_fictitious_TX": true,
+    "background_charged": true,
+    "zero_tail_noop": true,
+    "backward_rejected": true,
+    "large_gap_rejected": true,
+    "concurrent_compute_preserved": true,
+    "unsafe_tail_rejected": true,
+    "tail_override_removed_after_failure": true,
+    "prefix_SHA": true,
+    "prefix_manifests": true,
+    "all_prefix_arrivals_exact": true,
+    "prefix_before_first_defect": true,
+    "real_checkpoint_no_trigger_physics_parity": true,
+    "real_checkpoint_no_trigger_policy_parity": true
+  },
+  "seconds": 5.12203710002359,
+  "execution_overlay": {
+    "version": "OFFLOAD_EXACT_ARRIVAL_TAIL_V1",
+    "sha256": "2c88cc29922059710e482065c9dd1cf04dc5a0e8c5c076f79bdadfdb39ed09d0",
+    "scope": "OFFLOAD arrival registration only; original integrator/safety/fees; strict audit unchanged",
+    "frozen_dependencies": {
+      "src/network_revision/runtime.py": "28aafda6b6b35efd4b5cb2a3630f462c706fc23be9c4d70832493ee9fa996fa6",
+      "src/link/event_queue_runtime_v3.py": "260d6dfc5f83b06371bf6e4edca88234c6f402c92bfa62b50e7be6444a3cd504",
+      "formal_audit.py": "2efca189ac1c4cc84bba50704ab949ac1a8529f5221dfedefd9de76affb37d89"
+    }
+  },
+  "prefix": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T04200.pkl",
+  "prefix_sha256": "875699a342976bc2d586404279b5aef5d18acf87a15a0db0bea4c0fafe6c4cf8"
+}

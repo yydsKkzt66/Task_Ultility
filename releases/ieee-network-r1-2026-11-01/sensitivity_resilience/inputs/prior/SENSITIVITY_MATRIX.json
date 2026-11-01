@@ -1,0 +1,857 @@
+{
+  "version": "GROUND_PARALLEL_SENSITIVITY_V1",
+  "jobs": [
+    {
+      "job_id": "A1_GROUND_4101",
+      "package": "A",
+      "condition": "A1",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a1_4101",
+      "config_sha256": "3192672919b0b7fa7b5c3f6327a47ef824d609f4ebf9acea4c20579a3d76ec58",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 1,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "A1_GROUND_4102",
+      "package": "A",
+      "condition": "A1",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a1_4102",
+      "config_sha256": "9c7d290f57b3d2480a2317480cbdc0d80559bbbd66dcd7ab41d3b0ed77fb4e9d",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 2,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "A2_GROUND_4103",
+      "package": "A",
+      "condition": "A2",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a2_4103",
+      "config_sha256": "86cf5815da2958a04fdcdffbdcaf84390d06f7477b6287fd42952042a5c2e5e6",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 3,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "A3_GROUND_4102",
+      "package": "A",
+      "condition": "A3",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a3_4102",
+      "config_sha256": "46b308d73c28592cdce9f1be6b93113ee7f0b4b538188db4d2794b1a0d6ad75f",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 4,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "A4_GROUND_4101",
+      "package": "A",
+      "condition": "A4",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a4_4101",
+      "config_sha256": "d6d0c3d0cd410f12bfefb5816a3ce3e1f70f334f6f4f15fa1bb704ed3efc2995",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4",
+        "sensitivity/A4_4101_tasks.csv": "721b5e9870da3f8fcd8c72722248241e06a38b7f9eb8636a3b75e859a685c986"
+      },
+      "task_sha256": "721b5e9870da3f8fcd8c72722248241e06a38b7f9eb8636a3b75e859a685c986",
+      "queue_priority": 5,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "A4_GROUND_4103",
+      "package": "A",
+      "condition": "A4",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a4_4103",
+      "config_sha256": "1566f34844d84ebe03e6e866de117344468d2f0825e07295a590e99c372994c3",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540",
+        "sensitivity/A4_4103_tasks.csv": "7a2e4858e5588441ccf2cf606cb6f6ac84dedc9f409679c97e7df8f5b44d9698"
+      },
+      "task_sha256": "7a2e4858e5588441ccf2cf606cb6f6ac84dedc9f409679c97e7df8f5b44d9698",
+      "queue_priority": 6,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "A5_GROUND_4102",
+      "package": "A",
+      "condition": "A5",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a5_4102",
+      "config_sha256": "ed2cf7164cacff19112a6da655734f32b620a7de9151af312d03f45dfc43189e",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355",
+        "sensitivity/A5_4102_tasks.csv": "58f37197819725dd5c1c1a5f62690ad8756c7e2d83c61910f809d332f2be69bc"
+      },
+      "task_sha256": "58f37197819725dd5c1c1a5f62690ad8756c7e2d83c61910f809d332f2be69bc",
+      "queue_priority": 7,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "B1_GROUND_4101",
+      "package": "A",
+      "condition": "B1",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_b1_4101",
+      "config_sha256": "5727ae60045a3eb8bea9bed73791c9b14ce99b8cc8cde1e9990315f8054020d7",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 8,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "B1_GROUND_4102",
+      "package": "A",
+      "condition": "B1",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_b1_4102",
+      "config_sha256": "a51df8856457ab8dad164187b8014f8b74213de8a036e4d3ce9eacaee594fe85",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 9,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "B2_GROUND_4103",
+      "package": "A",
+      "condition": "B2",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_b2_4103",
+      "config_sha256": "76d8c9230276f04b58c6aa8a96a20903566dfc8c538b671b7ced35547c559792",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 10,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "A1_OFFLOAD_4103",
+      "package": "A",
+      "condition": "A1",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a1_4103",
+      "config_sha256": "ab297feae6e4d2d57e3697cb83db96c6db5a9dfa68b9c5df46bf82514795bb7c",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 11,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "A2_OFFLOAD_4101",
+      "package": "A",
+      "condition": "A2",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a2_4101",
+      "config_sha256": "b8627ee1de22d8d1c8e56e719ad19318becb16dad6ce43a272f10558711c8158",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 12,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "A2_OFFLOAD_4102",
+      "package": "A",
+      "condition": "A2",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a2_4102",
+      "config_sha256": "a4eb8e919333cd68b0b282f487d1f2d42d7a536af9ea0c3b1e58e31f72506e61",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 13,
+      "estimated_cpu_s": 1516.265625
+    },
+    {
+      "job_id": "A3_OFFLOAD_4101",
+      "package": "A",
+      "condition": "A3",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a3_4101",
+      "config_sha256": "8d7abd80430652e8385cbc38cc4fea5f0a0cc0a3ef15f9e466393b6aae4726a7",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 14,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "A3_OFFLOAD_4103",
+      "package": "A",
+      "condition": "A3",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a3_4103",
+      "config_sha256": "ab6c113763934cc368028f5eb86e2a7f2d89e3033a1d87e398492362f714c943",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 15,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "A4_OFFLOAD_4102",
+      "package": "A",
+      "condition": "A4",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a4_4102",
+      "config_sha256": "610708d4c9e71c62541e7554dff75e668adae2106d051a8cca9b416d3f291c97",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355",
+        "sensitivity/A4_4102_tasks.csv": "06389030b1bafe3588883241dfcb67a74367d8d657b58b5b39e34947c9200fde"
+      },
+      "task_sha256": "06389030b1bafe3588883241dfcb67a74367d8d657b58b5b39e34947c9200fde",
+      "queue_priority": 16,
+      "estimated_cpu_s": 1516.265625
+    },
+    {
+      "job_id": "A5_OFFLOAD_4102",
+      "package": "A",
+      "condition": "A5",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a5_4102",
+      "config_sha256": "ed2cf7164cacff19112a6da655734f32b620a7de9151af312d03f45dfc43189e",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355",
+        "sensitivity/A5_4102_tasks.csv": "58f37197819725dd5c1c1a5f62690ad8756c7e2d83c61910f809d332f2be69bc"
+      },
+      "task_sha256": "58f37197819725dd5c1c1a5f62690ad8756c7e2d83c61910f809d332f2be69bc",
+      "queue_priority": 17,
+      "estimated_cpu_s": 1516.265625
+    },
+    {
+      "job_id": "A5_OFFLOAD_4103",
+      "package": "A",
+      "condition": "A5",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a5_4103",
+      "config_sha256": "4c12dad3cb6bdd3f2c2c2a740c051cd5cbae512c8bb3c1a235f3087176e17dc8",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540",
+        "sensitivity/A5_4103_tasks.csv": "1e1385bb13dee7a385dc1a27c8ef5084ffbe95c6bca7c29fd1fee20c9f9aceff"
+      },
+      "task_sha256": "1e1385bb13dee7a385dc1a27c8ef5084ffbe95c6bca7c29fd1fee20c9f9aceff",
+      "queue_priority": 18,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "B1_OFFLOAD_4101",
+      "package": "A",
+      "condition": "B1",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_b1_4101",
+      "config_sha256": "5727ae60045a3eb8bea9bed73791c9b14ce99b8cc8cde1e9990315f8054020d7",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 19,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "B1_OFFLOAD_4102",
+      "package": "A",
+      "condition": "B1",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_b1_4102",
+      "config_sha256": "a51df8856457ab8dad164187b8014f8b74213de8a036e4d3ce9eacaee594fe85",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 20,
+      "estimated_cpu_s": 1516.265625
+    },
+    {
+      "job_id": "B2_OFFLOAD_4101",
+      "package": "A",
+      "condition": "B2",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_b2_4101",
+      "config_sha256": "cd8a44415b29498466414a9b6474868d88130845b9de18c043ebe8ab203b78e4",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 21,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "B2_OFFLOAD_4103",
+      "package": "A",
+      "condition": "B2",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_b2_4103",
+      "config_sha256": "76d8c9230276f04b58c6aa8a96a20903566dfc8c538b671b7ced35547c559792",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 22,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "A1_GROUND_4103",
+      "package": "B",
+      "condition": "A1",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a1_4103",
+      "config_sha256": "ab297feae6e4d2d57e3697cb83db96c6db5a9dfa68b9c5df46bf82514795bb7c",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 1,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "A2_GROUND_4101",
+      "package": "B",
+      "condition": "A2",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a2_4101",
+      "config_sha256": "b8627ee1de22d8d1c8e56e719ad19318becb16dad6ce43a272f10558711c8158",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 2,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "A2_GROUND_4102",
+      "package": "B",
+      "condition": "A2",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a2_4102",
+      "config_sha256": "a4eb8e919333cd68b0b282f487d1f2d42d7a536af9ea0c3b1e58e31f72506e61",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 3,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "A3_GROUND_4101",
+      "package": "B",
+      "condition": "A3",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a3_4101",
+      "config_sha256": "8d7abd80430652e8385cbc38cc4fea5f0a0cc0a3ef15f9e466393b6aae4726a7",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 4,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "A3_GROUND_4103",
+      "package": "B",
+      "condition": "A3",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a3_4103",
+      "config_sha256": "ab6c113763934cc368028f5eb86e2a7f2d89e3033a1d87e398492362f714c943",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 5,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "A4_GROUND_4102",
+      "package": "B",
+      "condition": "A4",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a4_4102",
+      "config_sha256": "610708d4c9e71c62541e7554dff75e668adae2106d051a8cca9b416d3f291c97",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355",
+        "sensitivity/A4_4102_tasks.csv": "06389030b1bafe3588883241dfcb67a74367d8d657b58b5b39e34947c9200fde"
+      },
+      "task_sha256": "06389030b1bafe3588883241dfcb67a74367d8d657b58b5b39e34947c9200fde",
+      "queue_priority": 6,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "A5_GROUND_4101",
+      "package": "B",
+      "condition": "A5",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a5_4101",
+      "config_sha256": "584bf42d31f2392c4d5ed282b5c06eb989e9285034809845f687136d26a7df30",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4",
+        "sensitivity/A5_4101_tasks.csv": "dd8c3b0e6d84a6df2e4aeaa3b9188cd511f0d75eca8c4bca11659f633c1c1b8b"
+      },
+      "task_sha256": "dd8c3b0e6d84a6df2e4aeaa3b9188cd511f0d75eca8c4bca11659f633c1c1b8b",
+      "queue_priority": 7,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "A5_GROUND_4103",
+      "package": "B",
+      "condition": "A5",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a5_4103",
+      "config_sha256": "4c12dad3cb6bdd3f2c2c2a740c051cd5cbae512c8bb3c1a235f3087176e17dc8",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540",
+        "sensitivity/A5_4103_tasks.csv": "1e1385bb13dee7a385dc1a27c8ef5084ffbe95c6bca7c29fd1fee20c9f9aceff"
+      },
+      "task_sha256": "1e1385bb13dee7a385dc1a27c8ef5084ffbe95c6bca7c29fd1fee20c9f9aceff",
+      "queue_priority": 8,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "B1_GROUND_4103",
+      "package": "B",
+      "condition": "B1",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_b1_4103",
+      "config_sha256": "c81ad8cf4e34abaa9a0069bc171ccaeba63d105cc1d3ce34ef724d54c25e37d5",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 9,
+      "estimated_cpu_s": 5058.953125
+    },
+    {
+      "job_id": "B2_GROUND_4101",
+      "package": "B",
+      "condition": "B2",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_b2_4101",
+      "config_sha256": "cd8a44415b29498466414a9b6474868d88130845b9de18c043ebe8ab203b78e4",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 10,
+      "estimated_cpu_s": 5140.796875
+    },
+    {
+      "job_id": "B2_GROUND_4102",
+      "package": "B",
+      "condition": "B2",
+      "arm": "GROUND",
+      "method": "B1",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_b2_4102",
+      "config_sha256": "4a826ed63aa4cfd105dc138cb75078cc2ba654f08c893b019985685ac631f031",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 11,
+      "estimated_cpu_s": 5261.421875
+    },
+    {
+      "job_id": "A1_OFFLOAD_4101",
+      "package": "B",
+      "condition": "A1",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a1_4101",
+      "config_sha256": "3192672919b0b7fa7b5c3f6327a47ef824d609f4ebf9acea4c20579a3d76ec58",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+      },
+      "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "queue_priority": 12,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "A1_OFFLOAD_4102",
+      "package": "B",
+      "condition": "A1",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a1_4102",
+      "config_sha256": "9c7d290f57b3d2480a2317480cbdc0d80559bbbd66dcd7ab41d3b0ed77fb4e9d",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 13,
+      "estimated_cpu_s": 1516.265625
+    },
+    {
+      "job_id": "A2_OFFLOAD_4103",
+      "package": "B",
+      "condition": "A2",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a2_4103",
+      "config_sha256": "86cf5815da2958a04fdcdffbdcaf84390d06f7477b6287fd42952042a5c2e5e6",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 14,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "A3_OFFLOAD_4102",
+      "package": "B",
+      "condition": "A3",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_a3_4102",
+      "config_sha256": "46b308d73c28592cdce9f1be6b93113ee7f0b4b538188db4d2794b1a0d6ad75f",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 15,
+      "estimated_cpu_s": 1516.265625
+    },
+    {
+      "job_id": "A4_OFFLOAD_4101",
+      "package": "B",
+      "condition": "A4",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a4_4101",
+      "config_sha256": "d6d0c3d0cd410f12bfefb5816a3ce3e1f70f334f6f4f15fa1bb704ed3efc2995",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4",
+        "sensitivity/A4_4101_tasks.csv": "721b5e9870da3f8fcd8c72722248241e06a38b7f9eb8636a3b75e859a685c986"
+      },
+      "task_sha256": "721b5e9870da3f8fcd8c72722248241e06a38b7f9eb8636a3b75e859a685c986",
+      "queue_priority": 16,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "A4_OFFLOAD_4103",
+      "package": "B",
+      "condition": "A4",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_a4_4103",
+      "config_sha256": "1566f34844d84ebe03e6e866de117344468d2f0825e07295a590e99c372994c3",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540",
+        "sensitivity/A4_4103_tasks.csv": "7a2e4858e5588441ccf2cf606cb6f6ac84dedc9f409679c97e7df8f5b44d9698"
+      },
+      "task_sha256": "7a2e4858e5588441ccf2cf606cb6f6ac84dedc9f409679c97e7df8f5b44d9698",
+      "queue_priority": 17,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "A5_OFFLOAD_4101",
+      "package": "B",
+      "condition": "A5",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "variant": "incremental_ground_parallel_sensitivity_a5_4101",
+      "config_sha256": "584bf42d31f2392c4d5ed282b5c06eb989e9285034809845f687136d26a7df30",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4",
+        "sensitivity/A5_4101_tasks.csv": "dd8c3b0e6d84a6df2e4aeaa3b9188cd511f0d75eca8c4bca11659f633c1c1b8b"
+      },
+      "task_sha256": "dd8c3b0e6d84a6df2e4aeaa3b9188cd511f0d75eca8c4bca11659f633c1c1b8b",
+      "queue_priority": 18,
+      "estimated_cpu_s": 1733.046875
+    },
+    {
+      "job_id": "B1_OFFLOAD_4103",
+      "package": "B",
+      "condition": "B1",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "variant": "incremental_ground_parallel_sensitivity_b1_4103",
+      "config_sha256": "c81ad8cf4e34abaa9a0069bc171ccaeba63d105cc1d3ce34ef724d54c25e37d5",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+      },
+      "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "queue_priority": 19,
+      "estimated_cpu_s": 1624.65625
+    },
+    {
+      "job_id": "B2_OFFLOAD_4102",
+      "package": "B",
+      "condition": "B2",
+      "arm": "OFFLOAD",
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "variant": "incremental_ground_parallel_sensitivity_b2_4102",
+      "config_sha256": "4a826ed63aa4cfd105dc138cb75078cc2ba654f08c893b019985685ac631f031",
+      "input_hashes": {
+        "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+        "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+        "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+        "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+      },
+      "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "queue_priority": 20,
+      "estimated_cpu_s": 1516.265625
+    }
+  ]
+}

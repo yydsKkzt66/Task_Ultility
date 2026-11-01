@@ -1,0 +1,149 @@
+{
+  "created": "2026-10-31T21:53:24.429286+08:00",
+  "heartbeat": {
+    "time": "2026-10-31 21:53:17",
+    "pid": 17580,
+    "accepted": 13,
+    "rows": [
+      {
+        "package": "A",
+        "arm": "GROUND",
+        "seed": 4101,
+        "status": "RUNNING",
+        "time_s": 17494.78274267319,
+        "arrivals": 1373,
+        "closed": 887,
+        "wall_s": 4221.72598629992,
+        "cpu_s": 4183.0,
+        "PID": 17424,
+        "result_path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_02",
+        "source_sha256": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+        "config_sha256": "05293c77a2bb297fc229f56d92ba379d99885829c54f22a995bbeaeaeb0806e2",
+        "input_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "observed_ETA_s": 990.6440468328619,
+        "live_CPU_s": 734.4375,
+        "RSS_MB": 338.960384
+      },
+      {
+        "package": "A",
+        "arm": "GROUND",
+        "seed": 4102,
+        "status": "RUNNING",
+        "time_s": 20207.513186881348,
+        "arrivals": 1567,
+        "closed": 885,
+        "wall_s": 5093.9050147000235,
+        "cpu_s": 5048.234375,
+        "PID": 27120,
+        "result_path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02",
+        "source_sha256": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+        "config_sha256": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+        "input_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "observed_ETA_s": 351.0177375439565,
+        "live_CPU_s": 5051.703125,
+        "RSS_MB": 351.637504
+      },
+      {
+        "package": "A",
+        "arm": "GROUND",
+        "seed": 4103,
+        "status": "COMPLETED",
+        "time_s": 21600.0,
+        "arrivals": 1600,
+        "closed": 1245,
+        "wall_s": 5104.248062799976,
+        "cpu_s": 5058.953125,
+        "PID": 41108,
+        "result_path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4103_GROUND\\attempt_01",
+        "source_sha256": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+        "config_sha256": "cdc931fe03e11c86ac396e09a2f29259ba0f808fd2bc5dfd44bd1e3195687fc1",
+        "input_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+        "observed_ETA_s": null
+      },
+      {
+        "package": "A",
+        "arm": "OFFLOAD",
+        "seed": 4101,
+        "status": "COMPLETED",
+        "time_s": 21600.0,
+        "arrivals": 1600,
+        "closed": 696,
+        "wall_s": 1752.1666318999487,
+        "cpu_s": 1733.046875,
+        "PID": 23632,
+        "result_path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_OFFLOAD\\attempt_01",
+        "source_sha256": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+        "config_sha256": "05293c77a2bb297fc229f56d92ba379d99885829c54f22a995bbeaeaeb0806e2",
+        "input_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+        "observed_ETA_s": null
+      },
+      {
+        "package": "A",
+        "arm": "OFFLOAD",
+        "seed": 4102,
+        "status": "COMPLETED",
+        "time_s": 21600.0,
+        "arrivals": 1600,
+        "closed": 696,
+        "wall_s": 1530.4680026999558,
+        "cpu_s": 1516.265625,
+        "PID": 19268,
+        "result_path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_03",
+        "source_sha256": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+        "config_sha256": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+        "input_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+        "observed_ETA_s": null
+      }
+    ],
+    "blocked_recoveries": []
+  },
+  "figure_state": {
+    "signature": "ef693b313d0695ed9be7b63e922cf3e422747690d96c6ec751fabb6a60ff005c",
+    "accepted": 13,
+    "required": 20,
+    "ready_for_formal_figure": false,
+    "counts": {
+      "GROUND": 1,
+      "OFFLOAD": 2,
+      "TUT_ADAPTED": 5,
+      "PROP": 5
+    },
+    "rejected": [],
+    "rule": "Only actual21600s/1600-task audited final runs; no failed or partial endpoint substitution",
+    "version_note": "Exact-tail overlay identities retained. Original exact-arrival traces have zero new branch activations; no whole-source byte-equivalence claim."
+  },
+  "figure": {
+    "signature": "ef693b313d0695ed9be7b63e922cf3e422747690d96c6ec751fabb6a60ff005c",
+    "complete_five_seed_figure": false,
+    "n_by_method": {
+      "GROUND": 1,
+      "OFFLOAD": 2,
+      "TUT_ADAPTED": 5,
+      "PROP": 5
+    },
+    "no_failed_or_partial_runs": true,
+    "one_pdf_page": true,
+    "legend_methods_present": true,
+    "manual_visual_review": "PASS: same rendered pixels as manually reviewed PDF",
+    "files": {
+      "main_exp_progress.pdf": "caeb186677985bb9e099f8af5c12b57e3fae61928dee964aa74f13e73f4f53d7",
+      "main_exp_progress.png": "d3db2f484720bdbc6c2e5d89dd8e80073e7193d8a7869698c980a8cebbfafe18",
+      "main_exp_progress.svg": "2978ed60fbb61d18d65c75411039c90de87466d8c6e3c1bf00c711004d0fad0e"
+    },
+    "generation": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\MAIN_FIGURE_UPDATED\\GENERATIONS\\ef693b313d06_43fa3674",
+    "marker_note": "Node unavailable on host and node_repl; supplied pre-authoring marker could not run. Plot generation and PDF content checks use installed Python tools.",
+    "render_engine": "PDFium150dpi",
+    "render_png_sha256": "a9ade8d095e4592ecc2640869685e303aee30a38260013174e1279459d128790",
+    "same_pixels_as_reviewed_pdf": true
+  },
+  "original_figures": [
+    {
+      "path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_20261029_07\\main_exp.pdf",
+      "sha256": "429466aef0b363cb965b62858a4c2a60df40a471c4a58211c7ae9404a0ddc0e6"
+    },
+    {
+      "path": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_CAUSAL_20261030_01\\main_exp.pdf",
+      "sha256": "243c12e206ce9f1ecf6a2bdbab580bafa0a877026110cbc3622e93c477c92f1f"
+    }
+  ]
+}

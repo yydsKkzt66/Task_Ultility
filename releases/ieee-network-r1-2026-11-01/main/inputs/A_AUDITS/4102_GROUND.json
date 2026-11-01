@@ -1,0 +1,126 @@
+{
+  "status": "ACCEPTED_WITH_AUTHOR_APPROVED_NUMERICAL_TOLERANCE",
+  "version": "SAVED_LEDGER_STRICT_ACCEPTANCE_V1",
+  "source_attempt": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02",
+  "original_audit_pass": false,
+  "original_failures": [
+    "arrival_identity"
+  ],
+  "original_audit_unchanged": true,
+  "arrival_time": {
+    "passed": true,
+    "distinct_ids_ok": true,
+    "order_preserved": true,
+    "finite": true,
+    "tolerance_s": 1e-07,
+    "absolute_only": true,
+    "literal_equality": false,
+    "max_absolute_difference_s": 3.2741809263825417e-11,
+    "differences": [
+      {
+        "task_id": "formal_4102_0908",
+        "input_s": 9603.197749927625,
+        "recorded_s": 9603.197749927593,
+        "difference_s": -3.2741809263825417e-11
+      }
+    ]
+  },
+  "non_arrival_original_checks_pass": true,
+  "independent_identity_causal_safety_accounting_product_checks": true,
+  "all_original_result_values_unchanged": true,
+  "simulations_run": 0,
+  "input_sources": {
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4102.json": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\seed_4102\\tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\seed_4102\\calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\seed_4102\\exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+  },
+  "raw_hashes": {
+    "AUDIT.json": "b3bc7f0012e8961d02d480868edecc197042eae2a760b7e24e139907978c5c6e",
+    "IDENTITY.json": "0ff8ad8fb2259e5caabd01c5ba44f30611c8bb843b325eb5f02251cb64753710",
+    "STATUS.json": "eb89528c570d9e15a78d87b71a803a2e1b2f4b85a6e9235c0ff663654238d646",
+    "RESULT/AUDITED_SUMMARY.json": "8dd86df4fb44a0b5f227bc912bbba03a267625d418b1b6a4d2ffd23a2479f452",
+    "RESULT/CONFIG_EFFECTIVE.json": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+    "RESULT/arrival_events.json": "098cd39ef678c2bcf7ed355ee5a92050073d424030ada8fdb8d452020e42fd06",
+    "RESULT/ground_ledger.json": "d426a5a54275e6f01c632ae3ac8cfc791604ea265fe4e15484caaf6c371424df",
+    "RESULT/task_accounting.csv": "cac85f8f043333da15a3acd2d1106963c239c8de10ddaec6793a31fc39fb2943",
+    "RESULT/work.json": "65ea8cb3e5c6c18d09d880f96dfb9589fd3e1e762fe6274f01881ae9c5510c7b",
+    "RESULT/flows.json": "fd8a0357aed9fd337a59194ae1bf86ea03789b8fac7d53051513218703c11a45",
+    "RESULT/products.json": "dd40317e711d09b0ca8224d525996588d668a4b1969be9c9c2b4c9b07f136ba0",
+    "RESULT/terminal_state.json": "eb4221d5439c0034ae309a20827b44ee112d67fd86d0d88af79ee07bcd2f039c",
+    "RESULT/physical_trajectory.json": "f9d49fc5cfdd6e0a9cd5825d7ab3fd45c3bac806ee42ba27e6bc9f6acdd4928a"
+  },
+  "plot_row": {
+    "method": "GROUND",
+    "seed": 4102,
+    "overall_net": 8.740160677851009,
+    "hv_net": 235.9902705588147,
+    "ordinary_net": -227.2501098809641,
+    "hv_closed": 360,
+    "ordinary_closed": 873,
+    "total_closed": 1233,
+    "partial_only": 0,
+    "effective_delivered": 1233,
+    "controllable_energy_kj": 102.51035113427095,
+    "downlink_mb": 4932.0,
+    "metadata_satisfied": 0,
+    "metadata_partial": 0,
+    "roi_satisfied": 0,
+    "roi_partial": 0,
+    "roi_context_satisfied": 1233,
+    "roi_context_partial": 0
+  },
+  "extra": {
+    "gross": 566.6345072348236,
+    "energy_cost": 84.89170329177347,
+    "downlink_cost": 453.8616802692534,
+    "backlog_cost": 19.140962995945806,
+    "mean_closed_delay_s": 2662.387513941992,
+    "p95_closed_delay_s": 6096.175849994413,
+    "hv_mean_closed_delay_s": 2056.1879085466944,
+    "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02",
+    "execution_manifests": {
+      "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+      "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9"
+    }
+  },
+  "acceptance_policy": {
+    "user_authorized": true,
+    "date_local": "2026-10-31",
+    "job": {
+      "method": "GROUND",
+      "seed": 4102
+    },
+    "request": "3.3×10^-11 秒的浮点尾差这种一般影响不大就算过就行，我时间紧，影响大再重来",
+    "scope": "Accept immaterial numerical roundoff after independent identity/causality/accounting checks; stop unnecessary continuation; preserve original audit and result values.",
+    "absolute_time_tolerance_s": 1e-07,
+    "tolerance_source": "Original AUDIT.json tolerances.time_s; no parameter or utility change",
+    "data_used": "A_RUNS/4102_GROUND/attempt_02 complete 21600 s result",
+    "excluded_data": "attempt_03 partial recovery is corroborating evidence only, not a source of final values",
+    "original_failure_must_remain": true
+  },
+  "original_audit_fail_preserved": true,
+  "completed_run_used": "attempt_02; 21600 s; 1600 tasks",
+  "recovery_not_used_as_final_data": true,
+  "post_defect_window_comparison": {
+    "windows": [
+      1,
+      2
+    ],
+    "all_net_gross_cost_closure_fields_identical": true
+  },
+  "tiny_tail_execution_evidence": [
+    {
+      "start_s": 9603.197749927593,
+      "end_s": 9603.197749927625,
+      "duration_s": 3.2741809263825417e-11,
+      "physical_intervals": 1,
+      "TX_intervals": 0,
+      "new_ground_events": 0,
+      "version": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2"
+    }
+  ],
+  "qualification": "Full original result independently reconciled; corrected continuation checked through window 2 only, not claimed as a completed counterfactual run."
+}

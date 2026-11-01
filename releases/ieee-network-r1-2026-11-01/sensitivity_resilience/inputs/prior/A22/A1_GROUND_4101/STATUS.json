@@ -1,0 +1,21 @@
+{
+  "phase": "COMPLETED",
+  "arm": "GROUND",
+  "method": "B1",
+  "seed": 4101,
+  "pid": 34156,
+  "process_created": 1793460904.4184935,
+  "updated_epoch": 1793467871.4106846,
+  "time_s": 21600.0,
+  "arrivals": 1600,
+  "closed": 439,
+  "decisions": 1600,
+  "candidates": 1600,
+  "active_wall_s": 8402.961493099923,
+  "total_wall_s": 8547.419204950333,
+  "original_start_epoch": 1793459323.9914796,
+  "cpu_s": 8328.96875,
+  "rss_bytes": 333750272,
+  "peak_rss_bytes": 563822592,
+  "task_id": null
+}

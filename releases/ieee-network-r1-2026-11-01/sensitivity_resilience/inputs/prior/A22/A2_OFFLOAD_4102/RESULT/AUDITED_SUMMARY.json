@@ -1,0 +1,5656 @@
+{
+  "variant": "incremental_ground_parallel_sensitivity_a2_4102",
+  "method": "OFFLOAD",
+  "seed": 4102,
+  "stop_s": 21600,
+  "scope": "FINITE_PERIOD_FORMAL_NOT_AUTOMATIC_SCIENTIFIC_ACCEPTANCE",
+  "arrivals": 1600,
+  "closed": 640,
+  "ground_events": 640,
+  "gross": 246.1653203114433,
+  "costs": {
+    "energy": 73.212714567701,
+    "downlink": 146.00965835344843,
+    "terminal_backlog": 0.0
+  },
+  "net": 26.94294739029388,
+  "ledger": {
+    "by_task": {
+      "formal_4102_0834": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 144.78157771314326,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1165": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 144.7815777131178,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1359": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 144.78157771311777,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0381": {
+        "inference_j": 51.84000000000012,
+        "encoding_j": 2.0400000000000773,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0892": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 144.78157771311777,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0440": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 144.78157771311777,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0302": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0174": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1060": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0211": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 30.766085264056002,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0775": {
+        "inference_j": 51.839999999999854,
+        "encoding_j": 2.039999999999888,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0022": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0739": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0767": {
+        "inference_j": 51.84000000000038,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.766085264030522,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0497": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 144.86138464355506,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1284": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 145.24345068881001,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0422": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.864233271375955,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0434": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.24345068878452,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1194": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.24345068878452,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0662": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.24345068881001,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1275": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.24345068881001,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1033": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.24345068881001,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0465": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.864233271375955,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0658": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.864233271375955,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0144": {
+        "inference_j": 51.84000000000039,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.864233271375955,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1147": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.38057198086034,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1567": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.702241410594,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0252": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.96172629975985,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0910": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.702241410594,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0416": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.96172629975985,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0092": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.96172629975985,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1257": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.70224141059404,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0081": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.96172629975985,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0273": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 30.96172629975985,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0759": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.702241410594,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0714": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.702241410594,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1392": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.70224141059404,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1517": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 145.99978984261378,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1168": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.1578438546291,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1041": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.058541819102928,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1193": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.15784385460353,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1448": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.15784385460353,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0602": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.1578438546291,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0956": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.058541819102928,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0581": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.15784385460353,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0923": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.15784385460353,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1280": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.33209817800648,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0234": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.61015173142096,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0259": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.61015173142096,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1371": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.61015173144656,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0347": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.61015173144656,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0771": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.154657242940072,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0970": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.154657242914478,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1133": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.61015173144654,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1311": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.61015173144656,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0842": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.154657242940072,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0086": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.154657242940072,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0159": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.154657242940072,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1276": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.955902832818,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0306": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.250049937320927,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1489": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.05905852855852,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0569": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.05905852855852,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0232": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.250049937320927,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1370": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.05905852855852,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0004": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.250049937320927,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1146": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.05905852855852,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0328": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.05905852855852,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0108": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.250049937320927,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1397": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.05905852855852,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0865": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.48564641839178,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0981": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.5044575539547,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0106": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.34469723021986,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0428": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.50445755398033,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0355": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.5044575539547,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0983": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.34469723021986,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0301": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.34469723021986,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1574": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.50445755398036,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1238": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.34469723021986,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1495": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.5044575539547,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0715": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.5752560347922,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0316": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1454": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0399": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0837": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.438576420891003,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0612": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0874": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.438576420891003,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1538": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0975": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0438": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.94624198063332,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1227": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.36349620551047,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_1101": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.040000000000267,
+        "tx_j": 31.531664789550465,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1215": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.3843048919538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0792": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.3843048919538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0856": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.3843048919538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0914": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.531664789550465,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0280": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.531664789550465,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0736": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.3843048919538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0880": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 148.38430489195383,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0648": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.3843048919538,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0386": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.80629972485178,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1107": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.8185393280586,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0780": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.81853932803287,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1388": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.8185393280586,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0738": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.8185393280586,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1592": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.8185393280586,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0344": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.623939607204733,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0357": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.623939607204733,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0290": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.623939607204733,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0791": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.623939607204733,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0383": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.91235248510748,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0862": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.715378145777613,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1082": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.715378145777613,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0408": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.24883833309988,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0365": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.2488383330999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0610": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.715378145777613,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1583": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.2488383330999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1241": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.715378145777613,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0498": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.24883833307413,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0609": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.715378145777613,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0109": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.715378145777613,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1225": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.2488383330999,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1512": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.6221626231412,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0822": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.6750950032861,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0010": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.80595768819926,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0179": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.80595768819926,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1045": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.80595768819926,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0601": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.67509500331187,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1262": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.67509500331187,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0265": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.80595768819926,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1575": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.6750950032861,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0796": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.7815647296285,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0281": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.8956555388924,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1008": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.0972025360219,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_1365": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.8956555388924,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0459": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.89565553886659,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0514": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.8956555388924,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0708": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.0972025359961,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0605": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 150.09720253597033,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0277": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.8956555388924,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1143": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.8956555388924,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0871": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.8956555388924,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0994": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.0972025359961,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0177": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.895655538892395,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1078": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.28442027834555,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0521": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.984449034344863,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1220": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.5150542793064,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1295": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 31.98444903434487,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0788": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 150.5150542793064,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1584": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.5150542793064,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1266": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.51505427930644,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1307": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.5150542793064,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0510": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.7291102490558,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0585": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1172": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.92854378269328,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0064": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0852": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.0399999999972356,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0413": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0819": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0399999999972356,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0245": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0448": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0012": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.0399999999972356,
+        "tx_j": 32.072315553817475,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0352": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999997,
+        "tx_j": 150.92854378271915,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0330": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 150.92854378271915,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1180": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.92854378269328,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1043": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.105562064237226,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0905": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.24517746134221,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1012": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.24517746134221,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0420": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 152.92685254568343,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0768": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.496956165953506,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1394": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 153.69195203046021,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0141": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.039999999997235,
+        "tx_j": 32.739184967081385,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0958": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 155.1589344438427,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0664": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 155.51191912935906,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1335": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 156.20067971378384,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0317": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 33.263955392959936,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0264": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0986": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.67638406649858,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0282": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0307": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0882": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0385": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0800": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1015": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0203": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0810": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0844": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0249": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0019": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0841": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1010": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.67638406658027,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0904": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1299": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.67638406658027,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1006": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.67638406658027,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0011": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.206231614159538,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0452": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.67638406658027,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1252": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.67638406658027,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0343": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.206231614159538,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0014": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.20623161415954,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1055": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.64473397259714,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1089": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257187124,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0157": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1471": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0954": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0020": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0615": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1030": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257187126,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0644": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257187126,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0813": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0149": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0511": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0913": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1129": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.154217671495108,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0583": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257187126,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1430": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257187126,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1556": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257178967,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0417": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257178967,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0345": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.43161257178967,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1562": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.24925411584728,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0731": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.19030119619154,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1316": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1547": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0544": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.10293900421412,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1363": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1473": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0500": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0499": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.10293900421412,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0550": {
+        "inference_j": 51.839999999999336,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.10293900421412,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0692": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.10293900421412,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1509": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0524": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.190301196273,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0990": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.10293900421412,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1014": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 85.11791130889601,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0372": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265485748,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0003": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.05239618916433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0965": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265485747,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1390": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265493882,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1196": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265493882,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0566": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.05239618916433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1396": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265493882,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0113": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.05239618916433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1393": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265485747,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1599": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265485747,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1425": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265485748,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1166": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.95245265485747,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0311": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.05239618916433,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1572": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.8058588121739,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0950": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.00258976476225,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0396": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948120067,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1187": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948111943,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1086": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948111943,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1320": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948120067,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0804": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.002589764762252,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1407": {
+        "inference_j": 51.83999999999932,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.002589764681012,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1297": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948111943,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0130": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.002589764762252,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0538": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948111943,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0166": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.002589764762252,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0361": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948120067,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0224": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 18.002589764762252,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0427": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.71806948120067,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1040": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.63571298895071,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1160": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 84.48715403372549,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0194": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1288": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403372549,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0522": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0749": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403372549,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1251": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403380662,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1383": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403380662,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0876": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1221": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403372549,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0466": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0379": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403380662,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0289": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0027": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1204": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.48715403380662,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0536": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.953520232171737,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1475": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.42218365646524,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1197": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850320022,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1561": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850328125,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1581": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 84.25970850320022,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0933": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.905188056957392,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0463": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850328125,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0331": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.905188056957392,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0801": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.905188056957392,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0073": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.905188056957392,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1112": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850328125,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0377": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 84.25970850320022,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0694": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850320022,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0488": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850328125,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1207": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.25970850320022,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1552": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.13369489588494,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0906": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.0357349180639,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0148": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0614": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.0357349180639,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0258": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.85759367007543,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0718": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0636": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0117": {
+        "inference_j": 51.83999999999933,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0883": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.85759367007543,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0196": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0486": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.03573491814481,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0471": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.03573491814483,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0652": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0168": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1385": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.03573491814483,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1445": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.03573491814483,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0333": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0212": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1099": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0481": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0304": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0091": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.85759367007543,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0635": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0220": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.857593670075428,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0540": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.90613429221901,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0319": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.810737469662516,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0647": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515147661,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0761": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515147661,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1391": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 83.81523515147661,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0350": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515147661,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0374": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515147661,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1273": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515147661,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0267": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.810737469662516,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0903": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.81073746974333,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1566": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515155743,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0626": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.81523515155743,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0180": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.810737469662516,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0163": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.810737469662516,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0740": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.80465928291835,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0727": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.764619822001002,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0741": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.764619822001002,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0230": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.764619822001002,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1047": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.59821092709203,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1183": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 83.59821092709203,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0608": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.59821092709203,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0397": {
+        "inference_j": 51.84000000001622,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.764619822001002,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0336": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.59821092709203,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0806": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.17459528825775,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1428": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 82.76489902889048,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1037": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 82.3691311590282,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0213": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.46250044397531,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0183": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.34412411265661,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0562": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 81.44069115436608,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0483": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.232415184123305,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0480": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.196660846082302,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0928": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 80.38265663938806,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0710": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 80.2873132338104,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1219": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.84101717735706,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0564": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.84101717735703,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1104": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.84101717725463,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0429": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.84101717725463,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0830": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.20371615021398,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0097": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.20371615021398,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0063": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.20371615021398,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0948": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.84101717735706,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0704": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.20371615011155,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0143": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.20371615021398,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0477": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 146.84101717735706,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1211": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.01661353061408,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1458": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.28813669344885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0184": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0548": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1198": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.28813669344885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1439": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.28813669344885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0295": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0030": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0600": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.28813669344885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0254": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0423": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047288667,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0127": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0341": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0527": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0192": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.298729047391205,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1000": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.2881366933463,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0107": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.33220581292903,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1378": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.73169361512728,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0676": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.392984893233795,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0154": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.392984893233795,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1131": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.73169361512728,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0171": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.392984893233795,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0984": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.392984893233795,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1125": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.73169361512728,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0518": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.73169361512728,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1155": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.73169361502462,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1499": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.73169361512728,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0737": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 147.85730728394356,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0639": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1525": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.17158106367705,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0216": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0725": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0047": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0541": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0946": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0922": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.17158106367705,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1444": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.17158106367705,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0214": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0292": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1013": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0911": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0198": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.48646097604422,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1138": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 148.17158106367705,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1510": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.17158106367705,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0683": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.6067345035952,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0897": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.60769209442896,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0709": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0337": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.60769209442896,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0172": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1281": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.60769209442896,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0619": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.60769209442896,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0949": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0151": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0963": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0314": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0565": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 148.60769209442896,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1144": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.579134570026294,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0421": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.616750842558858,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0403": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.03991974362788,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0129": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.670982945482308,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1222": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.03991974362785,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0462": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.670982945482308,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1460": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.03991974362788,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0247": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.670982945482308,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1140": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.03991974362788,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0248": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.670982945482308,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0017": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.670982945482304,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1182": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.03991974362785,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0298": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.670982945585276,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1595": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.03991974362788,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0972": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.36775660608802,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0770": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.761983378665178,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0816": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.761983378665178,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0661": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.468157076126,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1443": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.46815707612598,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1379": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 149.46815707612598,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0236": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.761983378665178,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0744": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.46815707612598,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0098": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.761983378665178,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0695": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.46815707612598,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0838": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.48223049722137,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1150": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.89229723378824,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0322": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.89229723378824,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1481": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.89229723378824,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0456": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.89229723378824,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0630": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.852113162208376,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0294": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.852113162208376,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1126": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.852113162105198,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0787": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.852113162105198,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1338": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.89229723378824,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1049": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 149.89229723389144,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0152": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.852113162208376,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0111": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.852113162208376,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0533": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.20293970857895,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0723": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.31223348521758,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1190": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.31223348521755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0886": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.941349615617767,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1514": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.31223348521755,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0620": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.941349615617767,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0900": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.31223348511426,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1386": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.31223348532083,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0860": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.941349615617767,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0059": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 31.94493985613598,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1596": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.72785927544925,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1545": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.72785927544922,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1582": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.7278592755526,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1544": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.72785927544922,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0126": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.029670096029086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0763": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.72785927544922,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0437": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.029670096029086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1231": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.029670096029086,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1121": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 150.96106492123792,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1570": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.1390682772523,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0485": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.13906827714885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1009": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.117052008918705,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1549": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.13906827714885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0436": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.13906827714885,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0851": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.117052008918705,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1062": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.117052008918705,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0755": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.117052008918705,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1337": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.32426765383923,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1305": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.54575444237486,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0613": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.203472818970994,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0006": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.203472818970994,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1217": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 151.54575444247843,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1563": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.54575444237486,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1176": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.54575444237486,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0968": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.203472818970994,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1336": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.6386034913818,
+        "downlink_mb": 3.9999999999999996
+      },
+      "formal_4102_0598": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.28891006161788,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0193": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.28891006161788,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1169": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.94781205437357,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0932": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.28891006161788,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0637": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.28891006161788,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1079": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.288910061617884,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1374": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.94781205437357,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0782": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 151.94781205447723,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0049": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.28891006161788,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0043": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032983,
+        "tx_j": 32.288910061514215,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0811": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 151.94781205447723,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0719": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 152.19125387879484,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1405": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 152.34513578146408,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0858": {
+        "inference_j": 0.0,
+        "encoding_j": 74.80000000000001,
+        "tx_j": 152.34513578146408,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1110": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 152.34513578146408,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0038": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 32.456744404968596,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0774": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 33.157484269477145,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1569": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0750": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0976": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0687": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0818": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1362": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0604": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.5991021202483,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0889": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0181": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0138": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0432": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0693": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0814": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0240": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200441134,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1016": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0283": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.977309200603507,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1513": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0576": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.59910212024832,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1488": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.46766252979137,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0009": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0400000000032987,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0062": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.928618114052526,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0705": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0407": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1145": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1306": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0430": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0653": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.928618114052526,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0720": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1069": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1438": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0641": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.928618114052526,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0363": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0556": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.92861811405253,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1341": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1537": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0769": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.36996759544593,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0577": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.34003192257549,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0474": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0326": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610422414,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1308": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0942": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0616": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1491": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0079": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0360": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0369": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1332": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1272": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0872": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0689": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0321": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0682": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1098": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 84.14430404868467,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0002": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1298": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.880664610260474,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1546": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.99382653379689,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0169": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0468": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0205": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0955": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.92211342786823,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0000": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0627": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0119": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1593": {
+        "inference_j": 0.0,
+        "encoding_j": 74.79999999999998,
+        "tx_j": 83.92211342786823,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0549": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0817": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.92211342786823,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0849": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0045": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0493": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.92211342786823,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0037": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0747": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0072": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0859": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.92211342770649,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1195": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.92211342786823,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1415": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.92211342786823,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0320": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.833449103355285,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0951": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.73727979963077,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0552": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752855567,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0278": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.78697197473328,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0629": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752855567,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0716": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.786971974894804,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0558": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.786971974894804,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1416": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752871719,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0275": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.786971974894804,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0930": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752871719,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0356": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752855567,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0339": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.786971974894804,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1171": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752855567,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1429": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.7033975287172,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1287": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.70339752855568,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0579": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.786971974894804,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1317": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.59333212546531,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1142": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018863,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0241": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357515099,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1559": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018863,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0588": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018862,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0123": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1368": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018863,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1188": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018862,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0054": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_0402": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0210": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0409": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0268": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1201": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018863,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0266": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_1157": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800034996,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1463": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.48815800018863,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0008": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.74123357498967,
+        "downlink_mb": 0.8500000000000001
+      },
+      "formal_4102_1431": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.31848121972932,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0987": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1259": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0789": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0697": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0269": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.8499999999999999
+      },
+      "formal_4102_0729": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0772": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_1052": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0431": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635177351,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0208": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0048": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0390": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0848": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0940": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0843": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.27639635161239,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0036": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.696234224703534,
+        "downlink_mb": 0.8499999999999999
+      },
+      "formal_4102_1548": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.09623705350735,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0078": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.651974216018267,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0323": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.651974216018264,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0046": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.651974216018264,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0748": {
+        "inference_j": 51.84000000001623,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.651974216018264,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0173": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.651974216018264,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0597": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.06811395750583,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0815": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.06811395750583,
+        "downlink_mb": 4.0
+      },
+      "formal_4102_0274": {
+        "inference_j": 51.840000000016225,
+        "encoding_j": 2.0399999999790452,
+        "tx_j": 17.651974216018264,
+        "downlink_mb": 0.85
+      },
+      "formal_4102_0621": {
+        "inference_j": 0.0,
+        "encoding_j": 74.8,
+        "tx_j": 83.06811395750583,
+        "downlink_mb": 4.0
+      }
+    },
+    "background_j": 191375.99999999927,
+    "solar_j": 230342.74219476868,
+    "battery_delta_j": -72062.16514039795,
+    "curtailed_solar_j": 0.0,
+    "controlled_j": 88407.47430915867,
+    "downlink_mb": 1586.6499999999928,
+    "backlog_mb": 0.0,
+    "unmaterialized_committed_mb": 0.0,
+    "expired_mb": 0.0
+  },
+  "soc": 0.7629683995888921,
+  "thermal": {
+    "time_s": 21600,
+    "temperatures_c": [
+      45.47794087303699,
+      28.80453652128513,
+      20.560517254276302,
+      20.370333116024295
+    ]
+  },
+  "decision_count": 1600,
+  "input_identity": "77198e29199d055874d867c481f136120a33d94790b5b9b51ef0a8e865bf90b8",
+  "physics_owner": "NetworkPhysics/C06_EventQueueKernelV3",
+  "formal_claim": false,
+  "formal_settlement_s": 21600.0,
+  "terminal_settled": true,
+  "net_scope": "FINITE_PERIOD_FIXED_KAPPA_SETTLED",
+  "kappa_Q_zero_fixed_trajectory_net": 26.94294739029388,
+  "observation_backlog_snapshot_charge": 0.0,
+  "groups": {
+    "all": {
+      "tasks": 1600,
+      "closed": 640,
+      "gross": 246.1653203114433,
+      "energy_cost": 73.212714567701,
+      "downlink_cost": 146.00965835344863,
+      "terminal_cost": 0.0,
+      "net": 26.942947390293682,
+      "status_counts": {
+        "closed": 640,
+        "deadline_elapsed_unclosed": 710,
+        "right_censored_rejected_or_partial": 250
+      }
+    },
+    "high_value": {
+      "tasks": 448,
+      "closed": 156,
+      "gross": 149.85135284644062,
+      "energy_cost": 24.130986829681664,
+      "downlink_cost": 54.81401254103423,
+      "terminal_cost": 0.0,
+      "net": 70.90635347572473,
+      "status_counts": {
+        "deadline_elapsed_unclosed": 246,
+        "right_censored_rejected_or_partial": 46,
+        "closed": 156
+      }
+    },
+    "ordinary": {
+      "tasks": 1152,
+      "closed": 484,
+      "gross": 96.31396746500245,
+      "energy_cost": 49.08172773801936,
+      "downlink_cost": 91.19564581241535,
+      "terminal_cost": 0.0,
+      "net": -43.96340608543226,
+      "status_counts": {
+        "closed": 484,
+        "deadline_elapsed_unclosed": 464,
+        "right_censored_rejected_or_partial": 204
+      }
+    }
+  },
+  "task_status": {
+    "formal_4102_0701": "deadline_elapsed_unclosed",
+    "formal_4102_0834": "closed",
+    "formal_4102_0590": "deadline_elapsed_unclosed",
+    "formal_4102_1165": "closed",
+    "formal_4102_1449": "deadline_elapsed_unclosed",
+    "formal_4102_1359": "closed",
+    "formal_4102_0381": "closed",
+    "formal_4102_0892": "closed",
+    "formal_4102_1158": "deadline_elapsed_unclosed",
+    "formal_4102_0440": "closed",
+    "formal_4102_0631": "deadline_elapsed_unclosed",
+    "formal_4102_0302": "closed",
+    "formal_4102_1564": "deadline_elapsed_unclosed",
+    "formal_4102_0174": "closed",
+    "formal_4102_1060": "closed",
+    "formal_4102_0211": "closed",
+    "formal_4102_0775": "closed",
+    "formal_4102_0022": "closed",
+    "formal_4102_0739": "closed",
+    "formal_4102_0767": "closed",
+    "formal_4102_0497": "closed",
+    "formal_4102_1284": "closed",
+    "formal_4102_0422": "closed",
+    "formal_4102_0434": "closed",
+    "formal_4102_1194": "closed",
+    "formal_4102_1025": "deadline_elapsed_unclosed",
+    "formal_4102_0662": "closed",
+    "formal_4102_1275": "closed",
+    "formal_4102_1033": "closed",
+    "formal_4102_0465": "closed",
+    "formal_4102_0658": "closed",
+    "formal_4102_0144": "closed",
+    "formal_4102_1304": "deadline_elapsed_unclosed",
+    "formal_4102_1147": "closed",
+    "formal_4102_1567": "closed",
+    "formal_4102_0252": "closed",
+    "formal_4102_0910": "closed",
+    "formal_4102_0416": "closed",
+    "formal_4102_0092": "closed",
+    "formal_4102_1257": "closed",
+    "formal_4102_0081": "closed",
+    "formal_4102_0042": "deadline_elapsed_unclosed",
+    "formal_4102_1011": "deadline_elapsed_unclosed",
+    "formal_4102_1401": "deadline_elapsed_unclosed",
+    "formal_4102_0057": "deadline_elapsed_unclosed",
+    "formal_4102_1063": "deadline_elapsed_unclosed",
+    "formal_4102_0273": "closed",
+    "formal_4102_0988": "deadline_elapsed_unclosed",
+    "formal_4102_0759": "closed",
+    "formal_4102_0714": "closed",
+    "formal_4102_0170": "deadline_elapsed_unclosed",
+    "formal_4102_0346": "deadline_elapsed_unclosed",
+    "formal_4102_1392": "closed",
+    "formal_4102_1517": "closed",
+    "formal_4102_0850": "deadline_elapsed_unclosed",
+    "formal_4102_1555": "deadline_elapsed_unclosed",
+    "formal_4102_1168": "closed",
+    "formal_4102_1041": "closed",
+    "formal_4102_1193": "closed",
+    "formal_4102_1448": "closed",
+    "formal_4102_0602": "closed",
+    "formal_4102_0956": "closed",
+    "formal_4102_0581": "closed",
+    "formal_4102_1486": "deadline_elapsed_unclosed",
+    "formal_4102_0923": "closed",
+    "formal_4102_1205": "deadline_elapsed_unclosed",
+    "formal_4102_0303": "deadline_elapsed_unclosed",
+    "formal_4102_1280": "closed",
+    "formal_4102_0618": "deadline_elapsed_unclosed",
+    "formal_4102_0234": "closed",
+    "formal_4102_0161": "deadline_elapsed_unclosed",
+    "formal_4102_1329": "deadline_elapsed_unclosed",
+    "formal_4102_0259": "closed",
+    "formal_4102_1371": "closed",
+    "formal_4102_0013": "deadline_elapsed_unclosed",
+    "formal_4102_1484": "deadline_elapsed_unclosed",
+    "formal_4102_0347": "closed",
+    "formal_4102_0902": "deadline_elapsed_unclosed",
+    "formal_4102_0771": "closed",
+    "formal_4102_0970": "closed",
+    "formal_4102_1133": "closed",
+    "formal_4102_1505": "deadline_elapsed_unclosed",
+    "formal_4102_1311": "closed",
+    "formal_4102_0085": "deadline_elapsed_unclosed",
+    "formal_4102_0857": "deadline_elapsed_unclosed",
+    "formal_4102_0842": "closed",
+    "formal_4102_1364": "deadline_elapsed_unclosed",
+    "formal_4102_0086": "closed",
+    "formal_4102_0159": "closed",
+    "formal_4102_1276": "closed",
+    "formal_4102_0324": "deadline_elapsed_unclosed",
+    "formal_4102_0080": "deadline_elapsed_unclosed",
+    "formal_4102_0306": "closed",
+    "formal_4102_1489": "closed",
+    "formal_4102_0055": "deadline_elapsed_unclosed",
+    "formal_4102_1001": "deadline_elapsed_unclosed",
+    "formal_4102_0569": "closed",
+    "formal_4102_0128": "deadline_elapsed_unclosed",
+    "formal_4102_0232": "closed",
+    "formal_4102_1370": "closed",
+    "formal_4102_0878": "deadline_elapsed_unclosed",
+    "formal_4102_0410": "deadline_elapsed_unclosed",
+    "formal_4102_0919": "deadline_elapsed_unclosed",
+    "formal_4102_1152": "deadline_elapsed_unclosed",
+    "formal_4102_0004": "closed",
+    "formal_4102_0667": "deadline_elapsed_unclosed",
+    "formal_4102_0575": "deadline_elapsed_unclosed",
+    "formal_4102_1146": "closed",
+    "formal_4102_0328": "closed",
+    "formal_4102_0520": "deadline_elapsed_unclosed",
+    "formal_4102_0756": "deadline_elapsed_unclosed",
+    "formal_4102_0108": "closed",
+    "formal_4102_1397": "closed",
+    "formal_4102_1096": "deadline_elapsed_unclosed",
+    "formal_4102_0865": "closed",
+    "formal_4102_0981": "closed",
+    "formal_4102_1531": "deadline_elapsed_unclosed",
+    "formal_4102_0106": "closed",
+    "formal_4102_0428": "closed",
+    "formal_4102_0355": "closed",
+    "formal_4102_0110": "deadline_elapsed_unclosed",
+    "formal_4102_0983": "closed",
+    "formal_4102_0301": "closed",
+    "formal_4102_1301": "deadline_elapsed_unclosed",
+    "formal_4102_1574": "closed",
+    "formal_4102_1238": "closed",
+    "formal_4102_1495": "closed",
+    "formal_4102_0715": "closed",
+    "formal_4102_0316": "closed",
+    "formal_4102_1454": "closed",
+    "formal_4102_0399": "closed",
+    "formal_4102_1296": "deadline_elapsed_unclosed",
+    "formal_4102_0837": "closed",
+    "formal_4102_1539": "deadline_elapsed_unclosed",
+    "formal_4102_0612": "closed",
+    "formal_4102_0874": "closed",
+    "formal_4102_0102": "deadline_elapsed_unclosed",
+    "formal_4102_0526": "deadline_elapsed_unclosed",
+    "formal_4102_1538": "closed",
+    "formal_4102_0368": "deadline_elapsed_unclosed",
+    "formal_4102_0512": "deadline_elapsed_unclosed",
+    "formal_4102_0221": "deadline_elapsed_unclosed",
+    "formal_4102_0975": "closed",
+    "formal_4102_1097": "deadline_elapsed_unclosed",
+    "formal_4102_0438": "closed",
+    "formal_4102_1227": "closed",
+    "formal_4102_0395": "deadline_elapsed_unclosed",
+    "formal_4102_1101": "closed",
+    "formal_4102_0139": "deadline_elapsed_unclosed",
+    "formal_4102_1177": "deadline_elapsed_unclosed",
+    "formal_4102_1215": "closed",
+    "formal_4102_0217": "deadline_elapsed_unclosed",
+    "formal_4102_0944": "deadline_elapsed_unclosed",
+    "formal_4102_0790": "deadline_elapsed_unclosed",
+    "formal_4102_0792": "closed",
+    "formal_4102_0563": "deadline_elapsed_unclosed",
+    "formal_4102_1148": "deadline_elapsed_unclosed",
+    "formal_4102_0856": "closed",
+    "formal_4102_1216": "deadline_elapsed_unclosed",
+    "formal_4102_0509": "deadline_elapsed_unclosed",
+    "formal_4102_0914": "closed",
+    "formal_4102_0894": "deadline_elapsed_unclosed",
+    "formal_4102_0280": "closed",
+    "formal_4102_0736": "closed",
+    "formal_4102_0494": "deadline_elapsed_unclosed",
+    "formal_4102_0286": "deadline_elapsed_unclosed",
+    "formal_4102_1115": "deadline_elapsed_unclosed",
+    "formal_4102_0880": "closed",
+    "formal_4102_0114": "deadline_elapsed_unclosed",
+    "formal_4102_0648": "closed",
+    "formal_4102_0885": "deadline_elapsed_unclosed",
+    "formal_4102_0033": "deadline_elapsed_unclosed",
+    "formal_4102_0386": "closed",
+    "formal_4102_1465": "deadline_elapsed_unclosed",
+    "formal_4102_0188": "deadline_elapsed_unclosed",
+    "formal_4102_1107": "closed",
+    "formal_4102_0226": "deadline_elapsed_unclosed",
+    "formal_4102_0082": "deadline_elapsed_unclosed",
+    "formal_4102_1156": "deadline_elapsed_unclosed",
+    "formal_4102_1400": "deadline_elapsed_unclosed",
+    "formal_4102_0780": "closed",
+    "formal_4102_1388": "closed",
+    "formal_4102_1018": "deadline_elapsed_unclosed",
+    "formal_4102_0222": "deadline_elapsed_unclosed",
+    "formal_4102_0260": "deadline_elapsed_unclosed",
+    "formal_4102_0738": "closed",
+    "formal_4102_0649": "deadline_elapsed_unclosed",
+    "formal_4102_1434": "deadline_elapsed_unclosed",
+    "formal_4102_1592": "closed",
+    "formal_4102_0344": "closed",
+    "formal_4102_1021": "deadline_elapsed_unclosed",
+    "formal_4102_0357": "closed",
+    "formal_4102_0290": "closed",
+    "formal_4102_0791": "closed",
+    "formal_4102_1149": "deadline_elapsed_unclosed",
+    "formal_4102_0383": "closed",
+    "formal_4102_1023": "deadline_elapsed_unclosed",
+    "formal_4102_0570": "deadline_elapsed_unclosed",
+    "formal_4102_0862": "closed",
+    "formal_4102_1082": "closed",
+    "formal_4102_0408": "closed",
+    "formal_4102_0365": "closed",
+    "formal_4102_1577": "deadline_elapsed_unclosed",
+    "formal_4102_0610": "closed",
+    "formal_4102_1583": "closed",
+    "formal_4102_1241": "closed",
+    "formal_4102_0498": "closed",
+    "formal_4102_0609": "closed",
+    "formal_4102_0829": "deadline_elapsed_unclosed",
+    "formal_4102_0109": "closed",
+    "formal_4102_1225": "closed",
+    "formal_4102_0442": "deadline_elapsed_unclosed",
+    "formal_4102_1512": "closed",
+    "formal_4102_0822": "closed",
+    "formal_4102_0010": "closed",
+    "formal_4102_0179": "closed",
+    "formal_4102_1045": "closed",
+    "formal_4102_0601": "closed",
+    "formal_4102_1262": "closed",
+    "formal_4102_0475": "deadline_elapsed_unclosed",
+    "formal_4102_0265": "closed",
+    "formal_4102_0146": "deadline_elapsed_unclosed",
+    "formal_4102_0547": "deadline_elapsed_unclosed",
+    "formal_4102_0023": "deadline_elapsed_unclosed",
+    "formal_4102_0931": "deadline_elapsed_unclosed",
+    "formal_4102_1575": "closed",
+    "formal_4102_0796": "closed",
+    "formal_4102_0281": "closed",
+    "formal_4102_1008": "closed",
+    "formal_4102_0101": "deadline_elapsed_unclosed",
+    "formal_4102_0989": "deadline_elapsed_unclosed",
+    "formal_4102_1365": "closed",
+    "formal_4102_0459": "closed",
+    "formal_4102_0514": "closed",
+    "formal_4102_0708": "closed",
+    "formal_4102_1360": "deadline_elapsed_unclosed",
+    "formal_4102_0901": "deadline_elapsed_unclosed",
+    "formal_4102_0605": "closed",
+    "formal_4102_0116": "deadline_elapsed_unclosed",
+    "formal_4102_0805": "deadline_elapsed_unclosed",
+    "formal_4102_0433": "deadline_elapsed_unclosed",
+    "formal_4102_0261": "deadline_elapsed_unclosed",
+    "formal_4102_0277": "closed",
+    "formal_4102_1095": "deadline_elapsed_unclosed",
+    "formal_4102_1143": "closed",
+    "formal_4102_0871": "closed",
+    "formal_4102_0803": "deadline_elapsed_unclosed",
+    "formal_4102_0994": "closed",
+    "formal_4102_0945": "deadline_elapsed_unclosed",
+    "formal_4102_1091": "deadline_elapsed_unclosed",
+    "formal_4102_0177": "closed",
+    "formal_4102_1078": "closed",
+    "formal_4102_0985": "deadline_elapsed_unclosed",
+    "formal_4102_0521": "closed",
+    "formal_4102_1151": "deadline_elapsed_unclosed",
+    "formal_4102_1220": "closed",
+    "formal_4102_0854": "deadline_elapsed_unclosed",
+    "formal_4102_1295": "closed",
+    "formal_4102_1534": "deadline_elapsed_unclosed",
+    "formal_4102_0348": "deadline_elapsed_unclosed",
+    "formal_4102_0788": "closed",
+    "formal_4102_0991": "deadline_elapsed_unclosed",
+    "formal_4102_1292": "deadline_elapsed_unclosed",
+    "formal_4102_1584": "closed",
+    "formal_4102_1074": "deadline_elapsed_unclosed",
+    "formal_4102_0638": "deadline_elapsed_unclosed",
+    "formal_4102_1266": "closed",
+    "formal_4102_0309": "deadline_elapsed_unclosed",
+    "formal_4102_0237": "deadline_elapsed_unclosed",
+    "formal_4102_0907": "deadline_elapsed_unclosed",
+    "formal_4102_1307": "closed",
+    "formal_4102_0510": "closed",
+    "formal_4102_1309": "deadline_elapsed_unclosed",
+    "formal_4102_1340": "deadline_elapsed_unclosed",
+    "formal_4102_1279": "deadline_elapsed_unclosed",
+    "formal_4102_0378": "deadline_elapsed_unclosed",
+    "formal_4102_0585": "closed",
+    "formal_4102_0388": "deadline_elapsed_unclosed",
+    "formal_4102_0998": "deadline_elapsed_unclosed",
+    "formal_4102_1172": "closed",
+    "formal_4102_0209": "deadline_elapsed_unclosed",
+    "formal_4102_1345": "deadline_elapsed_unclosed",
+    "formal_4102_0642": "deadline_elapsed_unclosed",
+    "formal_4102_1526": "deadline_elapsed_unclosed",
+    "formal_4102_0064": "closed",
+    "formal_4102_1408": "deadline_elapsed_unclosed",
+    "formal_4102_0313": "deadline_elapsed_unclosed",
+    "formal_4102_0852": "closed",
+    "formal_4102_0285": "deadline_elapsed_unclosed",
+    "formal_4102_0765": "deadline_elapsed_unclosed",
+    "formal_4102_0413": "closed",
+    "formal_4102_1435": "deadline_elapsed_unclosed",
+    "formal_4102_0555": "deadline_elapsed_unclosed",
+    "formal_4102_0182": "deadline_elapsed_unclosed",
+    "formal_4102_1395": "deadline_elapsed_unclosed",
+    "formal_4102_0819": "closed",
+    "formal_4102_0245": "closed",
+    "formal_4102_1322": "deadline_elapsed_unclosed",
+    "formal_4102_1076": "deadline_elapsed_unclosed",
+    "formal_4102_0007": "deadline_elapsed_unclosed",
+    "formal_4102_0448": "closed",
+    "formal_4102_1508": "deadline_elapsed_unclosed",
+    "formal_4102_1036": "deadline_elapsed_unclosed",
+    "formal_4102_0730": "deadline_elapsed_unclosed",
+    "formal_4102_0012": "closed",
+    "formal_4102_1159": "deadline_elapsed_unclosed",
+    "formal_4102_0228": "deadline_elapsed_unclosed",
+    "formal_4102_0352": "closed",
+    "formal_4102_0628": "deadline_elapsed_unclosed",
+    "formal_4102_1565": "deadline_elapsed_unclosed",
+    "formal_4102_0384": "deadline_elapsed_unclosed",
+    "formal_4102_0330": "closed",
+    "formal_4102_0937": "deadline_elapsed_unclosed",
+    "formal_4102_1180": "closed",
+    "formal_4102_1043": "closed",
+    "formal_4102_0861": "deadline_elapsed_unclosed",
+    "formal_4102_0905": "closed",
+    "formal_4102_1012": "closed",
+    "formal_4102_1507": "deadline_elapsed_unclosed",
+    "formal_4102_0420": "closed",
+    "formal_4102_1377": "deadline_elapsed_unclosed",
+    "formal_4102_1179": "deadline_elapsed_unclosed",
+    "formal_4102_0768": "closed",
+    "formal_4102_0596": "deadline_elapsed_unclosed",
+    "formal_4102_1135": "deadline_elapsed_unclosed",
+    "formal_4102_0531": "deadline_elapsed_unclosed",
+    "formal_4102_1394": "closed",
+    "formal_4102_0535": "deadline_elapsed_unclosed",
+    "formal_4102_0974": "deadline_elapsed_unclosed",
+    "formal_4102_1004": "deadline_elapsed_unclosed",
+    "formal_4102_1065": "deadline_elapsed_unclosed",
+    "formal_4102_0141": "closed",
+    "formal_4102_0458": "deadline_elapsed_unclosed",
+    "formal_4102_0958": "closed",
+    "formal_4102_0664": "closed",
+    "formal_4102_1498": "deadline_elapsed_unclosed",
+    "formal_4102_0105": "deadline_elapsed_unclosed",
+    "formal_4102_1335": "closed",
+    "formal_4102_0784": "deadline_elapsed_unclosed",
+    "formal_4102_0317": "closed",
+    "formal_4102_1423": "deadline_elapsed_unclosed",
+    "formal_4102_1597": "deadline_elapsed_unclosed",
+    "formal_4102_1233": "deadline_elapsed_unclosed",
+    "formal_4102_0264": "closed",
+    "formal_4102_0831": "deadline_elapsed_unclosed",
+    "formal_4102_1005": "deadline_elapsed_unclosed",
+    "formal_4102_1258": "deadline_elapsed_unclosed",
+    "formal_4102_1343": "deadline_elapsed_unclosed",
+    "formal_4102_0986": "closed",
+    "formal_4102_1462": "deadline_elapsed_unclosed",
+    "formal_4102_0282": "closed",
+    "formal_4102_0307": "closed",
+    "formal_4102_1503": "deadline_elapsed_unclosed",
+    "formal_4102_0882": "closed",
+    "formal_4102_1192": "deadline_elapsed_unclosed",
+    "formal_4102_0712": "deadline_elapsed_unclosed",
+    "formal_4102_0453": "deadline_elapsed_unclosed",
+    "formal_4102_1375": "deadline_elapsed_unclosed",
+    "formal_4102_1356": "deadline_elapsed_unclosed",
+    "formal_4102_1113": "deadline_elapsed_unclosed",
+    "formal_4102_0795": "deadline_elapsed_unclosed",
+    "formal_4102_1269": "deadline_elapsed_unclosed",
+    "formal_4102_0385": "closed",
+    "formal_4102_0800": "closed",
+    "formal_4102_1015": "closed",
+    "formal_4102_0203": "closed",
+    "formal_4102_0810": "closed",
+    "formal_4102_0469": "deadline_elapsed_unclosed",
+    "formal_4102_0844": "closed",
+    "formal_4102_0467": "deadline_elapsed_unclosed",
+    "formal_4102_0470": "deadline_elapsed_unclosed",
+    "formal_4102_1253": "deadline_elapsed_unclosed",
+    "formal_4102_0793": "deadline_elapsed_unclosed",
+    "formal_4102_0249": "closed",
+    "formal_4102_0964": "deadline_elapsed_unclosed",
+    "formal_4102_0019": "closed",
+    "formal_4102_0823": "deadline_elapsed_unclosed",
+    "formal_4102_1255": "deadline_elapsed_unclosed",
+    "formal_4102_0841": "closed",
+    "formal_4102_1010": "closed",
+    "formal_4102_0660": "deadline_elapsed_unclosed",
+    "formal_4102_1100": "deadline_elapsed_unclosed",
+    "formal_4102_1372": "deadline_elapsed_unclosed",
+    "formal_4102_0904": "closed",
+    "formal_4102_0090": "deadline_elapsed_unclosed",
+    "formal_4102_1452": "deadline_elapsed_unclosed",
+    "formal_4102_1299": "closed",
+    "formal_4102_0607": "deadline_elapsed_unclosed",
+    "formal_4102_1006": "closed",
+    "formal_4102_0011": "closed",
+    "formal_4102_0452": "closed",
+    "formal_4102_0582": "deadline_elapsed_unclosed",
+    "formal_4102_0934": "deadline_elapsed_unclosed",
+    "formal_4102_1252": "closed",
+    "formal_4102_0087": "deadline_elapsed_unclosed",
+    "formal_4102_0051": "deadline_elapsed_unclosed",
+    "formal_4102_1064": "deadline_elapsed_unclosed",
+    "formal_4102_0343": "closed",
+    "formal_4102_1007": "deadline_elapsed_unclosed",
+    "formal_4102_1167": "deadline_elapsed_unclosed",
+    "formal_4102_0995": "deadline_elapsed_unclosed",
+    "formal_4102_0539": "deadline_elapsed_unclosed",
+    "formal_4102_1218": "deadline_elapsed_unclosed",
+    "formal_4102_0496": "deadline_elapsed_unclosed",
+    "formal_4102_1313": "deadline_elapsed_unclosed",
+    "formal_4102_1424": "deadline_elapsed_unclosed",
+    "formal_4102_0014": "closed",
+    "formal_4102_1055": "closed",
+    "formal_4102_1089": "closed",
+    "formal_4102_0257": "deadline_elapsed_unclosed",
+    "formal_4102_1084": "deadline_elapsed_unclosed",
+    "formal_4102_0157": "closed",
+    "formal_4102_1239": "deadline_elapsed_unclosed",
+    "formal_4102_1471": "closed",
+    "formal_4102_0954": "closed",
+    "formal_4102_0020": "closed",
+    "formal_4102_1455": "deadline_elapsed_unclosed",
+    "formal_4102_1342": "deadline_elapsed_unclosed",
+    "formal_4102_0684": "deadline_elapsed_unclosed",
+    "formal_4102_0472": "deadline_elapsed_unclosed",
+    "formal_4102_0615": "closed",
+    "formal_4102_1030": "closed",
+    "formal_4102_0644": "closed",
+    "formal_4102_0813": "closed",
+    "formal_4102_1521": "deadline_elapsed_unclosed",
+    "formal_4102_0071": "deadline_elapsed_unclosed",
+    "formal_4102_0149": "closed",
+    "formal_4102_1542": "deadline_elapsed_unclosed",
+    "formal_4102_0511": "closed",
+    "formal_4102_0913": "closed",
+    "formal_4102_0654": "deadline_elapsed_unclosed",
+    "formal_4102_0980": "deadline_elapsed_unclosed",
+    "formal_4102_1129": "closed",
+    "formal_4102_0515": "deadline_elapsed_unclosed",
+    "formal_4102_1271": "deadline_elapsed_unclosed",
+    "formal_4102_0583": "closed",
+    "formal_4102_0016": "deadline_elapsed_unclosed",
+    "formal_4102_0726": "deadline_elapsed_unclosed",
+    "formal_4102_0625": "deadline_elapsed_unclosed",
+    "formal_4102_1404": "deadline_elapsed_unclosed",
+    "formal_4102_0915": "deadline_elapsed_unclosed",
+    "formal_4102_1430": "closed",
+    "formal_4102_1556": "closed",
+    "formal_4102_1399": "deadline_elapsed_unclosed",
+    "formal_4102_0766": "deadline_elapsed_unclosed",
+    "formal_4102_0417": "closed",
+    "formal_4102_1358": "deadline_elapsed_unclosed",
+    "formal_4102_0502": "deadline_elapsed_unclosed",
+    "formal_4102_0578": "deadline_elapsed_unclosed",
+    "formal_4102_0567": "deadline_elapsed_unclosed",
+    "formal_4102_1352": "deadline_elapsed_unclosed",
+    "formal_4102_0345": "closed",
+    "formal_4102_1485": "deadline_elapsed_unclosed",
+    "formal_4102_0572": "deadline_elapsed_unclosed",
+    "formal_4102_0262": "deadline_elapsed_unclosed",
+    "formal_4102_1562": "closed",
+    "formal_4102_0731": "closed",
+    "formal_4102_1123": "deadline_elapsed_unclosed",
+    "formal_4102_1316": "closed",
+    "formal_4102_1547": "closed",
+    "formal_4102_0888": "deadline_elapsed_unclosed",
+    "formal_4102_1039": "deadline_elapsed_unclosed",
+    "formal_4102_0879": "deadline_elapsed_unclosed",
+    "formal_4102_0457": "deadline_elapsed_unclosed",
+    "formal_4102_0544": "closed",
+    "formal_4102_1585": "deadline_elapsed_unclosed",
+    "formal_4102_0231": "deadline_elapsed_unclosed",
+    "formal_4102_0762": "deadline_elapsed_unclosed",
+    "formal_4102_1363": "closed",
+    "formal_4102_1162": "deadline_elapsed_unclosed",
+    "formal_4102_1473": "closed",
+    "formal_4102_0132": "deadline_elapsed_unclosed",
+    "formal_4102_1330": "deadline_elapsed_unclosed",
+    "formal_4102_0640": "deadline_elapsed_unclosed",
+    "formal_4102_1232": "deadline_elapsed_unclosed",
+    "formal_4102_1243": "deadline_elapsed_unclosed",
+    "formal_4102_0500": "closed",
+    "formal_4102_0757": "deadline_elapsed_unclosed",
+    "formal_4102_1432": "deadline_elapsed_unclosed",
+    "formal_4102_0499": "closed",
+    "formal_4102_1598": "deadline_elapsed_unclosed",
+    "formal_4102_0550": "closed",
+    "formal_4102_0338": "deadline_elapsed_unclosed",
+    "formal_4102_0455": "deadline_elapsed_unclosed",
+    "formal_4102_1535": "deadline_elapsed_unclosed",
+    "formal_4102_0692": "closed",
+    "formal_4102_1509": "closed",
+    "formal_4102_0524": "closed",
+    "formal_4102_0990": "closed",
+    "formal_4102_0777": "deadline_elapsed_unclosed",
+    "formal_4102_1014": "closed",
+    "formal_4102_0372": "closed",
+    "formal_4102_0003": "closed",
+    "formal_4102_0965": "closed",
+    "formal_4102_0674": "deadline_elapsed_unclosed",
+    "formal_4102_0807": "deadline_elapsed_unclosed",
+    "formal_4102_1326": "deadline_elapsed_unclosed",
+    "formal_4102_1390": "closed",
+    "formal_4102_1196": "closed",
+    "formal_4102_0566": "closed",
+    "formal_4102_1396": "closed",
+    "formal_4102_1242": "deadline_elapsed_unclosed",
+    "formal_4102_0113": "closed",
+    "formal_4102_0655": "deadline_elapsed_unclosed",
+    "formal_4102_1223": "deadline_elapsed_unclosed",
+    "formal_4102_1393": "closed",
+    "formal_4102_1599": "closed",
+    "formal_4102_1493": "deadline_elapsed_unclosed",
+    "formal_4102_1425": "closed",
+    "formal_4102_1166": "closed",
+    "formal_4102_0311": "closed",
+    "formal_4102_1572": "closed",
+    "formal_4102_0950": "closed",
+    "formal_4102_1516": "deadline_elapsed_unclosed",
+    "formal_4102_1348": "deadline_elapsed_unclosed",
+    "formal_4102_0839": "deadline_elapsed_unclosed",
+    "formal_4102_0396": "closed",
+    "formal_4102_1594": "deadline_elapsed_unclosed",
+    "formal_4102_1187": "closed",
+    "formal_4102_0353": "deadline_elapsed_unclosed",
+    "formal_4102_0443": "deadline_elapsed_unclosed",
+    "formal_4102_1086": "closed",
+    "formal_4102_0069": "deadline_elapsed_unclosed",
+    "formal_4102_0758": "deadline_elapsed_unclosed",
+    "formal_4102_1282": "deadline_elapsed_unclosed",
+    "formal_4102_1320": "closed",
+    "formal_4102_1214": "deadline_elapsed_unclosed",
+    "formal_4102_1300": "deadline_elapsed_unclosed",
+    "formal_4102_0804": "closed",
+    "formal_4102_1117": "deadline_elapsed_unclosed",
+    "formal_4102_1579": "deadline_elapsed_unclosed",
+    "formal_4102_1407": "closed",
+    "formal_4102_1543": "deadline_elapsed_unclosed",
+    "formal_4102_0573": "deadline_elapsed_unclosed",
+    "formal_4102_1297": "closed",
+    "formal_4102_0115": "deadline_elapsed_unclosed",
+    "formal_4102_0140": "deadline_elapsed_unclosed",
+    "formal_4102_0130": "closed",
+    "formal_4102_0021": "deadline_elapsed_unclosed",
+    "formal_4102_1437": "deadline_elapsed_unclosed",
+    "formal_4102_0367": "deadline_elapsed_unclosed",
+    "formal_4102_1529": "deadline_elapsed_unclosed",
+    "formal_4102_0538": "closed",
+    "formal_4102_0389": "deadline_elapsed_unclosed",
+    "formal_4102_0156": "deadline_elapsed_unclosed",
+    "formal_4102_0966": "deadline_elapsed_unclosed",
+    "formal_4102_0166": "closed",
+    "formal_4102_0802": "deadline_elapsed_unclosed",
+    "formal_4102_0959": "deadline_elapsed_unclosed",
+    "formal_4102_0361": "closed",
+    "formal_4102_0559": "deadline_elapsed_unclosed",
+    "formal_4102_1185": "deadline_elapsed_unclosed",
+    "formal_4102_0224": "closed",
+    "formal_4102_1323": "deadline_elapsed_unclosed",
+    "formal_4102_1068": "deadline_elapsed_unclosed",
+    "formal_4102_1344": "deadline_elapsed_unclosed",
+    "formal_4102_0427": "closed",
+    "formal_4102_1040": "closed",
+    "formal_4102_0041": "deadline_elapsed_unclosed",
+    "formal_4102_1160": "closed",
+    "formal_4102_0200": "deadline_elapsed_unclosed",
+    "formal_4102_1410": "deadline_elapsed_unclosed",
+    "formal_4102_0194": "closed",
+    "formal_4102_0112": "deadline_elapsed_unclosed",
+    "formal_4102_1288": "closed",
+    "formal_4102_1247": "deadline_elapsed_unclosed",
+    "formal_4102_1477": "deadline_elapsed_unclosed",
+    "formal_4102_0522": "closed",
+    "formal_4102_0749": "closed",
+    "formal_4102_1560": "deadline_elapsed_unclosed",
+    "formal_4102_1482": "deadline_elapsed_unclosed",
+    "formal_4102_0742": "deadline_elapsed_unclosed",
+    "formal_4102_1251": "closed",
+    "formal_4102_0233": "deadline_elapsed_unclosed",
+    "formal_4102_1451": "deadline_elapsed_unclosed",
+    "formal_4102_1440": "deadline_elapsed_unclosed",
+    "formal_4102_1383": "closed",
+    "formal_4102_0776": "deadline_elapsed_unclosed",
+    "formal_4102_0297": "deadline_elapsed_unclosed",
+    "formal_4102_0876": "closed",
+    "formal_4102_1221": "closed",
+    "formal_4102_1293": "deadline_elapsed_unclosed",
+    "formal_4102_1406": "deadline_elapsed_unclosed",
+    "formal_4102_0466": "closed",
+    "formal_4102_0379": "closed",
+    "formal_4102_0799": "deadline_elapsed_unclosed",
+    "formal_4102_0495": "deadline_elapsed_unclosed",
+    "formal_4102_0289": "closed",
+    "formal_4102_0027": "closed",
+    "formal_4102_1204": "closed",
+    "formal_4102_1469": "deadline_elapsed_unclosed",
+    "formal_4102_0938": "deadline_elapsed_unclosed",
+    "formal_4102_0917": "deadline_elapsed_unclosed",
+    "formal_4102_0536": "closed",
+    "formal_4102_1382": "deadline_elapsed_unclosed",
+    "formal_4102_0315": "deadline_elapsed_unclosed",
+    "formal_4102_1475": "closed",
+    "formal_4102_0476": "deadline_elapsed_unclosed",
+    "formal_4102_1197": "closed",
+    "formal_4102_1181": "deadline_elapsed_unclosed",
+    "formal_4102_0202": "deadline_elapsed_unclosed",
+    "formal_4102_1589": "deadline_elapsed_unclosed",
+    "formal_4102_0599": "deadline_elapsed_unclosed",
+    "formal_4102_1561": "closed",
+    "formal_4102_0411": "deadline_elapsed_unclosed",
+    "formal_4102_0387": "deadline_elapsed_unclosed",
+    "formal_4102_1581": "closed",
+    "formal_4102_0332": "deadline_elapsed_unclosed",
+    "formal_4102_0812": "deadline_elapsed_unclosed",
+    "formal_4102_0933": "closed",
+    "formal_4102_0463": "closed",
+    "formal_4102_0223": "deadline_elapsed_unclosed",
+    "formal_4102_1523": "deadline_elapsed_unclosed",
+    "formal_4102_0331": "closed",
+    "formal_4102_0846": "deadline_elapsed_unclosed",
+    "formal_4102_0801": "closed",
+    "formal_4102_0073": "closed",
+    "formal_4102_1112": "closed",
+    "formal_4102_1077": "deadline_elapsed_unclosed",
+    "formal_4102_0377": "closed",
+    "formal_4102_1085": "deadline_elapsed_unclosed",
+    "formal_4102_1590": "deadline_elapsed_unclosed",
+    "formal_4102_0673": "deadline_elapsed_unclosed",
+    "formal_4102_1048": "deadline_elapsed_unclosed",
+    "formal_4102_0943": "deadline_elapsed_unclosed",
+    "formal_4102_0694": "closed",
+    "formal_4102_1550": "deadline_elapsed_unclosed",
+    "formal_4102_0488": "closed",
+    "formal_4102_0833": "deadline_elapsed_unclosed",
+    "formal_4102_1207": "closed",
+    "formal_4102_1530": "deadline_elapsed_unclosed",
+    "formal_4102_1552": "closed",
+    "formal_4102_0219": "deadline_elapsed_unclosed",
+    "formal_4102_0592": "deadline_elapsed_unclosed",
+    "formal_4102_0906": "closed",
+    "formal_4102_0024": "deadline_elapsed_unclosed",
+    "formal_4102_0148": "closed",
+    "formal_4102_0614": "closed",
+    "formal_4102_1092": "deadline_elapsed_unclosed",
+    "formal_4102_1164": "deadline_elapsed_unclosed",
+    "formal_4102_1450": "deadline_elapsed_unclosed",
+    "formal_4102_0246": "deadline_elapsed_unclosed",
+    "formal_4102_0473": "deadline_elapsed_unclosed",
+    "formal_4102_0258": "closed",
+    "formal_4102_0532": "deadline_elapsed_unclosed",
+    "formal_4102_0826": "deadline_elapsed_unclosed",
+    "formal_4102_0718": "closed",
+    "formal_4102_0636": "closed",
+    "formal_4102_0117": "closed",
+    "formal_4102_0571": "right_censored_rejected_or_partial",
+    "formal_4102_0883": "closed",
+    "formal_4102_0953": "deadline_elapsed_unclosed",
+    "formal_4102_0066": "deadline_elapsed_unclosed",
+    "formal_4102_0196": "closed",
+    "formal_4102_0382": "deadline_elapsed_unclosed",
+    "formal_4102_0486": "closed",
+    "formal_4102_0957": "deadline_elapsed_unclosed",
+    "formal_4102_0447": "deadline_elapsed_unclosed",
+    "formal_4102_0471": "closed",
+    "formal_4102_1071": "deadline_elapsed_unclosed",
+    "formal_4102_0652": "closed",
+    "formal_4102_0168": "closed",
+    "formal_4102_0251": "deadline_elapsed_unclosed",
+    "formal_4102_0201": "deadline_elapsed_unclosed",
+    "formal_4102_1385": "closed",
+    "formal_4102_0061": "deadline_elapsed_unclosed",
+    "formal_4102_0270": "deadline_elapsed_unclosed",
+    "formal_4102_1445": "closed",
+    "formal_4102_1357": "deadline_elapsed_unclosed",
+    "formal_4102_1456": "deadline_elapsed_unclosed",
+    "formal_4102_0333": "closed",
+    "formal_4102_1246": "deadline_elapsed_unclosed",
+    "formal_4102_1580": "deadline_elapsed_unclosed",
+    "formal_4102_0212": "closed",
+    "formal_4102_0334": "deadline_elapsed_unclosed",
+    "formal_4102_1226": "deadline_elapsed_unclosed",
+    "formal_4102_1099": "closed",
+    "formal_4102_0481": "closed",
+    "formal_4102_0050": "deadline_elapsed_unclosed",
+    "formal_4102_0425": "deadline_elapsed_unclosed",
+    "formal_4102_1029": "deadline_elapsed_unclosed",
+    "formal_4102_0304": "closed",
+    "formal_4102_0091": "closed",
+    "formal_4102_0380": "deadline_elapsed_unclosed",
+    "formal_4102_0635": "closed",
+    "formal_4102_0375": "deadline_elapsed_unclosed",
+    "formal_4102_0239": "deadline_elapsed_unclosed",
+    "formal_4102_0220": "closed",
+    "formal_4102_0256": "deadline_elapsed_unclosed",
+    "formal_4102_0540": "closed",
+    "formal_4102_0134": "deadline_elapsed_unclosed",
+    "formal_4102_0319": "closed",
+    "formal_4102_0647": "closed",
+    "formal_4102_0506": "deadline_elapsed_unclosed",
+    "formal_4102_0761": "closed",
+    "formal_4102_1154": "deadline_elapsed_unclosed",
+    "formal_4102_0634": "deadline_elapsed_unclosed",
+    "formal_4102_1391": "closed",
+    "formal_4102_1457": "deadline_elapsed_unclosed",
+    "formal_4102_0935": "right_censored_rejected_or_partial",
+    "formal_4102_0084": "deadline_elapsed_unclosed",
+    "formal_4102_0350": "closed",
+    "formal_4102_1536": "deadline_elapsed_unclosed",
+    "formal_4102_0374": "closed",
+    "formal_4102_1035": "deadline_elapsed_unclosed",
+    "formal_4102_1464": "deadline_elapsed_unclosed",
+    "formal_4102_1273": "closed",
+    "formal_4102_0267": "closed",
+    "formal_4102_0903": "closed",
+    "formal_4102_1566": "closed",
+    "formal_4102_0626": "closed",
+    "formal_4102_0721": "deadline_elapsed_unclosed",
+    "formal_4102_0180": "closed",
+    "formal_4102_0150": "deadline_elapsed_unclosed",
+    "formal_4102_1228": "deadline_elapsed_unclosed",
+    "formal_4102_0606": "deadline_elapsed_unclosed",
+    "formal_4102_1520": "deadline_elapsed_unclosed",
+    "formal_4102_0688": "deadline_elapsed_unclosed",
+    "formal_4102_1551": "deadline_elapsed_unclosed",
+    "formal_4102_0163": "closed",
+    "formal_4102_0528": "deadline_elapsed_unclosed",
+    "formal_4102_0740": "closed",
+    "formal_4102_0840": "right_censored_rejected_or_partial",
+    "formal_4102_0058": "deadline_elapsed_unclosed",
+    "formal_4102_0727": "closed",
+    "formal_4102_0044": "deadline_elapsed_unclosed",
+    "formal_4102_1350": "deadline_elapsed_unclosed",
+    "formal_4102_0741": "closed",
+    "formal_4102_0230": "closed",
+    "formal_4102_0961": "deadline_elapsed_unclosed",
+    "formal_4102_0735": "deadline_elapsed_unclosed",
+    "formal_4102_1274": "deadline_elapsed_unclosed",
+    "formal_4102_1047": "closed",
+    "formal_4102_0881": "deadline_elapsed_unclosed",
+    "formal_4102_1183": "closed",
+    "formal_4102_0867": "deadline_elapsed_unclosed",
+    "formal_4102_1075": "deadline_elapsed_unclosed",
+    "formal_4102_1466": "deadline_elapsed_unclosed",
+    "formal_4102_0608": "closed",
+    "formal_4102_0733": "deadline_elapsed_unclosed",
+    "formal_4102_1480": "deadline_elapsed_unclosed",
+    "formal_4102_1403": "deadline_elapsed_unclosed",
+    "formal_4102_1059": "deadline_elapsed_unclosed",
+    "formal_4102_0397": "closed",
+    "formal_4102_0624": "deadline_elapsed_unclosed",
+    "formal_4102_1532": "deadline_elapsed_unclosed",
+    "formal_4102_1189": "deadline_elapsed_unclosed",
+    "formal_4102_0336": "closed",
+    "formal_4102_0376": "right_censored_rejected_or_partial",
+    "formal_4102_0806": "closed",
+    "formal_4102_0075": "deadline_elapsed_unclosed",
+    "formal_4102_0832": "deadline_elapsed_unclosed",
+    "formal_4102_1428": "closed",
+    "formal_4102_1081": "deadline_elapsed_unclosed",
+    "formal_4102_0728": "deadline_elapsed_unclosed",
+    "formal_4102_1037": "closed",
+    "formal_4102_0908": "deadline_elapsed_unclosed",
+    "formal_4102_0213": "closed",
+    "formal_4102_0153": "deadline_elapsed_unclosed",
+    "formal_4102_1235": "deadline_elapsed_unclosed",
+    "formal_4102_1080": "deadline_elapsed_unclosed",
+    "formal_4102_0183": "closed",
+    "formal_4102_0562": "closed",
+    "formal_4102_0977": "deadline_elapsed_unclosed",
+    "formal_4102_1120": "deadline_elapsed_unclosed",
+    "formal_4102_0809": "deadline_elapsed_unclosed",
+    "formal_4102_0853": "deadline_elapsed_unclosed",
+    "formal_4102_0483": "closed",
+    "formal_4102_0752": "right_censored_rejected_or_partial",
+    "formal_4102_0480": "closed",
+    "formal_4102_0928": "closed",
+    "formal_4102_0710": "closed",
+    "formal_4102_0120": "deadline_elapsed_unclosed",
+    "formal_4102_1515": "deadline_elapsed_unclosed",
+    "formal_4102_1213": "deadline_elapsed_unclosed",
+    "formal_4102_1067": "deadline_elapsed_unclosed",
+    "formal_4102_0444": "deadline_elapsed_unclosed",
+    "formal_4102_1219": "closed",
+    "formal_4102_1290": "deadline_elapsed_unclosed",
+    "formal_4102_1090": "deadline_elapsed_unclosed",
+    "formal_4102_0564": "closed",
+    "formal_4102_0308": "deadline_elapsed_unclosed",
+    "formal_4102_0820": "right_censored_rejected_or_partial",
+    "formal_4102_1104": "closed",
+    "formal_4102_1442": "deadline_elapsed_unclosed",
+    "formal_4102_1303": "deadline_elapsed_unclosed",
+    "formal_4102_0659": "deadline_elapsed_unclosed",
+    "formal_4102_1208": "deadline_elapsed_unclosed",
+    "formal_4102_0589": "deadline_elapsed_unclosed",
+    "formal_4102_0429": "closed",
+    "formal_4102_1433": "deadline_elapsed_unclosed",
+    "formal_4102_0242": "deadline_elapsed_unclosed",
+    "formal_4102_0501": "deadline_elapsed_unclosed",
+    "formal_4102_0830": "closed",
+    "formal_4102_0253": "deadline_elapsed_unclosed",
+    "formal_4102_0097": "closed",
+    "formal_4102_0229": "deadline_elapsed_unclosed",
+    "formal_4102_0063": "closed",
+    "formal_4102_1501": "deadline_elapsed_unclosed",
+    "formal_4102_0948": "closed",
+    "formal_4102_1038": "deadline_elapsed_unclosed",
+    "formal_4102_1487": "deadline_elapsed_unclosed",
+    "formal_4102_0677": "deadline_elapsed_unclosed",
+    "formal_4102_0773": "deadline_elapsed_unclosed",
+    "formal_4102_1032": "deadline_elapsed_unclosed",
+    "formal_4102_0449": "deadline_elapsed_unclosed",
+    "formal_4102_0704": "closed",
+    "formal_4102_0340": "deadline_elapsed_unclosed",
+    "formal_4102_1028": "deadline_elapsed_unclosed",
+    "formal_4102_0104": "right_censored_rejected_or_partial",
+    "formal_4102_0143": "closed",
+    "formal_4102_0477": "closed",
+    "formal_4102_1211": "closed",
+    "formal_4102_0053": "right_censored_rejected_or_partial",
+    "formal_4102_1524": "deadline_elapsed_unclosed",
+    "formal_4102_1458": "closed",
+    "formal_4102_1369": "deadline_elapsed_unclosed",
+    "formal_4102_1557": "deadline_elapsed_unclosed",
+    "formal_4102_0184": "closed",
+    "formal_4102_0548": "closed",
+    "formal_4102_1328": "deadline_elapsed_unclosed",
+    "formal_4102_1198": "closed",
+    "formal_4102_0827": "deadline_elapsed_unclosed",
+    "formal_4102_0657": "right_censored_rejected_or_partial",
+    "formal_4102_0155": "deadline_elapsed_unclosed",
+    "formal_4102_1439": "closed",
+    "formal_4102_1384": "deadline_elapsed_unclosed",
+    "formal_4102_1027": "deadline_elapsed_unclosed",
+    "formal_4102_1554": "deadline_elapsed_unclosed",
+    "formal_4102_0685": "deadline_elapsed_unclosed",
+    "formal_4102_0487": "deadline_elapsed_unclosed",
+    "formal_4102_0875": "deadline_elapsed_unclosed",
+    "formal_4102_0295": "closed",
+    "formal_4102_1118": "deadline_elapsed_unclosed",
+    "formal_4102_1270": "deadline_elapsed_unclosed",
+    "formal_4102_0142": "deadline_elapsed_unclosed",
+    "formal_4102_1540": "deadline_elapsed_unclosed",
+    "formal_4102_0030": "closed",
+    "formal_4102_1050": "deadline_elapsed_unclosed",
+    "formal_4102_0909": "right_censored_rejected_or_partial",
+    "formal_4102_0136": "deadline_elapsed_unclosed",
+    "formal_4102_1533": "deadline_elapsed_unclosed",
+    "formal_4102_0836": "deadline_elapsed_unclosed",
+    "formal_4102_0600": "closed",
+    "formal_4102_0700": "deadline_elapsed_unclosed",
+    "formal_4102_0254": "closed",
+    "formal_4102_0423": "closed",
+    "formal_4102_0835": "deadline_elapsed_unclosed",
+    "formal_4102_0127": "closed",
+    "formal_4102_0941": "deadline_elapsed_unclosed",
+    "formal_4102_0921": "deadline_elapsed_unclosed",
+    "formal_4102_0341": "closed",
+    "formal_4102_0527": "closed",
+    "formal_4102_1229": "deadline_elapsed_unclosed",
+    "formal_4102_0546": "deadline_elapsed_unclosed",
+    "formal_4102_0192": "closed",
+    "formal_4102_1136": "deadline_elapsed_unclosed",
+    "formal_4102_1000": "closed",
+    "formal_4102_0107": "closed",
+    "formal_4102_1153": "deadline_elapsed_unclosed",
+    "formal_4102_1105": "deadline_elapsed_unclosed",
+    "formal_4102_0732": "deadline_elapsed_unclosed",
+    "formal_4102_1378": "closed",
+    "formal_4102_0318": "deadline_elapsed_unclosed",
+    "formal_4102_1268": "deadline_elapsed_unclosed",
+    "formal_4102_0893": "right_censored_rejected_or_partial",
+    "formal_4102_0056": "deadline_elapsed_unclosed",
+    "formal_4102_0305": "deadline_elapsed_unclosed",
+    "formal_4102_0676": "closed",
+    "formal_4102_0154": "closed",
+    "formal_4102_1131": "closed",
+    "formal_4102_0703": "deadline_elapsed_unclosed",
+    "formal_4102_0147": "right_censored_rejected_or_partial",
+    "formal_4102_0713": "deadline_elapsed_unclosed",
+    "formal_4102_0996": "deadline_elapsed_unclosed",
+    "formal_4102_0171": "closed",
+    "formal_4102_0984": "closed",
+    "formal_4102_1500": "deadline_elapsed_unclosed",
+    "formal_4102_0993": "deadline_elapsed_unclosed",
+    "formal_4102_1125": "closed",
+    "formal_4102_0518": "closed",
+    "formal_4102_1155": "closed",
+    "formal_4102_0414": "deadline_elapsed_unclosed",
+    "formal_4102_0895": "deadline_elapsed_unclosed",
+    "formal_4102_1499": "closed",
+    "formal_4102_1114": "right_censored_rejected_or_partial",
+    "formal_4102_0461": "deadline_elapsed_unclosed",
+    "formal_4102_1265": "deadline_elapsed_unclosed",
+    "formal_4102_0737": "closed",
+    "formal_4102_0639": "closed",
+    "formal_4102_1525": "closed",
+    "formal_4102_0542": "right_censored_rejected_or_partial",
+    "formal_4102_0216": "closed",
+    "formal_4102_1209": "deadline_elapsed_unclosed",
+    "formal_4102_0725": "closed",
+    "formal_4102_0047": "closed",
+    "formal_4102_0760": "deadline_elapsed_unclosed",
+    "formal_4102_1376": "deadline_elapsed_unclosed",
+    "formal_4102_0541": "closed",
+    "formal_4102_0349": "deadline_elapsed_unclosed",
+    "formal_4102_0946": "closed",
+    "formal_4102_0922": "closed",
+    "formal_4102_1184": "deadline_elapsed_unclosed",
+    "formal_4102_1444": "closed",
+    "formal_4102_0891": "deadline_elapsed_unclosed",
+    "formal_4102_0276": "deadline_elapsed_unclosed",
+    "formal_4102_0214": "closed",
+    "formal_4102_1366": "deadline_elapsed_unclosed",
+    "formal_4102_0292": "closed",
+    "formal_4102_1013": "closed",
+    "formal_4102_1420": "deadline_elapsed_unclosed",
+    "formal_4102_0911": "closed",
+    "formal_4102_0198": "closed",
+    "formal_4102_1138": "closed",
+    "formal_4102_0847": "deadline_elapsed_unclosed",
+    "formal_4102_1510": "closed",
+    "formal_4102_0503": "right_censored_rejected_or_partial",
+    "formal_4102_0250": "deadline_elapsed_unclosed",
+    "formal_4102_0312": "right_censored_rejected_or_partial",
+    "formal_4102_0960": "deadline_elapsed_unclosed",
+    "formal_4102_0683": "closed",
+    "formal_4102_0897": "closed",
+    "formal_4102_1468": "deadline_elapsed_unclosed",
+    "formal_4102_1058": "deadline_elapsed_unclosed",
+    "formal_4102_0709": "closed",
+    "formal_4102_0337": "closed",
+    "formal_4102_0172": "closed",
+    "formal_4102_1281": "closed",
+    "formal_4102_1200": "deadline_elapsed_unclosed",
+    "formal_4102_1108": "deadline_elapsed_unclosed",
+    "formal_4102_0825": "deadline_elapsed_unclosed",
+    "formal_4102_0619": "closed",
+    "formal_4102_1093": "deadline_elapsed_unclosed",
+    "formal_4102_0370": "deadline_elapsed_unclosed",
+    "formal_4102_0362": "deadline_elapsed_unclosed",
+    "formal_4102_0949": "closed",
+    "formal_4102_1178": "deadline_elapsed_unclosed",
+    "formal_4102_0094": "deadline_elapsed_unclosed",
+    "formal_4102_0151": "closed",
+    "formal_4102_1349": "deadline_elapsed_unclosed",
+    "formal_4102_1124": "deadline_elapsed_unclosed",
+    "formal_4102_1347": "deadline_elapsed_unclosed",
+    "formal_4102_0963": "closed",
+    "formal_4102_0076": "deadline_elapsed_unclosed",
+    "formal_4102_0314": "closed",
+    "formal_4102_0031": "deadline_elapsed_unclosed",
+    "formal_4102_1291": "deadline_elapsed_unclosed",
+    "formal_4102_0565": "closed",
+    "formal_4102_0745": "deadline_elapsed_unclosed",
+    "formal_4102_1321": "deadline_elapsed_unclosed",
+    "formal_4102_0118": "right_censored_rejected_or_partial",
+    "formal_4102_1144": "closed",
+    "formal_4102_0869": "deadline_elapsed_unclosed",
+    "formal_4102_0421": "closed",
+    "formal_4102_0403": "closed",
+    "formal_4102_0129": "closed",
+    "formal_4102_1222": "closed",
+    "formal_4102_0462": "closed",
+    "formal_4102_1460": "closed",
+    "formal_4102_1381": "deadline_elapsed_unclosed",
+    "formal_4102_0247": "closed",
+    "formal_4102_0189": "deadline_elapsed_unclosed",
+    "formal_4102_1140": "closed",
+    "formal_4102_0543": "right_censored_rejected_or_partial",
+    "formal_4102_0418": "right_censored_rejected_or_partial",
+    "formal_4102_1412": "deadline_elapsed_unclosed",
+    "formal_4102_0248": "closed",
+    "formal_4102_0178": "right_censored_rejected_or_partial",
+    "formal_4102_1236": "deadline_elapsed_unclosed",
+    "formal_4102_0017": "closed",
+    "formal_4102_1182": "closed",
+    "formal_4102_0096": "deadline_elapsed_unclosed",
+    "formal_4102_0786": "deadline_elapsed_unclosed",
+    "formal_4102_0594": "deadline_elapsed_unclosed",
+    "formal_4102_0298": "closed",
+    "formal_4102_1285": "deadline_elapsed_unclosed",
+    "formal_4102_0997": "deadline_elapsed_unclosed",
+    "formal_4102_1595": "closed",
+    "formal_4102_0238": "deadline_elapsed_unclosed",
+    "formal_4102_1245": "deadline_elapsed_unclosed",
+    "formal_4102_0060": "right_censored_rejected_or_partial",
+    "formal_4102_1447": "deadline_elapsed_unclosed",
+    "formal_4102_0918": "deadline_elapsed_unclosed",
+    "formal_4102_0972": "closed",
+    "formal_4102_0513": "deadline_elapsed_unclosed",
+    "formal_4102_0770": "closed",
+    "formal_4102_0816": "closed",
+    "formal_4102_0661": "closed",
+    "formal_4102_0952": "deadline_elapsed_unclosed",
+    "formal_4102_1354": "deadline_elapsed_unclosed",
+    "formal_4102_1443": "closed",
+    "formal_4102_1088": "deadline_elapsed_unclosed",
+    "formal_4102_1467": "deadline_elapsed_unclosed",
+    "formal_4102_1289": "deadline_elapsed_unclosed",
+    "formal_4102_1422": "deadline_elapsed_unclosed",
+    "formal_4102_1379": "closed",
+    "formal_4102_0920": "deadline_elapsed_unclosed",
+    "formal_4102_1277": "deadline_elapsed_unclosed",
+    "formal_4102_0206": "deadline_elapsed_unclosed",
+    "formal_4102_1022": "deadline_elapsed_unclosed",
+    "formal_4102_0680": "right_censored_rejected_or_partial",
+    "formal_4102_0176": "right_censored_rejected_or_partial",
+    "formal_4102_0236": "closed",
+    "formal_4102_0744": "closed",
+    "formal_4102_0098": "closed",
+    "formal_4102_0695": "closed",
+    "formal_4102_1361": "deadline_elapsed_unclosed",
+    "formal_4102_1294": "deadline_elapsed_unclosed",
+    "formal_4102_0838": "closed",
+    "formal_4102_1150": "closed",
+    "formal_4102_0322": "closed",
+    "formal_4102_1481": "closed",
+    "formal_4102_1248": "deadline_elapsed_unclosed",
+    "formal_4102_0034": "right_censored_rejected_or_partial",
+    "formal_4102_0456": "closed",
+    "formal_4102_1203": "deadline_elapsed_unclosed",
+    "formal_4102_1573": "deadline_elapsed_unclosed",
+    "formal_4102_0630": "closed",
+    "formal_4102_0294": "closed",
+    "formal_4102_1002": "deadline_elapsed_unclosed",
+    "formal_4102_1094": "deadline_elapsed_unclosed",
+    "formal_4102_1126": "closed",
+    "formal_4102_0855": "deadline_elapsed_unclosed",
+    "formal_4102_0787": "closed",
+    "formal_4102_1249": "deadline_elapsed_unclosed",
+    "formal_4102_0743": "deadline_elapsed_unclosed",
+    "formal_4102_0392": "deadline_elapsed_unclosed",
+    "formal_4102_1312": "deadline_elapsed_unclosed",
+    "formal_4102_1338": "closed",
+    "formal_4102_1170": "deadline_elapsed_unclosed",
+    "formal_4102_0398": "deadline_elapsed_unclosed",
+    "formal_4102_1283": "deadline_elapsed_unclosed",
+    "formal_4102_1049": "closed",
+    "formal_4102_0272": "deadline_elapsed_unclosed",
+    "formal_4102_0679": "deadline_elapsed_unclosed",
+    "formal_4102_0152": "closed",
+    "formal_4102_1019": "deadline_elapsed_unclosed",
+    "formal_4102_1446": "deadline_elapsed_unclosed",
+    "formal_4102_0025": "deadline_elapsed_unclosed",
+    "formal_4102_0111": "closed",
+    "formal_4102_0533": "closed",
+    "formal_4102_0207": "right_censored_rejected_or_partial",
+    "formal_4102_0335": "deadline_elapsed_unclosed",
+    "formal_4102_0492": "deadline_elapsed_unclosed",
+    "formal_4102_0529": "deadline_elapsed_unclosed",
+    "formal_4102_0018": "deadline_elapsed_unclosed",
+    "formal_4102_0723": "closed",
+    "formal_4102_1190": "closed",
+    "formal_4102_0886": "closed",
+    "formal_4102_1514": "closed",
+    "formal_4102_0764": "deadline_elapsed_unclosed",
+    "formal_4102_0620": "closed",
+    "formal_4102_1122": "deadline_elapsed_unclosed",
+    "formal_4102_0900": "closed",
+    "formal_4102_1386": "closed",
+    "formal_4102_1199": "deadline_elapsed_unclosed",
+    "formal_4102_1461": "deadline_elapsed_unclosed",
+    "formal_4102_0860": "closed",
+    "formal_4102_0197": "right_censored_rejected_or_partial",
+    "formal_4102_0059": "closed",
+    "formal_4102_0665": "deadline_elapsed_unclosed",
+    "formal_4102_0235": "right_censored_rejected_or_partial",
+    "formal_4102_1191": "deadline_elapsed_unclosed",
+    "formal_4102_1596": "closed",
+    "formal_4102_0068": "right_censored_rejected_or_partial",
+    "formal_4102_0785": "deadline_elapsed_unclosed",
+    "formal_4102_0534": "deadline_elapsed_unclosed",
+    "formal_4102_1545": "closed",
+    "formal_4102_1264": "deadline_elapsed_unclosed",
+    "formal_4102_0029": "right_censored_rejected_or_partial",
+    "formal_4102_0074": "right_censored_rejected_or_partial",
+    "formal_4102_1582": "closed",
+    "formal_4102_1470": "deadline_elapsed_unclosed",
+    "formal_4102_1576": "deadline_elapsed_unclosed",
+    "formal_4102_0445": "deadline_elapsed_unclosed",
+    "formal_4102_1544": "closed",
+    "formal_4102_0126": "closed",
+    "formal_4102_0763": "closed",
+    "formal_4102_0415": "deadline_elapsed_unclosed",
+    "formal_4102_0083": "deadline_elapsed_unclosed",
+    "formal_4102_0437": "closed",
+    "formal_4102_1231": "closed",
+    "formal_4102_1054": "deadline_elapsed_unclosed",
+    "formal_4102_1541": "deadline_elapsed_unclosed",
+    "formal_4102_1267": "deadline_elapsed_unclosed",
+    "formal_4102_1121": "closed",
+    "formal_4102_1426": "deadline_elapsed_unclosed",
+    "formal_4102_0401": "deadline_elapsed_unclosed",
+    "formal_4102_1570": "closed",
+    "formal_4102_0485": "closed",
+    "formal_4102_0186": "deadline_elapsed_unclosed",
+    "formal_4102_1009": "closed",
+    "formal_4102_1549": "closed",
+    "formal_4102_0070": "right_censored_rejected_or_partial",
+    "formal_4102_1130": "deadline_elapsed_unclosed",
+    "formal_4102_0864": "right_censored_rejected_or_partial",
+    "formal_4102_0436": "closed",
+    "formal_4102_0279": "right_censored_rejected_or_partial",
+    "formal_4102_1476": "deadline_elapsed_unclosed",
+    "formal_4102_1380": "deadline_elapsed_unclosed",
+    "formal_4102_1528": "deadline_elapsed_unclosed",
+    "formal_4102_1478": "deadline_elapsed_unclosed",
+    "formal_4102_1263": "deadline_elapsed_unclosed",
+    "formal_4102_0851": "closed",
+    "formal_4102_0099": "right_censored_rejected_or_partial",
+    "formal_4102_1062": "closed",
+    "formal_4102_0646": "deadline_elapsed_unclosed",
+    "formal_4102_0026": "deadline_elapsed_unclosed",
+    "formal_4102_0755": "closed",
+    "formal_4102_1337": "closed",
+    "formal_4102_1212": "deadline_elapsed_unclosed",
+    "formal_4102_1305": "closed",
+    "formal_4102_1109": "right_censored_rejected_or_partial",
+    "formal_4102_0613": "closed",
+    "formal_4102_0006": "closed",
+    "formal_4102_1217": "closed",
+    "formal_4102_0040": "right_censored_rejected_or_partial",
+    "formal_4102_0808": "deadline_elapsed_unclosed",
+    "formal_4102_0651": "deadline_elapsed_unclosed",
+    "formal_4102_1563": "closed",
+    "formal_4102_1026": "deadline_elapsed_unclosed",
+    "formal_4102_0584": "right_censored_rejected_or_partial",
+    "formal_4102_0124": "right_censored_rejected_or_partial",
+    "formal_4102_1387": "deadline_elapsed_unclosed",
+    "formal_4102_1176": "closed",
+    "formal_4102_0519": "deadline_elapsed_unclosed",
+    "formal_4102_1261": "deadline_elapsed_unclosed",
+    "formal_4102_0968": "closed",
+    "formal_4102_1336": "closed",
+    "formal_4102_0936": "deadline_elapsed_unclosed",
+    "formal_4102_0598": "closed",
+    "formal_4102_0870": "deadline_elapsed_unclosed",
+    "formal_4102_0490": "deadline_elapsed_unclosed",
+    "formal_4102_0781": "deadline_elapsed_unclosed",
+    "formal_4102_0400": "right_censored_rejected_or_partial",
+    "formal_4102_0193": "closed",
+    "formal_4102_1169": "closed",
+    "formal_4102_1051": "deadline_elapsed_unclosed",
+    "formal_4102_0591": "right_censored_rejected_or_partial",
+    "formal_4102_0932": "closed",
+    "formal_4102_0637": "closed",
+    "formal_4102_1079": "closed",
+    "formal_4102_1314": "deadline_elapsed_unclosed",
+    "formal_4102_0553": "deadline_elapsed_unclosed",
+    "formal_4102_1374": "closed",
+    "formal_4102_0863": "deadline_elapsed_unclosed",
+    "formal_4102_0131": "right_censored_rejected_or_partial",
+    "formal_4102_0782": "closed",
+    "formal_4102_0545": "right_censored_rejected_or_partial",
+    "formal_4102_0896": "deadline_elapsed_unclosed",
+    "formal_4102_1256": "deadline_elapsed_unclosed",
+    "formal_4102_0049": "closed",
+    "formal_4102_1163": "deadline_elapsed_unclosed",
+    "formal_4102_0043": "closed",
+    "formal_4102_0811": "closed",
+    "formal_4102_0611": "deadline_elapsed_unclosed",
+    "formal_4102_0719": "closed",
+    "formal_4102_1073": "deadline_elapsed_unclosed",
+    "formal_4102_0887": "right_censored_rejected_or_partial",
+    "formal_4102_0939": "right_censored_rejected_or_partial",
+    "formal_4102_0924": "deadline_elapsed_unclosed",
+    "formal_4102_1034": "deadline_elapsed_unclosed",
+    "formal_4102_1492": "deadline_elapsed_unclosed",
+    "formal_4102_1405": "closed",
+    "formal_4102_0568": "deadline_elapsed_unclosed",
+    "formal_4102_1558": "deadline_elapsed_unclosed",
+    "formal_4102_0394": "right_censored_rejected_or_partial",
+    "formal_4102_1587": "deadline_elapsed_unclosed",
+    "formal_4102_0858": "closed",
+    "formal_4102_0690": "deadline_elapsed_unclosed",
+    "formal_4102_1240": "deadline_elapsed_unclosed",
+    "formal_4102_0969": "right_censored_rejected_or_partial",
+    "formal_4102_0460": "deadline_elapsed_unclosed",
+    "formal_4102_1110": "closed",
+    "formal_4102_0696": "deadline_elapsed_unclosed",
+    "formal_4102_0038": "closed",
+    "formal_4102_0164": "right_censored_rejected_or_partial",
+    "formal_4102_0419": "deadline_elapsed_unclosed",
+    "formal_4102_1519": "deadline_elapsed_unclosed",
+    "formal_4102_0122": "right_censored_rejected_or_partial",
+    "formal_4102_0255": "right_censored_rejected_or_partial",
+    "formal_4102_1483": "deadline_elapsed_unclosed",
+    "formal_4102_0077": "right_censored_rejected_or_partial",
+    "formal_4102_1139": "right_censored_rejected_or_partial",
+    "formal_4102_0243": "deadline_elapsed_unclosed",
+    "formal_4102_0454": "deadline_elapsed_unclosed",
+    "formal_4102_0633": "right_censored_rejected_or_partial",
+    "formal_4102_0702": "right_censored_rejected_or_partial",
+    "formal_4102_0774": "closed",
+    "formal_4102_0263": "right_censored_rejected_or_partial",
+    "formal_4102_0065": "right_censored_rejected_or_partial",
+    "formal_4102_0925": "right_censored_rejected_or_partial",
+    "formal_4102_1331": "right_censored_rejected_or_partial",
+    "formal_4102_0711": "deadline_elapsed_unclosed",
+    "formal_4102_0821": "deadline_elapsed_unclosed",
+    "formal_4102_0828": "deadline_elapsed_unclosed",
+    "formal_4102_0678": "right_censored_rejected_or_partial",
+    "formal_4102_0162": "right_censored_rejected_or_partial",
+    "formal_4102_1053": "right_censored_rejected_or_partial",
+    "formal_4102_0884": "deadline_elapsed_unclosed",
+    "formal_4102_0291": "right_censored_rejected_or_partial",
+    "formal_4102_1413": "deadline_elapsed_unclosed",
+    "formal_4102_0508": "deadline_elapsed_unclosed",
+    "formal_4102_1031": "deadline_elapsed_unclosed",
+    "formal_4102_0672": "deadline_elapsed_unclosed",
+    "formal_4102_1569": "closed",
+    "formal_4102_0204": "right_censored_rejected_or_partial",
+    "formal_4102_0464": "deadline_elapsed_unclosed",
+    "formal_4102_1003": "right_censored_rejected_or_partial",
+    "formal_4102_0750": "closed",
+    "formal_4102_1496": "deadline_elapsed_unclosed",
+    "formal_4102_0976": "closed",
+    "formal_4102_1141": "deadline_elapsed_unclosed",
+    "formal_4102_1494": "deadline_elapsed_unclosed",
+    "formal_4102_0039": "right_censored_rejected_or_partial",
+    "formal_4102_0167": "deadline_elapsed_unclosed",
+    "formal_4102_0595": "deadline_elapsed_unclosed",
+    "formal_4102_0687": "closed",
+    "formal_4102_0927": "right_censored_rejected_or_partial",
+    "formal_4102_0818": "closed",
+    "formal_4102_0158": "right_censored_rejected_or_partial",
+    "formal_4102_0899": "deadline_elapsed_unclosed",
+    "formal_4102_0926": "right_censored_rejected_or_partial",
+    "formal_4102_1362": "closed",
+    "formal_4102_0681": "right_censored_rejected_or_partial",
+    "formal_4102_1132": "deadline_elapsed_unclosed",
+    "formal_4102_1334": "right_censored_rejected_or_partial",
+    "formal_4102_0982": "right_censored_rejected_or_partial",
+    "formal_4102_1127": "right_censored_rejected_or_partial",
+    "formal_4102_0604": "closed",
+    "formal_4102_0299": "deadline_elapsed_unclosed",
+    "formal_4102_1057": "deadline_elapsed_unclosed",
+    "formal_4102_0650": "deadline_elapsed_unclosed",
+    "formal_4102_0889": "closed",
+    "formal_4102_0181": "closed",
+    "formal_4102_0138": "closed",
+    "formal_4102_0967": "right_censored_rejected_or_partial",
+    "formal_4102_0424": "deadline_elapsed_unclosed",
+    "formal_4102_1518": "right_censored_rejected_or_partial",
+    "formal_4102_0359": "deadline_elapsed_unclosed",
+    "formal_4102_0121": "right_censored_rejected_or_partial",
+    "formal_4102_1522": "deadline_elapsed_unclosed",
+    "formal_4102_1137": "deadline_elapsed_unclosed",
+    "formal_4102_1459": "deadline_elapsed_unclosed",
+    "formal_4102_0432": "closed",
+    "formal_4102_1302": "deadline_elapsed_unclosed",
+    "formal_4102_0693": "closed",
+    "formal_4102_0814": "closed",
+    "formal_4102_0798": "deadline_elapsed_unclosed",
+    "formal_4102_0663": "right_censored_rejected_or_partial",
+    "formal_4102_0479": "right_censored_rejected_or_partial",
+    "formal_4102_1325": "deadline_elapsed_unclosed",
+    "formal_4102_0240": "closed",
+    "formal_4102_1016": "closed",
+    "formal_4102_0557": "deadline_elapsed_unclosed",
+    "formal_4102_0561": "deadline_elapsed_unclosed",
+    "formal_4102_0283": "closed",
+    "formal_4102_1553": "right_censored_rejected_or_partial",
+    "formal_4102_0015": "right_censored_rejected_or_partial",
+    "formal_4102_1511": "deadline_elapsed_unclosed",
+    "formal_4102_1513": "closed",
+    "formal_4102_0225": "right_censored_rejected_or_partial",
+    "formal_4102_0296": "right_censored_rejected_or_partial",
+    "formal_4102_0717": "right_censored_rejected_or_partial",
+    "formal_4102_0451": "deadline_elapsed_unclosed",
+    "formal_4102_0576": "closed",
+    "formal_4102_0329": "right_censored_rejected_or_partial",
+    "formal_4102_0450": "right_censored_rejected_or_partial",
+    "formal_4102_1488": "closed",
+    "formal_4102_0165": "right_censored_rejected_or_partial",
+    "formal_4102_0666": "deadline_elapsed_unclosed",
+    "formal_4102_0530": "right_censored_rejected_or_partial",
+    "formal_4102_0009": "closed",
+    "formal_4102_0699": "deadline_elapsed_unclosed",
+    "formal_4102_0062": "closed",
+    "formal_4102_0537": "deadline_elapsed_unclosed",
+    "formal_4102_0199": "right_censored_rejected_or_partial",
+    "formal_4102_0999": "deadline_elapsed_unclosed",
+    "formal_4102_0705": "closed",
+    "formal_4102_0643": "right_censored_rejected_or_partial",
+    "formal_4102_0300": "right_censored_rejected_or_partial",
+    "formal_4102_1586": "deadline_elapsed_unclosed",
+    "formal_4102_0407": "closed",
+    "formal_4102_0525": "right_censored_rejected_or_partial",
+    "formal_4102_1145": "closed",
+    "formal_4102_1119": "right_censored_rejected_or_partial",
+    "formal_4102_1411": "right_censored_rejected_or_partial",
+    "formal_4102_1571": "deadline_elapsed_unclosed",
+    "formal_4102_1414": "deadline_elapsed_unclosed",
+    "formal_4102_1306": "closed",
+    "formal_4102_1417": "deadline_elapsed_unclosed",
+    "formal_4102_1353": "right_censored_rejected_or_partial",
+    "formal_4102_0218": "right_censored_rejected_or_partial",
+    "formal_4102_0035": "right_censored_rejected_or_partial",
+    "formal_4102_1339": "deadline_elapsed_unclosed",
+    "formal_4102_0446": "right_censored_rejected_or_partial",
+    "formal_4102_0430": "closed",
+    "formal_4102_0095": "right_censored_rejected_or_partial",
+    "formal_4102_0653": "closed",
+    "formal_4102_1175": "right_censored_rejected_or_partial",
+    "formal_4102_0724": "deadline_elapsed_unclosed",
+    "formal_4102_0645": "deadline_elapsed_unclosed",
+    "formal_4102_0720": "closed",
+    "formal_4102_0617": "right_censored_rejected_or_partial",
+    "formal_4102_0195": "right_censored_rejected_or_partial",
+    "formal_4102_1069": "closed",
+    "formal_4102_1070": "deadline_elapsed_unclosed",
+    "formal_4102_1103": "deadline_elapsed_unclosed",
+    "formal_4102_1402": "deadline_elapsed_unclosed",
+    "formal_4102_0191": "right_censored_rejected_or_partial",
+    "formal_4102_1438": "closed",
+    "formal_4102_1020": "deadline_elapsed_unclosed",
+    "formal_4102_0641": "closed",
+    "formal_4102_1588": "deadline_elapsed_unclosed",
+    "formal_4102_1046": "deadline_elapsed_unclosed",
+    "formal_4102_0363": "closed",
+    "formal_4102_0556": "closed",
+    "formal_4102_1341": "closed",
+    "formal_4102_0393": "deadline_elapsed_unclosed",
+    "formal_4102_0992": "right_censored_rejected_or_partial",
+    "formal_4102_1568": "deadline_elapsed_unclosed",
+    "formal_4102_0971": "deadline_elapsed_unclosed",
+    "formal_4102_1017": "deadline_elapsed_unclosed",
+    "formal_4102_1537": "closed",
+    "formal_4102_0751": "deadline_elapsed_unclosed",
+    "formal_4102_0769": "closed",
+    "formal_4102_0484": "right_censored_rejected_or_partial",
+    "formal_4102_0577": "closed",
+    "formal_4102_1083": "right_censored_rejected_or_partial",
+    "formal_4102_1419": "deadline_elapsed_unclosed",
+    "formal_4102_0474": "closed",
+    "formal_4102_1333": "deadline_elapsed_unclosed",
+    "formal_4102_1234": "right_censored_rejected_or_partial",
+    "formal_4102_0517": "deadline_elapsed_unclosed",
+    "formal_4102_0593": "deadline_elapsed_unclosed",
+    "formal_4102_0326": "closed",
+    "formal_4102_1308": "closed",
+    "formal_4102_1224": "right_censored_rejected_or_partial",
+    "formal_4102_0227": "right_censored_rejected_or_partial",
+    "formal_4102_0942": "closed",
+    "formal_4102_0616": "closed",
+    "formal_4102_1389": "right_censored_rejected_or_partial",
+    "formal_4102_0482": "deadline_elapsed_unclosed",
+    "formal_4102_1491": "closed",
+    "formal_4102_0079": "closed",
+    "formal_4102_1310": "deadline_elapsed_unclosed",
+    "formal_4102_0360": "closed",
+    "formal_4102_1355": "right_censored_rejected_or_partial",
+    "formal_4102_0707": "right_censored_rejected_or_partial",
+    "formal_4102_0369": "closed",
+    "formal_4102_1286": "deadline_elapsed_unclosed",
+    "formal_4102_1244": "right_censored_rejected_or_partial",
+    "formal_4102_0137": "right_censored_rejected_or_partial",
+    "formal_4102_1332": "closed",
+    "formal_4102_0310": "right_censored_rejected_or_partial",
+    "formal_4102_0551": "right_censored_rejected_or_partial",
+    "formal_4102_0028": "right_censored_rejected_or_partial",
+    "formal_4102_1272": "closed",
+    "formal_4102_0783": "deadline_elapsed_unclosed",
+    "formal_4102_1102": "right_censored_rejected_or_partial",
+    "formal_4102_0872": "closed",
+    "formal_4102_0505": "right_censored_rejected_or_partial",
+    "formal_4102_0175": "right_censored_rejected_or_partial",
+    "formal_4102_0916": "right_censored_rejected_or_partial",
+    "formal_4102_1367": "deadline_elapsed_unclosed",
+    "formal_4102_0689": "closed",
+    "formal_4102_0890": "right_censored_rejected_or_partial",
+    "formal_4102_1346": "right_censored_rejected_or_partial",
+    "formal_4102_1319": "right_censored_rejected_or_partial",
+    "formal_4102_0371": "deadline_elapsed_unclosed",
+    "formal_4102_0321": "closed",
+    "formal_4102_0682": "closed",
+    "formal_4102_0215": "right_censored_rejected_or_partial",
+    "formal_4102_0145": "right_censored_rejected_or_partial",
+    "formal_4102_0586": "right_censored_rejected_or_partial",
+    "formal_4102_0656": "right_censored_rejected_or_partial",
+    "formal_4102_1502": "right_censored_rejected_or_partial",
+    "formal_4102_1098": "closed",
+    "formal_4102_1186": "deadline_elapsed_unclosed",
+    "formal_4102_0002": "closed",
+    "formal_4102_0877": "right_censored_rejected_or_partial",
+    "formal_4102_1278": "right_censored_rejected_or_partial",
+    "formal_4102_1298": "closed",
+    "formal_4102_1546": "closed",
+    "formal_4102_0185": "right_censored_rejected_or_partial",
+    "formal_4102_0169": "closed",
+    "formal_4102_0468": "closed",
+    "formal_4102_1072": "right_censored_rejected_or_partial",
+    "formal_4102_0603": "deadline_elapsed_unclosed",
+    "formal_4102_0698": "right_censored_rejected_or_partial",
+    "formal_4102_0205": "closed",
+    "formal_4102_1111": "right_censored_rejected_or_partial",
+    "formal_4102_0001": "right_censored_rejected_or_partial",
+    "formal_4102_0955": "closed",
+    "formal_4102_0293": "right_censored_rejected_or_partial",
+    "formal_4102_1230": "right_censored_rejected_or_partial",
+    "formal_4102_0000": "closed",
+    "formal_4102_1024": "right_censored_rejected_or_partial",
+    "formal_4102_0491": "right_censored_rejected_or_partial",
+    "formal_4102_1116": "deadline_elapsed_unclosed",
+    "formal_4102_0627": "closed",
+    "formal_4102_1044": "right_censored_rejected_or_partial",
+    "formal_4102_1042": "deadline_elapsed_unclosed",
+    "formal_4102_0119": "closed",
+    "formal_4102_1237": "deadline_elapsed_unclosed",
+    "formal_4102_1593": "closed",
+    "formal_4102_0549": "closed",
+    "formal_4102_1504": "right_censored_rejected_or_partial",
+    "formal_4102_1373": "deadline_elapsed_unclosed",
+    "formal_4102_0032": "right_censored_rejected_or_partial",
+    "formal_4102_0817": "closed",
+    "formal_4102_0327": "right_censored_rejected_or_partial",
+    "formal_4102_0093": "right_censored_rejected_or_partial",
+    "formal_4102_0849": "closed",
+    "formal_4102_0045": "closed",
+    "formal_4102_0493": "closed",
+    "formal_4102_0574": "right_censored_rejected_or_partial",
+    "formal_4102_0037": "closed",
+    "formal_4102_0747": "closed",
+    "formal_4102_1578": "right_censored_rejected_or_partial",
+    "formal_4102_0187": "right_censored_rejected_or_partial",
+    "formal_4102_0072": "closed",
+    "formal_4102_0794": "right_censored_rejected_or_partial",
+    "formal_4102_0859": "closed",
+    "formal_4102_0669": "right_censored_rejected_or_partial",
+    "formal_4102_0516": "deadline_elapsed_unclosed",
+    "formal_4102_1195": "closed",
+    "formal_4102_1415": "closed",
+    "formal_4102_0320": "closed",
+    "formal_4102_0412": "right_censored_rejected_or_partial",
+    "formal_4102_0746": "right_censored_rejected_or_partial",
+    "formal_4102_0489": "right_censored_rejected_or_partial",
+    "formal_4102_0951": "closed",
+    "formal_4102_0580": "right_censored_rejected_or_partial",
+    "formal_4102_0552": "closed",
+    "formal_4102_0278": "closed",
+    "formal_4102_1066": "right_censored_rejected_or_partial",
+    "formal_4102_1087": "right_censored_rejected_or_partial",
+    "formal_4102_0629": "closed",
+    "formal_4102_1418": "right_censored_rejected_or_partial",
+    "formal_4102_0716": "closed",
+    "formal_4102_0558": "closed",
+    "formal_4102_1416": "closed",
+    "formal_4102_1441": "right_censored_rejected_or_partial",
+    "formal_4102_0271": "right_censored_rejected_or_partial",
+    "formal_4102_0671": "right_censored_rejected_or_partial",
+    "formal_4102_1453": "right_censored_rejected_or_partial",
+    "formal_4102_0342": "deadline_elapsed_unclosed",
+    "formal_4102_0275": "closed",
+    "formal_4102_1427": "right_censored_rejected_or_partial",
+    "formal_4102_0523": "right_censored_rejected_or_partial",
+    "formal_4102_1254": "right_censored_rejected_or_partial",
+    "formal_4102_1206": "right_censored_rejected_or_partial",
+    "formal_4102_0930": "closed",
+    "formal_4102_0722": "right_censored_rejected_or_partial",
+    "formal_4102_0133": "right_censored_rejected_or_partial",
+    "formal_4102_1409": "deadline_elapsed_unclosed",
+    "formal_4102_0356": "closed",
+    "formal_4102_1490": "right_censored_rejected_or_partial",
+    "formal_4102_0339": "closed",
+    "formal_4102_0929": "deadline_elapsed_unclosed",
+    "formal_4102_1171": "closed",
+    "formal_4102_0067": "right_censored_rejected_or_partial",
+    "formal_4102_1429": "closed",
+    "formal_4102_1173": "right_censored_rejected_or_partial",
+    "formal_4102_1287": "closed",
+    "formal_4102_1134": "deadline_elapsed_unclosed",
+    "formal_4102_1421": "right_censored_rejected_or_partial",
+    "formal_4102_0404": "right_censored_rejected_or_partial",
+    "formal_4102_0579": "closed",
+    "formal_4102_0351": "right_censored_rejected_or_partial",
+    "formal_4102_1318": "right_censored_rejected_or_partial",
+    "formal_4102_1317": "closed",
+    "formal_4102_0686": "right_censored_rejected_or_partial",
+    "formal_4102_1210": "right_censored_rejected_or_partial",
+    "formal_4102_1506": "right_censored_rejected_or_partial",
+    "formal_4102_1142": "closed",
+    "formal_4102_0560": "deadline_elapsed_unclosed",
+    "formal_4102_0241": "closed",
+    "formal_4102_0706": "right_censored_rejected_or_partial",
+    "formal_4102_0623": "right_censored_rejected_or_partial",
+    "formal_4102_0435": "right_censored_rejected_or_partial",
+    "formal_4102_1559": "closed",
+    "formal_4102_1591": "right_censored_rejected_or_partial",
+    "formal_4102_1128": "right_censored_rejected_or_partial",
+    "formal_4102_0588": "closed",
+    "formal_4102_0554": "right_censored_rejected_or_partial",
+    "formal_4102_0123": "closed",
+    "formal_4102_1106": "right_censored_rejected_or_partial",
+    "formal_4102_1368": "closed",
+    "formal_4102_0288": "right_censored_rejected_or_partial",
+    "formal_4102_1188": "closed",
+    "formal_4102_0005": "right_censored_rejected_or_partial",
+    "formal_4102_0670": "right_censored_rejected_or_partial",
+    "formal_4102_0054": "closed",
+    "formal_4102_0778": "right_censored_rejected_or_partial",
+    "formal_4102_0402": "closed",
+    "formal_4102_1472": "right_censored_rejected_or_partial",
+    "formal_4102_0753": "right_censored_rejected_or_partial",
+    "formal_4102_0366": "right_censored_rejected_or_partial",
+    "formal_4102_0391": "right_censored_rejected_or_partial",
+    "formal_4102_0125": "right_censored_rejected_or_partial",
+    "formal_4102_0210": "closed",
+    "formal_4102_0135": "right_censored_rejected_or_partial",
+    "formal_4102_0409": "closed",
+    "formal_4102_0441": "right_censored_rejected_or_partial",
+    "formal_4102_0754": "right_censored_rejected_or_partial",
+    "formal_4102_0268": "closed",
+    "formal_4102_1201": "closed",
+    "formal_4102_0668": "right_censored_rejected_or_partial",
+    "formal_4102_0266": "closed",
+    "formal_4102_0912": "right_censored_rejected_or_partial",
+    "formal_4102_0052": "right_censored_rejected_or_partial",
+    "formal_4102_0100": "right_censored_rejected_or_partial",
+    "formal_4102_1161": "right_censored_rejected_or_partial",
+    "formal_4102_1157": "closed",
+    "formal_4102_1463": "closed",
+    "formal_4102_1061": "right_censored_rejected_or_partial",
+    "formal_4102_0008": "closed",
+    "formal_4102_0675": "right_censored_rejected_or_partial",
+    "formal_4102_1351": "right_censored_rejected_or_partial",
+    "formal_4102_0779": "right_censored_rejected_or_partial",
+    "formal_4102_1431": "closed",
+    "formal_4102_0587": "right_censored_rejected_or_partial",
+    "formal_4102_0987": "closed",
+    "formal_4102_0373": "right_censored_rejected_or_partial",
+    "formal_4102_0866": "right_censored_rejected_or_partial",
+    "formal_4102_0364": "right_censored_rejected_or_partial",
+    "formal_4102_0354": "right_censored_rejected_or_partial",
+    "formal_4102_1259": "closed",
+    "formal_4102_0622": "right_censored_rejected_or_partial",
+    "formal_4102_0978": "right_censored_rejected_or_partial",
+    "formal_4102_0439": "right_censored_rejected_or_partial",
+    "formal_4102_0789": "closed",
+    "formal_4102_0868": "right_censored_rejected_or_partial",
+    "formal_4102_1324": "right_censored_rejected_or_partial",
+    "formal_4102_1474": "deadline_elapsed_unclosed",
+    "formal_4102_0160": "right_censored_rejected_or_partial",
+    "formal_4102_0697": "closed",
+    "formal_4102_1202": "right_censored_rejected_or_partial",
+    "formal_4102_0269": "closed",
+    "formal_4102_0507": "right_censored_rejected_or_partial",
+    "formal_4102_0691": "deadline_elapsed_unclosed",
+    "formal_4102_0729": "closed",
+    "formal_4102_0979": "right_censored_rejected_or_partial",
+    "formal_4102_0772": "closed",
+    "formal_4102_1260": "right_censored_rejected_or_partial",
+    "formal_4102_1052": "closed",
+    "formal_4102_1250": "deadline_elapsed_unclosed",
+    "formal_4102_0089": "right_censored_rejected_or_partial",
+    "formal_4102_1479": "right_censored_rejected_or_partial",
+    "formal_4102_0431": "closed",
+    "formal_4102_0358": "right_censored_rejected_or_partial",
+    "formal_4102_0208": "closed",
+    "formal_4102_0325": "right_censored_rejected_or_partial",
+    "formal_4102_0632": "right_censored_rejected_or_partial",
+    "formal_4102_0797": "right_censored_rejected_or_partial",
+    "formal_4102_0504": "right_censored_rejected_or_partial",
+    "formal_4102_0048": "closed",
+    "formal_4102_0390": "closed",
+    "formal_4102_0848": "closed",
+    "formal_4102_0088": "right_censored_rejected_or_partial",
+    "formal_4102_0962": "right_censored_rejected_or_partial",
+    "formal_4102_0940": "closed",
+    "formal_4102_1327": "right_censored_rejected_or_partial",
+    "formal_4102_0287": "right_censored_rejected_or_partial",
+    "formal_4102_0405": "right_censored_rejected_or_partial",
+    "formal_4102_0973": "right_censored_rejected_or_partial",
+    "formal_4102_0103": "right_censored_rejected_or_partial",
+    "formal_4102_0843": "closed",
+    "formal_4102_0036": "closed",
+    "formal_4102_1436": "right_censored_rejected_or_partial",
+    "formal_4102_1174": "right_censored_rejected_or_partial",
+    "formal_4102_0947": "right_censored_rejected_or_partial",
+    "formal_4102_1548": "closed",
+    "formal_4102_0873": "right_censored_rejected_or_partial",
+    "formal_4102_1398": "right_censored_rejected_or_partial",
+    "formal_4102_1315": "right_censored_rejected_or_partial",
+    "formal_4102_0734": "right_censored_rejected_or_partial",
+    "formal_4102_0078": "closed",
+    "formal_4102_0323": "closed",
+    "formal_4102_0284": "right_censored_rejected_or_partial",
+    "formal_4102_0046": "closed",
+    "formal_4102_0824": "right_censored_rejected_or_partial",
+    "formal_4102_0898": "right_censored_rejected_or_partial",
+    "formal_4102_1497": "right_censored_rejected_or_partial",
+    "formal_4102_0748": "closed",
+    "formal_4102_0244": "right_censored_rejected_or_partial",
+    "formal_4102_1056": "right_censored_rejected_or_partial",
+    "formal_4102_0406": "right_censored_rejected_or_partial",
+    "formal_4102_0173": "closed",
+    "formal_4102_0597": "closed",
+    "formal_4102_0815": "closed",
+    "formal_4102_0845": "right_censored_rejected_or_partial",
+    "formal_4102_0426": "right_censored_rejected_or_partial",
+    "formal_4102_0190": "right_censored_rejected_or_partial",
+    "formal_4102_0274": "closed",
+    "formal_4102_0621": "closed",
+    "formal_4102_1527": "right_censored_rejected_or_partial",
+    "formal_4102_0478": "right_censored_rejected_or_partial"
+  },
+  "candidate_category_counts": {
+    "no_deadline_service": 115,
+    "hard_physics": 2170,
+    "admitted": 640,
+    "business_rule_or_rank": 275
+  },
+  "task_rejection_decision_counts": {
+    "hard_physics": 940,
+    "no_deadline_service": 95,
+    "economics": 0,
+    "business_rule_or_rank": 0,
+    "unresolved_economics": 0
+  },
+  "rejection_count_note": "candidate counts are attempts; task counts are distinct IDs with any rejected decision in category, nonexclusive and separate from final lifecycle status",
+  "arm": "OFFLOAD",
+  "peak_temperatures_c": {
+    "chip": 53.89824623877083,
+    "board": 29.998873648890235,
+    "rf": 65.00000000995793,
+    "structure": 21.958867128070846
+  },
+  "min_soc": 0.7565813629053005,
+  "actual_safety_violations": 0,
+  "thermal_protection_count": 141,
+  "thermal_wait_s": 36.343993259863055,
+  "selected_models": {
+    "high_accuracy": 640
+  },
+  "progressive_authorizations": 0,
+  "progressive_ground_events": 0,
+  "ground_state_counts": {
+    "none": 960,
+    "roi_context_satisfied": 331,
+    "roi_satisfied": 309
+  },
+  "candidate_denominator": 3200,
+  "feasible_candidates": 915,
+  "rejection_reasons": [
+    {
+      "reason": "NO_EXECUTABLE_SERVICE_BEFORE_DEADLINE",
+      "candidates": 1889,
+      "distinct_tasks": 987
+    },
+    {
+      "reason": "LOCAL_INFORMATION_OR_QUALITY_REQUIREMENT",
+      "candidates": 864,
+      "distinct_tasks": 864
+    },
+    {
+      "reason": "UNSAFE_COMPUTE_OR_BACKGROUND_REQUIRES_READMISSION",
+      "candidates": 1732,
+      "distinct_tasks": 911
+    }
+  ],
+  "candidate_categories": {
+    "no_deadline_service": 115,
+    "hard_physics": 2170,
+    "admitted": 640,
+    "business_rule_or_rank": 275
+  },
+  "delta_Q_end": {
+    "nonzero": 0,
+    "min": null,
+    "max": null,
+    "evaluated": 0
+  },
+  "mode_seconds": {
+    "balanced": 200.0,
+    "egress_conservative": 400.0,
+    "energy_saving": 21000.0
+  },
+  "windows": [
+    {
+      "window": "business_01",
+      "start_s": 3600.0,
+      "end_s": 4200.0,
+      "business_seconds": 600.0,
+      "nominal_MB": 904.2257605111191,
+      "TX_union_s": 301.97758739880965,
+      "downlink_MB": 460.6,
+      "RF_energy_J": 17058.01447198934,
+      "time_utilization": 0.503295978998016,
+      "capacity_utilization": 0.5093860627678237
+    },
+    {
+      "window": "business_02",
+      "start_s": 9300.0,
+      "end_s": 9900.0,
+      "business_seconds": 600.0,
+      "nominal_MB": 1281.7894804000778,
+      "TX_union_s": 201.9863886727835,
+      "downlink_MB": 426.55,
+      "RF_energy_J": 9008.8637033349,
+      "time_utilization": 0.33664398112130584,
+      "capacity_utilization": 0.33277695481387737
+    },
+    {
+      "window": "business_03",
+      "start_s": 15000.0,
+      "end_s": 15600.0,
+      "business_seconds": 600.0,
+      "nominal_MB": 897.3150657522964,
+      "TX_union_s": 252.05675932692247,
+      "downlink_MB": 382.3,
+      "RF_energy_J": 14281.814098506527,
+      "time_utilization": 0.4200945988782041,
+      "capacity_utilization": 0.4260487922149006
+    },
+    {
+      "window": "business_04",
+      "start_s": 20700.0,
+      "end_s": 21300.0,
+      "business_seconds": 600.0,
+      "nominal_MB": 1288.4584664009453,
+      "TX_union_s": 149.65273114408046,
+      "downlink_MB": 317.2,
+      "RF_energy_J": 6651.062035325966,
+      "time_utilization": 0.24942121857346744,
+      "capacity_utilization": 0.24618566160385102
+    }
+  ]
+}

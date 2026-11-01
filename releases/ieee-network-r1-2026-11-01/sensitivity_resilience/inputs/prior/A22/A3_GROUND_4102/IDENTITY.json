@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "A3_GROUND_4102",
+    "package": "A",
+    "condition": "A3",
+    "arm": "GROUND",
+    "method": "B1",
+    "seed": 4102,
+    "variant": "incremental_ground_parallel_sensitivity_a3_4102",
+    "config_sha256": "46b308d73c28592cdce9f1be6b93113ee7f0b4b538188db4d2794b1a0d6ad75f",
+    "input_hashes": {
+      "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+      "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+      "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+      "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+    },
+    "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+    "queue_priority": 4,
+    "estimated_cpu_s": 5261.421875
+  },
+  "manifests": {
+    "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+  },
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "D:\\CondaEnvs\\research-dl\\python.exe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\runtime\\worker9h.py",
+    "--job",
+    "A3_GROUND_4102",
+    "--package",
+    "A",
+    "--out",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A3_GROUND_4102\\attempt_03",
+    "--stop",
+    "21600"
+  ],
+  "root": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\runtime",
+  "start_epoch": 1793459505.4468968,
+  "resume": "None",
+  "resume_at_s": 0.0,
+  "pid": 31736,
+  "process_created": 1793459503.870804,
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "ground_processing": {
+    "policy": "independent_fixed",
+    "service_s": 4.29,
+    "receive_capacity": "nonbinding",
+    "version": "GROUND_PARALLEL_V1"
+  },
+  "computational_policy": "V6_SAFETY_UNCHANGED_COMPACT_FORECAST_GROUND_PARALLEL_V1"
+}

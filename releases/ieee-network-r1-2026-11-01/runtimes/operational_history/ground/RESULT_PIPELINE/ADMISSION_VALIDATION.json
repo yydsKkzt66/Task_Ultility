@@ -1,0 +1,20 @@
+{
+  "pass_": true,
+  "checks": {
+    "accepted_final_value_from_audit": true,
+    "failed_audit_excluded": true,
+    "partial_endpoint_excluded": true,
+    "wrong_population_excluded": true,
+    "unsettled_Q_excluded": true,
+    "incorrect_accounting_excluded": true,
+    "unsafe_result_excluded": true,
+    "changed_input_excluded": true,
+    "unknown_source_excluded": true,
+    "unknown_overlay_excluded": true,
+    "changed_price_excluded": true,
+    "failed_GROUND4101_not_in_graph": true,
+    "causal_TUT_has_five_seeds": true,
+    "incomplete_baselines_have_no_five_seed_statistics": true
+  },
+  "accepted_at_validation": 13
+}

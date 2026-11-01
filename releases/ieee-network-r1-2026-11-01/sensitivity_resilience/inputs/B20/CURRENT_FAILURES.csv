@@ -1,0 +1,1 @@
+﻿job_id,condition,method,seed,status,time_s,arrivals,closed,active_wall_s,cpu_s,PID,attempt,config_sha256,source_sha256,input_sha256,estimated_remaining_s,net,HV_net,W1_net_HV,W2_net_HV,W3_net_HV,W4_net_HV

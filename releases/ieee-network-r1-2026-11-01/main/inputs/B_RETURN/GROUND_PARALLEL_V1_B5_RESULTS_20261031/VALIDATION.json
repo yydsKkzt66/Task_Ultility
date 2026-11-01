@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "generated_at": "2026-10-31T21:54:04.181600+08:00",
+  "completed_jobs": 5,
+  "available_seeds": {
+    "GROUND": [
+      4104,
+      4105
+    ],
+    "OFFLOAD": [
+      4103,
+      4104,
+      4105
+    ]
+  },
+  "complete_five_seeds_per_method": false,
+  "per_job_original_checks": 20,
+  "total_original_checks": 100,
+  "frozen_files_verified": 331,
+  "fixed_public_prices": {
+    "downlink_price_per_MB": 0.09202386055743175,
+    "energy_price_per_Wh": 2.981261194297225,
+    "terminal_backlog_price_per_MB": 0.09202386055743175
+  },
+  "independent_checks": {
+    "source_and_input_identity": true,
+    "complete_21600s": true,
+    "task_counts_1600": true,
+    "task_costs_and_net_recomputed": true,
+    "actual_energy_and_tx_reconciled": true,
+    "group_costs_recomputed": true,
+    "highest_product_deduplicated": true,
+    "closure_and_latency_recomputed": true,
+    "independent_ground_exact_4_29s": true,
+    "no_ground_queue_wait": true,
+    "old_new_delta_conservation": true,
+    "available_subset_mean_sample_SD": true,
+    "CSV_row_counts": true,
+    "XLSX_zip_and_XML": true,
+    "source_files_unchanged": true
+  },
+  "closed_latency_rows": 4476,
+  "source_evidence_files": 46,
+  "unresolved_failures": 0,
+  "historical_failed_or_interrupted_attempts": 2,
+  "no_simulation_rerun": true,
+  "baseline_reaudit_performed": false
+}

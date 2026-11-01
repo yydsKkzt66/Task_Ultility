@@ -1,0 +1,32 @@
+{
+  "pass_": true,
+  "rows": 96,
+  "groups": 32,
+  "seeds": [
+    4101,
+    4102,
+    4103
+  ],
+  "each_group_n": 3,
+  "ddof": 1,
+  "A_new": 22,
+  "B_new": 20,
+  "new_ground_offload_total": 42,
+  "normal_ground_offload": 6,
+  "PROP_TUT_reused": 48,
+  "sensitivity_rows": 84,
+  "normal_rows": 12,
+  "duplicate_keys": 0,
+  "missing_keys": 0,
+  "prior76_existing_values_changed": 0,
+  "B_job_config_source_input_matches": 20,
+  "B_delivery_file_SHA_pass": 33,
+  "B_original_raw_audits_reperformed_locally": false,
+  "B_validation_source": "Returned independent_validation and final validation; hashes retained",
+  "raw_PROP_TUT_dirs_missing_locally": 24,
+  "core_metric_cells_missing": 0,
+  "actual_safety_violations": 0.0,
+  "original_results_modified": false,
+  "simulations_run": 0,
+  "baseline_exception": "NORMAL GROUND4102 author-approved numerical arrival tolerance remains explicit"
+}

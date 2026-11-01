@@ -1,0 +1,79 @@
+[
+  {
+    "runtime": "prop_formal",
+    "archive": "runtimes/prop_formal.zip",
+    "scope": "Formal PROP main seeds 4101-4105; also contains the original ablation design, NOT returned ablation results.",
+    "archive_sha256": "91cae4bf5f1cf6a3357724d77b8bfb011fe4dfb53d56e872186b15c46628217f",
+    "bytes": 3226247,
+    "files": 169,
+    "manifests": {
+      "SOURCE_MANIFEST.json": "35e6471d6b5b26988e082b506cb2663e8b3c090c08424877f35975e12e48b0f4",
+      "INPUT_MANIFEST.json": "2b78eb27c84be6b08587dd104eb5180512938d0386c2bdcb487fe736afd5905e"
+    },
+    "additional_files": {
+      "README_CN.md": "de924d59b04172634b67a932afff271dc80b8278f26fc7465740b9b826a3e09f",
+      "README_REPRODUCE.md": "530a064250fef3f67cc371532db931cae97aa86d2a91df21250a132600409e37",
+      "NETWORK_REVISION_CONTRACT.md": "068a3e82415692bb484cb7b4e15722c73ac323a360dd1d79ae4de49dae7dca18"
+    }
+  },
+  {
+    "runtime": "tut_causal_seed4102",
+    "archive": "runtimes/tut_causal_seed4102.zip",
+    "scope": "Causal-delay TUT main seed 4102.",
+    "archive_sha256": "8967aa06e9936c8204a9dd199a35e0fbf0ca761b04e0abf50b50d7118951757d",
+    "bytes": 3233165,
+    "files": 172,
+    "manifests": {
+      "SOURCE_MANIFEST.json": "3c3de303fc1170220b7aaaf1a211bfdad0062832ef5c3d19d5156f8cbb955e62",
+      "INPUT_MANIFEST.json": "65eca47efda17e69e442de93ed105066014c74df876c99432ae7fa53178a8ec6"
+    },
+    "additional_files": {
+      "README_CN.md": "dc0417ae2189d70b3bb843ce91d67feb1cb8e549771c50557ebf21199516fe6a",
+      "README_REPRODUCE.md": "a17ca689f5d482e98536883a8d17bde464695ca364a61f594080542a653a6e8f",
+      "NETWORK_REVISION_CONTRACT.md": "c00294487f89c7f52433aa32d9c535b530bfcd36f34fd74a7701b18dbcb6cc70"
+    }
+  },
+  {
+    "runtime": "prop_tut_sensitivity",
+    "archive": "runtimes/prop_tut_sensitivity.zip",
+    "scope": "Causal TUT main seeds 4101,4103-4105; PROP/TUT sensitivity and outage scenarios.",
+    "archive_sha256": "174bbe28032fab6fd2692af3c11ce361a85f70650408609349449b3df3ddcf9e",
+    "bytes": 6664214,
+    "files": 297,
+    "manifests": {
+      "SOURCE_MANIFEST.json": "0c211d5fd3a5627bd3505b50eb4e7d024d347f12a8c71912cc891d00eab9e086",
+      "INPUT_MANIFEST.json": "2518b952d5438f60f348239ded3cd8248eda9708be80ca3cc9f67003c2e460fa"
+    },
+    "additional_files": {
+      "README_CN.md": "6348b7ed0a6098aaa75adeb52c17703a080f029f1be1e9247cacbbe2aded78ed",
+      "README_REPRODUCE.md": "a17ca689f5d482e98536883a8d17bde464695ca364a61f594080542a653a6e8f",
+      "NETWORK_REVISION_CONTRACT.md": "c00294487f89c7f52433aa32d9c535b530bfcd36f34fd74a7701b18dbcb6cc70"
+    }
+  },
+  {
+    "runtime": "ground_parallel_main",
+    "archive": "runtimes/ground_parallel_main.zip",
+    "scope": "GROUND/OFFLOAD main seeds 4101-4105. See arrival-clock acceptance/repair evidence.",
+    "archive_sha256": "301ab47ce77f72dbeb090cbfbe4f0a06851dd62a13acf3d9ca74ea2c7ba585fb",
+    "bytes": 6702044,
+    "files": 316,
+    "manifests": {
+      "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+      "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9"
+    },
+    "additional_files": {}
+  },
+  {
+    "runtime": "ground_parallel_sensitivity",
+    "archive": "runtimes/ground_parallel_sensitivity.zip",
+    "scope": "GROUND/OFFLOAD 42 perturbation runs, exact-arrival wrapper, independent 4.29 s ground processing.",
+    "archive_sha256": "b1cbbc97fcba7f3de2371dfb66b303b72507abb5639ebc4c313a1099d3aed1a2",
+    "bytes": 6792187,
+    "files": 345,
+    "manifests": {
+      "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+      "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+    },
+    "additional_files": {}
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "rows": [
+    {
+      "window": "business_01",
+      "start_s": 3600.0,
+      "end_s": 4200.0,
+      "ground_events_within_window": 180,
+      "gross_within_window": 89.66152497664442,
+      "closed_within_window": 180,
+      "backlog_ready_MB_at_end": 0.0,
+      "committed_unready_MB_at_end": 0.0,
+      "snapshot_available": true
+    },
+    {
+      "window": "business_02",
+      "start_s": 9300.0,
+      "end_s": 9900.0,
+      "ground_events_within_window": 177,
+      "gross_within_window": 69.81154860512544,
+      "closed_within_window": 177,
+      "backlog_ready_MB_at_end": 0.0,
+      "committed_unready_MB_at_end": 0.0,
+      "snapshot_available": true
+    },
+    {
+      "window": "business_03",
+      "start_s": 15000.0,
+      "end_s": 15600.0,
+      "ground_events_within_window": 160,
+      "gross_within_window": 53.249129174717694,
+      "closed_within_window": 160,
+      "backlog_ready_MB_at_end": 0.0,
+      "committed_unready_MB_at_end": 0.0,
+      "snapshot_available": true
+    },
+    {
+      "window": "business_04",
+      "start_s": 20700.0,
+      "end_s": 21300.0,
+      "ground_events_within_window": 133,
+      "gross_within_window": 50.816170344458115,
+      "closed_within_window": 133,
+      "backlog_ready_MB_at_end": 0.0,
+      "committed_unready_MB_at_end": 0.0,
+      "snapshot_available": true
+    }
+  ],
+  "note": "Actual ground events in [window_start,window_end); ACK/ground events after a window remain in the full ground ledger. Backlog from saved state at exact window end."
+}

@@ -1,0 +1,14 @@
+{
+  "main_rows": 20,
+  "sensitivity_rows": 96,
+  "distinct_runs": 104,
+  "runtime_manifests_checked": 1284,
+  "main_table_groups": 116,
+  "sensitivity_tables_reproduced_byte_identically": 15,
+  "main_and_sensitivity_figures_replotted": true,
+  "simulation_runs": 0,
+  "raw_physics_reaudit": false,
+  "ablation": "PENDING_EXTERNAL_RETURN",
+  "original_result_changes": 0,
+  "visual_check": "Main and sensitivity regenerated previews inspected: labels/legends/error bars visible; no clipping observed."
+}

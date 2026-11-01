@@ -1,0 +1,25 @@
+{
+  "utility": "Sum over all arriving tasks of actual information utility minus fixed actual E/B and ready terminal Q costs.",
+  "groups": {
+    "HV": [
+      "high",
+      "urgent"
+    ],
+    "ordinary": [
+      "low",
+      "medium"
+    ]
+  },
+  "closure_rate_denominators": {
+    "all": 1600,
+    "HV": 448,
+    "ordinary": 1152
+  },
+  "coverage": "Each task once; highest valid ground product. Fulfilled/partial separately.",
+  "latency_start": "actual task arrival",
+  "latency_end": "first valid ground final-requirement fulfillment",
+  "latency_population": "closed tasks only",
+  "energy_units": "actual controllable J or kJ; common background excluded",
+  "downlink_units": "decimal MB=8e6 bits",
+  "aggregation": "Arithmetic mean and sample SD of five per-seed metrics; P95 computed within each seed before aggregation."
+}

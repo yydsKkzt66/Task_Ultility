@@ -1,0 +1,30 @@
+{
+  "source_attempt": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02",
+  "source_hashes": {
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\RESULT\\AUDITED_SUMMARY.json": "6155211f552aed8022454bf44a0bba41468ad031fa0344307c9c7f2733356f43",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\RESULT\\CONFIG_EFFECTIVE.json": "3192672919b0b7fa7b5c3f6327a47ef824d609f4ebf9acea4c20579a3d76ec58",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\RESULT\\task_accounting.csv": "3b581b9f78ee320828765e732ccf4926b3a9f0c7451145121e5382e4c3fae08a",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\RESULT\\ground_ledger.json": "335c922e2e969ec06a873eb9601206a03f2839297ebee20b8fbcc8107c3cf0d9",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\RESULT\\terminal_state.json": "892f9646398b1841423d3f62eb65e756b7976edc685a5cd7ca80d664529f285c",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\IDENTITY.json": "785ce833ccc8fb317bb4286b2663188789b8bbaccabcb61f26509c69fd4bb422",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\STATUS.json": "5a8d78be88e8ab7e1adb459f15964145b508f7892909e7f2502bdc349686f651",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\AUDIT.json": "d341cf55e3ece02aee8565fc4338ade4a6bccc27c0e124c282731a84af15b26e",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\A1_GROUND_4101\\attempt_02\\COMPLETED.json": "5a8d78be88e8ab7e1adb459f15964145b508f7892909e7f2502bdc349686f651"
+  },
+  "ground_version": {
+    "policy": "independent_fixed",
+    "service_s": 4.29,
+    "receive_capacity": "nonbinding",
+    "version": "GROUND_PARALLEL_V1"
+  },
+  "execution_manifests": {
+    "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+  },
+  "original_audit_pass": true,
+  "original_failures": [],
+  "strict_completion_marker": true,
+  "metric_reconciliation_pass": true,
+  "simulations_run": 0,
+  "qualification": "Metric reconciliation only; never replaces physical audit or grants exception acceptance."
+}

@@ -1,0 +1,66 @@
+{
+  "horizon_s": 21600,
+  "macro_slot_s": 20,
+  "macro_slots": 1080,
+  "tasks_each": 1600,
+  "HV_each": 448,
+  "ordinary_each": 1152,
+  "seeds": [
+    4101,
+    4102,
+    4103
+  ],
+  "methods": [
+    "GROUND",
+    "OFFLOAD"
+  ],
+  "new_runs": 42,
+  "packages": {
+    "A": 22,
+    "B": 20
+  },
+  "normal_reuse": 6,
+  "unaffected_PROP_TUT_reuse": 48,
+  "nominal_windows": [
+    [
+      3600,
+      4200
+    ],
+    [
+      9300,
+      9900
+    ],
+    [
+      15000,
+      15600
+    ],
+    [
+      20700,
+      21300
+    ]
+  ],
+  "capacity_absolute": [
+    0.15,
+    0.3,
+    0.9
+  ],
+  "value_maps": [
+    [
+      1,
+      2,
+      5,
+      10
+    ],
+    [
+      1,
+      5,
+      20,
+      50
+    ]
+  ],
+  "normal_capacity": 0.5,
+  "ground_processing_s": 4.29,
+  "compressed_payload_mb": 4,
+  "scientific_source_parity": "SCIENTIFIC_SOURCE_PARITY.json",
+  "actual_metrics": "PENDING until completed runs"
+}

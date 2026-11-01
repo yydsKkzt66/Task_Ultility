@@ -1,0 +1,21 @@
+{
+  "base_manifests": {
+    "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+    "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9"
+  },
+  "effective_manifests": {
+    "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+    "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9",
+    "OFFLOAD_EXACT_ARRIVAL_TAIL_V1": "2c88cc29922059710e482065c9dd1cf04dc5a0e8c5c076f79bdadfdb39ed09d0"
+  },
+  "files": {
+    "exact_arrival.py": "2c88cc29922059710e482065c9dd1cf04dc5a0e8c5c076f79bdadfdb39ed09d0",
+    "recover.py": "68e5d0fc958bdafa90d87b31baf7b81b23ebc04d2faa72c8bcca4f54372fef8a",
+    "validate.py": "39183169765bbd4fdc432e3ede8dd9869db68762035c0ba8c4828b8ab2d612f8",
+    "VALIDATION.json": "528b27b939efaa2149de88c1e9d4c58a655a21b50095a38ea717d0d80658a8cc"
+  },
+  "failed_audit_sha256": "b3bc7f0012e8961d02d480868edecc197042eae2a760b7e24e139907978c5c6e",
+  "failed_arrivals_sha256": "a90609cdbb36cf7c8900503f21c18070630398d94fd46b75796f0e5ae4925a7b",
+  "failed_source_identity_sha256": "b7a3153352ee89e435e8d4e7e548943b94240dd38814fb41bb053faa5a8621ea",
+  "prefix_sha256": "875699a342976bc2d586404279b5aef5d18acf87a15a0db0bea4c0fafe6c4cf8"
+}

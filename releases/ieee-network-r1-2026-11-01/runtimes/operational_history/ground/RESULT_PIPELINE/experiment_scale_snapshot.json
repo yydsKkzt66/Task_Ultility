@@ -1,0 +1,488 @@
+{
+  "scope": "accepted formal runs only; missing runs excluded",
+  "required_runs": 20,
+  "accepted_runs": 13,
+  "records": [
+    {
+      "method": "GROUND",
+      "seed": 4103,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "high": 323,
+          "medium": 830,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "high": 323,
+          "medium": 830,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333453
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4103_GROUND\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "3aee4b276cdbff3247e1a314cf815bc70ac8cc6b2e874b38d84dda05004935bd"
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333478
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_OFFLOAD\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "fc7f2be0c549c3c1a7517ec3d7c39c4048805f130766684575ae41022b69fb50"
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.450520833346
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_03\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "e488a6215cc47823677f75288cf1b5cc0b1259b37f99e4ab2f9e305c24e7fa38"
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4101,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333478
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_SENSITIVITY3SEED_20261030_01\\A_RUNS\\NORMAL_4101_TUT_ADAPTED\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "f24af291981cff0460d004cc60fcbfa083b614262a74f63a25a96d95c2a36017"
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4102,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.450520833346
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_TUT_CAUSAL6H_20261029_01\\RUN\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "4a7f46d1d3c5da18dbebde61f1ed6b552e02e7083b32f319b794aa1c5e0dd7a9"
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4103,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "high": 323,
+          "medium": 830,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "high": 323,
+          "medium": 830,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333453
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_SENSITIVITY3SEED_20261030_01\\A_RUNS\\NORMAL_4103_TUT_ADAPTED\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "9574698ed348d4bf49fe54996996d2c1c7a118b7c0ca967b5b4db1e2b97a71c9"
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4104,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "high": 323,
+          "urgent": 125,
+          "medium": 830,
+          "low": 322
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "high": 323,
+          "urgent": 125,
+          "medium": 830,
+          "low": 322
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333471
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_SENSITIVITY3SEED_20261030_01\\A_RUNS\\NORMAL_4104_TUT_ADAPTED\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "182d1b15f9367aa8c59bc86f77ee9ec0a4e0e200412e4218fdcb339d8f41e73e"
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4105,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "low": 322,
+          "high": 323,
+          "medium": 830,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "low": 322,
+          "high": 323,
+          "medium": 830,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333483
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_SENSITIVITY3SEED_20261030_01\\A_RUNS\\NORMAL_4105_TUT_ADAPTED\\attempt_01\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "e1733fa8b69e16539130780b064a145fd9a01c7be825648d4c09f8ab1d9546d7"
+    },
+    {
+      "method": "PROP",
+      "seed": 4101,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333478
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_FORMAL6H_20261028_01\\MAIN_RUNS\\4101_PROP\\attempt_06\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "f25b069af9badc7ca793e7505bd96661deb73dc10b713bd2794de1e42ad5385a"
+    },
+    {
+      "method": "PROP",
+      "seed": 4102,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "medium": 830,
+          "high": 323,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.450520833346
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_FORMAL6H_20261028_01\\MAIN_RUNS\\4102_PROP\\attempt_03\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "85209ada0ecf065bdbe2eb10a06194e4f3f0a76b48d44ff1def6e62d0e6745af"
+    },
+    {
+      "method": "PROP",
+      "seed": 4103,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "high": 323,
+          "medium": 830,
+          "low": 322,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "high": 323,
+          "medium": 830,
+          "low": 322,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333453
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_FORMAL6H_20261028_01\\MAIN_RUNS\\4103_PROP\\attempt_05\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "e1cc6222f4e86e322a583fed1f87df30ca816785ef7e63c8f9816b3a67b0a2a3"
+    },
+    {
+      "method": "PROP",
+      "seed": 4104,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "high": 323,
+          "urgent": 125,
+          "medium": 830,
+          "low": 322
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "high": 323,
+          "urgent": 125,
+          "medium": 830,
+          "low": 322
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333471
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_FORMAL6H_20261028_01\\MAIN_RUNS\\4104_PROP\\attempt_05\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "2ad919cf573cac9248af085d905048d8caa5a60650ef5cb61c72652fbb24a49b"
+    },
+    {
+      "method": "PROP",
+      "seed": 4105,
+      "time": {
+        "full_horizon_s": 21600.0,
+        "macro_slot_s": 20,
+        "full_macro_slots": 1080,
+        "actual_prefix_s": 21600.0
+      },
+      "tasks": {
+        "full_count": 1600,
+        "full_class_counts": {
+          "low": 322,
+          "high": 323,
+          "medium": 830,
+          "urgent": 125
+        },
+        "actual_arrivals": 1600,
+        "prefix_classes": {
+          "low": 322,
+          "high": 323,
+          "medium": 830,
+          "urgent": 125
+        },
+        "full_values": {
+          "min": 0.17447916666666666,
+          "max": 4.361979166666667,
+          "sum": 1599.4505208333483
+        },
+        "full_deadline_s": {
+          "min": 1223.279790160911,
+          "max": 14376.80653947615
+        }
+      },
+      "source_snapshot": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_FORMAL6H_20261028_01\\MAIN_RUNS\\4105_PROP\\attempt_03\\RESULT\\experiment_scale_snapshot.json",
+      "source_sha256": "2d5d3354c848d8894d29138782d47ed57eefd536992bc5a2c86742737c40dcb9"
+    }
+  ]
+}

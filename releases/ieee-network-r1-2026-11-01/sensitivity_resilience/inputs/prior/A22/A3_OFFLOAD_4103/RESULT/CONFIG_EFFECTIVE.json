@@ -1,0 +1,140 @@
+{
+  "variant": "incremental_ground_parallel_sensitivity_a3_4103",
+  "seed": 4103,
+  "legacy_config": "network_inputs/legacy_config.json",
+  "physics": {
+    "network": {
+      "board_capacity_j_k": 450.0,
+      "rf_capacity_j_k": 100.0,
+      "structure_capacity_j_k": 4500.0,
+      "board_structure_conductance_w_k": 1.04,
+      "rf_structure_conductance_w_k": 1.04,
+      "emissivity_area_m2": 0.08,
+      "space_temperature_k": 3.0,
+      "board_idle_power_w": 7.9,
+      "rf_idle_power_w": 0.0,
+      "structure_idle_power_w": 0.96,
+      "rf_escaped_fraction": 0.0,
+      "chip_limit_c": 60.0,
+      "rf_limit_c": 70.0,
+      "chip_uncertainty_margin_c": 6.1,
+      "rf_uncertainty_margin_c": 5.0,
+      "initial_board_structure_rf_c": 15.0,
+      "board_structure_limit_c": 30.0,
+      "frozen_background_power_w": 8.86,
+      "source_by_field": {
+        "board_capacity_j_k": "REFERENCE_ASSUMPTION: 0.5 kg distinct Al-equivalent board/enclosure thermal mass times 900 J/(kg K); not chip mass or identified hardware",
+        "rf_capacity_j_k": "REFERENCE_ASSUMPTION: 0.111111 kg short-timescale Al-equivalent participating mass times 900; not total 300 g transmitter mass and not PA junction",
+        "structure_capacity_j_k": "REFERENCE_ASSUMPTION: 5 kg distinct Al-equivalent participating structure times 900; not total spacecraft mass",
+        "board_structure_conductance_w_k": "REFERENCE_DESIGN: four independent 4-40 small-stiff contact paths times NASA guideline 0.26 W/K; actual interface not measured",
+        "rf_structure_conductance_w_k": "REFERENCE_DESIGN: four independent 4-40 small-stiff contact paths times NASA guideline 0.26 W/K; actual interface not measured",
+        "emissivity_area_m2": "REFERENCE_DESIGN: 0.8 emissivity times 0.10 m2 effective radiating area including view-factor convention; not measured coating or geometry",
+        "space_temperature_k": "REFERENCE_DEEP_SPACE_SINK: 3 K approximation; Earth IR, albedo and solar absorbed heat are in the separate effective external flux",
+        "board_idle_power_w": "REFERENCE_PORTABILITY_ASSUMPTION: 7.9 W rounded near public Full4T idle mean 7.902109 W; existing total budget remains 8.86 W",
+        "rf_idle_power_w": "REFERENCE_DUTY_STATE: TX subsystem power-gated when not transmitting; RX/TT&C not separately added; not SRX-8 powered-idle specification",
+        "structure_idle_power_w": "DERIVED_RESIDUAL: 8.86-7.9-0=0.96 W; represents remaining frozen bus background without importing another spacecraft",
+        "rf_escaped_fraction": "CONSERVATIVE_HEAT_ENVELOPE: all task DC energy counted as retained heat; ignores nonnegative escaped RF energy, not an efficiency measurement",
+        "chip_limit_c": "DECLARED_DIAGNOSTIC_OPERATIONAL_CEILING: 60 C, not manufacturer shutdown rating; predicts at most 53.9 C after margin; observed source peak 57 C does not certify safety",
+        "rf_limit_c": "REFERENCE_MODULE_OPERATIONAL_CEILING: 70 C inspired by SRX-8 official module operating range; not PA junction or identification of current hardware",
+        "chip_uncertainty_margin_c": "ENGINEERING_MARGIN: round observed maximum underestimation 6.028247 C up to 6.1 C; not a future error bound",
+        "rf_uncertainty_margin_c": "DECLARED_ENGINEERING_MARGIN: 5 C; uncalibrated, not statistical bound or hotspot allowance certification",
+        "initial_board_structure_rf_c": "PRESERVED_AUTHOR_R01_INITIAL_15_C",
+        "board_structure_limit_c": "PRESERVED_AUTHOR_R01_30_C_LIMIT; BUPT surface/structure reference, not chip limit",
+        "frozen_background_power_w": "PRESERVED_R02_FROZEN_BACKGROUND_8.86_W"
+      },
+      "qualification": "AUTHOR_APPROVED_ENGINEERING_DIAGNOSTIC"
+    },
+    "initial_state": "R06_FOUR_NODE_INITIAL_DERIVATION",
+    "max_step_s": 20.0,
+    "acquisition": false,
+    "external_heat_model": "R06_TWO_STATE_ENGINEERING_BOUNDARY_WITH_LEGACY_SUNLIGHT",
+    "absorbed_external_w": [
+      15.480743924596997,
+      24.870418887787615
+    ]
+  },
+  "public_prices": {
+    "downlink_price_per_MB": 0.09202386055743175,
+    "energy_price_per_Wh": 2.981261194297225,
+    "terminal_backlog_price_per_MB": 0.09202386055743175
+  },
+  "q_eff": {
+    "balanced": 0.7342411587001637,
+    "high_accuracy": 0.8215028271304525,
+    "lightweight": 0.5697178218395861
+  },
+  "capacity": 0.9,
+  "source_bundle_capacity": 0.35,
+  "slot_seconds": 20.0,
+  "horizon_s": 21600.0,
+  "control_interval_slots": 10,
+  "propagation_s": 0.0,
+  "profile_policy": "RETAIN_LEGACY_MODEL_AND_ENCODING_PROFILES",
+  "pressure_policy": "SOC_GAP_CELSIUS_HEADROOM_EXECUTABLE_WINDOW",
+  "calibration": "OLD_FIXED_PRICES_UNIFIED_COMPARISON_NOT_RECALIBRATED",
+  "physical_qualification": "ENGINEERING_DIAGNOSTIC_NOT_HARDWARE_VALIDATED",
+  "input_hashes": {
+    "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+    "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+    "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+    "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+    "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+  },
+  "incremental_pricing": {
+    "use_mode": true,
+    "use_dynamic": true,
+    "a_E": 1.2,
+    "a_H": 0.8,
+    "a_W": 1.1,
+    "interval_slots": 10,
+    "tolerance": 1e-12,
+    "formal_settlement_s": 21600.0,
+    "qualification": "PROVISIONAL_STARTING_COEFFICIENTS_NO_TUNING",
+    "mode_thresholds": {
+      "soc_enter": 0.7,
+      "soc_exit": 0.74,
+      "thermal_enter": 0.8,
+      "thermal_exit": 0.7,
+      "queue_enter": 0.65,
+      "queue_exit": 0.45,
+      "contact_enter_s": 120.0,
+      "contact_exit_s": 80.0,
+      "urgency_enter": 0.65,
+      "urgency_exit": 0.5,
+      "hv_enter": 0.1,
+      "hv_exit": 0.05
+    }
+  },
+  "task_manifest": "seed_4103/tasks.csv",
+  "observation_horizon_s": 21600.0,
+  "dataset_scope": "FROZEN_FIVE_SEED_SYNTHETIC_TEMPLATE_RESAMPLING",
+  "observation_contract": "Finite6h; ground benefits and online/public terminal ready Q align at21600; original relative DDL retained",
+  "finite_period": true,
+  "business_calendar": "seed_4103/calendar.json",
+  "public_pricing_name": "基于资源状态的定价",
+  "tut_latency_policy": "causal_ground",
+  "sensitivity": {
+    "condition": "A3",
+    "capacity_multiplier": 0.9,
+    "base_calendar_multiplier": 0.5,
+    "value_weights": [
+      1,
+      3,
+      10,
+      25
+    ],
+    "outage": null,
+    "notification_s": null,
+    "main_value_total": 1599.4505208333335,
+    "notification_contract": "NORMAL_CALENDAR_UNTIL_OUTAGE_START; NOTIFY_BEFORE_DECISION_AND_TX",
+    "prefix_reuse": false,
+    "value_normalization_factor": 1.0
+  },
+  "ground_processing": {
+    "policy": "independent_fixed",
+    "service_s": 4.29,
+    "receive_capacity": "nonbinding",
+    "version": "GROUND_PARALLEL_V1"
+  },
+  "implementation_contract": "V6_SHARED_PHYSICS_WITH_B1_FULL_TAIL_AND_INDEPENDENT_GROUND_V1"
+}

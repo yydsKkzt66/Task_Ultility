@@ -1,0 +1,31 @@
+{
+  "job": {
+    "job_id": "A5_OFFLOAD_4103",
+    "package": "A",
+    "condition": "A5",
+    "arm": "OFFLOAD",
+    "method": "OFFLOAD",
+    "seed": 4103,
+    "variant": "incremental_ground_parallel_sensitivity_a5_4103",
+    "config_sha256": "4c12dad3cb6bdd3f2c2c2a740c051cd5cbae512c8bb3c1a235f3087176e17dc8",
+    "input_hashes": {
+      "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+      "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+      "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+      "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540",
+      "sensitivity/A5_4103_tasks.csv": "1e1385bb13dee7a385dc1a27c8ef5084ffbe95c6bca7c29fd1fee20c9f9aceff"
+    },
+    "task_sha256": "1e1385bb13dee7a385dc1a27c8ef5084ffbe95c6bca7c29fd1fee20c9f9aceff",
+    "queue_priority": 18,
+    "estimated_cpu_s": 1624.65625
+  },
+  "manifests": {
+    "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+  },
+  "source_audit_pass": true,
+  "sensitivity_audit_pass": true,
+  "metrics_pass": true,
+  "epoch": 1793475687.15259
+}

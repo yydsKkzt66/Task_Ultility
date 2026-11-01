@@ -1,0 +1,16 @@
+{
+  "source_sha256": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+  "input_sha256": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095",
+  "jobs": 42,
+  "packages": {
+    "A": 22,
+    "B": 20
+  },
+  "scientific_version": "GROUND_PARALLEL_V1_SHARED_V6_PHYSICS",
+  "arrival_overlay": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2",
+  "max_workers_each": 4,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "host": "Windows-10-10.0.26200-SP0",
+  "task": "Two machines, each has a 9 hour target; preserve full1600/21600 and actual accounting",
+  "draft_identifier_correction": "Plan config names lacked incremental dispatch prefix; corrected before ANY execution; old planning artifact retained."
+}

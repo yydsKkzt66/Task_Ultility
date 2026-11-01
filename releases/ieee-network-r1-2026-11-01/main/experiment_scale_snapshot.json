@@ -1,0 +1,263 @@
+{
+  "horizon_s": 21600,
+  "macro_slot_s": 20,
+  "macro_slot_count": 1080,
+  "runs": 20,
+  "seeds": [
+    4101,
+    4102,
+    4103,
+    4104,
+    4105
+  ],
+  "tasks_per_run": 1600,
+  "HV_per_run": 448,
+  "ordinary_per_run": 1152,
+  "background_energy_kJ": 191.376,
+  "prices": "Frozen public E/B/Q; see source configs",
+  "detector": "Frozen engineering proxy profiles; no real detector evidence added",
+  "image_files_read_by_this_postprocessor": [],
+  "ground_processing": "GROUND_PARALLEL_V1: full reception then independent 4.29 s; no shared serial queue; no receive overflow",
+  "source_identity": {
+    "source_sha256": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+    "input_sha256": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9",
+    "matrix_sha256": "10e79d9f945c82686385a5dcd260f96a0ee6077ddeccaed239db9fe37c442f46",
+    "base": "V6 + independent ground resource config; no scheduling change",
+    "all_seeds": [
+      4101,
+      4102,
+      4103,
+      4104,
+      4105
+    ],
+    "A": 5,
+    "B": 5,
+    "max_parallel_per_machine": 4
+  },
+  "unknown_fields": {
+    "complete_B_execution_trajectory": "NOT_INCLUDED_IN_RETURN_PACKAGE",
+    "B_raw_reservation_authorization_traces": "NOT_INCLUDED_IN_RETURN_PACKAGE"
+  },
+  "per_run": [
+    {
+      "method": "GROUND",
+      "seed": 4101,
+      "controlled_kJ": 101.35917000600568,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 34.62486929873381,
+      "downlink_MB": 4948.0,
+      "closed": 1236,
+      "partial": 0,
+      "effective_products": 1236
+    },
+    {
+      "method": "GROUND",
+      "seed": 4102,
+      "controlled_kJ": 102.51035113427095,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 34.88094997900599,
+      "downlink_MB": 4932.0,
+      "closed": 1233,
+      "partial": 0,
+      "effective_products": 1233
+    },
+    {
+      "method": "GROUND",
+      "seed": 4103,
+      "controlled_kJ": 101.49168136127582,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 34.654449029518446,
+      "downlink_MB": 4980.0,
+      "closed": 1245,
+      "partial": 0,
+      "effective_products": 1245
+    },
+    {
+      "method": "GROUND",
+      "seed": 4104,
+      "controlled_kJ": 102.31526867327482,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 34.83769508554861,
+      "downlink_MB": 4900.0,
+      "closed": 1223,
+      "partial": 0,
+      "effective_products": 1223
+    },
+    {
+      "method": "GROUND",
+      "seed": 4105,
+      "controlled_kJ": 99.78610768578392,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 34.27166690023793,
+      "downlink_MB": 4660.0,
+      "closed": 1165,
+      "partial": 0,
+      "effective_products": 1165
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4101,
+      "controlled_kJ": 75.60071433550767,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 28.317343901573683,
+      "downlink_MB": 1731.89999999999,
+      "closed": 696,
+      "partial": 0,
+      "effective_products": 696
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4102,
+      "controlled_kJ": 75.27798288756773,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 28.230586347291883,
+      "downlink_MB": 1716.1499999999899,
+      "closed": 696,
+      "partial": 0,
+      "effective_products": 696
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4103,
+      "controlled_kJ": 74.31223406452294,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 27.96971206729315,
+      "downlink_MB": 1676.05,
+      "closed": 697,
+      "partial": 0,
+      "effective_products": 697
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4104,
+      "controlled_kJ": 74.55771886823784,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 28.036203601988113,
+      "downlink_MB": 1690.1,
+      "closed": 695,
+      "partial": 0,
+      "effective_products": 695
+    },
+    {
+      "method": "OFFLOAD",
+      "seed": 4105,
+      "controlled_kJ": 75.29729485086047,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 28.235783749164376,
+      "downlink_MB": 1722.45,
+      "closed": 696,
+      "partial": 0,
+      "effective_products": 696
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4101,
+      "controlled_kJ": 37.877643214076,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 16.52215540963335,
+      "downlink_MB": 911.21,
+      "closed": 503,
+      "partial": 364,
+      "effective_products": 867
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4102,
+      "controlled_kJ": 36.94060300308233,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 16.179551779063402,
+      "downlink_MB": 846.07,
+      "closed": 504,
+      "partial": 362,
+      "effective_products": 866
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4103,
+      "controlled_kJ": 38.32780798611863,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 16.685752109270577,
+      "downlink_MB": 884.614,
+      "closed": 532,
+      "partial": 373,
+      "effective_products": 905
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4104,
+      "controlled_kJ": 36.94375804333613,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 16.18071005327714,
+      "downlink_MB": 838.292,
+      "closed": 527,
+      "partial": 343,
+      "effective_products": 870
+    },
+    {
+      "method": "TUT_ADAPTED",
+      "seed": 4105,
+      "controlled_kJ": 37.75523137700097,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 16.477557926130295,
+      "downlink_MB": 881.168,
+      "closed": 494,
+      "partial": 384,
+      "effective_products": 878
+    },
+    {
+      "method": "PROP",
+      "seed": 4101,
+      "controlled_kJ": 50.295080763107066,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 20.811377432622045,
+      "downlink_MB": 1029.1080518749998,
+      "closed": 654,
+      "partial": 450,
+      "effective_products": 1104
+    },
+    {
+      "method": "PROP",
+      "seed": 4102,
+      "controlled_kJ": 49.28469471744763,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 20.478913174962486,
+      "downlink_MB": 987.4207309999981,
+      "closed": 666,
+      "partial": 445,
+      "effective_products": 1111
+    },
+    {
+      "method": "PROP",
+      "seed": 4103,
+      "controlled_kJ": 49.57442206814796,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 20.574532155883436,
+      "downlink_MB": 993.5130931249988,
+      "closed": 679,
+      "partial": 464,
+      "effective_products": 1143
+    },
+    {
+      "method": "PROP",
+      "seed": 4104,
+      "controlled_kJ": 50.05722723880314,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 20.733362930733314,
+      "downlink_MB": 995.0811662499971,
+      "closed": 695,
+      "partial": 427,
+      "effective_products": 1122
+    },
+    {
+      "method": "PROP",
+      "seed": 4105,
+      "controlled_kJ": 51.45877997310423,
+      "background_kJ": 191.376,
+      "controlled_share_of_gross_load_percent": 21.19086070735159,
+      "downlink_MB": 1052.9497163749998,
+      "closed": 679,
+      "partial": 437,
+      "effective_products": 1116
+    }
+  ]
+}

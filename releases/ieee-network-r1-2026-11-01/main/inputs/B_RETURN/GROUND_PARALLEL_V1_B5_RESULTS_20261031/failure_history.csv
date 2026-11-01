@@ -1,0 +1,3 @@
+﻿arm,seed,attempt,status,error,time_s,current_status
+OFFLOAD,4104,C:\Users\78689\NetworkExperimentDelivery\GROUND_PARALLEL_V1_B5_20261031\4104_OFFLOAD\attempt_01,FAILED,"PermissionError(13, '拒绝访问。')",18272.317682970865,COMPLETED
+OFFLOAD,4105,C:\Users\78689\NetworkExperimentDelivery\GROUND_PARALLEL_V1_B5_20261031\4105_OFFLOAD\attempt_01,INTERRUPTED,未记录；旧尝试已停止并存在后续尝试,,COMPLETED

@@ -1,0 +1,7 @@
+{
+  "parent_checkpoint": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T04200.pkl",
+  "parent_sha256": "875699a342976bc2d586404279b5aef5d18acf87a15a0db0bea4c0fafe6c4cf8",
+  "parent_metadata_sha256": "0b6f599e79e6963185fdf2b2dc7674c4501e0e81121ebe3bb88eac339eb2bad1",
+  "reason": "All342 prefix arrivals exact; new arrival-only branch would not fire; state bytes unchanged",
+  "validation_sha256": "528b27b939efaa2149de88c1e9d4c58a655a21b50095a38ea717d0d80658a8cc"
+}

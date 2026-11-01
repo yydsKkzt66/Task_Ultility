@@ -1,0 +1,21 @@
+{
+  "phase": "COMPLETED",
+  "arm": "OFFLOAD",
+  "method": "OFFLOAD",
+  "seed": 4101,
+  "pid": 41820,
+  "process_created": 1793470069.2801533,
+  "updated_epoch": 1793473100.81685,
+  "time_s": 21600,
+  "arrivals": 1600,
+  "closed": 583,
+  "decisions": 1600,
+  "candidates": 3200,
+  "active_wall_s": 3029.031429399969,
+  "total_wall_s": 3029.033107280731,
+  "original_start_epoch": 1793470071.7837427,
+  "cpu_s": 2994.109375,
+  "rss_bytes": 271781888,
+  "peak_rss_bytes": 361185280,
+  "task_id": null
+}

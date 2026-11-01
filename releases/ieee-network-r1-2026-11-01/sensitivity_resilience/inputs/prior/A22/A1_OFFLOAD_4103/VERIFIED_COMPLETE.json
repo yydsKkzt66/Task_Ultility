@@ -1,0 +1,30 @@
+{
+  "job": {
+    "job_id": "A1_OFFLOAD_4103",
+    "package": "A",
+    "condition": "A1",
+    "arm": "OFFLOAD",
+    "method": "OFFLOAD",
+    "seed": 4103,
+    "variant": "incremental_ground_parallel_sensitivity_a1_4103",
+    "config_sha256": "ab297feae6e4d2d57e3697cb83db96c6db5a9dfa68b9c5df46bf82514795bb7c",
+    "input_hashes": {
+      "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+      "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+      "seed_4103/tasks.csv": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+      "seed_4103/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+      "seed_4103/exogenous.json": "7e5afdba41b3042313f4587e7ef515808c5c5383112d0835e8738a7f258dd540"
+    },
+    "task_sha256": "e8adb9fc2f40800d88ad7ac19841dd8c9a17b78ebb542d822ff89589ba09838e",
+    "queue_priority": 11,
+    "estimated_cpu_s": 1624.65625
+  },
+  "manifests": {
+    "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+  },
+  "source_audit_pass": true,
+  "sensitivity_audit_pass": true,
+  "metrics_pass": true,
+  "epoch": 1793476662.2982996
+}

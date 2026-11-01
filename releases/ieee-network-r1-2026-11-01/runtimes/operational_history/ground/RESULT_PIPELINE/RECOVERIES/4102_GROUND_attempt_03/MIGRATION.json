@@ -1,0 +1,30 @@
+{
+  "bad_arrivals": [
+    {
+      "task_id": "formal_4102_0908",
+      "time_s": 9603.197749927593,
+      "expected_s": 9603.197749927625,
+      "gap_s": 3.2741809263825417e-11
+    }
+  ],
+  "first_bad_s": 9603.197749927625,
+  "checkpoint": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_GROUND\\attempt_02\\CHECKPOINTS\\T08560.pkl",
+  "old_audit_sha256": "b3bc7f0012e8961d02d480868edecc197042eae2a760b7e24e139907978c5c6e",
+  "old_identity_sha256": "0ff8ad8fb2259e5caabd01c5ba44f30611c8bb843b325eb5f02251cb64753710",
+  "prefix_time_s": 8560.0,
+  "prefix_arrivals": 681,
+  "parent_checkpoint_sha256": "1edc6c2a7217fcd3d4157eafa3cc5be2ae0a88f6eba052726284d027da5a92db",
+  "parent_metadata_sha256": "341b3665f8aab749c6bbf1a90d632df5f90562838dad35af46f8b9d5ea1228af",
+  "exact_prefix_no_trigger": true,
+  "execution_overlay": {
+    "version": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2",
+    "sha256": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d",
+    "scope": "GROUND/OFFLOAD arrival registration only; original integrator/safety/fees; strict audit unchanged",
+    "frozen_dependencies": {
+      "src/network_revision/runtime.py": "28aafda6b6b35efd4b5cb2a3630f462c706fc23be9c4d70832493ee9fa996fa6",
+      "src/link/event_queue_runtime_v3.py": "260d6dfc5f83b06371bf6e4edca88234c6f402c92bfa62b50e7be6444a3cd504",
+      "formal_audit.py": "2efca189ac1c4cc84bba50704ab949ac1a8529f5221dfedefd9de76affb37d89"
+    }
+  },
+  "policy": "Original scientific parameters and strict final audit; actual positive tail integration"
+}

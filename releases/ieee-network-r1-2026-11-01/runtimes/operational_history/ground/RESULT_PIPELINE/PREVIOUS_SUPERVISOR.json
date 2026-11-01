@@ -1,0 +1,19 @@
+{
+  "identity": {
+    "pid": 46112,
+    "process_created": 1793449698.2758913,
+    "package": "A",
+    "max_workers": 5,
+    "controller_sha256": "5dcec6ce20e04d577db999c32a79d99f4385ce0c7f4c2703ff3d7a3adf133885"
+  },
+  "command": [
+    "D:\\CondaEnvs\\research-dl\\python.exe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\RUN_CONTROL_5\\control.py",
+    "--source",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work",
+    "--out",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS",
+    "--max-workers",
+    "5"
+  ]
+}

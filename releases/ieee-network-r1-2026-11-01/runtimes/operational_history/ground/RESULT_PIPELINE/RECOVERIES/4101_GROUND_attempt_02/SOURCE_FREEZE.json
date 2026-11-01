@@ -1,0 +1,17 @@
+{
+  "base_manifests": {
+    "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+    "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9"
+  },
+  "effective_manifests": {
+    "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+    "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9",
+    "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d"
+  },
+  "files": {
+    "exact_arrival.py": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d",
+    "recover_job.py": "f51ce205f6365e73feaf9803914bb0bdb051b7c583f2c71b0f02b8eadbf0f69a",
+    "validate.py": "fe02ef2ec7c371ac3388cca25a5736969b6f6da0ff7c16c3f69a5a9b7ce0220c",
+    "VALIDATION.json": "8e62ca275f1e9f0f9eacf262ba362cf2ca94d7244c7e064aded1210aecdb4ce2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "unique_runs": 96,
+  "sensitivity_runs": 84,
+  "normal_runs": 12,
+  "method_condition_groups": 32,
+  "seeds": [
+    4101,
+    4102,
+    4103
+  ],
+  "ddof": 1,
+  "plot_rows_checked": 80,
+  "main_points": 80,
+  "excluded_points": 0,
+  "ground_low_capacity_points_restored": 4,
+  "summary_mean_sd_pairs_recomputed": 1520,
+  "maximum_plot_summary_difference": 1.7763568394002505e-15,
+  "normal_matches_existing_three_seed_main_reference": true,
+  "five_seed_means_used": false,
+  "all_per_seed_accounting_and_product_identities_pass": true,
+  "capacity_not_rescaled": true,
+  "mean_minus_sd_min": -63.98083077708768,
+  "mean_plus_sd_max": 416.3335843639348,
+  "shared_y_limits": [
+    -80,
+    450
+  ],
+  "source_plot_sha256": "066fb18e6b747fe17e0fe12cbc10623e43365693f4bd6a41d16d0b6f078d6ab5",
+  "source_per_seed_sha256": "e9e8588ea5cd6ae5279ec7ab4705b5da2d45c66ff16002291a2f08e18b83a8b5",
+  "raw_trajectories_reaudited": false,
+  "simulations_run": 0
+}

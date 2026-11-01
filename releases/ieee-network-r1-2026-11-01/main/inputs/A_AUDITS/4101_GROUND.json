@@ -1,0 +1,82 @@
+{
+  "status": "ACCEPTED",
+  "version": "SAVED_LEDGER_STRICT_ACCEPTANCE_V1",
+  "source_attempt": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_02",
+  "original_audit_pass": true,
+  "original_failures": [],
+  "original_audit_unchanged": true,
+  "arrival_time": {
+    "passed": true,
+    "distinct_ids_ok": true,
+    "order_preserved": true,
+    "finite": true,
+    "tolerance_s": 1e-07,
+    "absolute_only": true,
+    "literal_equality": true,
+    "max_absolute_difference_s": 0.0,
+    "differences": []
+  },
+  "non_arrival_original_checks_pass": true,
+  "independent_identity_causal_safety_accounting_product_checks": true,
+  "all_original_result_values_unchanged": true,
+  "simulations_run": 0,
+  "input_sources": {
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\configs\\network_revision\\incremental_ground_parallel_4101.json": "05293c77a2bb297fc229f56d92ba379d99885829c54f22a995bbeaeaeb0806e2",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\seed_4101\\tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\seed_4101\\calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\.network_ground_parallel_work\\network_inputs\\seed_4101\\exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+  },
+  "raw_hashes": {
+    "AUDIT.json": "e61ee6724af59beacda13cda38dc660fd05a324bf2acb503abd4320d4e188b32",
+    "IDENTITY.json": "121e0d53f379e536b5ff25ae83aafa37e7de4c8a912d06e1b866f54bb66211d1",
+    "STATUS.json": "50822a1a252fc460caaedaca6520b2759a6a5d47c73c238fa7b1dbe23659da53",
+    "RESULT/AUDITED_SUMMARY.json": "433b04192ecabf782d609ff1308d7aa4f4f19391a92e4e903e4aaa17c661b1b0",
+    "RESULT/CONFIG_EFFECTIVE.json": "05293c77a2bb297fc229f56d92ba379d99885829c54f22a995bbeaeaeb0806e2",
+    "RESULT/arrival_events.json": "012f314092a4e20765ef6164bc515c67c7a455cbf76a46a4063630d2b8af9109",
+    "RESULT/ground_ledger.json": "ceca682419a41820cf41171e2573996f10d264df77b82044c9611456695a1faf",
+    "RESULT/task_accounting.csv": "b1c48379f3cabcf8a59542eaa088fcaf2f40b0766925c4dea246ee570c8422c9",
+    "RESULT/work.json": "2a9a39295d11d8b4fcd9e97abe48f2d0d6ba89acd3cf2984616820f9fa3ff650",
+    "RESULT/flows.json": "c1a3b5361c795a64a609f1ee2797e418e8c102f2adece71e6a2194514bbd4fa6",
+    "RESULT/products.json": "3d96160b81ae34dd6464b477a089b1a67fb404b68229d880c24ad340e7d4384e",
+    "RESULT/terminal_state.json": "1d1dd511122b3e93de4b9eb3c2262304046501ab06e139a05863de5ae313c340",
+    "RESULT/physical_trajectory.json": "3c1f93c288de974a23de621744923936e6e5c0037e3ae510f871a5f473575b9d",
+    "COMPLETED.json": "50822a1a252fc460caaedaca6520b2759a6a5d47c73c238fa7b1dbe23659da53"
+  },
+  "plot_row": {
+    "method": "GROUND",
+    "seed": 4101,
+    "overall_net": 30.40399724583449,
+    "hv_net": 264.07282445266947,
+    "ordinary_net": -233.66882720683643,
+    "hv_closed": 370,
+    "ordinary_closed": 866,
+    "total_closed": 1236,
+    "partial_only": 0,
+    "effective_delivered": 1236,
+    "controllable_energy_kj": 101.35917000600568,
+    "downlink_mb": 4948.0,
+    "metadata_satisfied": 0,
+    "metadata_partial": 0,
+    "roi_satisfied": 0,
+    "roi_partial": 0,
+    "roi_context_satisfied": 1236,
+    "roi_context_partial": 0
+  },
+  "extra": {
+    "gross": 591.0259727736309,
+    "energy_cost": 83.93837784029999,
+    "downlink_cost": 455.3340620381723,
+    "backlog_cost": 21.349535649324167,
+    "mean_closed_delay_s": 2748.0741657536655,
+    "p95_closed_delay_s": 6882.4944577379965,
+    "hv_mean_closed_delay_s": 1937.5494077189267,
+    "source": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_02",
+    "execution_manifests": {
+      "SOURCE_MANIFEST.json": "9e46ef963d6d0b6a19b406ffe830aa3ba66d1eaf727d43a9c3c14fa9d4f4d869",
+      "INPUT_MANIFEST.json": "4de5633131d1091bc76956f65161ea17901678c0c8d7b3eafabf806d66afd1d9",
+      "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d"
+    }
+  }
+}

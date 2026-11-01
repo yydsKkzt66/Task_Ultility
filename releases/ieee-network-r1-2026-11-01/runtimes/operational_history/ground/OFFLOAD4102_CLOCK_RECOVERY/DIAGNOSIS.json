@@ -1,0 +1,16 @@
+{
+  "old_audit_checks": 20,
+  "old_passed": 19,
+  "bad_arrivals": [
+    {
+      "task_id": "formal_4102_0733",
+      "time_s": 9406.642356677126,
+      "expected": 9406.642356677172,
+      "delta_s": -4.547473508864641e-11
+    }
+  ],
+  "first_bad_arrival_s": 9406.642356677172,
+  "last_unaffected_checkpoint_s": 4200,
+  "full_task_count": 1600,
+  "old_failed_attempt_sha_inventory": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\OFFLOAD4102_CLOCK_RECOVERY\\FAILED_ATTEMPT_FILES_SHA256.json"
+}

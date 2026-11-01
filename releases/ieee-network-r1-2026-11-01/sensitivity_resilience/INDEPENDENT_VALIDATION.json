@@ -1,0 +1,21 @@
+{
+  "pass_": true,
+  "checks": {
+    "duplicate_key_rejected": true,
+    "utility_corruption_rejected": true,
+    "product_double_count_rejected": true,
+    "energy_unit_error_rejected": true,
+    "wrong_seed_rejected": true,
+    "wrong_version_rejected": true,
+    "wrong_config_hash_rejected": true,
+    "all_group_means_and_ddof1_independently_checked": true,
+    "all_84_pairs_use_same_seed_normal": true,
+    "retention_is_mean_of_three_seed_ratios": true,
+    "standalone_recompute_byte_identical": true
+  },
+  "aggregate_metrics_verified": 1520,
+  "paired_seed_rows_verified": 84,
+  "independent_derived_files": 15,
+  "source_edits": 0,
+  "simulations_run": 0
+}

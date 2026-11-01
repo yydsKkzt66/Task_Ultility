@@ -1,0 +1,27 @@
+{
+  "LABELS": [
+    "GROUND",
+    "OFFLOAD",
+    "TUT-Adapt",
+    "PROP"
+  ],
+  "COLORS": [
+    "#78B6C8",
+    "#F2D98E",
+    "#466F87",
+    "#E48578"
+  ],
+  "TEXT": "#30343A",
+  "EDGE": "#555B61",
+  "GRID": "#E4E6E8",
+  "font_family": "Times New Roman",
+  "font_size_pt": 8.5,
+  "tick_font_size_pt": 8.5,
+  "legend_font_size_pt": 8,
+  "axis_label_font_size_pt": 9,
+  "spine_width_pt": 0.6,
+  "error_linewidth_pt": 0.8,
+  "grid_linewidth_pt": 0.45,
+  "source_script": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_MAIN_FIGURE_2X2_CAUSAL_20261030_01\\plot_main_exp.py",
+  "source_sha256": "a93464b28a3e2d60f20393f6ae6c9921e34751866fc47d3815705cd2052ad6bb"
+}

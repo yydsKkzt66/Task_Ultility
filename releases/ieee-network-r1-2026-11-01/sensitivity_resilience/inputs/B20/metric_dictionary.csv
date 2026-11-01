@@ -1,0 +1,36 @@
+﻿metric,label_CN,unit,definition_CN
+overall_net,总体净效用,utility,全部到达任务实际到地收益减其可控资源费用
+hv_net,HV净效用,utility,high+urgent任务实际收益减其实际可控资源费用
+ordinary_net,普通任务净效用,utility,low+medium任务实际收益减其实际可控资源费用
+overall_gross,总体毛效用,utility,观察期内实际有效信息收益
+energy_cost,能耗扣分E,utility,实际可控J/3600乘统一固定每Wh价格
+downlink_cost,下传扣分B,utility,实际十进制MB乘统一固定每MB价格
+queue_cost,期末ready积压扣分Q,utility,21600s ready积压按固定价格结算
+fixed_cost,资源总扣分,utility,E+B+Q
+hv_closed,HV闭环数,tasks,high+urgent，必须有效满足需求
+ordinary_closed,普通闭环数,tasks,low+medium，必须有效满足需求
+total_closed,总体闭环数,tasks,HV与普通闭环数之和
+hv_closure_rate_percent,HV闭环率,%,HV闭环数/448*100
+ordinary_closure_rate_percent,普通闭环率,%,普通闭环数/1152*100
+closure_rate_percent,总体闭环率,%,总体闭环数/1600*100
+controllable_energy_kj,可控能耗,kJ,推理+编码+实际RF发送；背景单列不重复计费
+downlink_mb,实际下传量,MB,十进制MB；全部实际传输成本保留
+latency_mean_s,闭环时延均值,s,只统计本方法已闭环任务，真实到达到首次有效满足需求
+latency_p95_s,闭环时延95分位,s,仅闭环样本，(n-1)*0.95线性插值
+hv_latency_mean_s,HV闭环时延均值,s,仅实际闭环的high+urgent任务
+hv_latency_p95_s,HV闭环时延95分位,s,仅实际闭环的high+urgent任务
+effective_delivered,有有效到地产品任务数,tasks,最高有效产品按任务去重；每任务计一次
+partial_only,仅部分交付任务数,tasks,有有效产品但未满足最终需求
+no_valid_product,无有效到地产品任务数,tasks,最高有效产品为none
+right_censored_tasks,期末右删失,tasks,21600s未闭环但尚未过DDL
+deadline_failed_tasks,已过DDL未闭环,tasks,与已闭环、右删失互斥
+actual_safety_violations,实际安全违例,events,沿用冻结审计阈值与公差
+metadata_satisfied,metadata 满足需求,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+metadata_partial,metadata 仅部分交付,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+metadata_total,metadata 总数,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+roi_satisfied,roi 满足需求,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+roi_partial,roi 仅部分交付,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+roi_total,roi 总数,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+roi_context_satisfied,roi_context 满足需求,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+roi_context_partial,roi_context 仅部分交付,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥
+roi_context_total,roi_context 总数,tasks,每个任务仅计最高有效到地产品，满足需求与部分交付互斥

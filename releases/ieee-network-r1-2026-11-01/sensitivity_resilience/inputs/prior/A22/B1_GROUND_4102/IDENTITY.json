@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "B1_GROUND_4102",
+    "package": "A",
+    "condition": "B1",
+    "arm": "GROUND",
+    "method": "B1",
+    "seed": 4102,
+    "variant": "incremental_ground_parallel_sensitivity_b1_4102",
+    "config_sha256": "a51df8856457ab8dad164187b8014f8b74213de8a036e4d3ce9eacaee594fe85",
+    "input_hashes": {
+      "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+      "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+      "seed_4102/tasks.csv": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+      "seed_4102/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+      "seed_4102/exogenous.json": "f943e4b2c24df4588d19ceec7848b42618f24bfeea931ab1e38849bd7b42f355"
+    },
+    "task_sha256": "6d0c9a3ab4c9e0e8178df6c415720a9dc8d9951994896b85f5911e4cd3dc4604",
+    "queue_priority": 9,
+    "estimated_cpu_s": 5261.421875
+  },
+  "manifests": {
+    "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+  },
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "D:\\CondaEnvs\\research-dl\\python.exe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\IO_STABILITY_V1\\io_worker.py",
+    "--runtime",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\runtime",
+    "--job",
+    "B1_GROUND_4102",
+    "--package",
+    "A",
+    "--out",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\A_RUNS\\B1_GROUND_4102\\attempt_01"
+  ],
+  "root": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_SENSITIVITY9H_20261031_01\\runtime",
+  "start_epoch": 1793463362.1975975,
+  "resume": "None",
+  "resume_at_s": 0.0,
+  "pid": 596,
+  "process_created": 1793463360.018887,
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "ground_processing": {
+    "policy": "independent_fixed",
+    "service_s": 4.29,
+    "receive_capacity": "nonbinding",
+    "version": "GROUND_PARALLEL_V1"
+  },
+  "computational_policy": "V6_SAFETY_UNCHANGED_COMPACT_FORECAST_GROUND_PARALLEL_V1",
+  "operational_overlay": {
+    "version": "IO_STABILITY_V1",
+    "status_interval_s": 10.0,
+    "scientific_source_sha256": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "files": {
+      "check_io.py": "ef72b3605709e4c1810b4a9d5db27d1058cd3e0dceb8a26317ff449742152e4b",
+      "io_queue.py": "0ca99c87a8e5d3db17b75138e63571787549f856bea0cb5163bc5a2f272c5c28",
+      "io_worker.py": "476fb4b3324d80f60651a320ed2bfa6da3975503fdb9ebf435ccc83a9a16e16b",
+      "migrate.py": "dda2a30658eb19813137779268126de76539efd24cc2d1e731ca926c667345cf",
+      "robust_io.py": "7846a58339c5a6c6b0333c7e313cb717ff6b0b204a7d8e0468c5b4979fadd7f9"
+    },
+    "scope": "Atomic JSON retries, nonfatal status write, less frequent status replacement; unchanged simulator/checkpoint scientific identity."
+  }
+}

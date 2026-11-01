@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "pid": 13144,
+    "process_created": 1793454310.7072654,
+    "package": "A",
+    "max_workers": 5,
+    "controller_sha256": "86816caace917b9822456e1c4956942e43de523bd0ee9f7e04bb7301b1888086",
+    "automatic_clock_recovery": true,
+    "automatic_figure_update": true
+  },
+  "command": [
+    "D:\\CondaEnvs\\research-dl\\python.exe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\RESULT_PIPELINE\\auto_finish.py"
+  ]
+}

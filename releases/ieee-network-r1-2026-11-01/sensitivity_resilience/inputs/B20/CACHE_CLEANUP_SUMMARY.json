@@ -1,0 +1,13 @@
+{
+  "removed": {
+    "C:": {
+      "files": 812,
+      "bytes": 3433208116
+    },
+    "E:": {
+      "files": 5880,
+      "bytes": 128110166
+    }
+  },
+  "experiment_data_and_checkpoints_preserved": true
+}

@@ -1,0 +1,13 @@
+{
+  "updated": "2026-11-01T02:58:18.692761+08:00",
+  "verified_complete": 20,
+  "expected": 20,
+  "all_completed": true,
+  "prices": {
+    "downlink_price_per_MB": 0.09202386055743175,
+    "energy_price_per_Wh": 2.981261194297225,
+    "terminal_backlog_price_per_MB": 0.09202386055743175
+  },
+  "source_result_modified": false,
+  "per_method_per_condition_three_seeds_not_assumed": true
+}

@@ -1,0 +1,36 @@
+{
+  "pass_": true,
+  "pass": true,
+  "checks": {
+    "arrival_identity": true,
+    "1600_tasks": true,
+    "end21600": true,
+    "quotas": true,
+    "CPU_serial_and_unique": true,
+    "no_early_work": true,
+    "causal_ready": true,
+    "TX_ready_window": true,
+    "integer_bit_conservation": true,
+    "ground_causal_and_period": true,
+    "independent_ground_exact_4_29": true,
+    "ground_no_overflow": true,
+    "all_complete_ground_inputs_registered_once": true,
+    "independent_gross_and_closure": true,
+    "actual_E_B_Q_and_fixed_net": true,
+    "background_separate": true,
+    "physical_safety": true,
+    "candidate_denominator": true,
+    "arm_switch": true,
+    "ground_prediction_execution_same_rule": true
+  },
+  "failures": [],
+  "tolerances": {
+    "time_s": 1e-07,
+    "energy_j_abs": 1e-05,
+    "utility_abs": 1e-08,
+    "relative": 1e-09,
+    "integer_bits": 0,
+    "note": "Comparison tolerances only; no relaxed physical limit, no modified safety predicate"
+  },
+  "claim": "Finite-period five-seed engineering proxy experiment; not measured onboard compute"
+}

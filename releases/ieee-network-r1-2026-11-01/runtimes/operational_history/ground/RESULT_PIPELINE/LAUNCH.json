@@ -1,0 +1,9 @@
+{
+  "pid": 17580,
+  "command": [
+    "D:\\CondaEnvs\\research-dl\\python.exe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\RESULT_PIPELINE\\auto_finish.py"
+  ],
+  "created": "2026-10-31 21:49:42",
+  "scope": "A recovery plus audited result collection; B data import only"
+}

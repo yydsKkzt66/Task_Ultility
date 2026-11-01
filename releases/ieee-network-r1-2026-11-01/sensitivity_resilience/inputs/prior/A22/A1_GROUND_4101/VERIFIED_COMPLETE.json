@@ -1,0 +1,30 @@
+{
+  "job": {
+    "job_id": "A1_GROUND_4101",
+    "package": "A",
+    "condition": "A1",
+    "arm": "GROUND",
+    "method": "B1",
+    "seed": 4101,
+    "variant": "incremental_ground_parallel_sensitivity_a1_4101",
+    "config_sha256": "3192672919b0b7fa7b5c3f6327a47ef824d609f4ebf9acea4c20579a3d76ec58",
+    "input_hashes": {
+      "legacy_config.json": "f8c1745f9d0c3f6880aff61f4c13afa42c132c7d5ab751fd4f4990b63d3a35fe",
+      "task_manifest.csv": "ffdc5a332c125aa0b24d08bf8081f842afededafae3123a37b7a951a1f7d0841",
+      "seed_4101/tasks.csv": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+      "seed_4101/calendar.json": "d6c25eeefdef69dacb9c8b0d62a892d64df51ace8c86137e108e7493bd587aa7",
+      "seed_4101/exogenous.json": "f5c9e6a07c3cf1c26183a9c7bee014d433a97aa6f74c1e1f774198c8132dc8e4"
+    },
+    "task_sha256": "e32cc02172db1fcc94a9af58d2a573c682dcf2c786bf97120a2a110958e6da92",
+    "queue_priority": 1,
+    "estimated_cpu_s": 5140.796875
+  },
+  "manifests": {
+    "SOURCE_MANIFEST.json": "1e2112dbb016b65f91e7799b32138fe6a4f06d10a8bf38154a88de3dd55c849e",
+    "INPUT_MANIFEST.json": "52e5009fe493edb63c2f34535072ff795cb9f4e5158ae13f0f7d17ee17e82095"
+  },
+  "source_audit_pass": true,
+  "sensitivity_audit_pass": true,
+  "metrics_pass": true,
+  "epoch": 1793467871.6488554
+}

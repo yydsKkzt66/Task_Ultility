@@ -1,0 +1,30 @@
+{
+  "pid": 17424,
+  "command": [
+    "D:\\CondaEnvs\\research-dl\\python.exe",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\RESULT_PIPELINE\\recover_job.py",
+    "--seed",
+    "4101",
+    "--arm",
+    "GROUND",
+    "--previous",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_01",
+    "--out",
+    "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_02",
+    "--worker"
+  ],
+  "epoch": 1793454054.8283877,
+  "out": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_02",
+  "previous": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4101_GROUND\\attempt_01",
+  "resume_s": 14780.0,
+  "execution_overlay": {
+    "version": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2",
+    "sha256": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d",
+    "scope": "GROUND/OFFLOAD arrival registration only; original integrator/safety/fees; strict audit unchanged",
+    "frozen_dependencies": {
+      "src/network_revision/runtime.py": "28aafda6b6b35efd4b5cb2a3630f462c706fc23be9c4d70832493ee9fa996fa6",
+      "src/link/event_queue_runtime_v3.py": "260d6dfc5f83b06371bf6e4edca88234c6f402c92bfa62b50e7be6444a3cd504",
+      "formal_audit.py": "2efca189ac1c4cc84bba50704ab949ac1a8529f5221dfedefd9de76affb37d89"
+    }
+  }
+}

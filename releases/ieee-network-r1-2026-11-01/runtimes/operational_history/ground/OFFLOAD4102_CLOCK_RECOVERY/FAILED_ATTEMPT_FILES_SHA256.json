@@ -1,0 +1,277 @@
+[
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\AUDIT.json",
+    "sha256": "b3bc7f0012e8961d02d480868edecc197042eae2a760b7e24e139907978c5c6e",
+    "bytes": 1152
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\candidates.jsonl",
+    "sha256": "6dd084d053e9fac6a62d3367d71eb9dd0acfe1ce58a470ec9ed90886783d5032",
+    "bytes": 12830383
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED.json",
+    "sha256": "57f6fa774ec3be6ae33b9efc053f8cc083f1d32ff40fa687c5e22f19977a2ec1",
+    "bytes": 1120
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\IDENTITY.json",
+    "sha256": "b7a3153352ee89e435e8d4e7e548943b94240dd38814fb41bb053faa5a8621ea",
+    "bytes": 2944
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\LATEST_CHECKPOINT.json",
+    "sha256": "078beb198e6161b98197acbe09f412caaf546f9581ea92498a644a4c3ec46ed7",
+    "bytes": 86
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\STATUS.json",
+    "sha256": "2474f8fd065dd359bf2468f593f0239ca958636779cae79d29cfd7086534c87f",
+    "bytes": 522
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\status.jsonl",
+    "sha256": "d00266b789d66f2c318c5e34eddfea73484990d15ea6b82ab2c8e3fc263ff8bd",
+    "bytes": 1272219
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\WINDOW_NET.json",
+    "sha256": "909393e9f46ac94728d713098f999066151c82f583e9af077c1b4cece70e67e5",
+    "bytes": 2825
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T04200.json",
+    "sha256": "0b6f599e79e6963185fdf2b2dc7674c4501e0e81121ebe3bb88eac339eb2bad1",
+    "bytes": 2181
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T04200.pkl",
+    "sha256": "875699a342976bc2d586404279b5aef5d18acf87a15a0db0bea4c0fafe6c4cf8",
+    "bytes": 8406285
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T12680.json",
+    "sha256": "b92e5a64f683d5cf8eb7253f0e0cda2dbbf80a6e01bf3119e3ea2fee674e75a1",
+    "bytes": 2186
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T12680.pkl",
+    "sha256": "b9cf32724d67aa5fba7355df6e57e6f7ad1bff9e5e29b251e477b040d2b21493",
+    "bytes": 18874096
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T19960.json",
+    "sha256": "62cb8ac623295d5750b6ca69c2cd41133799a5b0cd514a03abd03db7290d5b6e",
+    "bytes": 2194
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T19960.pkl",
+    "sha256": "0310bed6a0d6ba5bf1b4868b2921e1fb747f03846ddcd0185ef746f32956809e",
+    "bytes": 31106404
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T21600.json",
+    "sha256": "6183de26e9af3fd775ee65bdd945fdf2af01f1e16583b82433d117e9f03b4e7e",
+    "bytes": 2192
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\CHECKPOINTS\\T21600.pkl",
+    "sha256": "c4b452e57301811358920158c21f3d846562d2093b40c21c87b43f806a34200a",
+    "bytes": 33087764
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\arrival_events.json",
+    "sha256": "a90609cdbb36cf7c8900503f21c18070630398d94fd46b75796f0e5ae4925a7b",
+    "bytes": 128747
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\CONFIG_EFFECTIVE.json",
+    "sha256": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+    "bytes": 6646
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\decisions.json",
+    "sha256": "29bf26877cdc93657d87fc95db79d44a1809dac0a2d441d9e71e78fbc8b99447",
+    "bytes": 591590
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\events.json",
+    "sha256": "d97bafb049ca1159849dc384ab84dcfd0953b95e14dd2d422c959a72fa6b9ce5",
+    "bytes": 458805
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\experiment_scale_snapshot.json",
+    "sha256": "e488a6215cc47823677f75288cf1b5cc0b1259b37f99e4ab2f9e305c24e7fa38",
+    "bytes": 126315
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\flows.json",
+    "sha256": "0793044deb4331ed3b5aa5331a51a10e6b2bfc849a9f7c6fe5a60376a929b39f",
+    "bytes": 454402
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\ground_ledger.json",
+    "sha256": "f5302dee917d14b9d4b10e75fb51afb85d82e4095ed4574204d2923020ec7224",
+    "bytes": 383156
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\mode_updates.json",
+    "sha256": "c569d31c10447418dd88590506457aa6af597fdee77505f46c9572af244971ab",
+    "bytes": 8808
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\overhead.json",
+    "sha256": "8647dd9f8bab138f1c4a0e8aef8de518d5f434c8b0f2b29a39d6f63488ce46ce",
+    "bytes": 151662
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\physical_trajectory.json",
+    "sha256": "90c4e6e67ab67ca6b1cfffa71ea5f8c61da62b1d19da83d800177c2a8934f5a7",
+    "bytes": 15333060
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\products.json",
+    "sha256": "48ac74cd180d9a3b454993c95b6d789cca4451efcc48c21b73bded319c1dab69",
+    "bytes": 563158
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\progress_feedback.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "bytes": 4
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\staged_trace.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "bytes": 4
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\summary.json",
+    "sha256": "52db116ea9b389b9fdbb05530665c6d73143fa60c5b4eb953e4ed6bfb55352ae",
+    "bytes": 201431
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\terminal_state.json",
+    "sha256": "9a17bcda132ec48cbc4371e04d4c50463221853db6e7425f56feac72573df76a",
+    "bytes": 107331
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\thermal_protection.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "bytes": 4
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\TRACE_POLICY.json",
+    "sha256": "742a5a461e09f9021a88b8aed1898b06cf9113d0287e2fd579d690b16d5ee500",
+    "bytes": 139
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\FAILED_PARTIAL\\work.json",
+    "sha256": "95790a00d90eeb0ed6e9b539c776ddcccb69fda9ce9a04cbf7865cde0d2242ba",
+    "bytes": 252335
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\arrival_events.json",
+    "sha256": "a90609cdbb36cf7c8900503f21c18070630398d94fd46b75796f0e5ae4925a7b",
+    "bytes": 128747
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\AUDITED_SUMMARY.json",
+    "sha256": "3c02523b951cb6f676ebbfc55a0a9d6c597b28a5e9379a6188aef37e6ed4df54",
+    "bytes": 204400
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\CONFIG_EFFECTIVE.json",
+    "sha256": "bbf85b357d091703d742acf4c19743cb113ebf592261ba952c32e90e7815d60a",
+    "bytes": 6646
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\decisions.json",
+    "sha256": "29bf26877cdc93657d87fc95db79d44a1809dac0a2d441d9e71e78fbc8b99447",
+    "bytes": 591590
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\events.json",
+    "sha256": "d97bafb049ca1159849dc384ab84dcfd0953b95e14dd2d422c959a72fa6b9ce5",
+    "bytes": 458805
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\experiment_scale_snapshot.json",
+    "sha256": "e488a6215cc47823677f75288cf1b5cc0b1259b37f99e4ab2f9e305c24e7fa38",
+    "bytes": 126315
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\flows.json",
+    "sha256": "0793044deb4331ed3b5aa5331a51a10e6b2bfc849a9f7c6fe5a60376a929b39f",
+    "bytes": 454402
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\ground_ledger.json",
+    "sha256": "f5302dee917d14b9d4b10e75fb51afb85d82e4095ed4574204d2923020ec7224",
+    "bytes": 383156
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\mode_updates.json",
+    "sha256": "c569d31c10447418dd88590506457aa6af597fdee77505f46c9572af244971ab",
+    "bytes": 8808
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\overhead.json",
+    "sha256": "8647dd9f8bab138f1c4a0e8aef8de518d5f434c8b0f2b29a39d6f63488ce46ce",
+    "bytes": 151662
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\physical_trajectory.json",
+    "sha256": "90c4e6e67ab67ca6b1cfffa71ea5f8c61da62b1d19da83d800177c2a8934f5a7",
+    "bytes": 15333060
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\products.json",
+    "sha256": "48ac74cd180d9a3b454993c95b6d789cca4451efcc48c21b73bded319c1dab69",
+    "bytes": 563158
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\progress_feedback.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "bytes": 4
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\staged_trace.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "bytes": 4
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\summary.json",
+    "sha256": "52db116ea9b389b9fdbb05530665c6d73143fa60c5b4eb953e4ed6bfb55352ae",
+    "bytes": 201431
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\task_accounting.csv",
+    "sha256": "13f414e0418bb1ea8fc3d5bbe3400a175dd62902cd3394188868343aebd2d42c",
+    "bytes": 289620
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\terminal_state.json",
+    "sha256": "9a17bcda132ec48cbc4371e04d4c50463221853db6e7425f56feac72573df76a",
+    "bytes": 107331
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\thermal_protection.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "bytes": 4
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\TRACE_POLICY.json",
+    "sha256": "742a5a461e09f9021a88b8aed1898b06cf9113d0287e2fd579d690b16d5ee500",
+    "bytes": 139
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\windows.csv",
+    "sha256": "3edc1fca4805dea318dcdabdeb12262b7d3c159caa3549e05f3a7ecf24fc92f4",
+    "bytes": 664
+  },
+  {
+    "path": "handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_02\\RESULT\\work.json",
+    "sha256": "95790a00d90eeb0ed6e9b539c776ddcccb69fda9ce9a04cbf7865cde0d2242ba",
+    "bytes": 252335
+  }
+]

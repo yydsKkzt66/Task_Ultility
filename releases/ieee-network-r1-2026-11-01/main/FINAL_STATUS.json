@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE",
+  "version": "GROUND_PARALLEL_V1_PLUS_CAUSAL_TUT",
+  "methods": [
+    "GROUND",
+    "OFFLOAD",
+    "TUT_ADAPTED",
+    "PROP"
+  ],
+  "seeds": [
+    4101,
+    4102,
+    4103,
+    4104,
+    4105
+  ],
+  "rows": 20,
+  "ddof": 1,
+  "figure_mm": [
+    182,
+    132
+  ],
+  "png_dpi": 600,
+  "vector_pdf_fonts_embedded": true,
+  "prop_tut_unchanged": true,
+  "original_result_ledgers_unchanged": true,
+  "manuscript_unchanged": true,
+  "parameters_unchanged": true,
+  "original_audit_failure_preserved": true,
+  "one_user_authorized_tolerance_acceptance": true,
+  "partial_recovery_stopped_and_excluded": true
+}

@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETED_AUDIT_PASS",
+  "old": {
+    "gross": 591.0259727736309,
+    "net": 30.40399724583449,
+    "HV_net": 264.07282445266947,
+    "closed": 1236,
+    "energy": 83.93837784029999,
+    "downlink": 455.3340620381723,
+    "terminal_backlog": 21.349535649324167
+  },
+  "new": {
+    "gross": 591.0259727736309,
+    "net": 30.40399724583449,
+    "HV_net": 264.07282445266947,
+    "closed": 1236,
+    "energy": 83.93837784029999,
+    "downlink": 455.3340620381723,
+    "terminal_backlog": 21.349535649324167
+  },
+  "delta": {
+    "gross": 0.0,
+    "net": 0.0,
+    "HV_net": 0.0,
+    "closed": 0,
+    "energy": 0.0,
+    "downlink": 0.0,
+    "terminal_backlog": 0.0
+  },
+  "old_failed_result_retained": true,
+  "execution_overlay": {
+    "version": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2",
+    "sha256": "5a0176d60af50584050c00bac1b13246085492f200fb6c0adfe58c46091cd90d",
+    "scope": "GROUND/OFFLOAD arrival registration only; original integrator/safety/fees; strict audit unchanged",
+    "frozen_dependencies": {
+      "src/network_revision/runtime.py": "28aafda6b6b35efd4b5cb2a3630f462c706fc23be9c4d70832493ee9fa996fa6",
+      "src/link/event_queue_runtime_v3.py": "260d6dfc5f83b06371bf6e4edca88234c6f402c92bfa62b50e7be6444a3cd504",
+      "formal_audit.py": "2efca189ac1c4cc84bba50704ab949ac1a8529f5221dfedefd9de76affb37d89"
+    }
+  },
+  "tail_records": [
+    {
+      "start_s": 15084.14814848914,
+      "end_s": 15084.148148489197,
+      "duration_s": 5.820766091346741e-11,
+      "physical_intervals": 1,
+      "TX_intervals": 0,
+      "new_ground_events": 0,
+      "version": "GROUND_OFFLOAD_EXACT_ARRIVAL_TAIL_V2"
+    }
+  ],
+  "exact_arrivals": 1600,
+  "audit_sha256": "e61ee6724af59beacda13cda38dc660fd05a324bf2acb503abd4320d4e188b32"
+}

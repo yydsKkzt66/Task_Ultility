@@ -1,0 +1,288 @@
+{
+  "font_family": "Times New Roman",
+  "font_file": "C:\\Windows\\Fonts\\times.ttf",
+  "font_fallback": false,
+  "main_png_pixels": [
+    4299,
+    3118
+  ],
+  "main_png_dpi": [
+    599.9988,
+    599.9988
+  ],
+  "main_figure_mm": [
+    182,
+    132
+  ],
+  "minimum_text_pt": 8,
+  "axis_linewidth_pt": 0.6,
+  "bar_edge_linewidth_pt": 0.45,
+  "error_linewidth_pt": 0.8,
+  "hatch_linewidth_pt": 0.4,
+  "hatch": "///",
+  "method_colors": [
+    "#78B6C8",
+    "#F2D98E",
+    "#466F87",
+    "#E48578"
+  ],
+  "light_colors": [
+    [
+      0.6558823529411765,
+      0.813921568627451,
+      0.8598039215686274
+    ],
+    [
+      0.9668627450980392,
+      0.9031372549019607,
+      0.7119607843137254
+    ],
+    [
+      0.5284313725490196,
+      0.6329411764705882,
+      0.6941176470588235
+    ],
+    [
+      0.9311764705882353,
+      0.6890196078431372,
+      0.6558823529411765
+    ]
+  ],
+  "light_formula": "0.65 * base RGB + 0.35 * white RGB",
+  "product_colors": [
+    "#DCE9EE",
+    "#78B6C8",
+    "#466F87"
+  ],
+  "bubble_scale_points2_per_net_utility": 1.0,
+  "bubble_area_offset": 0,
+  "bubble_clearances": [
+    {
+      "method1": "GROUND",
+      "method2": "OFFLOAD",
+      "clearance_mm": 29.30925165077105
+    },
+    {
+      "method1": "GROUND",
+      "method2": "TUT_ADAPTED",
+      "clearance_mm": 51.00673938124764
+    },
+    {
+      "method1": "GROUND",
+      "method2": "PROP",
+      "clearance_mm": 43.10632420332114
+    },
+    {
+      "method1": "OFFLOAD",
+      "method2": "TUT_ADAPTED",
+      "clearance_mm": 22.171411933424586
+    },
+    {
+      "method1": "OFFLOAD",
+      "method2": "PROP",
+      "clearance_mm": 13.08287245824409
+    },
+    {
+      "method1": "TUT_ADAPTED",
+      "method2": "PROP",
+      "clearance_mm": 1.9857094336540642
+    }
+  ],
+  "text_outside_canvas": [],
+  "legend_checks": [
+    {
+      "panel": "a",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": []
+    },
+    {
+      "panel": "b",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": []
+    },
+    {
+      "panel": "c",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": []
+    },
+    {
+      "panel": "d",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": [
+        {
+          "method": "GROUND",
+          "clearance_pt": 102.4111688706052
+        },
+        {
+          "method": "OFFLOAD",
+          "clearance_pt": 53.083599229019434
+        },
+        {
+          "method": "TUT_ADAPTED",
+          "clearance_pt": 32.24766624420512
+        },
+        {
+          "method": "PROP",
+          "clearance_pt": 28.14062743893912
+        }
+      ]
+    },
+    {
+      "panel": "a",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": [],
+      "scope": "standalone"
+    },
+    {
+      "panel": "b",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": [],
+      "scope": "standalone"
+    },
+    {
+      "panel": "c",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": [],
+      "scope": "standalone"
+    },
+    {
+      "panel": "d",
+      "label_overlaps": [],
+      "bar_overlaps": 0,
+      "legend_to_bubble_gaps": [
+        {
+          "method": "GROUND",
+          "clearance_pt": 102.41116887060524
+        },
+        {
+          "method": "OFFLOAD",
+          "clearance_pt": 53.083599229019455
+        },
+        {
+          "method": "TUT_ADAPTED",
+          "clearance_pt": 32.24766624420512
+        },
+        {
+          "method": "PROP",
+          "clearance_pt": 28.140627438939127
+        }
+      ],
+      "scope": "standalone"
+    }
+  ],
+  "style_revision": {
+    "b_bar_width": 0.44,
+    "c_bar_height": 0.4,
+    "all_spines_visible": true,
+    "ticks": "in; all four sides",
+    "grid": "both; light gray",
+    "panel_titles": "below axes",
+    "legend_d": "framed vertical, exact marker size"
+  },
+  "pdfs": [
+    {
+      "file": "main_exp.pdf",
+      "width_mm": 181.99999999999164,
+      "height_mm": 132.0000000000153,
+      "fonts": [
+        {
+          "name": "/DQNAXI+TimesNewRomanPSMT",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/FHDZGZ+TimesNewRomanPS-BoldMT",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "raster_images": []
+    },
+    {
+      "file": "a_net_utility.pdf",
+      "width_mm": 90.99999999999582,
+      "height_mm": 65.99999999999,
+      "fonts": [
+        {
+          "name": "/DHNATT+TimesNewRomanPSMT",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/CABGBF+TimesNewRomanPS-BoldMT",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "raster_images": []
+    },
+    {
+      "file": "b_task_closure.pdf",
+      "width_mm": 90.99999999999582,
+      "height_mm": 65.99999999999,
+      "fonts": [
+        {
+          "name": "/GASHJI+TimesNewRomanPSMT",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/DBBNJP+TimesNewRomanPS-BoldMT",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "raster_images": []
+    },
+    {
+      "file": "c_ground_products.pdf",
+      "width_mm": 90.99999999999582,
+      "height_mm": 65.99999999999,
+      "fonts": [
+        {
+          "name": "/FLXQYY+TimesNewRomanPSMT",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/FAWUOL+TimesNewRomanPS-BoldMT",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "raster_images": []
+    },
+    {
+      "file": "d_resource_use.pdf",
+      "width_mm": 90.99999999999582,
+      "height_mm": 65.99999999999,
+      "fonts": [
+        {
+          "name": "/CPNODI+TimesNewRomanPSMT",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/BBDAXU+TimesNewRomanPS-BoldMT",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "raster_images": []
+    }
+  ],
+  "versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1"
+  },
+  "input_csv_sha256": "a385d01638d663d29058dcb6f2a23549e41ea563920753af3f601f793ec79a0d",
+  "visual_review": "PENDING_ACTUAL_IMAGE_INSPECTION"
+}

@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "at": "2026-11-01T04:32:23.338284+08:00",
+  "jobs": 20,
+  "arrivals_each": 1600,
+  "horizon_s": 21600,
+  "elapsed_s": 12381.929767608643,
+  "original_audit_checks": 400,
+  "sensitivity_and_metrics_audits_passed": true,
+  "independent_raw_accounting_and_ground_events_recomputed": true,
+  "frozen_files_verified": 355,
+  "safety_violations": 0,
+  "unresolved_or_historical_experiment_failures": 0,
+  "negative_overall_net_jobs": [
+    "B1_GROUND_4103",
+    "B2_GROUND_4101",
+    "B2_GROUND_4102",
+    "A1_OFFLOAD_4101",
+    "A1_OFFLOAD_4102"
+  ],
+  "available_seeds_per_condition_method": [
+    {
+      "condition": "A1",
+      "method": "GROUND",
+      "n": 1,
+      "seeds": "4103",
+      "missing_seeds": "4101;4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A1",
+      "method": "OFFLOAD",
+      "n": 2,
+      "seeds": "4101;4102",
+      "missing_seeds": "4103",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A2",
+      "method": "GROUND",
+      "n": 2,
+      "seeds": "4101;4102",
+      "missing_seeds": "4103",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A2",
+      "method": "OFFLOAD",
+      "n": 1,
+      "seeds": "4103",
+      "missing_seeds": "4101;4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A3",
+      "method": "GROUND",
+      "n": 2,
+      "seeds": "4101;4103",
+      "missing_seeds": "4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A3",
+      "method": "OFFLOAD",
+      "n": 1,
+      "seeds": "4102",
+      "missing_seeds": "4101;4103",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A4",
+      "method": "GROUND",
+      "n": 1,
+      "seeds": "4102",
+      "missing_seeds": "4101;4103",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A4",
+      "method": "OFFLOAD",
+      "n": 2,
+      "seeds": "4101;4103",
+      "missing_seeds": "4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A5",
+      "method": "GROUND",
+      "n": 2,
+      "seeds": "4101;4103",
+      "missing_seeds": "4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "A5",
+      "method": "OFFLOAD",
+      "n": 1,
+      "seeds": "4101",
+      "missing_seeds": "4102;4103",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "B1",
+      "method": "GROUND",
+      "n": 1,
+      "seeds": "4103",
+      "missing_seeds": "4101;4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "B1",
+      "method": "OFFLOAD",
+      "n": 1,
+      "seeds": "4103",
+      "missing_seeds": "4101;4102",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "B2",
+      "method": "GROUND",
+      "n": 2,
+      "seeds": "4101;4102",
+      "missing_seeds": "4103",
+      "complete_three_seeds": false
+    },
+    {
+      "condition": "B2",
+      "method": "OFFLOAD",
+      "n": 1,
+      "seeds": "4102",
+      "missing_seeds": "4101;4103",
+      "complete_three_seeds": false
+    }
+  ],
+  "simulations_rerun": 0,
+  "original_code_and_results_unchanged": true
+}

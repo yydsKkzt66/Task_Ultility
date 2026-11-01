@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETED_AND_AUDIT_PASS",
+  "new_attempt": "D:\\北邮work\\5.15多状态感知轻量化星上agent\\leo_onboard_codesign_case_study_v2\\handoff_out\\NETWORK_GROUND_PARALLEL_20261031_01\\A_RUNS\\4102_OFFLOAD\\attempt_03",
+  "old_attempt_retained_failed": true,
+  "execution_overlay": {
+    "version": "OFFLOAD_EXACT_ARRIVAL_TAIL_V1",
+    "sha256": "2c88cc29922059710e482065c9dd1cf04dc5a0e8c5c076f79bdadfdb39ed09d0",
+    "scope": "OFFLOAD arrival registration only; original integrator/safety/fees; strict audit unchanged",
+    "frozen_dependencies": {
+      "src/network_revision/runtime.py": "28aafda6b6b35efd4b5cb2a3630f462c706fc23be9c4d70832493ee9fa996fa6",
+      "src/link/event_queue_runtime_v3.py": "260d6dfc5f83b06371bf6e4edca88234c6f402c92bfa62b50e7be6444a3cd504",
+      "formal_audit.py": "2efca189ac1c4cc84bba50704ab949ac1a8529f5221dfedefd9de76affb37d89"
+    }
+  },
+  "tail_records": [
+    {
+      "start_s": 9406.642356677126,
+      "end_s": 9406.642356677172,
+      "duration_s": 4.547473508864641e-11,
+      "physical_intervals": 1,
+      "TX_intervals": 0,
+      "new_ground_events": 0,
+      "version": "OFFLOAD_EXACT_ARRIVAL_TAIL_V1"
+    }
+  ],
+  "original_failed_metrics": {
+    "gross": 273.2424217030792,
+    "net": 52.975859749755756,
+    "energy": 62.33981365768784,
+    "downlink": 157.92674829563558,
+    "terminal_backlog": 0.0,
+    "closed": 696
+  },
+  "recovered_metrics": {
+    "gross": 273.2424217030792,
+    "net": 52.975859749755756,
+    "energy": 62.33981365768784,
+    "downlink": 157.92674829563558,
+    "terminal_backlog": 0.0,
+    "closed": 696
+  },
+  "metric_deltas": {
+    "gross": 0.0,
+    "net": 0.0,
+    "energy": 0.0,
+    "downlink": 0.0,
+    "terminal_backlog": 0.0,
+    "closed": 0
+  },
+  "audit_sha256": "04ab2b8ecdf56c55f73b201a7cee1cc0418ae28ec116ad0c2c9ae7a778a74e6d",
+  "source_manifests_verified": true,
+  "actual_arrivals": 1600,
+  "exact_arrivals": 1600
+}

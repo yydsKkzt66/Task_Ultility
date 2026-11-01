@@ -1,0 +1,1 @@
+GROUND/OFFLOAD: GROUND_PARALLEL_V1; TUT_ADAPTED: common causal-ground latency; PROP: frozen formal reference. Seeds 4101-4105, n=5, ddof=1. GROUND/4102 uses complete attempt_02 with author-approved numerical time tolerance; original strict equality FAIL retained. See DATA_VALIDATION.json and inputs/A_AUDITS/4102_GROUND.json.

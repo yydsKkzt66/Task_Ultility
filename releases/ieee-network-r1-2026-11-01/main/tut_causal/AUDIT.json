@@ -1,0 +1,97 @@
+{
+  "pass_": true,
+  "seeds": [
+    {
+      "seed": 4101,
+      "passed": true,
+      "actual_arrivals": 1600,
+      "closure_latency_n": 503,
+      "independent_gross_and_fixed_net": true,
+      "actual_work_and_TX_energy_reconciled": true,
+      "actual_TX_MB_reconciled": true,
+      "highest_product_counts_reconciled": true,
+      "closure_identity_reconciled": true,
+      "right_censoring_partition": true,
+      "model": "balanced",
+      "ground_quality": [
+        0.697529100765
+      ],
+      "candidate_latency_checks": 4800
+    },
+    {
+      "seed": 4102,
+      "passed": true,
+      "actual_arrivals": 1600,
+      "closure_latency_n": 504,
+      "independent_gross_and_fixed_net": true,
+      "actual_work_and_TX_energy_reconciled": true,
+      "actual_TX_MB_reconciled": true,
+      "highest_product_counts_reconciled": true,
+      "closure_identity_reconciled": true,
+      "right_censoring_partition": true,
+      "model": "balanced",
+      "ground_quality": [
+        0.697529100765
+      ],
+      "candidate_latency_checks": 4800
+    },
+    {
+      "seed": 4103,
+      "passed": true,
+      "actual_arrivals": 1600,
+      "closure_latency_n": 532,
+      "independent_gross_and_fixed_net": true,
+      "actual_work_and_TX_energy_reconciled": true,
+      "actual_TX_MB_reconciled": true,
+      "highest_product_counts_reconciled": true,
+      "closure_identity_reconciled": true,
+      "right_censoring_partition": true,
+      "model": "balanced",
+      "ground_quality": [
+        0.697529100765
+      ],
+      "candidate_latency_checks": 4800
+    },
+    {
+      "seed": 4104,
+      "passed": true,
+      "actual_arrivals": 1600,
+      "closure_latency_n": 527,
+      "independent_gross_and_fixed_net": true,
+      "actual_work_and_TX_energy_reconciled": true,
+      "actual_TX_MB_reconciled": true,
+      "highest_product_counts_reconciled": true,
+      "closure_identity_reconciled": true,
+      "right_censoring_partition": true,
+      "model": "balanced",
+      "ground_quality": [
+        0.697529100765
+      ],
+      "candidate_latency_checks": 4800
+    },
+    {
+      "seed": 4105,
+      "passed": true,
+      "actual_arrivals": 1600,
+      "closure_latency_n": 494,
+      "independent_gross_and_fixed_net": true,
+      "actual_work_and_TX_energy_reconciled": true,
+      "actual_TX_MB_reconciled": true,
+      "highest_product_counts_reconciled": true,
+      "closure_identity_reconciled": true,
+      "right_censoring_partition": true,
+      "model": "balanced",
+      "ground_quality": [
+        0.697529100765
+      ],
+      "candidate_latency_checks": 4800
+    }
+  ],
+  "total_tasks": 8000,
+  "total_candidate_latency_checks": 24000,
+  "max_candidate_latency_error_s": 1.7763568394002505e-15,
+  "source_compatibility": true,
+  "fixed_public_prices_identical": true,
+  "no_simulation_launched": true,
+  "no_original_results_code_or_paper_modified": true
+}
