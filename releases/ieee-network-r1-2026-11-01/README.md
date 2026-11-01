@@ -8,9 +8,9 @@ This archive, dated 1 November 2026, contains the accepted **6 h / 1,600-task** 
 | Capacity / value sensitivity | Three paired seeds 4101–4103, all four methods | Complete |
 | Service-outage resilience | Lost window 2; continuous loss of windows 2–3; same paired seeds | Complete core metrics |
 | Sensitivity / resilience combined | 84 perturbation runs plus 12 shared normal references | 96 unique records |
-| Ablation | Five-seed full-PROP reference and original design/configuration provenance | **Formal external ablation return and EXACT_ARRIVAL_V2 source still pending** |
+| Ablation | Five-seed full-PROP reference and original design/configuration provenance | **Formal ablation results will be uploaded separately from the other computer** |
 
-**This is not yet a complete ablation release.** The four formal external ablation arms (w/o RM, w/o Prog, Fixed-H, Req-only) are not replaced by development results. The existing w/o Mode supplement is also awaiting its original return. `ablation/MISSING_EXTERNAL_RETURN.csv` lists the needed evidence. Do not use the original V1 design/runtime as proof of the external run's final version.
+**The owner has assigned formal ablation publication to the other computer.** This local release covers the main experiment and sensitivity/resilience analysis. The four formal external ablation arms (w/o RM, w/o Prog, Fixed-H, Req-only) and the existing w/o Mode supplement are not included here or replaced by development results. `ablation/MISSING_EXTERNAL_RETURN.csv` is retained as an evidence checklist for the separate upload. Do not use the original V1 design/runtime as proof of the external run's final version.
 
 ## Read and reproduce the published metrics
 

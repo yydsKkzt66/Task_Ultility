@@ -8,7 +8,7 @@
   "main_and_sensitivity_figures_replotted": true,
   "simulation_runs": 0,
   "raw_physics_reaudit": false,
-  "ablation": "PENDING_EXTERNAL_RETURN",
+  "ablation": "MANAGED_ON_OTHER_COMPUTER_SEPARATE_UPLOAD",
   "original_result_changes": 0,
   "visual_check": "Main and sensitivity regenerated previews inspected: labels/legends/error bars visible; no clipping observed."
 }

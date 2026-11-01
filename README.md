@@ -1,6 +1,6 @@
 ## IEEE Network first-revision experiments (2026-11-01)
 
-The revised 6 h / 1,600-task main experiments, capacity/value sensitivity and service-outage resilience data, frozen runtime sources and reproduction scripts are archived in [releases/ieee-network-r1-2026-11-01](releases/ieee-network-r1-2026-11-01/README.md). Main and sensitivity/resilience metrics are complete; the external formal ablation return is still pending and explicitly listed. The earlier frozen competition release [comsoc-apb-2026-v1](https://github.com/yydsKkzt66/Task_Ultility/tree/comsoc-apb-2026-v1) remains unchanged.
+The revised 6 h / 1,600-task main experiments, capacity/value sensitivity and service-outage resilience data, frozen runtime sources and reproduction scripts are archived in [releases/ieee-network-r1-2026-11-01](releases/ieee-network-r1-2026-11-01/README.md). Main and sensitivity/resilience metrics are complete. Formal ablation results are managed on another computer and will be uploaded separately. The earlier frozen competition release [comsoc-apb-2026-v1](https://github.com/yydsKkzt66/Task_Ultility/tree/comsoc-apb-2026-v1) remains unchanged.
 
 ---
 

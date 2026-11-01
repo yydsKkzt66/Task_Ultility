@@ -1,7 +1,7 @@
 {
   "main": "COMPLETE_20_RUNS",
   "sensitivity_resilience": "COMPLETE_96_ROWS_84_PERTURBATIONS_12_MATCHED_NORMAL",
-  "ablation": "WAITING_FOR_FORMAL_EXTERNAL_RESULTS_AND_EXACT_ARRIVAL_V2_SOURCE",
+  "ablation": "MANAGED_ON_OTHER_COMPUTER_SEPARATE_UPLOAD",
   "new_experiments_run": false,
   "old_results_modified": false
 }
